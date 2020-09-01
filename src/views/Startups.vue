@@ -127,15 +127,15 @@
         </v-card-title>
         <v-row class="mx-1">
           <v-col cols="6">
-            <v-img src="../assets/benefex.png" width="150" contain />
+            <v-img src="../assets/benefex.png" width="150" contain class="startups" />
           </v-col>
           <v-col cols="6">
-            <v-img src="../assets/thirdSpace.png" width="150" contain />
+            <v-img src="../assets/thirdSpace.png" width="150" contain class="startups" />
           </v-col>
         </v-row>
         <v-row class="mx-1">
           <v-col cols="6">
-            <v-img src="../assets/vision-box.png" width="150" contain />
+            <v-img src="../assets/vision-box.png" width="150" contain class="startups" />
           </v-col>
         </v-row>
       </v-card>
@@ -193,15 +193,15 @@
         </v-card-title>
         <v-row class="ma-4">
           <v-col cols="6">
-            <v-img src="../assets/unmind.png" width="150" contain />
+            <v-img src="../assets/unmind.png" width="150" contain class="startups" />
           </v-col>
           <v-col cols="6">
-            <v-img src="../assets/curve.png" width="150" contain />
+            <v-img src="../assets/curve.png" width="150" contain class="startups" />
           </v-col>
         </v-row>
         <v-row class="ma-4">
           <v-col cols="6">
-            <v-img src="../assets/feedr.png" width="150" contain />
+            <v-img src="../assets/feedr.png" width="150" contain class="startups" />
           </v-col>
         </v-row>
       </v-card>
