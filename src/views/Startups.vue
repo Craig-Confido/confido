@@ -127,19 +127,15 @@
         </v-card-title>
         <v-row class="mx-1">
           <v-col cols="6">
-            <v-img>
-            </v-img>
+            <v-img src="../assets/benefex.png" width="150" contain />
           </v-col>
           <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-magnify</v-icon>
+            <v-img src="../assets/thirdSpace.png" width="150" contain />
           </v-col>
         </v-row>
         <v-row class="mx-1">
           <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-account-clock</v-icon>
-          </v-col>
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-account-group</v-icon>
+            <v-img src="../assets/vision-box.png" width="150" contain />
           </v-col>
         </v-row>
       </v-card>
@@ -195,20 +191,17 @@
         <v-card-title class="headline font-weight-bold">
           Case studies.
         </v-card-title>
-        <v-row class="mx-1">
+        <v-row class="ma-4">
           <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-file-document</v-icon>
+            <v-img src="../assets/unmind.png" width="150" contain />
           </v-col>
           <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-magnify</v-icon>
+            <v-img src="../assets/curve.png" width="150" contain />
           </v-col>
         </v-row>
-        <v-row class="mx-1">
+        <v-row class="ma-4">
           <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-account-clock</v-icon>
-          </v-col>
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-account-group</v-icon>
+            <v-img src="../assets/feedr.png" width="150" contain />
           </v-col>
         </v-row>
       </v-card>

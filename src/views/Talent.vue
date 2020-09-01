@@ -123,24 +123,17 @@
     <v-col cols="12" md="6">
       <v-card color="blue lighten-2" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-card-title class="headline font-weight-bold">
-          Case studies.
+          Who we work with.
         </v-card-title>
-        <v-row class="mx-1">
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-file-document</v-icon>
-          </v-col>
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-magnify</v-icon>
-          </v-col>
-        </v-row>
-        <v-row class="mx-1">
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-account-clock</v-icon>
-          </v-col>
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-account-group</v-icon>
-          </v-col>
-        </v-row>
+        <v-card-text class="white--text">
+          <p>Products making the world a better place</p>
+          <p>Seed to Series B</p>
+          <p>Startups that have a clear vision and roadmap</p>
+          <p>Startups that value and invest in their people</p>
+        </v-card-text>
+        <v-card-actions>
+          <v-btn class="btn--outlined font-weight-bold mx-auto px-4" outlined color="white" rounded href="mailto:info@confidotalent.com">Sounds good, let's talk!</v-btn>
+        </v-card-actions>
       </v-card>
     </v-col>
   </v-row>
@@ -154,57 +147,80 @@
   <v-row class="mx-16">
     <v-col cols="12">
       <v-card color="blue lighten-2" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
-        <v-card-title class="headline font-weight-bold">
-          Process.
-        </v-card-title>
-        <v-row class="mx-1">
+        <v-row>
           <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-human-greeting-proximity</v-icon>
-            <h3>Brief workshop</h3>
+            <v-card-title class="headline font-weight-bold">
+              What we look for.
+            </v-card-title>
+            <v-card-text class="white--text">
+              <p>Business value focus</p>
+              <p>User centred design</p>
+              <p>No ego / team player</p>
+              <p>Growth mindset /<br />
+                Invested in self development</p>
+            </v-card-text>
+            <v-card-actions>
+              <v-btn class="btn--outlined font-weight-bold px-4" outlined color="white" rounded href="mailto:info@confidotalent.com">I work in Product!</v-btn>
+            </v-card-actions>
           </v-col>
           <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-file-document-edit-outline</v-icon>
-            <h3>Candidate search</h3>
-          </v-col>
-        </v-row>
-        <v-row class="mx-1">
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-check-decagram</v-icon>
-            <h3>Interviews</h3>
-          </v-col>
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-account-multiple-check</v-icon>
-            <h3>Onboarding</h3>
+            <v-card-title class="headline font-weight-bold">
+              Roles we cover.
+            </v-card-title>
+            <v-card-text class="white--text">
+              <p>Product owner/manager</p>
+              <p>UI Designer</p>
+              <p>UX Designer</p>
+              <p>Product and Service Designer</p>
+              <p>User Researcher</p>
+            </v-card-text>
+            <v-card-actions class="ml-2">
+              <h3>From Junior <v-icon class="white--text">mdi-arrow-right</v-icon> VP</h3>
+            </v-card-actions>
           </v-col>
         </v-row>
       </v-card>
     </v-col>
   </v-row>
+
   <v-row class="text-left mx-16">
     <v-col cols="12">
-      <h1>Product.</h1>
+      <h1>Engineering.</h1>
     </v-col>
   </v-row>
   <v-row class="mx-16">
     <v-col cols="12">
       <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
-        <v-card-title class="headline font-weight-bold">
-          Case studies.
-        </v-card-title>
-        <v-row class="mx-1">
+        <v-row>
           <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-file-document</v-icon>
+            <v-card-title class="headline font-weight-bold">
+              What we look for.
+            </v-card-title>
+            <v-card-text class="white--text">
+              <p>Technologist</p>
+              <p>User/product focused approach</p>
+              <p>No ego / team player</p>
+              <p>Growth mindset /<br />
+                Invested in self development</p>
+            </v-card-text>
+            <v-card-actions>
+              <v-btn class="btn--outlined font-weight-bold px-4" outlined color="white" rounded href="mailto:info@confidotalent.com">I work in Engineering!</v-btn>
+            </v-card-actions>
           </v-col>
           <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-magnify</v-icon>
-          </v-col>
-        </v-row>
-        <v-row class="mx-1">
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-account-clock</v-icon>
-          </v-col>
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-account-group</v-icon>
+            <v-card-title class="headline font-weight-bold">
+              Roles we cover.
+            </v-card-title>
+            <v-card-text class="white--text">
+              <p>Developer (Frontend, backend, fullstack)<br />
+                All stacks and technologies</p>
+              <p>Quality Assurance</p>
+              <p>DevOps/Platform</p>
+              <p>Data Engineer/Scientist</p>
+            </v-card-text>
+            <v-card-actions class="ml-2">
+              <h3>From Junior <v-icon class="white--text">mdi-arrow-right</v-icon> VP</h3>
+            </v-card-actions>
           </v-col>
         </v-row>
       </v-card>
