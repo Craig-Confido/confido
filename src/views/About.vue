@@ -1,8 +1,8 @@
 <template>
 <v-container fluid class="pa-0 ma-0">
   <section class="mx-4 mx-md-16">
-  <v-img src="../assets/Confido-Take-one2.png" class="d-flex d-md-none" alt="image of people" />
     <v-row class="text-left mt-16">
+  <v-img src="../assets/Confido-Take-one2.png" class="d-flex d-md-none" alt="image of people" />
       <v-col cols="12" sm="6">
         <h1 class="display-1 mb-3 mt-3 font-weight-bold" aria-label="Intro text">
           Startups and people are
