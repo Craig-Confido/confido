@@ -18,7 +18,6 @@
       </v-col>
     </v-row>
   </section>
-  // ! TODO: Make component
   <v-row class="mt-10 full-width-green px-auto py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
     <v-col cols="12" sm="3">
       <h1>
@@ -75,7 +74,6 @@
   </v-row>
   <v-row class="mx-4 mx-md-16">
     <v-col cols="12" md="6">
-      // ! TODO: Make data-fed component
       <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-card-title class="headline font-weight-bold">
           Process.
