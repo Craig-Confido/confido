@@ -2,26 +2,26 @@
 <v-container fluid class="pa-0 ma-0">
   <section class="mx-4 mx-md-16">
     <v-row class="text-left mt-10">
-      <v-col cols="12" sm="7" class="mt-0 mt-md-12">
-        <h1 class="display-1 mb-3 mt-3 font-weight-bold" aria-label="Karl's posts">
+      <v-col cols="12" sm="6" class="mt-0 mt-md-12">
+        <h1 class="display-1 mb-3 mt-3 font-weight-bold" aria-label="Intro text">
           Startups and people are
           <span class="accent--text">
             <strong>unique</strong>
           </span>, no two are the same. That’s why hiring is so hard.
         </h1>
-        <h2 class="text-lg-h5 my-8">
+        <h2 class="text-h5 my-8">
           Confido focus on aligning the one thing that connects the two, to create something
           <span class="secondary--text">
             <strong>special</strong>
           </span>.
         </h2>
-        <h3 class="font-weight-black success--text my-8 text-lg-h3">Values.</h3>
+        <h3 class="font-weight-black success--text my-8 text-h3">Values.</h3>
         <v-row class="mt-12 mx-4 mx-md-0">
           <v-btn class="mr-4 mt-4 btn--outlined font-weight-black" outlined color="accent" rounded width="150" height="50">Startups</v-btn>
           <v-btn class="mr-4 mt-4 btn--outlined font-weight-bold" outlined color="secondary" rounded width="150" height="50">Talent</v-btn>
         </v-row>
       </v-col>
-      <v-col cols="12" sm="5">
+      <v-col cols="12" sm="6">
         <v-img src="../assets/placeholder.svg" alt="image of people" />
       </v-col>
     </v-row>
