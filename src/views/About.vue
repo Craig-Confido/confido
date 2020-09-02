@@ -17,8 +17,8 @@
         </h2>
         <h3 class="font-weight-black success--text my-8 text-h3">Values.</h3>
         <v-row class="mt-12 mx-0">
-          <v-btn class="mr-4 mt-4 btn--outlined font-weight-black" outlined color="accent" rounded width="150" height="50">Startups</v-btn>
-          <v-btn class="mr-4 mt-4 btn--outlined font-weight-bold" outlined color="secondary" rounded width="150" height="50">Talent</v-btn>
+          <v-btn to="/startups" class="mr-4 mt-4 btn--outlined font-weight-black" outlined color="accent" rounded width="150" height="50">Startups</v-btn>
+          <v-btn to="/talent" class="mr-4 mt-4 btn--outlined font-weight-bold" outlined color="secondary" rounded width="150" height="50">Talent</v-btn>
         </v-row>
       </v-col>
       <v-col cols="12" sm="6">
@@ -34,13 +34,13 @@
       <h3>Seed to Series B</h3>
       <h3>Products that improve peoples' lives</h3>
     </v-col>
-    <v-col cols="6" sm="3">
+    <v-col cols="6" sm="3" class="mt-8 mt-md-none">
       <h2>20+</h2>
       <h3>Startups scaled</h3>
       <h2 class="mt-4">&lt;4</h2>
       <h3>Weeks to hire</h3>
     </v-col>
-    <v-col cols="6" sm="3">
+    <v-col cols="6" sm="3" class="mt-8 mt-md-none">
       <h2>70+</h2>
       <h3>Hires made</h3>
       <h2 class="mt-4">97.5%</h2>

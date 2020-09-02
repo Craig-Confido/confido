@@ -19,7 +19,7 @@
     </v-row>
   </section>
   <v-row class="mt-10 full-width-blue px-auto py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
-    <v-col cols="12" sm="3">
+    <v-col cols="6" sm="3">
       <h1>
         Exclusive
       </h1>
@@ -35,7 +35,7 @@
         Candidates in process per role
       </h3>
     </v-col>
-    <v-col cols="12" sm="3">
+    <v-col cols="6" sm="3">
       <h1>
         &lt; 2
       </h1>
@@ -43,7 +43,7 @@
         Weeks average Interview process
       </h3>
     </v-col>
-    <v-col cols="12" sm="3">
+    <v-col cols="6" sm="3">
       <h1>
         97.5%
       </h1>
