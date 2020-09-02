@@ -1,8 +1,8 @@
 <template>
 <v-container fluid class="pa-0 ma-0">
   <section class="mx-4 mx-md-16">
-    <v-row class="text-left mt-10">
-      <v-col cols="12" sm="6" class="mt-0 mt-md-12">
+    <v-row class="text-left mt-16">
+      <v-col cols="12" sm="6">
         <h1 class="display-1 mb-3 mt-3 font-weight-bold" aria-label="Intro text">
           Startups and people are
           <span class="accent--text">
@@ -22,7 +22,8 @@
         </v-row>
       </v-col>
       <v-col cols="12" sm="6">
-        <v-img src="../assets/placeholder.svg" alt="image of people" />
+        <!--<v-img src="../assets/Confido-Take-one.png" alt="image of people" />-->
+        <v-img src="../assets/Confido-Take-one2.png" alt="image of people" />
       </v-col>
     </v-row>
   </section>
