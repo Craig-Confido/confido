@@ -1,6 +1,7 @@
 <template>
 <v-container fluid class="pa-0 ma-0">
   <section class="mx-4 mx-md-16">
+  <v-img src="../assets/Confido-Take-one2.png" class="d-flex d-md-none" alt="image of people" />
     <v-row class="text-left mt-16">
       <v-col cols="12" sm="6">
         <h1 class="display-1 mb-3 mt-3 font-weight-bold" aria-label="Intro text">
@@ -22,12 +23,11 @@
         </v-row>
       </v-col>
       <v-col cols="12" sm="6">
-        <!--<v-img src="../assets/Confido-Take-one.png" alt="image of people" />-->
         <v-img src="../assets/Confido-Take-one2.png" class="d-none d-md-flex" alt="image of people" />
       </v-col>
     </v-row>
   </section>
-  <v-row class="mt-10 text-left full-width-pink px-auto py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
+  <v-row class="mt-10 text-left full-width-pink px-4 px-md-16 py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
     <v-col cols="12" sm="6">
       <h1 class="mb-4">What we do.</h1>
       <h3>Build Product and Tech</h3>
