@@ -1,6 +1,6 @@
 <template>
 <v-container fluid class="pa-0 ma-0">
-  <section class="ma-16">
+  <section class="ma-4 ma-md-16">
     <v-row class="text-left mt-10">
       <v-col cols="12" sm="7" class="mt-12">
         <h1 class="display-1 mb-3 mt-3 font-weight-bold" aria-label="Karl's posts">
@@ -50,7 +50,7 @@
     <v-carousel cycle height="400" hide-delimiter-background light :show-arrows="false">
       <v-carousel-item v-for="quote in quotes" :key="quote">
         <v-sheet color="#F1F1FF" height="100%">
-          <v-row class="fill-height px-16 mx-16" align="center" justify="center">
+          <v-row class="fill-height px-16 mx-4 mx-md-16" align="center" justify="center">
             <v-text class="headline text--primary">{{ quote.content }}</v-text>
             <v-text class="text-h6 text--primary">{{ quote.advocate }}</v-text>
           </v-row>
@@ -58,7 +58,7 @@
       </v-carousel-item>
     </v-carousel>
   </v-row>
-  <v-row class="mx-16">
+  <v-row class="mx-4 mx-md-16">
     <v-col cols="12">
       <v-card color="white" class="pa-8 my-16" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <h1 class="mb-4 text-left">Companies we've scaled.</h1>
@@ -83,12 +83,12 @@
       </v-card>
     </v-col>
   </v-row>
-  <v-row class="text-left mx-16">
+  <v-row class="text-left mx-4 mx-md-16">
     <v-col cols="12">
       <h1>Who we are.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-16">
+  <v-row class="mx-4 mx-md-16">
     <v-col cols="12" md="6">
       <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-card-title class="headline font-weight-bold">We are Confido.</v-card-title>
@@ -121,12 +121,12 @@
       </v-card>
     </v-col>
   </v-row>
-  <v-row class="text-left mx-16">
+  <v-row class="text-left mx-4 mx-md-16">
     <v-col cols="12">
       <h1>Get in touch.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-16">
+  <v-row class="mx-4 mx-md-16">
     <v-col cols="12">
       <v-card color="primary" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-row>
