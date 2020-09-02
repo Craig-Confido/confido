@@ -192,7 +192,7 @@
       <h1>Get in touch.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-md-16">
     <v-col cols="12">
       <GetInTouch :contact="contact" />
     </v-col>
