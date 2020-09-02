@@ -2,7 +2,7 @@
 <v-container fluid class="pa-0 ma-0">
   <section class="ma-4 ma-md-16">
     <v-row class="text-left mt-10">
-      <v-col cols="12" sm="7" class="mt-12">
+      <v-col cols="12" sm="7" class="mt-0 mt-md-12">
         <h1 class="display-2 my-16 font-weight-bold" aria-label="Karl's posts">
           Want to build products that make the world a better place?
         </h1>
