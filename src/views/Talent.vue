@@ -54,27 +54,7 @@
   </v-row>
   <v-row class="mx-4 mx-md-16">
     <v-col cols="12">
-      <v-card color="white" class="pa-8 my-16" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
-        <h1 class="mb-4 text-left">Companies we've scaled.</h1>
-        <v-row class="mx-4 my-4">
-          <v-img src="../assets/benefex.png" width="150" contain class="mx-16 my-8" />
-          <v-img src="../assets/defty.png" width="150" contain class="mx-16 my-8" />
-          <v-img src="../assets/houseKeep.png" width="150" contain class="mx-16 my-8" />
-          <v-img src="../assets/octopusWealth.png" width="150" contain class="mx-16 my-8" />
-        </v-row>
-        <v-row class="mx-4 my-4">
-          <v-img src="../assets/homehero.png" width="150" contain class="mx-16 my-8" />
-          <v-img src="../assets/unmind.png" width="150" contain class="mx-16 my-8" />
-          <v-img src="../assets/curve.png" width="150" contain class="mx-16 my-8" />
-          <v-img src="../assets/vision-box.png" width="150" contain class="mx-16 my-8" />
-        </v-row>
-        <v-row class="mx-4 my-4">
-          <v-img src="../assets/matr.png" width="150" contain class="mx-16 my-8" />
-          <v-img src="../assets/thirdSpace.png" width="150" contain class="mx-16 my-8" />
-          <v-img src="../assets/upp.png" width="150" contain class="mx-16 my-8" />
-          <v-img src="../assets/unbabel.png" width="150" contain class="mx-16 my-8" />
-        </v-row>
-      </v-card>
+      <Logos :logo="logo" />
     </v-col>
   </v-row>
   <v-row class="text-left mx-4 mx-md-16">
@@ -233,59 +213,27 @@
   </v-row>
   <v-row class="mx-4 mx-md-16">
     <v-col cols="12">
-      <v-card color="primary" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
-        <v-row>
-          <v-col cols="12" md="6">
-            <v-card-title class="headline font-weight-bold">
-              Contact us.
-            </v-card-title>
-            <v-row>
-              <v-col cols="6">
-                <v-text-field v-model="name" :rules="nameRules" label="Name" required class="mx-4 white px-2 py-4" style="border-radius: 8px;"></v-text-field>
-              </v-col>
-              <v-col cols="6">
-                <v-text-field v-model="email" :rules="emailRules" label="Email" required class="mx-4 white px-2 py-4" style="border-radius: 8px;"></v-text-field>
-              </v-col>
-            </v-row>
-            <v-row>
-              <v-col cols="12">
-                <v-textarea v-model="description" :rules="descriptionRules" :counter="280" label="Description" required class="mx-4 white px-2 py-4" style="border-radius: 8px;"></v-textarea>
-              </v-col>
-            </v-row>
-            <v-card-actions>
-              <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="white" rounded href="mailto:info@confidotalent.com">
-                Send
-              </v-btn>
-            </v-card-actions>
-          </v-col>
-          <v-col cols="12" md="6">
-            <v-card-title class="headline font-weight-bold">
-              Phone us.
-            </v-card-title>
-            <v-card-text class="text-h6 mb-14 white--text">
-              <a href="tel:+44 203 000 0000" class="white--text">+44 203 000 0000</a>
-            </v-card-text>
-            <v-card-title class="headline font-weight-bold">
-              Email us.
-            </v-card-title>
-            <v-card-text class="text-h6 mb-14 white--text">
-              <a href="mailto:info@confidotalent.com" class="white--text">info@confidotalent.com</a>
-            </v-card-text>
-          </v-col>
-        </v-row>
-      </v-card>
+      <GetInTouch :contact="contact" />
     </v-col>
   </v-row>
 </v-container>
 </template>
 
 <script>
+import Logos from '../components/Logos';
+import GetInTouch from '../components/GetInTouch';
+
 export default {
-  name: "LazyPDF",
+  name: "Talent",
+  components: {
+    Logos,
+    GetInTouch
+  },
   data() {
     return {
       hero: "https://res.cloudinary.com/kejk/image/upload/v1585992488/macbook-pro-space-gray-on-the-wooden-table_e6bu8w.jpg",
-      url: "https://res.cloudinary.com/kejk/raw/upload/v1587568180/Lazy%20PDF%20-%20V1.1.zip"
+      url: "https://res.cloudinary.com/kejk/raw/upload/v1587568180/Lazy%20PDF%20-%20V1.1.zip",
+      contact: [],
     };
   },
   methods: {
