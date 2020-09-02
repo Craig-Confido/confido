@@ -61,12 +61,12 @@
     <v-col cols="12">
       <h1>Talent.</h1>
     </v-col>
-    <v-col cols="6">
+    <v-col cols="12" sm="6">
       <h2>
         We take time to understand what you're about, your values, what you stand for and the type of startup where you will succeed.
       </h2>
     </v-col>
-    <v-col cols="6" class="text-right">
+    <v-col cols="12" sm="6" class="text-right">
       <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="primary" rounded href="mailto:info@confidotalent.com">
         Talk to us about roles
       </v-btn>
