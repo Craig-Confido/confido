@@ -75,7 +75,7 @@
         <v-card-title class="headline font-weight-bold">We are Confido.</v-card-title>
         <v-card-text class="text-h6 mb-14 white--text">We are that person you can always go to for honest, straight answers. We don’t judge. We’ve got your back. We tell you what you need to hear, no what you want to hear. W’e’re always there when you need us.</v-card-text>
         <v-card-actions>
-          <v-btn class="btn--outlined font-weight-bold mx-auto" outlined color="white" rounded to="/startups">Scale your team</v-btn>
+          <v-btn class="btn--outlined font-weight-bold mx-auto px-4" outlined color="white" rounded to="/startups">Scale your team</v-btn>
         </v-card-actions>
       </v-card>
     </v-col>
@@ -97,7 +97,7 @@
           </v-row>
         </v-card-text>
         <v-card-actions>
-          <v-btn class="btn--outlined font-weight-bold mx-auto" outlined color="white" rounded to="/talent">Accellerate your career</v-btn>
+          <v-btn class="btn--outlined font-weight-bold mx-auto px-4" outlined color="white" rounded to="/talent">Accellerate your career</v-btn>
         </v-card-actions>
       </v-card>
     </v-col>
