@@ -27,7 +27,7 @@
       </v-col>
     </v-row>
   </section>
-  <v-row class="mt-10 text-left full-width-pink px-4 px-md-16 py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
+  <v-row class="mt-10 text-left full-width-pink px-auto py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
     <v-col cols="12" sm="6">
       <h1 class="mb-4">What we do.</h1>
       <h3>Build Product and Tech</h3>
