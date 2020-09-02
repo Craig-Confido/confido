@@ -47,7 +47,7 @@
       <h3>Success rate</h3>
     </v-col>
   </v-row>
-  <v-row class="mx-0white--text" no-gutters">
+  <v-row class="mx-0white--text" no-gutters>
     <v-carousel cycle class="mx-0" height="400" hide-delimiter-background light :show-arrows="false">
       <v-carousel-item v-for="quote in quotes" :key="quote">
         <v-sheet color="#F1F1FF" height="100%">
