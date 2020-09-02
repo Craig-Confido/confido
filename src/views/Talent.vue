@@ -128,7 +128,7 @@
     <v-col cols="12">
       <v-card color="blue lighten-2" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-row>
-          <v-col cols="6">
+          <v-col cols="12" sm="6">
             <v-card-title class="headline font-weight-bold">
               What we look for.
             </v-card-title>
@@ -143,7 +143,7 @@
               <v-btn class="btn--outlined font-weight-bold px-4" outlined color="white" rounded href="mailto:info@confidotalent.com">I work in Product!</v-btn>
             </v-card-actions>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="12" sm="6">
             <v-card-title class="headline font-weight-bold">
               Roles we cover.
             </v-card-title>
@@ -172,7 +172,7 @@
     <v-col cols="12">
       <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-row>
-          <v-col cols="6">
+          <v-col cols="12" sm="6">
             <v-card-title class="headline font-weight-bold">
               What we look for.
             </v-card-title>
@@ -187,7 +187,7 @@
               <v-btn class="btn--outlined font-weight-bold px-4" outlined color="white" rounded href="mailto:info@confidotalent.com">I work in Engineering!</v-btn>
             </v-card-actions>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="12" sm="6">
             <v-card-title class="headline font-weight-bold">
               Roles we cover.
             </v-card-title>
