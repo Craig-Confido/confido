@@ -121,7 +121,7 @@
       </v-card>
     </v-col>
   </v-row>
-  <v-row class="my-16 full-width-green" style="height: 8px;">
+  <v-row class="my-16 full-width-green" no-gutters style="height: 8px;">
   </v-row>
   <v-row class="text-left mx-0 mx-md-16">
     <v-col cols="12">
