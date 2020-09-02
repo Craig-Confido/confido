@@ -18,7 +18,7 @@
       </v-col>
     </v-row>
   </section>
-  <v-row class="mt-10 full-width-green px-auto py-16 white--text no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
+  <v-row class="mt-10 full-width-green px-auto py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
     <v-col cols="6" sm="3">
       <h1>
         20+
