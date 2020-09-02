@@ -16,14 +16,14 @@
           </span>.
         </h2>
         <h3 class="font-weight-black success--text my-8 text-h3">Values.</h3>
-        <v-row class="mt-12 mx-4 mx-md-0">
+        <v-row class="mt-12 mx-0">
           <v-btn class="mr-4 mt-4 btn--outlined font-weight-black" outlined color="accent" rounded width="150" height="50">Startups</v-btn>
           <v-btn class="mr-4 mt-4 btn--outlined font-weight-bold" outlined color="secondary" rounded width="150" height="50">Talent</v-btn>
         </v-row>
       </v-col>
       <v-col cols="12" sm="6">
         <!--<v-img src="../assets/Confido-Take-one.png" alt="image of people" />-->
-        <v-img src="../assets/Confido-Take-one2.png" alt="image of people" />
+        <v-img src="../assets/Confido-Take-one2.png" class="d-none d-md-flex" alt="image of people" />
       </v-col>
     </v-row>
   </section>
@@ -51,7 +51,7 @@
     <v-carousel cycle height="400" hide-delimiter-background light :show-arrows="false">
       <v-carousel-item v-for="quote in quotes" :key="quote">
         <v-sheet color="#F1F1FF" height="100%">
-          <v-row class="fill-height px-16 mx-4 mx-md-16" align="center" justify="center">
+          <v-row class="fill-height px-16 mx-0 mx-md-16" align="center" justify="center">
             <v-text class="headline text--primary">{{ quote.content }}</v-text>
             <v-text class="text-h6 text--primary">{{ quote.advocate }}</v-text>
           </v-row>
@@ -59,17 +59,17 @@
       </v-carousel-item>
     </v-carousel>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-md-16">
     <v-col cols="12">
       <Logos :logo="logo" />
     </v-col>
   </v-row>
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-md-16">
     <v-col cols="12">
       <h1>Who we are.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-md-16">
     <v-col cols="12" md="6">
       <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-card-title class="headline font-weight-bold">We are Confido.</v-card-title>
@@ -102,12 +102,12 @@
       </v-card>
     </v-col>
   </v-row>
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-md-16">
     <v-col cols="12">
       <h1>Get in touch.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-md-16">
     <v-col cols="12">
       <GetInTouch :contact="contact" />
     </v-col>
