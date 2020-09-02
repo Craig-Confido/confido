@@ -3,7 +3,7 @@
   <section class="ma-4 ma-md-16">
     <v-row class="text-left mt-10">
       <v-col cols="12" sm="7" class="mt-0 mt-md-12">
-        <h1 class="display-2 my-16 font-weight-bold" aria-label="Karl's posts">
+        <h1 class="display-2 my-16 font-weight-bold" aria-label="Startups">
           Building out the core team?
         </h1>
         <v-btn class="mt-16 mr-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="150" height="50">
@@ -18,7 +18,7 @@
       </v-col>
     </v-row>
   </section>
-  <v-row class="mt-10 full-width-green px-auto py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
+  <v-row class="mt-10 full-width-green px-auto py-16 white--text">
     <v-col cols="6" sm="3">
       <h1>
         20+
@@ -52,12 +52,12 @@
       </h3>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-md-16">
     <v-col cols="12">
       <Logos :logo="logo" />
     </v-col>
   </v-row>
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-md-16">
     <v-col cols="12">
       <h1>Search.</h1>
     </v-col>
@@ -72,7 +72,7 @@
       </v-btn>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-md-16">
     <v-col cols="12" md="6">
       <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-card-title class="headline font-weight-bold">
@@ -123,7 +123,7 @@
   </v-row>
   <v-row class="my-16 full-width-green" style="height: 8px;">
   </v-row>
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-md-16">
     <v-col cols="12">
       <h1>On-site.</h1>
     </v-col>
@@ -138,7 +138,7 @@
       </v-btn>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-md-16">
     <v-col cols="12" md="6">
       <v-card color="success" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-card-title class="headline font-weight-bold">
@@ -187,7 +187,7 @@
       </v-card>
     </v-col>
   </v-row>
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-md-16">
     <v-col cols="12">
       <h1>Get in touch.</h1>
     </v-col>
