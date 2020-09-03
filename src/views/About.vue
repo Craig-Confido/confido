@@ -162,10 +162,5 @@ export default {
       ],
     };
   },
-  methods: {
-    onResize() {
-      this.isMobile = window.innerWidth < 600;
-    },
-  },
 };
 </script>

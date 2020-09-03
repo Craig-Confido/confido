@@ -68,7 +68,7 @@
       </h2>
     </v-col>
     <v-col cols="12" sm="6" class="text-right">
-      <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="primary" rounded href="mailto:info@confidotalent.com">
+      <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="primary" rounded href="mailto:info@confidotalent.com?subject=Talent: I'd like to know more about available roles">
         Talk to us about roles
       </v-btn>
     </v-col>
@@ -113,7 +113,7 @@
           <p>Startups that value and invest in their people</p>
         </v-card-text>
         <v-card-actions>
-          <v-btn class="btn--outlined font-weight-bold mx-auto px-4" outlined color="white" rounded href="mailto:info@confidotalent.com">Sounds good, let's talk!</v-btn>
+          <v-btn class="btn--outlined font-weight-bold mx-auto px-4" outlined color="white" rounded href="mailto:info@confidotalent.com?subject=Talent: I'd like to know more about available roles">Sounds good, let's talk!</v-btn>
         </v-card-actions>
       </v-card>
     </v-col>
@@ -141,7 +141,7 @@
                 Invested in self development</p>
             </v-card-text>
             <v-card-actions>
-              <v-btn class="btn--outlined font-weight-bold px-4" outlined color="white" rounded href="mailto:info@confidotalent.com">I work in Product!</v-btn>
+              <v-btn class="btn--outlined font-weight-bold px-4" outlined color="white" rounded href="mailto:info@confidotalent.com?subject=Talent: I work in Product, tell me more about roles!">I work in Product!</v-btn>
             </v-card-actions>
           </v-col>
           <v-col cols="12" sm="6">
@@ -185,7 +185,7 @@
                 Invested in self development</p>
             </v-card-text>
             <v-card-actions>
-              <v-btn class="btn--outlined font-weight-bold px-4" outlined color="white" rounded href="mailto:info@confidotalent.com">I work in Engineering!</v-btn>
+              <v-btn class="btn--outlined font-weight-bold px-4" outlined color="white" rounded href="mailto:info@confidotalent.com?subject=Talent: I work in Engineering, tell me more about roles!">I work in Engineering!</v-btn>
             </v-card-actions>
           </v-col>
           <v-col cols="12" sm="6">
@@ -237,10 +237,5 @@ export default {
       contact: [],
     };
   },
-  methods: {
-    onResize() {
-      this.isMobile = window.innerWidth < 600
-    },
-  }
 };
 </script>

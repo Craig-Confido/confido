@@ -68,7 +68,7 @@
       </h2>
     </v-col>
     <v-col cols="12" sm="6" class="text-right">
-      <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="primary" rounded href="mailto:info@confidotalent.com">
+      <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="primary" rounded href="mailto:info@confidotalent.com?subject=Startup: I'd like to know more about how Search services work">
         Talk to us about search
       </v-btn>
     </v-col>
@@ -107,7 +107,7 @@
       </h2>
     </v-col>
     <v-col cols="12" sm="6" class="text-right">
-      <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="primary" rounded href="mailto:info@confidotalent.com">
+      <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="primary" rounded href="Startup: I'd like to know more about how On-site services work">
         Talk to us about on-site support
       </v-btn>
     </v-col>
@@ -189,10 +189,5 @@ export default {
       }],
     };
   },
-  methods: {
-    onResize() {
-      this.isMobile = window.innerWidth < 600
-    },
-  }
 };
 </script>
