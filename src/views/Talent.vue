@@ -6,11 +6,11 @@
         <h1 class="display-2 my-16 font-weight-bold" aria-label="Talent">
           Want to build products that make the world a better place?
         </h1>
-        <v-btn class="mt-16 mr-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="150" height="50">
-          Engineering
-        </v-btn>
-        <v-btn class="mt-16 mr-4 btn--outlined font-weight-bold" outlined color="blue lighten-2" rounded width="150" height="50">
+        <v-btn @click="$vuetify.goTo('#product')" class="mt-16 mr-4 btn--outlined font-weight-bold" outlined color="blue lighten-2" rounded width="150" height="50">
           Product
+        </v-btn>
+        <v-btn @click="$vuetify.goTo('#engineering')" class="mt-16 mr-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="150" height="50">
+          Engineering
         </v-btn>
       </v-col>
       <v-col cols="12" sm="5">
@@ -119,7 +119,7 @@
   </v-row>
   <v-row class="my-16 full-width-blue" no-gutters style="height: 8px;">
   </v-row>
-  <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
+  <v-row id="product" class="text-left mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>Product.</h1>
     </v-col>
@@ -163,7 +163,7 @@
     </v-col>
   </v-row>
 
-  <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
+  <v-row id="engineering" class="text-left mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>Engineering.</h1>
     </v-col>
