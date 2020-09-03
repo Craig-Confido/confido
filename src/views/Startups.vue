@@ -6,10 +6,10 @@
         <h1 class="display-2 my-16 font-weight-bold" aria-label="Startups">
           Building out the core team?
         </h1>
-        <v-btn class="mt-16 mr-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="150" height="50">
+        <v-btn @click="$vuetify.goTo('#search')" class=" mt-16 mr-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="150" height="50">
           Search-only
         </v-btn>
-        <v-btn class="mt-16 mr-4 btn--outlined font-weight-bold" outlined color="success" rounded width="150" height="50">
+        <v-btn @click="$vuetify.goTo('#onsite')" class=" mt-16 mr-4 btn--outlined font-weight-bold" outlined color="success" rounded width="150" height="50">
           On-site team
         </v-btn>
       </v-col>
@@ -57,7 +57,7 @@
       <Logos :logo="logo" />
     </v-col>
   </v-row>
-  <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
+  <v-row class="text-left mx-0 mx-md-6 mx-lg-16" id="search">
     <v-col cols="12">
       <h1>Search.</h1>
     </v-col>
@@ -96,7 +96,7 @@
   </v-row>
   <v-row class="my-16 full-width-green" no-gutters style="height: 8px;">
   </v-row>
-  <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
+  <v-row id="onsite" class="text-left mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>On-site.</h1>
     </v-col>
