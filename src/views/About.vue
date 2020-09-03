@@ -48,12 +48,12 @@
     </v-col>
   </v-row>
   <v-row class="mx-0 white--text" no-gutters>
-    <v-carousel cycle class="mx-0" height="400" hide-delimiter-background light :show-arrows="false">
-      <v-carousel-item v-for="quote in quotes" :key="quote">
-        <v-sheet color="#F1F1FF" height="100%">
-          <v-row class="fill-height px-16 mx-0 mx-md-6 mx-lg-16" align="center" justify="center">
+    <v-carousel cycle continuous class="mx-0 py-0" hide-delimiter-background light :show-arrows="false">
+      <v-carousel-item v-for="quote in quotes" :key="quote" class="px-0 mx-0 px-md-16 mx-md-16">
+        <v-sheet color="transparent" height="100%" class="px-0 px-md-16">
+          <v-row class="fill-height px-4 mx-0 mx-md-6 mx-lg-16" align="center" justify="center">
             <v-text class="headline text--primary"><strong>{{ quote.content }}</strong></v-text>
-            <v-text class="text-h6 text--primary">{{ quote.advocate }}</v-text>
+            <v-text class="text-h6 mb-8 text--primary">{{ quote.advocate }}</v-text>
           </v-row>
         </v-sheet>
       </v-carousel-item>
@@ -132,12 +132,12 @@ export default {
           advocate: "Daniel Brown – CEO, Defty",
         },
         {
-          content: "Confido have partnered with us in the truest sense. Without them, I am sure we wouldn’t be as far along our journey as we currently are; long may it continue.",
-          advocate: "Daniel Brown – CEO, Defty",
+          content: "The guys were really keen to understand exactly what I was looking for from the start, and as a result the candidates we met were all high calibre and very credible. It meant the whole process was much quicker than I’ve experienced on similar searches in the past.",
+          advocate: "Richard Wazacz - CEO, Octopus Wealth",
         },
         {
-          content: "Confido have partnered with us in the truest sense. Without them, I am sure we wouldn’t be as far along our journey as we currently are; long may it continue.",
-          advocate: "Daniel Brown – CEO, Defty",
+          content: "Craig and his team quickly understood the profile we were looking for in terms of technology, seniority and, crucially, culture. They were able to go beyond this by advising on how to communicate our brand and the opportunity to the market",
+          advocate: "Avin Rabheru - Founder & CEO, Housekeep",
         },
       ],
       logos: [],

@@ -2,7 +2,8 @@
 <v-container fluid class="pa-0 ma-0">
   <section class="ma-4 ma-lg-16">
     <v-row class="text-left mt-10">
-      <v-col cols="12" sm="7" class="mt-0 mt-md-12">
+      <v-img src="../assets/Confido-Take-one.png" class="d-flex d-md-none" alt="image of people" />
+      <v-col cols="12" sm="6" class="mt-0 mt-md-12">
         <h1 class="display-2 my-16 font-weight-bold" aria-label="Startups">
           Building out the core team?
         </h1>
@@ -13,8 +14,8 @@
           On-site team
         </v-btn>
       </v-col>
-      <v-col cols="12" sm="5">
-        <v-img src="#" alt="image of people" />
+      <v-col cols="12" sm="6">
+        <v-img src="../assets/Confido-Take-one.png" class="d-none d-md-flex" alt="image of people" />
       </v-col>
     </v-row>
   </section>
