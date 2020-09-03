@@ -74,51 +74,10 @@
   </v-row>
   <v-row class="mx-4 mx-md-16">
     <v-col cols="12" md="6">
-      <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
-        <v-card-title class="headline font-weight-bold">
-          Process.
-        </v-card-title>
-        <v-row class="mx-1">
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-file-document</v-icon>
-            <h3>Brief workshop</h3>
-          </v-col>
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-magnify</v-icon>
-            <h3>Candidate search</h3>
-          </v-col>
-        </v-row>
-        <v-row class="mx-1">
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-account-clock</v-icon>
-            <h3>Interviews</h3>
-          </v-col>
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-account-group</v-icon>
-            <h3>Onboarding</h3>
-          </v-col>
-        </v-row>
-      </v-card>
+      <ColorCard v-for="card in purpleCards" :key="card" :card="card" />
     </v-col>
     <v-col cols="12" md="6">
-      <v-card color="success" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
-        <v-card-title class="headline font-weight-bold">
-          Case studies.
-        </v-card-title>
-        <v-row class="mx-1">
-          <v-col cols="6">
-            <v-img src="../assets/benefex.png" width="150" contain class="startups" />
-          </v-col>
-          <v-col cols="6">
-            <v-img src="../assets/vision-box.png" width="150" contain class="startups" />
-          </v-col>
-        </v-row>
-        <v-row class="mx-1">
-          <v-col cols="6">
-            <v-img src="../assets/thirdSpace.png" width="150" contain class="startups" />
-          </v-col>
-        </v-row>
-      </v-card>
+      <ColorImgCard v-for="card in greenImgCards" :key="card" :card="card" />
     </v-col>
   </v-row>
   <v-row class="my-16 full-width-green" style="height: 8px;">
@@ -140,31 +99,7 @@
   </v-row>
   <v-row class="mx-4 mx-md-16">
     <v-col cols="12" md="6">
-      <v-card color="success" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
-        <v-card-title class="headline font-weight-bold">
-          Process.
-        </v-card-title>
-        <v-row class="mx-1">
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-human-greeting-proximity</v-icon>
-            <h3>Brief workshop</h3>
-          </v-col>
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-file-document-edit-outline</v-icon>
-            <h3>Candidate search</h3>
-          </v-col>
-        </v-row>
-        <v-row class="mx-1">
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-check-decagram</v-icon>
-            <h3>Interviews</h3>
-          </v-col>
-          <v-col cols="6">
-            <v-icon class="white--text text-lg-h2">mdi-account-multiple-check</v-icon>
-            <h3>Onboarding</h3>
-          </v-col>
-        </v-row>
-      </v-card>
+      <ColorCard v-for="card in greenCards" :key="card" :card="card" />
     </v-col>
     <v-col cols="12" md="6">
       <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
@@ -173,15 +108,15 @@
         </v-card-title>
         <v-row class="ma-4">
           <v-col cols="6">
-            <v-img src="../assets/unmind.png" width="150" contain class="startups" />
+            <v-img src="../../public/images/unmind.png" width="150" contain class="startups" />
           </v-col>
           <v-col cols="6">
-            <v-img src="../assets/curve.png" width="150" contain class="startups" />
+            <v-img src="../../public/images/curve.png" width="150" contain class="startups" />
           </v-col>
         </v-row>
         <v-row class="ma-4">
           <v-col cols="6">
-            <v-img src="../assets/feedr.png" width="150" contain class="startups" />
+            <v-img src="../../public/images/feedr.png" width="150" contain class="startups" />
           </v-col>
         </v-row>
       </v-card>
@@ -203,18 +138,60 @@
 <script>
 import Logos from '../components/Logos';
 import GetInTouch from '../components/GetInTouch';
+import ColorCard from '../components/ColorCard';
+import ColorImgCard from '../components/ColorImgCard';
 
 export default {
   name: "Startups",
   components: {
     Logos,
-    GetInTouch
+    GetInTouch,
+    ColorCard,
+    ColorImgCard
   },
   data() {
     return {
       hero: "https://res.cloudinary.com/kejk/image/upload/v1585992488/macbook-pro-space-gray-on-the-wooden-table_e6bu8w.jpg",
       url: "https://res.cloudinary.com/kejk/raw/upload/v1587568180/Lazy%20PDF%20-%20V1.1.zip",
       contact: [],
+      purpleCards: [{
+        color: "accent",
+        title: "Process.",
+        icontl: "mdi-file-document",
+        texttl: "Brief workshop",
+        icontr: "mdi-magnify",
+        texttr: "Candidate search",
+        iconbl: "mdi-account-clock",
+        textbl: "Interviews",
+        iconbr: "mdi-account-group",
+        textbr: "Onboarding",
+      }],
+      greenCards: [{
+        color: "success",
+        title: "Process.",
+        icontl: "mdi-human-greeting-proximity",
+        texttl: "Brief workshop",
+        icontr: "mdi-file-document-edit-outline",
+        texttr: "Candidate search",
+        iconbl: "mdi-check-decagram",
+        textbl: "Interviews",
+        iconbr: "mdi-account-multiple-check",
+        textbr: "Onboarding",
+      }],
+      greenImgCards: [{
+        color: "success",
+        title: "Case studies.",
+        imgtl: "../../public/images/benefex.png",
+        imgtr: "./../public/images/vision-box.png",
+        imgbl: "./../public/images/thirdSpace.png",
+      }],
+      purpleImgCards: [{
+        color: "accent",
+        title: "Case studies.",
+        imgtl: "mdi-human-greeting-proximity",
+        imgtr: "Brief workshop",
+        imgbl: "mdi-file-document-edit-outline",
+      }],
     };
   },
   methods: {
