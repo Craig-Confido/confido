@@ -30,8 +30,17 @@
       </v-list>
     </v-navigation-drawer>
   </v-app-bar>
-  <v-content>
+  <v-content id="intro">
     <router-view />
+    <v-speed-dial v-model="fab" fixed bottom right alt="Scroll to top">
+      <template v-slot:activator>
+        <v-btn v-model="fab" color="accent" style="opacity: 0.7;" fab @click="$vuetify.goTo('#intro')">
+          <v-icon>
+            mdi-arrow-up
+          </v-icon>
+        </v-btn>
+      </template>
+    </v-speed-dial>
   </v-content>
   <v-footer class="secondary">
     <v-row>
