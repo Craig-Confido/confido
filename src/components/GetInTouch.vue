@@ -17,12 +17,12 @@
         </v-col>
       </v-row>
       <v-card-actions>
-        <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="success" rounded href="mailto:info@confidotalent.com">
+        <v-btn @click="send" class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="success" rounded>
           Send
         </v-btn>
       </v-card-actions>
     </v-col>
-    <v-col cols="12" md="6">
+    <v-col cols=" 12" md="6">
       <v-card-title class="headline font-weight-bold primary--text">Phone us.</v-card-title>
       <v-card-text class="text-h6 mb-14 success--text">
         <a href="tel:+44 203 000 0000" class="success--text">+44 203 000 0000</a>
@@ -57,5 +57,10 @@ export default {
     (v) =>
     v.length <= 280 || "Description must be less than 280 characters",
   ],
+  methods: {
+    submit() {
+      this.$v.$touch()
+    },
+  }
 };
 </script>
