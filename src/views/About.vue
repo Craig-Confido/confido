@@ -2,7 +2,7 @@
 <v-container fluid class="pa-0 ma-0">
   <section class="mx-4 mx-lg-16">
     <v-row class="text-left mt-16">
-  <v-img src="../assets/Confido-Take-one2.png" class="d-flex d-md-none" alt="image of people" />
+      <v-img src="../assets/Confido-Take-one2.png" class="d-flex d-md-none" alt="image of people" />
       <v-col cols="12" sm="6">
         <h1 class="display-1 mb-3 mt-3 font-weight-bold" aria-label="Intro text">
           Startups and people are
@@ -52,7 +52,7 @@
       <v-carousel-item v-for="quote in quotes" :key="quote">
         <v-sheet color="#F1F1FF" height="100%">
           <v-row class="fill-height px-16 mx-0 mx-md-6 mx-lg-16" align="center" justify="center">
-            <v-text class="headline text--primary">{{ quote.content }}</v-text>
+            <v-text class="headline text--primary"><strong>{{ quote.content }}</strong></v-text>
             <v-text class="text-h6 text--primary">{{ quote.advocate }}</v-text>
           </v-row>
         </v-sheet>

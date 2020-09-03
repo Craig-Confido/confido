@@ -77,7 +77,21 @@
       <ColorCard v-for="card in purpleCards" :key="card" :card="card" />
     </v-col>
     <v-col cols="12" md="6">
-      <ColorImgCard v-for="card in greenImgCards" :key="card" :card="card" />
+      <!--<ColorImgCard v-for="card in greenImgCards" :key="card" :card="card" :src="card" />-->
+      <v-card color="success" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
+        <v-card-title class="headline font-weight-bold">
+          Case studies.
+        </v-card-title>
+        <v-row class="ma-4">
+          <v-col cols="6">
+            <v-img src="../../public/images/benefex.png" width="150" contain class="startups" />
+            <v-img src="../../public/images/vision-box.png" width="150" contain class="startups mt-md-16" />
+          </v-col>
+          <v-col cols="6">
+            <v-img src="../../public/images/thirdSpace.png" width="150" contain class="startups" />
+          </v-col>
+        </v-row>
+      </v-card>
     </v-col>
   </v-row>
   <v-row class="my-16 full-width-green" no-gutters style="height: 8px;">
@@ -109,14 +123,10 @@
         <v-row class="ma-4">
           <v-col cols="6">
             <v-img src="../../public/images/unmind.png" width="150" contain class="startups" />
+            <v-img src="../../public/images/feedr.png" width="150" contain class="startups mt-md-16" />
           </v-col>
           <v-col cols="6">
             <v-img src="../../public/images/curve.png" width="150" contain class="startups" />
-          </v-col>
-        </v-row>
-        <v-row class="ma-4">
-          <v-col cols="6">
-            <v-img src="../../public/images/feedr.png" width="150" contain class="startups" />
           </v-col>
         </v-row>
       </v-card>
@@ -139,7 +149,6 @@
 import Logos from '../components/Logos';
 import GetInTouch from '../components/GetInTouch';
 import ColorCard from '../components/ColorCard';
-import ColorImgCard from '../components/ColorImgCard';
 
 export default {
   name: "Startups",
@@ -147,7 +156,6 @@ export default {
     Logos,
     GetInTouch,
     ColorCard,
-    ColorImgCard
   },
   data() {
     return {
@@ -177,20 +185,6 @@ export default {
         textbl: "Interviews",
         iconbr: "mdi-account-multiple-check",
         textbr: "Onboarding",
-      }],
-      greenImgCards: [{
-        color: "success",
-        title: "Case studies.",
-        imgtl: "../../public/images/benefex.png",
-        imgtr: "./../public/images/vision-box.png",
-        imgbl: "./../public/images/thirdSpace.png",
-      }],
-      purpleImgCards: [{
-        color: "accent",
-        title: "Case studies.",
-        imgtl: "mdi-human-greeting-proximity",
-        imgtr: "Brief workshop",
-        imgbl: "mdi-file-document-edit-outline",
       }],
     };
   },
