@@ -19,9 +19,14 @@
         </v-btn>
       </v-app-bar-icon>
       <v-list class="mt-16 pt-4">
-        <v-list-item v-for="link in links.slice(0, 4)" :key="`${link.label}--page-link`" class="my-2 mx-1 white--text" rounded text :to="link.url">
+        <v-list-item v-for="link in links.slice(0, 4)" :key="`${link.label}--page-link`" class="my-2 mx-0 white--text" rounded text :to="link.url">
           <v-list-item-content class="font-weight-medium white--text">
             {{ link.label }}
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item class="my-2 mx-0 white--text" rounded text to="/subscribe">
+          <v-list-item-content class="font-weight-medium white--text">
+            Subscribe to newsletter
           </v-list-item-content>
         </v-list-item>
         <v-list-item v-for="social in socials" :key="`${social.icon}--page-link`" class="my-2 mx-1 white--text" text rounded target="_blank" :href="social.url">
@@ -62,6 +67,8 @@ export default {
   name: "App",
   data() {
     return {
+      multiLine: true,
+      snackbar: true,
       drawer: false,
       group: null,
       links: [{

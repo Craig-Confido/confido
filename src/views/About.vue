@@ -27,20 +27,20 @@
       </v-col>
     </v-row>
   </section>
-  <v-row class="mt-10 text-left full-width-pink mx-0 px-6 px-md-16 py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
+  <v-row class="mt-10 text-left full-width-pink mx-auto px-6 px-md-16 py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
     <v-col cols="12" sm="6">
       <h1 class="mb-4">What we do.</h1>
       <h3>Build Product and Tech</h3>
       <h3>Seed to Series B</h3>
       <h3>Products that improve peoples' lives</h3>
     </v-col>
-    <v-col cols="6" sm="3" class="mt-8 mt-md-none">
+    <v-col cols="6" sm="3" class="mt-8 mt-md-0">
       <h2>20+</h2>
       <h3>Startups scaled</h3>
       <h2 class="mt-4">&lt;4</h2>
       <h3>Weeks to hire</h3>
     </v-col>
-    <v-col cols="6" sm="3" class="mt-8 mt-md-none">
+    <v-col cols="6" sm="3" class="mt-8 mt-md-0">
       <h2>70+</h2>
       <h3>Hires made</h3>
       <h2 class="mt-4">97.5%</h2>
