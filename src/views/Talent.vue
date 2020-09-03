@@ -52,7 +52,7 @@
       </h3>
     </v-col>
   </v-row>
-  <v-row class="mx-0 mx-lg-16">
+  <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <Logos :logo="logo" />
     </v-col>
@@ -72,7 +72,7 @@
       </v-btn>
     </v-col>
   </v-row>
-  <v-row class="mx-0 mx-lg-16">
+  <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12" md="6">
       <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-card-title class="headline font-weight-bold">
@@ -119,12 +119,12 @@
   </v-row>
   <v-row class="my-16 full-width-blue" no-gutters style="height: 8px;">
   </v-row>
-  <v-row class="text-left mx-0 mx-lg-16">
+  <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>Product.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-0 mx-lg-16">
+  <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <v-card color="blue lighten-2" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-row>
@@ -163,12 +163,12 @@
     </v-col>
   </v-row>
 
-  <v-row class="text-left mx-0 mx-lg-16">
+  <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>Engineering.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-0 mx-lg-16">
+  <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-row>
@@ -206,12 +206,12 @@
       </v-card>
     </v-col>
   </v-row>
-  <v-row class="text-left mx-0 mx-lg-16">
+  <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>Get in touch.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-0 mx-lg-16">
+  <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <GetInTouch :contact="contact" />
     </v-col>

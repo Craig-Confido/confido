@@ -51,7 +51,7 @@
     <v-carousel cycle class="mx-0" height="400" hide-delimiter-background light :show-arrows="false">
       <v-carousel-item v-for="quote in quotes" :key="quote">
         <v-sheet color="#F1F1FF" height="100%">
-          <v-row class="fill-height px-16 mx-0 mx-lg-16" align="center" justify="center">
+          <v-row class="fill-height px-16 mx-0 mx-md-6 mx-lg-16" align="center" justify="center">
             <v-text class="headline text--primary">{{ quote.content }}</v-text>
             <v-text class="text-h6 text--primary">{{ quote.advocate }}</v-text>
           </v-row>
@@ -59,17 +59,17 @@
       </v-carousel-item>
     </v-carousel>
   </v-row>
-  <v-row class="mx-0 mx-lg-16">
+  <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <Logos :logo="logo" />
     </v-col>
   </v-row>
-  <v-row class="text-left mx-0 mx-lg-16">
+  <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>Who we are.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-0 mx-lg-16">
+  <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12" md="6">
       <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-card-title class="headline font-weight-bold">We are Confido.</v-card-title>
@@ -102,12 +102,12 @@
       </v-card>
     </v-col>
   </v-row>
-  <v-row class="text-left mx-0 mx-lg-16">
+  <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>Get in touch.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-0 mx-lg-16">
+  <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <GetInTouch :contact="contact" />
     </v-col>

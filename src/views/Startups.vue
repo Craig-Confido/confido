@@ -52,12 +52,12 @@
       </h3>
     </v-col>
   </v-row>
-  <v-row class="mx-0 mx-lg-16">
+  <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <Logos :logo="logo" />
     </v-col>
   </v-row>
-  <v-row class="text-left mx-0 mx-lg-16">
+  <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>Search.</h1>
     </v-col>
@@ -72,7 +72,7 @@
       </v-btn>
     </v-col>
   </v-row>
-  <v-row class="mx-0 mx-lg-16">
+  <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12" md="6">
       <ColorCard v-for="card in purpleCards" :key="card" :card="card" />
     </v-col>
@@ -82,7 +82,7 @@
   </v-row>
   <v-row class="my-16 full-width-green" no-gutters style="height: 8px;">
   </v-row>
-  <v-row class="text-left mx-0 mx-lg-16">
+  <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>On-site.</h1>
     </v-col>
@@ -97,7 +97,7 @@
       </v-btn>
     </v-col>
   </v-row>
-  <v-row class="mx-0 mx-lg-16">
+  <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12" md="6">
       <ColorCard v-for="card in greenCards" :key="card" :card="card" />
     </v-col>
@@ -122,12 +122,12 @@
       </v-card>
     </v-col>
   </v-row>
-  <v-row class="text-left mx-0 mx-lg-16">
+  <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>Get in touch.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-0 mx-lg-16">
+  <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <GetInTouch :contact="contact" />
     </v-col>
