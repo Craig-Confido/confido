@@ -1,7 +1,8 @@
 <template>
 <v-container fluid class="pa-0 ma-0">
-  <section class="mx-4 mx-md-16">
+  <section class="mx-4 mx-lg-16">
     <v-row class="text-left mt-16">
+  <v-img src="../assets/Confido-Take-one2.png" class="d-flex d-md-none" alt="image of people" />
       <v-col cols="12" sm="6">
         <h1 class="display-1 mb-3 mt-3 font-weight-bold" aria-label="Intro text">
           Startups and people are
@@ -16,42 +17,41 @@
           </span>.
         </h2>
         <h3 class="font-weight-black success--text my-8 text-h3">Values.</h3>
-        <v-row class="mt-12 mx-4 mx-md-0">
-          <v-btn class="mr-4 mt-4 btn--outlined font-weight-black" outlined color="accent" rounded width="150" height="50">Startups</v-btn>
-          <v-btn class="mr-4 mt-4 btn--outlined font-weight-bold" outlined color="secondary" rounded width="150" height="50">Talent</v-btn>
+        <v-row class="mt-12 mx-0">
+          <v-btn to="/startups" class="mr-4 mt-4 btn--outlined font-weight-black" outlined color="accent" rounded width="150" height="50">Startups</v-btn>
+          <v-btn to="/talent" class="mr-4 mt-4 btn--outlined font-weight-bold" outlined color="secondary" rounded width="150" height="50">Talent</v-btn>
         </v-row>
       </v-col>
       <v-col cols="12" sm="6">
-        <!--<v-img src="../assets/Confido-Take-one.png" alt="image of people" />-->
-        <v-img src="../assets/Confido-Take-one2.png" alt="image of people" />
+        <v-img src="../assets/Confido-Take-one2.png" class="d-none d-md-flex" alt="image of people" />
       </v-col>
     </v-row>
   </section>
-  <v-row class="mt-10 text-left full-width-pink px-16 py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
+  <v-row class="mt-10 text-left full-width-pink mx-0 px-6 px-md-16 py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
     <v-col cols="12" sm="6">
       <h1 class="mb-4">What we do.</h1>
       <h3>Build Product and Tech</h3>
       <h3>Seed to Series B</h3>
       <h3>Products that improve peoples' lives</h3>
     </v-col>
-    <v-col cols="6" sm="3">
+    <v-col cols="6" sm="3" class="mt-8 mt-md-none">
       <h2>20+</h2>
       <h3>Startups scaled</h3>
       <h2 class="mt-4">&lt;4</h2>
       <h3>Weeks to hire</h3>
     </v-col>
-    <v-col cols="6" sm="3">
+    <v-col cols="6" sm="3" class="mt-8 mt-md-none">
       <h2>70+</h2>
       <h3>Hires made</h3>
       <h2 class="mt-4">97.5%</h2>
       <h3>Success rate</h3>
     </v-col>
   </v-row>
-  <v-row>
-    <v-carousel cycle height="400" hide-delimiter-background light :show-arrows="false">
+  <v-row class="mx-0 white--text" no-gutters>
+    <v-carousel cycle class="mx-0" height="400" hide-delimiter-background light :show-arrows="false">
       <v-carousel-item v-for="quote in quotes" :key="quote">
         <v-sheet color="#F1F1FF" height="100%">
-          <v-row class="fill-height px-16 mx-4 mx-md-16" align="center" justify="center">
+          <v-row class="fill-height px-16 mx-0 mx-lg-16" align="center" justify="center">
             <v-text class="headline text--primary">{{ quote.content }}</v-text>
             <v-text class="text-h6 text--primary">{{ quote.advocate }}</v-text>
           </v-row>
@@ -59,17 +59,17 @@
       </v-carousel-item>
     </v-carousel>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-lg-16">
     <v-col cols="12">
       <Logos :logo="logo" />
     </v-col>
   </v-row>
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-lg-16">
     <v-col cols="12">
       <h1>Who we are.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-lg-16">
     <v-col cols="12" md="6">
       <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-card-title class="headline font-weight-bold">We are Confido.</v-card-title>
@@ -102,12 +102,12 @@
       </v-card>
     </v-col>
   </v-row>
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-lg-16">
     <v-col cols="12">
       <h1>Get in touch.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-lg-16">
     <v-col cols="12">
       <GetInTouch :contact="contact" />
     </v-col>

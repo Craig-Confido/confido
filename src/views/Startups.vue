@@ -1,9 +1,9 @@
 <template>
 <v-container fluid class="pa-0 ma-0">
-  <section class="ma-4 ma-md-16">
+  <section class="ma-4 ma-lg-16">
     <v-row class="text-left mt-10">
       <v-col cols="12" sm="7" class="mt-0 mt-md-12">
-        <h1 class="display-2 my-16 font-weight-bold" aria-label="Karl's posts">
+        <h1 class="display-2 my-16 font-weight-bold" aria-label="Startups">
           Building out the core team?
         </h1>
         <v-btn class="mt-16 mr-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="150" height="50">
@@ -19,7 +19,7 @@
     </v-row>
   </section>
   <v-row class="mt-10 full-width-green px-auto py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
-    <v-col cols="12" sm="3">
+    <v-col cols="6" sm="3">
       <h1>
         20+
       </h1>
@@ -35,7 +35,7 @@
         Hires made
       </h3>
     </v-col>
-    <v-col cols="12" sm="3">
+    <v-col cols="6" sm="3">
       <h1>
         &lt;4
       </h1>
@@ -43,7 +43,7 @@
         Weeks to hire
       </h3>
     </v-col>
-    <v-col cols="12" sm="3">
+    <v-col cols="6" sm="3">
       <h1>
         97.5%
       </h1>
@@ -52,27 +52,27 @@
       </h3>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-lg-16">
     <v-col cols="12">
       <Logos :logo="logo" />
     </v-col>
   </v-row>
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-lg-16">
     <v-col cols="12">
       <h1>Search.</h1>
     </v-col>
-    <v-col cols="6">
+    <v-col cols="12" sm="6">
       <h2>
         Working exclusively with startups to headhunt the top product and tech talent in the market.
       </h2>
     </v-col>
-    <v-col cols="6" class="text-right">
+    <v-col cols="12" sm="6" class="text-right">
       <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="primary" rounded href="mailto:info@confidotalent.com">
         Talk to us about search
       </v-btn>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-lg-16">
     <v-col cols="12" md="6">
       <ColorCard v-for="card in purpleCards" :key="card" :card="card" />
     </v-col>
@@ -80,24 +80,24 @@
       <ColorImgCard v-for="card in greenImgCards" :key="card" :card="card" />
     </v-col>
   </v-row>
-  <v-row class="my-16 full-width-green" style="height: 8px;">
+  <v-row class="my-16 full-width-green" no-gutters style="height: 8px;">
   </v-row>
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-lg-16">
     <v-col cols="12">
       <h1>On-site.</h1>
     </v-col>
-    <v-col cols="6">
+    <v-col cols="12" sm="6">
       <h2>
         Working onsite with startups to sustainably scale product and tech teams.
       </h2>
     </v-col>
-    <v-col cols="6" class="text-right">
+    <v-col cols="12" sm="6" class="text-right">
       <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="primary" rounded href="mailto:info@confidotalent.com">
         Talk to us about on-site support
       </v-btn>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-lg-16">
     <v-col cols="12" md="6">
       <ColorCard v-for="card in greenCards" :key="card" :card="card" />
     </v-col>
@@ -122,12 +122,12 @@
       </v-card>
     </v-col>
   </v-row>
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-lg-16">
     <v-col cols="12">
       <h1>Get in touch.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-lg-16">
     <v-col cols="12">
       <GetInTouch :contact="contact" />
     </v-col>

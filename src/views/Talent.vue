@@ -1,9 +1,9 @@
 <template>
 <v-container fluid class="pa-0 ma-0">
-  <section class="ma-4 ma-md-16">
+  <section class="ma-4 ma-lg-16">
     <v-row class="text-left mt-10">
       <v-col cols="12" sm="7" class="mt-0 mt-md-12">
-        <h1 class="display-2 my-16 font-weight-bold" aria-label="Karl's posts">
+        <h1 class="display-2 my-16 font-weight-bold" aria-label="Talent">
           Want to build products that make the world a better place?
         </h1>
         <v-btn class="mt-16 mr-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="150" height="50">
@@ -19,7 +19,7 @@
     </v-row>
   </section>
   <v-row class="mt-10 full-width-blue px-auto py-16 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);">
-    <v-col cols="12" sm="3">
+    <v-col cols="6" sm="3" class="px-4 px-md-none">
       <h1>
         Exclusive
       </h1>
@@ -27,7 +27,7 @@
         Startup relationships
       </h3>
     </v-col>
-    <v-col cols="6" sm="3">
+    <v-col cols="6" sm="3" class="px-4 px-md-none">
       <h1>
         &lt; 3
       </h1>
@@ -35,7 +35,7 @@
         Candidates in process per role
       </h3>
     </v-col>
-    <v-col cols="12" sm="3">
+    <v-col cols="6" sm="3" class="px-4 px-md-none">
       <h1>
         &lt; 2
       </h1>
@@ -43,7 +43,7 @@
         Weeks average Interview process
       </h3>
     </v-col>
-    <v-col cols="12" sm="3">
+    <v-col cols="6" sm="3" class="px-4 px-md-none">
       <h1>
         97.5%
       </h1>
@@ -52,27 +52,27 @@
       </h3>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-lg-16">
     <v-col cols="12">
       <Logos :logo="logo" />
     </v-col>
   </v-row>
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-md-16">
     <v-col cols="12">
       <h1>Talent.</h1>
     </v-col>
-    <v-col cols="6">
+    <v-col cols="12" sm="6">
       <h2>
         We take time to understand what you're about, your values, what you stand for and the type of startup where you will succeed.
       </h2>
     </v-col>
-    <v-col cols="6" class="text-right">
+    <v-col cols="12" sm="6" class="text-right">
       <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="primary" rounded href="mailto:info@confidotalent.com">
         Talk to us about roles
       </v-btn>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-lg-16">
     <v-col cols="12" md="6">
       <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-card-title class="headline font-weight-bold">
@@ -119,16 +119,16 @@
   </v-row>
   <v-row class="my-16 full-width-blue" no-gutters style="height: 8px;">
   </v-row>
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-lg-16">
     <v-col cols="12">
       <h1>Product.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-lg-16">
     <v-col cols="12">
       <v-card color="blue lighten-2" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-row>
-          <v-col cols="6">
+          <v-col cols="12" sm="6">
             <v-card-title class="headline font-weight-bold">
               What we look for.
             </v-card-title>
@@ -143,7 +143,7 @@
               <v-btn class="btn--outlined font-weight-bold px-4" outlined color="white" rounded href="mailto:info@confidotalent.com">I work in Product!</v-btn>
             </v-card-actions>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="12" sm="6">
             <v-card-title class="headline font-weight-bold">
               Roles we cover.
             </v-card-title>
@@ -163,16 +163,16 @@
     </v-col>
   </v-row>
 
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-lg-16">
     <v-col cols="12">
       <h1>Engineering.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-lg-16">
     <v-col cols="12">
       <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
         <v-row>
-          <v-col cols="6">
+          <v-col cols="12" sm="6">
             <v-card-title class="headline font-weight-bold">
               What we look for.
             </v-card-title>
@@ -187,7 +187,7 @@
               <v-btn class="btn--outlined font-weight-bold px-4" outlined color="white" rounded href="mailto:info@confidotalent.com">I work in Engineering!</v-btn>
             </v-card-actions>
           </v-col>
-          <v-col cols="6">
+          <v-col cols="12" sm="6">
             <v-card-title class="headline font-weight-bold">
               Roles we cover.
             </v-card-title>
@@ -206,12 +206,12 @@
       </v-card>
     </v-col>
   </v-row>
-  <v-row class="text-left mx-4 mx-md-16">
+  <v-row class="text-left mx-0 mx-lg-16">
     <v-col cols="12">
       <h1>Get in touch.</h1>
     </v-col>
   </v-row>
-  <v-row class="mx-4 mx-md-16">
+  <v-row class="mx-0 mx-lg-16">
     <v-col cols="12">
       <GetInTouch :contact="contact" />
     </v-col>

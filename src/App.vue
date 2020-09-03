@@ -12,7 +12,7 @@
         <v-icon>{{ social.icon }}</v-icon>
       </v-text>
     </v-btn>
-    <v-navigation-drawer v-model="drawer" color="accent" class="d-md-none" right clipped absolute temporary app>
+    <v-navigation-drawer v-model="drawer" color="accent" class="d-md-none" right absolute temporary rounded app>
       <v-app-bar-icon @click.stop="drawer = !drawer" class="white--text d-md-none">
         <v-btn class="white--text mt-7" right absolute rounded icon>
           <v-icon class="text-right">mdi-close</v-icon>
