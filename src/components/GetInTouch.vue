@@ -1,5 +1,5 @@
 <template>
-<v-card class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05); border: 4px solid #3EC1B9">
+<v-card class="pa-8 my-2 white--text text-left card-shadow" style="border: 4px solid #3EC1B9">
   <v-row>
     <v-col cols="12" md="6">
       <v-card-title class="headline font-weight-bold primary--text" v-if="!status">Contact us.</v-card-title>

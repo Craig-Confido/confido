@@ -1,5 +1,5 @@
 <template>
-<v-card :color="`${card.color}`" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
+<v-card :color="`${card.color}`" class="pa-8 my-2 white--text text-left card-shadow">
   <v-card-title class="headline font-weight-bold">
     {{ card.title }}
   </v-card-title>

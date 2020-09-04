@@ -1,5 +1,5 @@
 <template>
-<v-card color="white" class="pa-8 my-16" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
+<v-card color="white" class="pa-8 my-16 card-shadow">
   <h1 class="mb-4 text-left">Companies we've scaled.</h1>
   <v-row class="mx-4 my-4">
     <v-img src="../../public/images/benefex.png" width="150" contain class="mx-4 mx-sm-16 my-8" />

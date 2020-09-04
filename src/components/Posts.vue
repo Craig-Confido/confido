@@ -1,5 +1,5 @@
 <template>
-<v-card :to="`${post.url}`" :target="`${post.ext}`" rel="noreferrer" hover class="text-left">
+<v-card :to="`${post.url}`" :target="`${post.ext}`" rel="noreferrer" hover class="text-left card-shadow">
   <v-img :src="`${post.img}`" height="340" />
   <h1 class="title ma-4" color="primary--text">
     {{ post.title }}

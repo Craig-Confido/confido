@@ -3,7 +3,7 @@
   <section class="ma-4 ma-lg-16">
     <v-row class="text-left mt-10">
       <v-col cols="12" sm="6" class="mt-0 mt-md-12">
-        <v-img src="../assets/Confido-Take-one2.png" class="d-flex d-md-none" alt="image of people" />
+        <v-img src="../../public/images/placeholder.svg" class="d-flex d-md-none" alt="image of people" />
         <h1 class="display-2 my-16 font-weight-bold" aria-label="Talent">
           Want to build products that make the world a better place?
         </h1>
@@ -15,7 +15,7 @@
         </v-btn>
       </v-col>
       <v-col cols="12" sm="6">
-        <v-img src="../assets/Confido-Take-one2.png" class="d-none d-md-flex" alt="image of people" />
+        <v-img src="../../public/images/placeholder.svg" class="d-none d-md-flex" alt="image of people" />
       </v-col>
     </v-row>
   </section>
@@ -75,7 +75,7 @@
   </v-row>
   <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12" md="6">
-      <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
+      <v-card color="accent" class="pa-8 my-2 white--text text-left card-shadow">
         <v-card-title class="headline font-weight-bold">
           Process.
         </v-card-title>
@@ -102,7 +102,7 @@
       </v-card>
     </v-col>
     <v-col cols="12" md="6">
-      <v-card color="blue lighten-2" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
+      <v-card color="blue lighten-2" class="pa-8 my-2 white--text text-left card-shadow">
         <v-card-title class="headline font-weight-bold">
           Who we work with.
         </v-card-title>
@@ -127,7 +127,7 @@
   </v-row>
   <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
-      <v-card color="blue lighten-2" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
+      <v-card color="blue lighten-2" class="pa-8 my-2 white--text text-left card-shadow">
         <v-row>
           <v-col cols="12" sm="6">
             <v-card-title class="headline font-weight-bold">
@@ -171,7 +171,7 @@
   </v-row>
   <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
-      <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
+      <v-card color="accent" class="pa-8 my-2 white--text text-left card-shadow">
         <v-row>
           <v-col cols="12" sm="6">
             <v-card-title class="headline font-weight-bold">

@@ -1,9 +1,1 @@
 User-agent: *
-Disallow: /portfolio
-Disallow: /portfolio/neuerenergy
-Disallow: /portfolio/duchenne-and-me
-Disallow: /portfolio/make-me-a-cocktail
-Disallow: /portfolio/santen-dyed
-Disallow: /portfolio/enel-battery-storage
-Disallow: /portfolio/project-nimbus
-Disallow: /portfolio/kejk-update

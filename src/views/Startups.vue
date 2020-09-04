@@ -2,7 +2,7 @@
 <v-container fluid class="pa-0 ma-0">
   <section class="ma-4 ma-lg-16">
     <v-row class="text-left mt-10">
-      <v-img src="../assets/Confido-Take-one.png" class="d-flex d-md-none" alt="image of people" />
+      <v-img src="../../public/images/placeholder.svg" class="d-flex d-md-none" alt="image of people" />
       <v-col cols="12" sm="6" class="mt-0 mt-md-12">
         <h1 class="display-2 my-16 font-weight-bold" aria-label="Startups">
           Building out the core team?
@@ -15,7 +15,7 @@
         </v-btn>
       </v-col>
       <v-col cols="12" sm="6">
-        <v-img src="../assets/Confido-Take-one.png" class="d-none d-md-flex" alt="image of people" />
+        <v-img src="../../public/images/placeholder.svg" class="d-none d-md-flex" alt="image of people" />
       </v-col>
     </v-row>
   </section>
@@ -79,7 +79,7 @@
     </v-col>
     <v-col cols="12" md="6">
       <!--<ColorImgCard v-for="card in greenImgCards" :key="card" :card="card" :src="card" />-->
-      <v-card color="success" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
+      <v-card color="success" class="pa-8 my-2 white--text text-left card-shadow">
         <v-card-title class="headline font-weight-bold">
           Case studies.
         </v-card-title>
@@ -117,7 +117,7 @@
       <ColorCard v-for="card in greenCards" :key="card" :card="card" />
     </v-col>
     <v-col cols="12" md="6">
-      <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
+      <v-card color="accent" class="pa-8 my-2 white--text text-left card-shadow">
         <v-card-title class="headline font-weight-bold">
           Case studies.
         </v-card-title>

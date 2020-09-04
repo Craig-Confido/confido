@@ -2,7 +2,7 @@
 <v-container fluid class="pa-0 ma-0">
   <section class="mx-4 mx-lg-16">
     <v-row class="text-left mt-16">
-      <v-img src="../assets/Confido-Take-one2.png" class="d-flex d-md-none" alt="image of people" />
+      <v-img src="../../public/images/placeholder.svg" class="d-flex d-md-none" alt="image of people" />
       <v-col cols="12" sm="6">
         <h1 class="display-1 mb-3 mt-3 font-weight-bold" aria-label="Intro text">
           Startups and people are
@@ -23,7 +23,7 @@
         </v-row>
       </v-col>
       <v-col cols="12" sm="6">
-        <v-img src="../assets/Confido-Take-one2.png" class="d-none d-md-flex" alt="image of people" />
+        <v-img src="../../public/images/placeholder.svg" class="d-none d-md-flex" alt="image of people" />
       </v-col>
     </v-row>
   </section>
@@ -71,7 +71,7 @@
   </v-row>
   <v-row class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12" md="6">
-      <v-card color="accent" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
+      <v-card color="accent" class="pa-8 my-2 white--text text-left card-shadow">
         <v-card-title class="headline font-weight-bold">We are Confido.</v-card-title>
         <v-card-text class="text-h6 mb-14 white--text">We are that person you can always go to for honest, straight answers. We don’t judge. We’ve got your back. We tell you what you need to hear, no what you want to hear. W’e’re always there when you need us.</v-card-text>
         <v-card-actions>
@@ -80,7 +80,7 @@
       </v-card>
     </v-col>
     <v-col cols="12" md="6">
-      <v-card color="secondary" class="pa-8 my-2 white--text text-left" style="box-shadow: 0px 20px 70px rgba(46, 49, 174, 0.05);">
+      <v-card color="secondary" class="pa-8 my-2 white--text text-left card-shadow">
         <v-card-title class="headline font-weight-bold">We are your confidant.</v-card-title>
         <v-card-text class="text-subtitle-1 white--text">
           <v-row>
