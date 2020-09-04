@@ -79,17 +79,17 @@ export default {
       drawer: false,
       group: null,
       links: [{
-          icon: "mdi-information-outline",
+          icon: "mdi-information",
           label: "About",
           url: "/",
         },
         {
-          icon: "mdi-apache-kafka",
+          icon: "mdi-sprout",
           label: "Startups",
           url: "/startups",
         },
         {
-          icon: "mdi-account-group-outline",
+          icon: "mdi-account-group",
           label: "Talent",
           url: "/talent",
         },
