@@ -14,7 +14,7 @@
         </v-row>
         <v-row>
           <v-col cols="12">
-            <v-textarea v-model="message" :rules="messageRules" :counter="280" label="Your message" required class="mx-4 white px-2 py-4" />
+            <v-textarea v-model="message" :rules="messageRules" :counter="1000" label="Your message" required class="mx-4 white px-2 py-4" />
           </v-col>
         </v-row>
         <v-card-actions>
@@ -43,7 +43,7 @@
       </v-card-text>
       <v-card-title class="headline font-weight-bold primary--text">Email us.</v-card-title>
       <v-card-text class="text-h6 mb-14 success--text">
-        <a href="mailto:info@confidotalent.com" class="success--text">info@confidotalent.com</a>
+        <a href="mailto:contact@confidotalent.com" class="success--text">contact@confidotalent.com</a>
       </v-card-text>
     </v-col>
   </v-row>
@@ -69,7 +69,7 @@ export default {
       ],
       messageRules: [
         (v) => !!v || "Message is required",
-        (v) => v.length <= 280 || "Message must be less than 280 characters",
+        (v) => v.length <= 1000 || "Message must be less than 1000 characters",
       ],
     }),
   methods: {
