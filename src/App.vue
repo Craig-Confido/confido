@@ -20,17 +20,24 @@
       </v-app-bar-icon>
       <v-list class="mt-16 pt-4" rounded>
         <v-list-item v-for="link in links.slice(0, 4)" :key="`${link.label}--page-link`" class="my-2 mx-0 white--text" text :to="link.url">
+          <v-list-item-icon>
+            <v-icon class="white--text">
+              {{ link.icon }}
+            </v-icon>
+          </v-list-item-icon>
           <v-list-item-content class="font-weight-medium white--text">
             {{ link.label }}
           </v-list-item-content>
         </v-list-item>
-        <v-list-item class="my-2 mx-0 white--text" text to="/subscribe">
-          <v-list-item-content class="font-weight-medium white--text">
-            Subscribe to newsletter
-          </v-list-item-content>
-        </v-list-item>
         <v-list-item v-for="social in socials" :key="`${social.icon}--page-link`" class="my-2 mx-1 white--text" text target="_blank" :href="social.url">
-          <v-icon class="font-weight-medium white--text text-left">{{ social.icon }}</v-icon>
+          <v-list-item-icon class="white--text">
+            <v-icon class="white--text text-left">
+              {{ social.icon }}
+            </v-icon>
+          </v-list-item-icon>
+          <v-list-item-content class="font-weight-medium white--text">
+            {{ social.label }}
+          </v-list-item-content>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -50,7 +57,7 @@
   <v-footer class="secondary">
     <v-row>
       <v-col cols="12">
-        <v-btn v-for="link in links" :key="`${link.label}--page-link`" class="my-2 mx-1 white--text" text :to="link.url">
+        <v-btn v-for="link in links.slice(0,5)" :key="`${link.label}--page-link`" class="my-2 mx-1 white--text" text :to="link.url">
           <v-text class="font-weight-medium">{{ link.label }}</v-text>
         </v-btn>
       </v-col>
@@ -72,40 +79,43 @@ export default {
       drawer: false,
       group: null,
       links: [{
+          icon: "mdi-information-outline",
           label: "About",
           url: "/",
         },
         {
+          icon: "mdi-apache-kafka",
           label: "Startups",
           url: "/startups",
         },
         {
+          icon: "mdi-account-group-outline",
           label: "Talent",
           url: "/talent",
         },
         {
+          icon: "mdi-id-card",
           label: "Hub",
           url: "/hub",
-        },
-        {
-          label: "Contact",
-          url: "/contact",
         },
         {
           label: "Privacy & Cookies",
           url: "/privacy-cookies",
         },
         {
+          icon: "mdi-information-outline",
           label: "Newsletter signup",
           url: "/newsletter-signup",
         },
       ],
       socials: [{
           icon: "mdi-twitter",
+          label: "Twitter",
           url: "https://twitter.com/confidotalent",
         },
         {
           icon: "mdi-linkedin",
+          label: "LinkedIn",
           url: "https://www.linkedin.com/company/confido-talent/",
         },
       ],

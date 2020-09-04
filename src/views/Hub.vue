@@ -25,8 +25,8 @@
               Career hacks, news and views, straight from startups and us, to you.
             </h3>
             <v-card-actions class="mx-auto justify-center">
-              <v-btn class="mb-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="150" height="50">
-                Subscribe
+              <v-btn class="mb-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="200" height="50" href="https://www.linkedin.com/company/confido-talent/" target="_blank">
+                View on LinkedIn
               </v-btn>
             </v-card-actions>
           </v-card>

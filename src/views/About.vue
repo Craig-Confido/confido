@@ -2,8 +2,11 @@
 <v-container fluid class="pa-0 ma-0">
   <section class="mx-4 mx-lg-16">
     <v-row class="text-left mt-16">
-      <v-img src="../../public/images/placeholder.svg" class="d-flex d-md-none" alt="image of people" />
-      <v-col cols="12" sm="6">
+      <v-img src="../../public/images/placeholder.svg" class="d-flex d-md-none mx-md-16" alt="image of people" />
+      <!--<v-img src="../../public/images/hero/Confido-Idea-Two_1.png" class="d-flex d-md-none" alt="image of people" />-->
+      <!--<v-img src="../../public/images/hero/Confido-Idea-Two_2.png" class="d-flex d-md-none" alt="image of people" />-->
+      <!--<v-img src="../../public/images/hero/Confido-Idea-Two_3.png" class="d-flex d-md-none" alt="image of people" />-->
+      <v-col cols="12" sm="7">
         <h1 class="display-1 mb-3 mt-3 font-weight-bold" aria-label="Intro text">
           Startups and people are
           <span class="accent--text">
@@ -22,8 +25,11 @@
           <v-btn to="/talent" class="mr-4 mt-4 btn--outlined font-weight-bold" outlined color="secondary" rounded width="150" height="50">Talent</v-btn>
         </v-row>
       </v-col>
-      <v-col cols="12" sm="6">
-        <v-img src="../../public/images/placeholder.svg" class="d-none d-md-flex" alt="image of people" />
+      <v-col cols="12" sm="5">
+        <v-img src="../../public/images/placeholder.svg" class="d-none d-md-flex mx-md-16" alt="image of people" />
+        <!--<v-img src="../../public/images/hero/Confido-Idea-Two_1.png" class="d-none d-md-flex" alt="image of people" />-->
+        <!--<v-img src="../../public/images/hero/Confido-Idea-Two_2.png" class="d-none d-md-flex" alt="image of people" />-->
+        <!--<v-img src="../../public/images/hero/Confido-Idea-Two_3.png" class="d-none d-md-flex mx-md-16" alt="image of people" />-->
       </v-col>
     </v-row>
   </section>
