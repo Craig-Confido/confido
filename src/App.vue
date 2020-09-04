@@ -14,7 +14,7 @@
     </v-btn>
     <v-navigation-drawer v-model="drawer" color="accent" class="d-md-none" right absolute temporary app>
       <v-app-bar-icon @click.stop="drawer = !drawer" class="white--text d-md-none">
-        <v-btn class="white--text mt-7" right absolute icon>
+        <v-btn class="white--text mt-7 mr-4" right absolute icon>
           <v-icon class="text-right">mdi-close</v-icon>
         </v-btn>
       </v-app-bar-icon>
