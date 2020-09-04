@@ -6,15 +6,20 @@
       <v-form v-if="!status" v-model="valid" ref="form" @submit="sendForm" lazy-validation>
         <v-row>
           <v-col cols="6">
-            <v-text-field v-model="name" :rules="nameRules" label="Name" required class="mx-4 white px-2 py-4" />
+            <v-text-field v-model="name" :rules="nameRules" label="Name *" required class="mx-4 white px-2 py-4" />
           </v-col>
           <v-col cols="6">
-            <v-text-field v-model="email" :rules="emailRules" label="Email" required class="mx-4 white px-2 py-4" />
+            <v-text-field v-model="email" :rules="emailRules" label="Email *" required class="mx-4 white px-2 py-4" />
           </v-col>
         </v-row>
         <v-row>
           <v-col cols="12">
-            <v-textarea v-model="message" :rules="messageRules" :counter="1000" label="Your message" required class="mx-4 white px-2 py-4" />
+            <v-text-field v-model="title" label="Job title" class="mx-4 white px-2 py-4" />
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col cols="12">
+            <v-textarea v-model="message" :rules="messageRules" :counter="1000" label="Your message *" required class="mx-4 white px-2 py-4" />
           </v-col>
         </v-row>
         <v-card-actions>
@@ -24,7 +29,7 @@
           <v-btn v-else type="submit" class="btn--outlined font-weight-bold mx-auto px-8 py-0" outlined color="success" rounded>
             Send
           </v-btn>
-          <v-btn @click="reset" class="btn--outlined font-weight-bold mx-auto px-8 py-0" outlined color="grey" rounded>
+          <v-btn @click="reset" class="btn--outlined font-weight-bold mx-auto px-8 py-0" outlined color="primary" rounded>
             Reset
           </v-btn>
         </v-card-actions>
@@ -58,6 +63,7 @@ export default {
       name: null,
       email: null,
       message: null,
+      title: null,
       valid: false,
       nameRules: [
         (v) => !!v || "Name is required",
@@ -83,9 +89,10 @@ export default {
             Accept: 'application/json'
           },
           body: JSON.stringify({
-            name: this.name,
-            email: this.email,
-            message: this.message
+            Name: this.name,
+            Email: this.email,
+            Role: this.title,
+            Message: this.message
           })
         })
         .then(response => response.json())
