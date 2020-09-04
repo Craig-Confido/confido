@@ -1,4 +1,4 @@
-# Lazy PDF
+# Confido
 
 ## Project setup
 ```
