@@ -7,29 +7,29 @@
     <v-btn v-for="link in links.slice(0, 4)" :key="`${link.label}--page-link`" class="my-2 mx-1 white--text d-none d-md-flex" text :to="link.url">
       <v-text class="font-weight-medium">{{ link.label }}</v-text>
     </v-btn>
-    <v-btn v-for="social in socials" :key="`${social.icon}--page-link`" class="my-2 mx-1 white--text d-none d-md-flex" text rounded target="_blank" :href="social.url">
+    <v-btn v-for="social in socials" :key="`${social.icon}--page-link`" class="my-2 mx-1 white--text d-none d-md-flex" icon target="_blank" :href="social.url">
       <v-text class="font-weight-medium">
         <v-icon>{{ social.icon }}</v-icon>
       </v-text>
     </v-btn>
-    <v-navigation-drawer v-model="drawer" color="accent" class="d-md-none" right absolute temporary rounded app>
+    <v-navigation-drawer v-model="drawer" color="accent" class="d-md-none" right absolute temporary app>
       <v-app-bar-icon @click.stop="drawer = !drawer" class="white--text d-md-none">
-        <v-btn class="white--text mt-7" right absolute rounded icon>
+        <v-btn class="white--text mt-7" right absolute icon>
           <v-icon class="text-right">mdi-close</v-icon>
         </v-btn>
       </v-app-bar-icon>
-      <v-list class="mt-16 pt-4">
-        <v-list-item v-for="link in links.slice(0, 4)" :key="`${link.label}--page-link`" class="my-2 mx-0 white--text" rounded text :to="link.url">
+      <v-list class="mt-16 pt-4" rounded>
+        <v-list-item v-for="link in links.slice(0, 4)" :key="`${link.label}--page-link`" class="my-2 mx-0 white--text" text :to="link.url">
           <v-list-item-content class="font-weight-medium white--text">
             {{ link.label }}
           </v-list-item-content>
         </v-list-item>
-        <v-list-item class="my-2 mx-0 white--text" rounded text to="/subscribe">
+        <v-list-item class="my-2 mx-0 white--text" text to="/subscribe">
           <v-list-item-content class="font-weight-medium white--text">
             Subscribe to newsletter
           </v-list-item-content>
         </v-list-item>
-        <v-list-item v-for="social in socials" :key="`${social.icon}--page-link`" class="my-2 mx-1 white--text" text rounded target="_blank" :href="social.url">
+        <v-list-item v-for="social in socials" :key="`${social.icon}--page-link`" class="my-2 mx-1 white--text" text target="_blank" :href="social.url">
           <v-icon class="font-weight-medium white--text text-left">{{ social.icon }}</v-icon>
         </v-list-item>
       </v-list>
