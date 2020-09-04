@@ -3,7 +3,7 @@
   <v-row>
     <v-col cols="12" md="6">
       <v-card-title class="headline font-weight-bold primary--text" v-if="!status">Contact us.</v-card-title>
-      <v-form v-if="!status" ref="form" @submit="sendForm">
+      <v-form v-if="!status" v-model="valid" ref="form" @submit="sendForm" lazy-validation>
         <v-row>
           <v-col cols="6">
             <v-text-field v-model="name" :rules="nameRules" label="Name" required class="mx-4 white px-2 py-4" />
@@ -18,7 +18,10 @@
           </v-col>
         </v-row>
         <v-card-actions>
-          <v-btn type="submit" class="btn--outlined font-weight-bold mx-auto px-8 py-0" outlined color="success" rounded>
+          <v-btn v-if="!valid || null " disabled type="submit" class="btn--outlined font-weight-bold mx-auto px-8 py-0" outlined color="success" rounded>
+            Send
+          </v-btn>
+          <v-btn v-else type="submit" class="btn--outlined font-weight-bold mx-auto px-8 py-0" outlined color="success" rounded>
             Send
           </v-btn>
           <v-btn @click="reset" class="btn--outlined font-weight-bold mx-auto px-8 py-0" outlined color="grey" rounded>
@@ -58,7 +61,7 @@ export default {
       valid: false,
       nameRules: [
         (v) => !!v || "Name is required",
-        (v) => v.length <= 2 || "Name must be more than 2 characters",
+        (v) => v.length >= 3 || "Name must be at least than three characters",
       ],
       emailRules: [
         (v) => !!v || "E-mail is required",
@@ -66,8 +69,7 @@ export default {
       ],
       messageRules: [
         (v) => !!v || "Message is required",
-        (v) =>
-        v.length >= 280 || "Message must be less than 280 characters",
+        (v) => v.length <= 280 || "Message must be less than 280 characters",
       ],
     }),
   methods: {
