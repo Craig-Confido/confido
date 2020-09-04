@@ -55,12 +55,12 @@
       </h3>
     </v-col>
   </v-row>
-  <v-row class="mx-0 mx-md-6 mx-lg-16">
+  <v-row class="d-none d-md-flex mx-md-16 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <Logos :logo="logo" />
     </v-col>
   </v-row>
-  <v-row class="text-left mx-0 mx-md-6 mx-lg-16" id="search">
+  <v-row class="text-left mt-8 mt-md-0 mx-0 mx-md-6 mx-lg-16" id="search">
     <v-col cols="12">
       <h1>Search.</h1>
     </v-col>
