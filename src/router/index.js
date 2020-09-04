@@ -23,6 +23,11 @@ const routes = [
     path: '/hub',
     name: 'Hub',
     component: () => import('../views/Hub.vue')
+  },
+  {
+    path: '/privacy',
+    name: 'Privacy',
+    component: () => import('../views/Privacy.vue')
   }
 ]
 

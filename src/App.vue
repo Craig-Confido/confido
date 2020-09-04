@@ -100,7 +100,7 @@ export default {
         },
         {
           label: "Privacy & Cookies",
-          url: "/privacy-cookies",
+          url: "/privacy",
         },
         {
           icon: "mdi-information-outline",

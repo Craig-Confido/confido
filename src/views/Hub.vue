@@ -14,7 +14,7 @@
             Are the perceptions and reality of hiring in the tech startup space one and the same? Are the challenges you face hiring the best talent unique to you, or universal?"
           </v-text>
           <v-row class="mt-8 ml-0">
-            <v-btn class="mb-4 btn--outlined font-weight-bold" outlined color="white" rounded width="150" height="50" to="/article/blah">
+            <v-btn class="mb-4 btn--outlined font-weight-bold px-8 py-6" outlined color="white" rounded to="/article/blah">
               Read more
             </v-btn>
           </v-row>
@@ -25,7 +25,7 @@
               Career hacks, news and views, straight from startups and us, to you.
             </h3>
             <v-card-actions class="mx-auto justify-center">
-              <v-btn class="mb-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="200" height="50" href="https://www.linkedin.com/company/confido-talent/" target="_blank">
+              <v-btn class="mb-4 btn--outlined font-weight-bold mx-auto px-8 py-6" outlined color="accent" rounded href="https://www.linkedin.com/company/confido-talent/" target="_blank">
                 View on LinkedIn
               </v-btn>
             </v-card-actions>

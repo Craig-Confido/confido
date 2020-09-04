@@ -3,7 +3,6 @@
   <section class="ma-4 ma-lg-16">
     <v-row class="text-left mt-10">
       <v-img src="../../public/images/placeholder.svg" class="d-flex d-md-none mx-md-16" alt="image of people" />
-      <!--<v-img src="../../public/images/hero/Confido-Idea-Two_1.png" class="d-flex d-md-none" alt="image of people" />-->
       <v-col cols="12" sm="7" class="mt-0 mt-md-12">
         <h1 class="display-2 my-16 font-weight-bold" aria-label="Startups">
           Building out the core team?
@@ -17,7 +16,6 @@
       </v-col>
       <v-col cols="12" sm="5">
       <v-img src="../../public/images/placeholder.svg" class="d-none d-md-flex mx-md-16" alt="image of people" />
-        <!--<v-img src="../../public/images/hero/Confido-Idea-Two_1.png" class="d-none d-md-flex mx-md-16" alt="image of people" />-->
       </v-col>
     </v-row>
   </section>
