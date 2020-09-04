@@ -86,7 +86,7 @@
         <v-row class="ma-4">
           <v-col cols="6">
             <v-img src="../../public/images/benefex.png" width="150" contain eager class="startups" />
-            <v-img src="../../public/images/vision-box.png" width="150" contain eager class="startups mt-md-16" />
+            <v-img src="../../public/images/vision-box.png" width="150" contain eager class="startups mt-8 mt-md-16" />
           </v-col>
           <v-col cols="6">
             <v-img src="../../public/images/thirdSpace.png" width="150" contain eager class="startups" />
@@ -124,7 +124,7 @@
         <v-row class="ma-4">
           <v-col cols="6">
             <v-img src="../../public/images/unmind.png" width="150" contain eager class="startups" />
-            <v-img src="../../public/images/feedr.png" width="150" contain eager class="startups mt-md-16" />
+            <v-img src="../../public/images/feedr.png" width="150" contain eager class="startups mt-8 mt-md-16" />
           </v-col>
           <v-col cols="6">
             <v-img src="../../public/images/curve.png" width="150" contain eager class="startups" />
