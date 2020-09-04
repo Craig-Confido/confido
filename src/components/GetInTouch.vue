@@ -43,11 +43,11 @@
     </v-col>
     <v-col cols=" 12" md="6">
       <v-card-title class="headline font-weight-bold primary--text">Phone us.</v-card-title>
-      <v-card-text class="text-h6 mb-14 success--text">
+      <v-card-text class="text-h6 mb-4 mb-md-14 success--text">
         <a href="tel:+44 203 000 0000" class="success--text">+44 203 000 0000</a>
       </v-card-text>
       <v-card-title class="headline font-weight-bold primary--text">Email us.</v-card-title>
-      <v-card-text class="text-h6 mb-14 success--text">
+      <v-card-text class="text-h6 mb-4 mb-md-14 success--text">
         <a href="mailto:contact@confidotalent.com" class="success--text">contact@confidotalent.com</a>
       </v-card-text>
     </v-col>
