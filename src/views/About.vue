@@ -142,24 +142,6 @@ export default {
       ],
       logos: [],
       contact: [],
-      valid: false,
-      firstname: "",
-      lastname: "",
-      nameRules: [
-        (v) => !!v || "Name is required",
-        (v) => v.length >= 2 || "Name must be more than 2 characters",
-      ],
-      email: "",
-      emailRules: [
-        (v) => !!v || "E-mail is required",
-        (v) => /.+@.+/.test(v) || "E-mail must be valid",
-      ],
-      description: "",
-      descriptionRules: [
-        (v) => !!v || "Description is required",
-        (v) =>
-        v.length <= 280 || "Description must be less than 280 characters",
-      ],
     };
   },
 };
