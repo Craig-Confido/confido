@@ -97,9 +97,7 @@
       <v-img src="https://www.confidotalent.com/application/files/7815/6090/5476/Benefex_onehub.jpg" height="200" gradient="to top right, rgba(100,115,201,1), rgba(25,32,72, .7)" >
         <v-img src="../../public/images/benefex-white.png" width="150" contain eager class="startups mt-16" />
       </v-img>
-        <v-card-title class="primary--text px-8 pt-8">
-          <h2>Exclusive Talent Partnership</h2>
-        </v-card-title>
+          <h2 class="primary--text px-2 pt-8">Exclusive Talent Partnership</h2>
         <v-card-text class="text-left mt-4 px-8 pt-0">
           <h3 class="primary--text">The Challenge</h3>
           <p>The CTO needed to scale a new product tribe, but had seen no success over an 18 month period, having engaged over 10 agencies.</p>
@@ -141,9 +139,7 @@
       <v-img src="https://www.confidotalent.com/application/files/2415/6154/4295/vision_box.jpg" height="200" gradient="to top right, rgba(100,115,201,1), rgba(25,32,72, .7)" >
         <v-img src="../../public/images/visionbox-white.png" width="150" contain eager class="startups mt-16" />
       </v-img>
-        <v-card-title class="primary--text px-8 pt-8">
-          <h2>Engineering Function Scaling</h2>
-        </v-card-title>
+          <h2 class="primary--text px-2 pt-8">Engineering Function Scaling</h2>
         <v-card-text class="text-left mt-4 px-8 pt-0">
           <h3 class="primary--text">The Challenge</h3>
           <p>The CTO needed to scale the entire engineering function; firstly hiring theirmanagement layer, then scaling the Development, DevOps and QA functions. They weren't seeing enough volume or quality from their existing recruitment channels and wanted a specialist search partner to attract top talent from allover Europe.</p>
@@ -221,9 +217,7 @@
       <v-img src="https://www.confidotalent.com/application/files/3615/6224/8669/unmind_1.png" height="200" gradient="to top right, rgba(100,115,201,1), rgba(25,32,72, .7)" >
         <v-img src="../../public/images/unmind-white.png" width="150" contain eager class="startups mt-16" />
       </v-img>
-        <v-card-title class="primary--text px-8 pt-8">
-          <h2>Mobile and Web Team Scaling</h2>
-        </v-card-title>
+          <h2 class="primary--text px-2 pt-8">Mobile and Web Team Scaling</h2>
         <v-card-text class="text-left mt-4 px-8 pt-0">
           <h3 class="primary--text">The Challenge</h3>
           <p>To scale their cross-platform product, the CTO needed to make some key React Native hires & a mobile SME. Having exhausted direct & referral networks, AI platforms and other agencies without success, he turned to Confido.</p>
