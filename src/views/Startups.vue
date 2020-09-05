@@ -108,7 +108,7 @@
           <li>4-6 week hiring timeline for each position</li>
           <li>95% CV to Interview ratio</li>
           </ul>
-          <h3 class="primary--text">The Result</h3>
+          <h3 class="primary--text mt-4">The Result</h3>
           <p>Confido successful scaled the product tribe and is now the exclusive Tech and Design Hiring Partner.</p>
           <h3 class="primary--text">About Benefex</h3>
           <p>Founded by CEO Matt Macri-Waller in 2003, Benefex is an employee experience provider.Employees look to their employers to design an experience that works for them, Benefex deliver those experiences through technology.</p>
@@ -150,7 +150,7 @@
           <li>56% outreach response rate</li>
           <li>90% offer acceptance</li>
           </ul>
-          <h3 class="primary--text">The Result</h3>
+          <h3 class="primary--text mt-4">The Result</h3>
           <p>Our relationship with Vision-Box is going from strength to strength - stay tuned for more updates</p>
           <h3 class="primary--text">About Vision-Box</h3>
           <p>Confido have accelerated the hiring process for Vision-Box and will continue to be used for Tech and Design hiring across the offices in Lisbon and Porto. </p>
@@ -229,7 +229,7 @@
           <li>4 offers, 3 acceptances</li>
           <li>Average times from submission to offer reduced from 4 to 2 weeks.</li>
           </ul>
-          <h3 class="primary--text">The Result</h3>
+          <h3 class="primary--text mt-4">The Result</h3>
           <p>Following successful hires, Confido is now an exclusive hiring partner for the wider engineering team.</p>
           <h3 class="primary--text">About Unmind</h3>
           <p>Unmind's B2B workplace wellness platform is shown to decrease stress, enhance sleep, and improve business performance of your employees.</p>
