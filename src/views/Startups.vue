@@ -88,6 +88,7 @@
     <v-dialog
       v-model="benefex"
       width="1000px"
+      class="overflow-hidden"
     >
       <template v-slot:activator="{ on, attrs }">
           <v-img src="../../public/images/benefex-white.png" width="150" contain eager class="startups" v-bind="attrs"
@@ -130,6 +131,7 @@
     <v-dialog
       v-model="visionbox"
       width="1000px"
+      class="overflow-hidden"
     >
       <template v-slot:activator="{ on, attrs }">
           <v-img src="../../public/images/visionbox-white.png" width="150" contain eager class="startups mt-8 mt-md-16" v-bind="attrs"
@@ -208,6 +210,7 @@
           <v-dialog
       v-model="unmind"
       width="1000px"
+      class="overflow-hidden"
     >
       <template v-slot:activator="{ on, attrs }">
           <v-img src="../../public/images/unmind-white.png" width="150" contain eager class="startups" v-bind="attrs"
