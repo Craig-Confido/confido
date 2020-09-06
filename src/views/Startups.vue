@@ -192,7 +192,7 @@
     </v-col>
     <v-col cols="12" sm="6" class="text-right">
       <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="primary" rounded href="mailto:contact@confidotalent.com?subject=Startup: I'd like to know more about how On-site services work">
-        Talk to us about on-site support
+        Talk to us about on-site
       </v-btn>
     </v-col>
   </v-row>
