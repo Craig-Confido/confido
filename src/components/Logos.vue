@@ -19,7 +19,7 @@
     <v-col cols="6">
       <v-img src="../../public/images/benefex.png" width="150" contain class="my-8" />
       <v-img src="../../public/images/defty.svg" width="150" contain class="my-8" />
-      <v-img src="../../public/images/housekeep.png" width="150" contain class="my-8" />
+      <v-img src="../../public/images/houseKeep.png" width="150" contain class="my-8" />
       <v-img src="../../public/images/octopusWealth.png" width="150" contain class="my-8" />
       <v-img src="../../public/images/homehero.svg" width="150" contain class="my-8" />
       <v-img src="../../public/images/unmind.png" width="150" contain class="my-8" />
