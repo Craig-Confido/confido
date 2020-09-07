@@ -4,7 +4,7 @@
   <v-row class="mx-4 my-4 d-none d-md-flex">
     <v-img src="../../public/images/benefex.png" width="150" contain class="mx-4 mx-sm-8 my-8 my-md-4 my-lg-0" />
     <v-img src="../../public/images/defty.svg" width="150" contain class="mx-4 mx-sm-8 my-8 my-md-4 my-lg-0" />
-    <v-img src="../../public/images/housekeep.png" width="150" contain class="mx-4 mx-sm-8 my-8 my-md-4 my-lg-0" />
+    <v-img src="../../public/images/houseKeep.png" width="150" contain class="mx-4 mx-sm-8 my-8 my-md-4 my-lg-0" />
     <v-img src="../../public/images/octopusWealth.png" width="150" contain class="mx-4 mx-sm-8 my-8 my-md-4 my-lg-0" />
     <v-img src="../../public/images/homehero.svg" width="150" contain class="mx-4 mx-sm-8 my-8 my-md-4 my-lg-0" />
     <v-img src="../../public/images/unmind.png" width="150" contain class="mx-4 mx-sm-8 my-8 my-md-4 my-lg-0" />
