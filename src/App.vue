@@ -1,7 +1,9 @@
 <template>
 <v-app>
   <v-app-bar app class="accent" flat height="100">
-    <v-img src="./assets/Logo.svg" max-height="300" max-width="300" contain />
+    <a href="/">
+      <v-img src="./assets/Logo.svg" max-height="300" max-width="300" contain />
+    </a>
     <v-spacer />
     <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="white--text d-md-none"></v-app-bar-nav-icon>
     <v-btn v-for="link in links.slice(0, 4)" :key="`${link.label}--page-link`" class="my-2 mx-1 white--text d-none d-md-flex" text :to="link.url">
