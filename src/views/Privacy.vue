@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <v-container>
     <v-row class="text-left mt-0 mt-md-8">

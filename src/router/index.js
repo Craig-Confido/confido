@@ -25,6 +25,12 @@ const routes = [
     component: () => import('../views/Hub.vue')
   },
   {
+    path: '/hub/posts/:slug',
+    name: 'Post',
+    props: true,
+    component: () => import('../components/PostDetail.vue')
+  },
+  {
     path: '/privacy',
     name: 'Privacy',
     component: () => import('../views/Privacy.vue')

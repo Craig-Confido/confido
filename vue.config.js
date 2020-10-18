@@ -4,7 +4,7 @@ module.exports = {
   "transpileDependencies": [
     "vuetify"
   ],
-  
+
   lintOnSave: true,
   filenameHashing: false,
   chainWebpack: config => {
@@ -15,9 +15,9 @@ module.exports = {
   productionSourceMap: false,
 
   pwa: {
-    name: 'KEJK',
-    themeColor: '#272727',
-    msTileColor: '#272727',
+    name: 'Confido',
+    themeColor: '#F1F1FF',
+    msTileColor: '#F1F1FF',
     workboxOptions: {
       skipWaiting: true
     }
