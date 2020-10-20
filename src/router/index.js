@@ -32,7 +32,6 @@ const routes = [
         title: '',
         metadata: '',
         content: '',
-
       }
     },
     component: () => import('../components/Post.vue')
