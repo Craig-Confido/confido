@@ -1,13 +1,9 @@
 <template>
-  <v-container class="blog-900">
-    <section class="ma-4 ma-lg-16">
-      <v-row class="mt-3 mb-5">
-        <v-col cols="12" md="12">
-          <Post :post="post" class="justify-center" />
-        </v-col>
-      </v-row>
-    </section>
-  </v-container>
+  <v-row class="mx-4 mx-lg-16">
+    <v-col cols="12" md="12">
+      <Post :post="post" class="justify-center" />
+    </v-col>
+  </v-row>
 </template>
 
 <script>
