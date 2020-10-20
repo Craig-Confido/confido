@@ -27,12 +27,7 @@ const routes = [
   {
     path: '/hub/post/:slug',
     name: 'PostView',
-    props: {
-      post: {
-        title: '',
-        content: '',
-      }
-    },
+    props: true,
     component: () => import('../views/PostView.vue')
   },
   {
