@@ -26,15 +26,14 @@ const routes = [
   },
   {
     path: '/hub/post/:slug',
-    name: 'Post',
+    name: 'PostView',
     props: {
-      posts: {
+      post: {
         title: '',
-        metadata: '',
         content: '',
       }
     },
-    component: () => import('../components/Post.vue')
+    component: () => import('../views/PostView.vue')
   },
   {
     path: '/privacy',

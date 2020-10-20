@@ -36,15 +36,15 @@ export default {
   name: "PostCards",
   props: {
     post: {
-      type: String,
+      type: Object,
       default: "No posts are loaded"
     }
-  },
-  data() {
-    return {
-      loading: false,
-      posts: []
-    };
   }
+  // data() {
+  //   return {
+  //     loading: false,
+  //     posts: {}
+  //   };
+  // }
 };
 </script>
