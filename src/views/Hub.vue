@@ -59,12 +59,7 @@
     </v-row>
     <section class="ma-4 ma-lg-16">
       <v-row class="mt-3 mb-5">
-        <v-col
-          v-for="(post, index) in posts"
-          :key="post.slug + '_' + index"
-          cols="12"
-          md="4"
-        >
+        <v-col v-for="post in posts" :key="post._id" cols="12" md="4">
           <PostCards :post="post" class="justify-center" />
         </v-col>
       </v-row>
@@ -80,18 +75,24 @@ const api = Cosmic();
 // Set these values, found in Bucket > Settings after logging in at https://app.cosmicjs.com/login
 const bucket = api.bucket({
   slug: "confido",
-  read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn",
+  read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn"
 });
 
 export default {
   name: "Hub",
   components: {
-    PostCards,
+    PostCards
+  },
+  props: {
+    post: {
+      type: String,
+      default: "No posts are loaded"
+    }
   },
   data() {
     return {
       loading: false,
-      posts: {},
+      posts: []
     };
   },
   created() {
@@ -104,14 +105,14 @@ export default {
       bucket
         .getObjects({
           type: "posts",
-          props: "_id,slug,title,content,metadata", // Limit the API response data by props
+          props: "_id,slug,title,content,metadata" // Limit the API response data by props
         })
-        .then((data) => {
+        .then(data => {
           const posts = data.objects;
           this.loading = false;
           this.posts = posts;
         });
-    },
-  },
+    }
+  }
 };
 </script>
