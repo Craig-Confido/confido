@@ -40,11 +40,5 @@ export default {
       default: "No posts are loaded"
     }
   }
-  // data() {
-  //   return {
-  //     loading: false,
-  //     posts: {}
-  //   };
-  // }
 };
 </script>

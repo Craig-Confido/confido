@@ -83,12 +83,6 @@ export default {
   components: {
     PostCards
   },
-  // props: {
-  //   post: {
-  //     type: Object,
-  //     default: "No posts are loaded"
-  //   }
-  // },
   data() {
     return {
       loading: false,

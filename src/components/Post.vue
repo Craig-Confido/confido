@@ -1,7 +1,6 @@
 /* eslint-disable */
 <template>
   <v-container>
-    <!--<v-content v-for="(post, _id) in posts" :key="_id">-->
     <v-main>
       <v-img src="" height="240" class="img post-shadow" />
       <v-row class="text-left pl-lg-12">

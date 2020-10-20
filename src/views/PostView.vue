@@ -12,7 +12,6 @@
 
 <script>
 import Post from "../components/Post";
-
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
 // Set these values, found in Bucket > Settings after logging in at https://app.cosmicjs.com/login
@@ -22,23 +21,19 @@ const bucket = api.bucket({
 });
 
 export default {
-  name: "Hub",
+  name: "PostView",
   components: {
     Post
   },
-  // props: {
-  //   post: {
-  //     type: Object,
-  //     default: "No posts are loaded"
-  //   }
-  // },
   data() {
     return {
       loading: false,
-      posts: {}
+      post: {},
+      slug: ""
     };
   },
   created() {
+    this.slug = this.$route.params.slug;
     this.fetchData();
   },
   methods: {
@@ -46,12 +41,12 @@ export default {
       this.error = this.post = null;
       this.loading = true;
       bucket
-        .getObjects({
-          type: "posts",
-          props: "_id,slug,title,content,metadata" // Limit the API response data by props
+        .getObject({
+          slug: this.slug
         })
         .then(data => {
-          const posts = data.objects;
+          console.log(data);
+          this.post = data.object;
           this.loading = false;
           this.posts = posts;
         });
