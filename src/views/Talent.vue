@@ -401,19 +401,49 @@ export default {
       quotes: [
         {
           content:
-            "Confido have partnered with us in the truest sense. Without them, I am sure we wouldn’t be as far along our journey as we currently are; long may it continue.",
-          advocate: "Daniel Brown – CEO, Defty"
+            "Confido ensured my journey through the recruitment process was not only smooth, but also pleasant and swift. They always acted with my interests in mind and were quick to resolve any issues.",
+          advocate: "Frontend Chapter Lead"
         },
         {
           content:
-            "The guys were really keen to understand exactly what I was looking for from the start, and as a result the candidates we met were all high calibre and very credible. It meant the whole process was much quicker than I’ve experienced on similar searches in the past.",
-          advocate: "Richard Wazacz - CEO, Octopus Wealth"
+            "I couldn't recommend Confido more. They have honestly been one of the best, if not the best recruiter I have worked with. They gave constant feedback, took lots of time to listen and really thought about what I wanted and needed and where would work well for me.",
+          advocate: "Software Engineer"
         },
         {
           content:
-            "Craig and his team quickly understood the profile we were looking for in terms of technology, seniority and, crucially, culture. They were able to go beyond this by advising on how to communicate our brand and the opportunity to the market",
-          advocate: "Avin Rabheru - Founder & CEO, Housekeep"
-        }
+            "Confido has been one of the best recruiters I've worked with and I have nothing but praise for them. I’ll definitely be in touch for any future job hunt.",
+          advocate: "Senior Software Engineer"
+        },
+        {
+          content:
+            "From our first interaction, Confido took the time to get to know me and what I care about and matched me with companies that share my values.",
+          advocate: "Senior Software Engineer"
+        },
+        {
+          content:
+            "I've now secured a role at a company that resonates with my personal values regarding people and how they should be treated. I cannot recommend Confido enough.",
+          advocate: "Lead QA Engineer"
+        },
+        {
+          content:
+            "Confido is the best business I've worked with when looking for new career opportunities. From initial contact through to receiving an offer, the experience was painless and I was treated with care and attention.",
+          advocate: "Product Designer"
+        },
+        {
+          content:
+            "Confido’s communication and feedback was excellent throughout the hiring process. Most importantly, they took the time understand my situation and provided invaluable advice to help me make my decision.",
+          advocate: "Senior Product Manager"
+        },
+        {
+          content:
+            "Confido’s attention to detail and fantastic communication throughout the whole process was second to none. They supported me throughout the whole process and kept me up to date with everything that was going on.",
+          advocate: "QA Lead"
+        },
+        {
+          content:
+            "It was an absolute pleasure to work with Confido. They made the process of finding a new role as pain-free and relaxed as possible. They also take the time to get to know candidates; I felt that they really understood my personality, skills and career goals.",
+          advocate: "QA Automation Engineer"
+        },
       ],
       titles: [
         {

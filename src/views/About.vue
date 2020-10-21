@@ -252,18 +252,43 @@ export default {
       quotes: [
         {
           content:
-            "Confido have partnered with us in the truest sense. Without them, I am sure we wouldn’t be as far along our journey as we currently are; long may it continue.",
-          advocate: "Daniel Brown – CEO, Defty"
+            "Confido have partnered with us in the truest sense. Helping us grow more in the last six months than we achieved with others over the previous twelve.",
+          advocate: "Paul Smith – CTO, Benefex"
         },
         {
           content:
-            "The guys were really keen to understand exactly what I was looking for from the start, and as a result the candidates we met were all high calibre and very credible. It meant the whole process was much quicker than I’ve experienced on similar searches in the past.",
+            "Confido were able to go beyond the norm by advising on how to communicate our brand and the opportunity to the market, and build out an efficient process to attract the top tier candidates we wanted.",
+          advocate: "Avin Rabheru - CEO, Housekeep"
+        },
+        {
+          content:
+            "We had a shortlist of candidates within 48 hours and we were able to put a job offer out within a week. I can wholeheartedly recommend Confido to help grow your team.",
+          advocate: "David Riley - Head of Design, HomeHero"
+        },
+        {
+          content:
+            "Whether it’s a hiring goal, upskilling internal talent teams, or working with budget holders to effectively workforce and scenario plan, Confido have partnered with us in every sense of the word. Sharp, resourceful and totally committed. Great job.",
+          advocate: "Matt Collinge - CTO, Curve"
+        },
+        {
+          content:
+            "Confido have been a true partner to us over the last 18 months, both in advice and execution for a number of key hires across the engineering and product teams. I’d recommend them highly to anyone needing to scale up their product and engineering functions.",
+          advocate: "Tom Hooper - CEO, Matr"
+        },
+        {
+          content:
+            "It's a pleasure working with Confido. Simply put, they deliver. Confido have sourced universally high-quality candidates, then worked seamlessly with us to manage a candidate-centred interview process and close offers. Highly recommended.",
+          advocate: "Sam Stagg - CTO, TSL"
+        },
+        {
+          content:
+            "Confido worked really closely with me to help me find our new Head of Engineering. The candidates we met were all high calibre and very credible. The whole process was much quicker than I’ve experienced on similar searches in the past.",
           advocate: "Richard Wazacz - CEO, Octopus Wealth"
         },
         {
           content:
-            "Craig and his team quickly understood the profile we were looking for in terms of technology, seniority and, crucially, culture. They were able to go beyond this by advising on how to communicate our brand and the opportunity to the market",
-          advocate: "Avin Rabheru - Founder & CEO, Housekeep"
+            "We needed to scale a small startup team about 3x in a short space of time but didn't want to compromise on the quality of candidates. We'd tried alternative recruitment arrangements but hadn't seen results until we engaged Confido.",
+          advocate: "Mark Somerfield - VP of Engineering, Feedr"
         }
       ],
       logos: [],
