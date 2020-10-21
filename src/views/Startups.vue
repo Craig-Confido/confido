@@ -8,10 +8,26 @@
           class="d-flex d-md-none mx-md-16"
           alt="image of people"
         />
-        <v-col cols="12" sm="7" class="mt-0 mt-md-12">
-          <h1 class="display-2 my-16 font-weight-bold" aria-label="Startups">
-            Need to make a critical product or engineering hire?
-          </h1>
+        <v-col cols="12" sm="7">
+          <v-carousel
+            cycle
+            continuous
+            hide-delimiter-background
+            light
+            hide-delimiters
+            :show-arrows="false"
+            height="400px"
+          >
+            <v-carousel-item v-for="quote in quotes" :key="quote">
+              <v-sheet color="transparent" class="px-8">
+                <v-row>
+                  <h1 class="display-2 font-weight-bold my-16 py-16">
+                    <strong>{{ quote.title }}</strong>
+                  </h1>
+                </v-row>
+              </v-sheet>
+            </v-carousel-item>
+          </v-carousel>
           <v-btn
             @click="$vuetify.goTo('#search')"
             class="mt-16 mr-4 btn--outlined font-weight-bold"
@@ -48,30 +64,38 @@
       style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55)"
     >
       <v-col cols="6" sm="3">
+        <v-icon class="text-h3 white--text mb-2"
+          >mdi-rocket-launch-outline</v-icon
+        >
         <h1>
           20+
-          <v-icon class="white--text ml-4">mdi-rocket-launch-outline</v-icon>
         </h1>
         <h3>Startups scaled</h3>
       </v-col>
       <v-col cols="6" sm="3">
+        <v-icon class="text-h3 white--text mb-2"
+          >mdi-account-group-outline</v-icon
+        >
         <h1>
           70+
-          <v-icon class="white--text ml-4">mdi-account-group-outline</v-icon>
         </h1>
         <h3>Hires made</h3>
       </v-col>
       <v-col cols="6" sm="3">
+        <v-icon class="text-h3 white--text mb-2"
+          >mdi-clock-check-outline</v-icon
+        >
         <h1>
           &lt;4
-          <v-icon class="white--text ml-4">mdi-clock-check-outline</v-icon>
         </h1>
         <h3>Weeks to hire</h3>
       </v-col>
       <v-col cols="6" sm="3">
+        <v-icon class="text-h3 white--text mb-2"
+          >mdi-check-circle-outline</v-icon
+        >
         <h1>
           97.5%
-          <v-icon class="white--text ml-4">mdi-check-circle-outline</v-icon>
         </h1>
         <h3>Success rate</h3>
       </v-col>
@@ -117,70 +141,58 @@
             you the best.</v-card-text
           >
           <v-row class="primary--text mx-auto text-center mt-4">
-            <v-col cols="6" sm="3">
+            <v-col cols="6" sm="4">
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-clock-check-outline</v-icon
               >
               <h1>&lt;4 weeks</h1>
               <h3>Average time to hire</h3>
             </v-col>
-            <v-col cols="6" sm="3">
+            <v-col cols="6" sm="4">
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-check-circle-outline</v-icon
               >
               <h1>83% of hires</h1>
               <h3>Made from initial shortlist</h3>
             </v-col>
-            <v-col cols="6" sm="3">
+            <v-col cols="6" sm="4">
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-trophy-outline</v-icon
               >
               <h1>98%</h1>
               <h3>Success rate</h3>
             </v-col>
-            <v-col cols="6" sm="3">
-              <v-icon class="secondary--text ml-4 text-h2"
-                >mdi-percent-outline</v-icon
-              >
-              <h1>100%</h1>
-              <h3>Of placements complete rebate</h3>
-            </v-col>
           </v-row>
         </v-card>
       </v-col>
     </v-row>
     <v-row class="mx-0 mx-md-6 mx-lg-16">
-      <v-col cols="12" md="6">
-        <ColorCard v-for="card in purpleCards" :key="card" :card="card" />
+      <v-col cols="12">
+        <ColorWideCard v-for="card in purpleCards" :key="card" :card="card" />
       </v-col>
-      <v-col cols="12" md="6">
-        <v-card
-          color="success"
-          class="pa-8 my-2 white--text text-left card-shadow"
-        >
-          <v-card-title class="headline font-weight-bold"
-            >Case studies.</v-card-title
-          >
-          <v-card-subtitle class="text-h6 white--text mb-8"
-            >Learn more from the teams we've built.</v-card-subtitle
-          >
-          <v-row class="ma-4">
-            <v-col cols="6">
+    </v-row>
+    <v-col cols="12" md="6" class="mt-8">
+      <v-text class="text-h4 font-weight-bold">Case studies.</v-text>
+      <v-card color="transparent" flat>
+        <v-row class="ma-4">
+          <v-col cols="12" md="4">
               <v-dialog
                 v-model="benefex"
                 width="1000px"
                 class="overflow-hidden"
               >
                 <template v-slot:activator="{ on, attrs }">
+                <div class="circle pointer">
                   <v-img
-                    src="../../public/images/benefex-white.png"
+                    src="../../public/images/benefex.png"
                     width="150"
                     contain
                     eager
-                    class="startups"
+                    class="circle pointer"
                     v-bind="attrs"
                     v-on="on"
                   />
+                </div>
                 </template>
                 <v-card>
                   <v-img
@@ -245,21 +257,36 @@
                   </v-card-actions>
                 </v-card>
               </v-dialog>
+              </v-col>
+              <v-col cols="12" md="4">
+              <div class="circle pointer">
+                <v-img
+                  src="../../public/images/thirdSpace.png"
+                  width="150"
+                  contain
+                  eager
+                  class="circle pointer"
+                />
+                </div>
+              </v-col>
+              <v-col cols="12" md="4">
               <v-dialog
                 v-model="visionbox"
                 width="1000px"
                 class="overflow-hidden"
               >
                 <template v-slot:activator="{ on, attrs }">
+                <div class="circle pointer">
                   <v-img
-                    src="../../public/images/visionbox-white.png"
+                    src="../../public/images/vision-box.svg"
                     width="150"
                     contain
                     eager
-                    class="startups mt-8 mt-md-16"
+                    class="circle pointer"
                     v-bind="attrs"
                     v-on="on"
                   />
+                </div>
                 </template>
                 <v-card>
                   <v-img
@@ -321,16 +348,10 @@
                 </v-card>
               </v-dialog>
             </v-col>
-            <v-col cols="6">
-              <v-img
-                src="../../public/images/thirdspace-white.png"
-                width="150"
-                contain
-                eager
-                class="startups mt-md-2"
-              />
-            </v-col>
           </v-row>
+          <v-card-text class="primary--text text-h5"
+            >Learn more from the teams we've scaled</v-card-text
+          >
         </v-card>
       </v-col>
     </v-row>
@@ -353,38 +374,58 @@
         <v-btn
           class="btn--outlined font-weight-bold mx-auto px-8 py-4"
           outlined
-          color="primary"
+          color="secondary"
           rounded
           href="mailto:contact@confidotalent.com?subject=Startup: I'd like to know more about how On-site services work"
-          >Talk to us about on-site</v-btn
+          >Get in touch</v-btn
         >
       </v-col>
     </v-row>
     <v-row class="mx-0 mx-md-6 mx-lg-16">
-      <v-col cols="12" md="6">
-        <v-card
-          color="accent"
-          class="pa-8 my-2 white--text text-left card-shadow"
-        >
-          <v-card-title class="headline font-weight-bold"
-            >Case studies.</v-card-title
+      <v-col cols="12">
+        <v-card class="pa-8 my-2 white--text text-left card-shadow">
+          <v-card-title class="headline font-weight-bold primary--text"
+            >Why choose search?</v-card-title
           >
-          <v-card-text class="text-h6 white--text">
-            Post Series A, startups need to be able to scale sustainably, at
-            pace.
-          </v-card-text>
-          <v-card-text class="text-h6 white--text">
-            With an on-site partnership we’ll help strategically plan for this
-            growth, as well as deliver talent that feels at home with your
-            brand.
-          </v-card-text>
-          <v-card-text class="text-center my-10">
-            <v-icon class="white--text text-h4"> mdi-charity </v-icon>
-          </v-card-text>
+          <v-card-text class="text-h6 primary--text"
+            >Going through sustained growth phases is challenging. You need to start thinking about talent more strategically, whilst continuing to grow headcount month on month. Onsite provides you with the dedicated expertise that enables you to plan for the long term, alongside achieving your hiring goals in the short term.</v-card-text
+          >
+          <v-row class="primary--text mx-auto text-center mt-4">
+            <v-col cols="6" sm="3">
+              <v-icon class="secondary--text ml-4 text-h2"
+                >mdi-cash-multiple</v-icon
+              >
+              <h1>40% cost saving</h1>
+              <h3>compared to agency spend</h3>
+            </v-col>
+            <v-col cols="6" sm="3">
+              <v-icon class="secondary--text ml-4 text-h2"
+                >mdi-finance</v-icon
+              >
+              <h1>3x acceleration</h1>
+              <h3>in hiring velocity</h3>
+            </v-col>
+            <v-col cols="6" sm="3">
+              <v-icon class="secondary--text ml-4 text-h2"
+                >mdi-clock-check-outline</v-icon
+              >
+              <h1>&gt; 20%</h1>
+              <h3>improvement on time to hire</h3>
+            </v-col>
+            <v-col cols="6" sm="3">
+              <v-icon class="secondary--text ml-4 text-h2"
+                >mdi-account-group</v-icon
+              >
+              <h1>Increased</h1>
+              <h3>team diversity</h3>
+            </v-col>
+          </v-row>
         </v-card>
       </v-col>
-      <v-col cols="12" md="6">
-        <ColorCard v-for="card in greenCards" :key="card" :card="card" />
+    </v-row>
+    <v-row class="mx-0 mx-md-6 mx-lg-16">
+      <v-col cols="12">
+        <ColorWideCard v-for="card in greenCards" :key="card" :card="card" />
       </v-col>
     </v-row>
     <v-col cols="12" md="6" class="mt-8">
@@ -514,6 +555,7 @@
 import Logos from "../components/Logos";
 import GetInTouch from "../components/GetInTouch";
 import ColorCard from "../components/ColorCard";
+import ColorWideCard from "../components/ColorWideCard"
 
 export default {
   name: "Startups",
@@ -521,6 +563,7 @@ export default {
     Logos,
     GetInTouch,
     ColorCard,
+    ColorWideCard
   },
   data() {
     return {
@@ -532,37 +575,57 @@ export default {
       visionbox: false,
       unmind: false,
       contact: [],
+      quotes: [
+        {
+          title: "Need to make a critical product or engineering hire?"
+        },
+        {
+          title: "Looking to build out your core team?"
+        },
+        {
+          title: "Need to scale your teams by 2x / 3x?"
+        }
+      ],
+      tab: null,
       purpleCards: [
         {
           color: "accent",
+          accentColor: "secondary",
           title: "Process.",
-          icontl: "mdi-file-document",
-          texttl: "Brief workshop",
-          icontr: "mdi-magnify",
-          texttr: "Candidate search",
-          iconbl: "mdi-account-clock",
-          textbl: "Interviews",
-          iconbr: "mdi-account-group",
-          textbr: "Onboarding",
-        },
+          tab1: "Brief workshop",
+          tab2: "Headhunting",
+          tab3: "Interviews",
+          tab4: "Onboarding",
+          icon1: "mdi-file-document",
+          icon2: "mdi-magnify",
+          icon3: "mdi-account-clock",
+          icon4: "mdi-account-group",
+          text1: "To kick things off, we'll spend two to three hours with your Senior team to identify what truly makes you unique. We'll then go to market as an extension of your brand to attract the best candidates for you.",
+          text2: "While most recruiters focus on the active 10% of the candidate market, we’ll open up the hidden 90% for you. We take a structured approach to breaking down the local market based on your hiring needs, which allows us to unearth talent that’s harder to find.",
+          text3: "We’ll provide you with a shortlist of our top three candidates to interview. We focus on a streamlined interview process that can be completed within two weeks. As well as assessing the candidates, we’ll also showcase the benefits of working for you.",
+          text4: "Once you’ve selected your new starter, we’ll work with you both to ensure the onboarding process is as seamless as possible. This includes handling offer negotiation, notice periods, onboarding and integration with the team.",
+        }
       ],
       greenCards: [
         {
           color: "success",
+          accentColor: "white",
           title: "Process.",
-          text:
-            "Building teams on a larger scale and providing framework for long-term growth.",
-          icontl: "mdi-human-greeting-proximity",
-          texttl: "Discovery workshop",
-          icontr: "mdi-file-document-edit-outline",
-          texttr: "Project scoping",
-          iconbl: "mdi-check-decagram",
-          textbl: "Delivery",
-          iconbr: "mdi-cog-sync-outline",
-          textbr: "Analysis",
-        },
-      ],
+          tab1: "Discovery workshop",
+          tab2: "Project scoping",
+          tab3: "Delivery",
+          tab4: "Analysis",
+          icon1: "mdi-file-document",
+          icon2: "mdi-magnify",
+          icon3: "mdi-check-circle-outline",
+          icon4: "mdi-account-group",
+          text1: "This session will establish how new talent will help accelerate your business goals. We’ll discuss your current state versus future state, key business and product priorities, and how talent will be expected to meet these needs.",
+          text2: "We'll work with you to agree on the strategy and deliverables of Confido's talent solution to meet those business and product milestones.",
+          text3: "We'll deliver our solution by providing you with expertise on wider talent strategy, as well as the new hires you need to continue scaling.",
+          text4: "Our team will conduct regular evaluations and data analysis to drive further improvements.",
+        }
+      ]
     };
-  },
+  }
 };
 </script>

@@ -86,7 +86,8 @@ export default {
   data() {
     return {
       loading: false,
-      posts: {}
+      posts: {},
+      featuredPosts: {}
     };
   },
   created() {
@@ -103,8 +104,10 @@ export default {
         })
         .then(data => {
           const posts = data.objects;
+          const featuredPosts = data.objects;
           this.loading = false;
           this.posts = posts;
+          this.featuredPosts = featuredPosts;
         });
     }
   }

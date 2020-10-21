@@ -8,6 +8,7 @@
 
 <script>
 import Post from "../components/Post";
+
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
 // Set these values, found in Bucket > Settings after logging in at https://app.cosmicjs.com/login

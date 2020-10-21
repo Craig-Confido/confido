@@ -8,10 +8,6 @@
           class="d-flex d-md-none mx-md-16"
           alt="image of people"
         />
-        <!--<v-img src="../../public/images/hero/Confido-Idea-Two_1.png" class="d-flex d-md-none" alt="image of people" />-->
-        <!--<v-img src="../../public/images/hero/Confido-Idea-Two_3.png" class="d-flex d-md-none" alt="image of people" />-->
-        <!--<v-img src="../../public/images/hero/Confido-Idea-Two_4.png" class="d-flex d-md-none" alt="image of people" />-->
-        <!--<v-img src="../../public/images/hero/Confido-Idea-Two_5.png" class="d-flex d-md-none" alt="image of people" />-->
         <v-col cols="12" sm="6">
           <h1
             class="display-1 mb-3 mt-3 font-weight-bold"
@@ -249,7 +245,7 @@ export default {
   name: "About",
   components: {
     Logos,
-    GetInTouch,
+    GetInTouch
   },
   data() {
     return {
@@ -257,22 +253,22 @@ export default {
         {
           content:
             "Confido have partnered with us in the truest sense. Without them, I am sure we wouldn’t be as far along our journey as we currently are; long may it continue.",
-          advocate: "Daniel Brown – CEO, Defty",
+          advocate: "Daniel Brown – CEO, Defty"
         },
         {
           content:
             "The guys were really keen to understand exactly what I was looking for from the start, and as a result the candidates we met were all high calibre and very credible. It meant the whole process was much quicker than I’ve experienced on similar searches in the past.",
-          advocate: "Richard Wazacz - CEO, Octopus Wealth",
+          advocate: "Richard Wazacz - CEO, Octopus Wealth"
         },
         {
           content:
             "Craig and his team quickly understood the profile we were looking for in terms of technology, seniority and, crucially, culture. They were able to go beyond this by advising on how to communicate our brand and the opportunity to the market",
-          advocate: "Avin Rabheru - Founder & CEO, Housekeep",
-        },
+          advocate: "Avin Rabheru - Founder & CEO, Housekeep"
+        }
       ],
       logos: [],
-      contact: [],
+      contact: []
     };
-  },
+  }
 };
 </script>

@@ -7,12 +7,10 @@
       class="img post-shadow"
     />
     <v-row class="text-left pl-lg-12">
-      <v-col cols="6">
+      <v-col cols="12">
         <h1 class="title my-4" color="primary--text">
           {{ post.title }}
         </h1>
-      </v-col>
-      <v-col cols="6">
         <v-chip class="tag px-4 py-2 my-4" color="secondary">
           <strong>{{ post.metadata.tag }}</strong>
         </v-chip>
