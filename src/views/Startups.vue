@@ -18,11 +18,11 @@
             :show-arrows="false"
             height="400px"
           >
-            <v-carousel-item v-for="quote in quotes" :key="quote">
+            <v-carousel-item v-for="title in titles" :key="title">
               <v-sheet color="transparent" class="px-8">
                 <v-row>
                   <h1 class="display-2 font-weight-bold my-16 py-16">
-                    <strong>{{ quote.title }}</strong>
+                    <strong>{{ title.title }}</strong>
                   </h1>
                 </v-row>
               </v-sheet>
@@ -567,15 +567,11 @@ export default {
   },
   data() {
     return {
-      hero:
-        "https://res.cloudinary.com/kejk/image/upload/v1585992488/macbook-pro-space-gray-on-the-wooden-table_e6bu8w.jpg",
-      url:
-        "https://res.cloudinary.com/kejk/raw/upload/v1587568180/Lazy%20PDF%20-%20V1.1.zip",
       benefex: false,
       visionbox: false,
       unmind: false,
       contact: [],
-      quotes: [
+      titles: [
         {
           title: "Need to make a critical product or engineering hire?"
         },

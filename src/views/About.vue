@@ -8,7 +8,7 @@
           class="d-flex d-md-none mx-md-16"
           alt="image of people"
         />
-        <v-col cols="12" sm="6">
+        <v-col cols="12" sm="7">
           <h1
             class="display-1 mb-3 mt-3 font-weight-bold"
             aria-label="Intro text"
@@ -46,7 +46,7 @@
             >
           </v-row>
         </v-col>
-        <v-col cols="12" sm="6">
+        <v-col cols="12" sm="5">
           <v-img
             src="../../public/images/placeholder.svg"
             class="d-none d-md-flex mx-md-16"
