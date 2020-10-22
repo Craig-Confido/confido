@@ -194,68 +194,7 @@
                   />
                 </div>
                 </template>
-                <v-card>
-                  <v-img
-                    src="https://www.confidotalent.com/application/files/7815/6090/5476/Benefex_onehub.jpg"
-                    height="200"
-                    gradient="to top right, rgba(100,115,201,1), rgba(25,32,72, .7)"
-                  >
-                    <v-img
-                      src="../../public/images/benefex-white.png"
-                      width="150"
-                      contain
-                      eager
-                      class="startups mt-16"
-                    />
-                  </v-img>
-                  <h2 class="primary--text px-8 pt-8">
-                    Exclusive Talent Partnership
-                  </h2>
-                  <v-card-text class="text-left mt-4 px-8 pt-0">
-                    <h3 class="primary--text">The Challenge</h3>
-                    <p>
-                      The CTO needed to scale a new product tribe, but had seen
-                      no success over an 18 month period, having engaged over 10
-                      agencies.
-                    </p>
-                    <h3 class="primary--text">Key stats</h3>
-                    <ul>
-                      <li>
-                        Multiple hires - Java Developers, Automation QAs and
-                        Senior Product Manager
-                      </li>
-                      <li>
-                        Real-time market analysis to demonstrate brand strength
-                        within local hiring market
-                      </li>
-                      <li>4-6 week hiring timeline for each position</li>
-                      <li>95% CV to Interview ratio</li>
-                    </ul>
-                    <h3 class="primary--text mt-4">The Result</h3>
-                    <p>
-                      Confido successful scaled the product tribe and is now the
-                      exclusive Tech and Design Hiring Partner.
-                    </p>
-                    <h3 class="primary--text">About Benefex</h3>
-                    <p>
-                      Founded by CEO Matt Macri-Waller in 2003, Benefex is an
-                      employee experience provider.Employees look to their
-                      employers to design an experience that works for them,
-                      Benefex deliver those experiences through technology.
-                    </p>
-                  </v-card-text>
-                  <v-card-actions>
-                    <v-spacer />
-                    <v-btn
-                      color="primary"
-                      text
-                      class="px-4 py-2"
-                      @click="benefex = false"
-                      >Close</v-btn
-                    >
-                    <v-spacer />
-                  </v-card-actions>
-                </v-card>
+                  <CaseStudyLargeCard v-for="card in caseStudyCards.slice(0,1)" :key="card" :card="card" />
               </v-dialog>
               </v-col>
               <v-col cols="12" md="4">
@@ -521,15 +460,26 @@
             </v-dialog>
           </v-col>
           <v-col cols="12" md="4">
-            <div class="circle pointer">
-              <v-img
-                src="../../public/images/feedr.webp"
-                width="150"
-                contain
-                eager
-                class="circle"
-              />
+             <v-dialog
+                v-model="feedr"
+                width="1000px"
+                class="overflow-hidden"
+              >
+              <template v-slot:activator="{ on, attrs }">
+              <div class="circle pointer">
+                <v-img
+                  src="../../public/images/feedr.webp"
+                  width="150"
+                  contain
+                  eager
+                  class="circle"
+                  v-bind="attrs"
+                  v-on="on"
+                />
             </div>
+            </template>
+              <CaseStudyLargeCard v-for="card in caseStudyCards.slice(1,2)" :key="card" :card="card" />
+          </v-dialog>
           </v-col>
         </v-row>
         <v-card-text class="primary--text text-h5"
@@ -556,6 +506,7 @@ import Logos from "../components/Logos";
 import GetInTouch from "../components/GetInTouch";
 import ColorCard from "../components/ColorCard";
 import ColorWideCard from "../components/ColorWideCard"
+import CaseStudyLargeCard from "../components/CaseStudyLargeCard"
 
 export default {
   name: "Startups",
@@ -563,13 +514,78 @@ export default {
     Logos,
     GetInTouch,
     ColorCard,
-    ColorWideCard
+    ColorWideCard,
+    CaseStudyLargeCard
   },
   data() {
     return {
       benefex: false,
       visionbox: false,
       unmind: false,
+      caseStudyCards: [
+        {
+          image: "https://www.confidotalent.com/application/files/7815/6090/5476/Benefex_onehub.jpg",
+          logo: "../images/benefex-white.png",
+          title: "Benefex build workplace tech that transforms the employee experience, and focuses on improving employee wellbeing.",
+          brief: "Benefex are a fast growing product company based in Southampton. In 18 months they used over 10 recruitment partners with little to no success. They needed a partner they could rely on to help them attract top product and tech talent and deliver 5-10 hires per year.",
+          challenge1Title: "Lack of market intel",
+          challenge1: "Who else was hiring, what for, and for how much?",
+          challenge2Title: "Attracting the right people",
+          challenge2: "How could Benefex appear more attractive?",
+          challenge3Title: "Securing top tier candidates",
+          challenge3: "What did they need to change to find the best candidates?",
+          solution1Icon: "mdi-file-document",
+          solution1Title: "Brief workshop",
+          solution1: "Week 1",
+          solution1Text: "We spent time with the senior management team to build a detailed brief playing to Benefex’s strengths within the local market.",
+          solution2Icon: "mdi-magnify",
+          solution2Title: "Search report",
+          solution2: "Week 3",
+          solution2Text: "We shared data on who was hiring, including salary packages and benefits, and how Benefex compared. We also evaluated the local talent demographic.",
+          solution3Icon: "mdi-cog",
+          solution3Title: "Search alignment",
+          solution3: "Week 4",
+          solution3Text: "Based on the search report, we noticed that all the companies in the area were hiring at the same level, which was where the local market was smallest.",
+          resultText: "We adjusted the search based on the market intel and made all 3 hires within 6 weeks. Since then, we’ve completed over 13 successful searches and continue to work exclusively on all product and engineering hires.",
+          result1Icon: "mdi-trophy",
+          result1Text: "13 searches completed in 2 years",
+          result2Icon: "mdi-account-group",
+          result2Text: "Built out leadership team",
+          result3Icon: "mdi-check-circle",
+          result3Text: "100% success rate on all searches",
+        },
+        {
+          image: "https://images.unsplash.com/photo-1543352632-5a4b24e4d2a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3625&q=80",
+          logo: "../images/feedr-white.png",
+          title: "Feedr is on a mission to make it easier for people to get healthy, delicious food at the office, every day.",
+          brief: "Benefex are a fast growing product company based in Southampton. In 18 months they used over 10 recruitment partners with little to no success. They needed a partner they could rely on to help them attract top product and tech talent and deliver 5-10 hires per year.",
+          challenge1Title: "Lack of market intel",
+          challenge1: "Who else was hiring, what for, and for how much?",
+          challenge2Title: "Attracting the right people",
+          challenge2: "How could Benefex appear more attractive?",
+          challenge3Title: "Securing top tier candidates",
+          challenge3: "What did they need to change to find the best candidates?",
+          solution1Icon: "mdi-file-document",
+          solution1Title: "Brief workshop",
+          solution1: "Week 1",
+          solution1Text: "We spent time with the senior management team to build a detailed brief playing to Benefex’s strengths within the local market.",
+          solution2Icon: "mdi-magnify",
+          solution2Title: "Search report",
+          solution2: "Week 3",
+          solution2Text: "We shared data on who was hiring, including salary packages and benefits, and how Benefex compared. We also evaluated the local talent demographic.",
+          solution3Icon: "mdi-cog",
+          solution3Title: "Search alignment",
+          solution3: "Week 4",
+          solution3Text: "Based on the search report, we noticed that all the companies in the area were hiring at the same level, which was where the local market was smallest.",
+          resultText: "We adjusted the search based on the market intel and made all 3 hires within 6 weeks. Since then, we’ve completed over 13 successful searches and continue to work exclusively on all product and engineering hires.",
+          result1Icon: "mdi-trophy",
+          result1Text: "13 searches completed in 2 years",
+          result2Icon: "mdi-account-group",
+          result2Text: "Built out leadership team",
+          result3Icon: "mdi-check-circle",
+          result3Text: "100% success rate on all searches",
+        }
+      ],
       contact: [],
       titles: [
         {
@@ -620,7 +636,7 @@ export default {
           text3: "We'll deliver our solution by providing you with expertise on wider talent strategy, as well as the new hires you need to continue scaling.",
           text4: "Our team will conduct regular evaluations and data analysis to drive further improvements.",
         }
-      ]
+      ],
     };
   }
 };

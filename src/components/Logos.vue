@@ -217,7 +217,6 @@ export default {
       showing: false,
       cards: [
         {
-          showing: false,
           tech: true,
           product: true,
           image: "../images/benefex.png",
@@ -244,7 +243,6 @@ export default {
           label3: "100% success rate across all hires",
         },
         {
-          showing: false,
           tech: true,
           product: false,
           image: "../images/houseKeep.png",
