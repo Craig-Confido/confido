@@ -240,12 +240,14 @@
 <script>
 import Logos from "../components/Logos";
 import GetInTouch from "../components/GetInTouch";
+import CaseStudySmallCard from "../components/CaseStudySmallCard";
 
 export default {
   name: "About",
   components: {
     Logos,
-    GetInTouch
+    GetInTouch,
+    CaseStudySmallCard
   },
   data() {
     return {
