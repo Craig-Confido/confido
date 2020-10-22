@@ -8,7 +8,7 @@
     <v-col cols="12" md="2">
         <img :src="`${card.image}`" width="150" />
         <h5 class="text-h6 mt-4">{{ card.subtitle }}</h5>
-        <v-card v-if="card.tech == true" flat color="accent" class="mt-2">
+        <v-card v-if="card.tech == true" flat color="accent" class="mt-2 br-15">
           <v-card-title class="white--text">{{ card.boxOneTitle }}</v-card-title>
           <v-card-text>
           <p class="white--text my-0">{{ card.boxOneTextOne }}</p>
@@ -19,7 +19,7 @@
           <p class="white--text my-0">{{ card.boxOneTextSix }}</p>
           </v-card-text>
         </v-card>
-        <v-card v-if="card.product == true" flat color="success" class="mt-2">
+        <v-card v-if="card.product == true" flat color="success" class="mt-2 br-15">
           <v-card-title class="white--text">{{ card.boxTwoTitle }}</v-card-title>
           <v-card-text>
           <p class="white--text my-0">{{ card.boxTwoTextOne }}</p>
