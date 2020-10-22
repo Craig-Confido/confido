@@ -101,26 +101,49 @@
         class="mx-4 mx-sm-8 my-8 my-md-4 my-lg-0"
       />
     </v-row>
+
     <v-row class="d-flex d-md-none">
       <v-col cols="6">
-        <v-img
-          src="../../public/images/benefex.png"
-          width="150"
-          contain
-          class="my-8"
-        />
+        <v-dialog
+        v-model="benefex"
+        width="2000px"
+        class="overflow-hidden"
+      >
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            src="../../public/images/benefex.png"
+            width="150"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 my-lg-0 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+          <CaseStudySmallCard v-for="card in cards.slice(0, 1)" :key="card" :card="card" />
+        </v-dialog>
         <v-img
           src="../../public/images/defty.svg"
           width="150"
           contain
           class="my-8"
         />
+        <v-dialog
+      v-model="benefex"
+      width="2000px"
+      class="overflow-hidden"
+    >
+      <template v-slot:activator="{ on, attrs }">
         <v-img
           src="../../public/images/houseKeep.png"
           width="150"
           contain
-          class="my-8"
+          class="mx-4 mx-sm-8 my-8 my-md-4 my-lg-0 pointer"
+          v-bind="attrs"
+          v-on="on"
         />
+      </template>
+          <CaseStudySmallCard v-for="card in cards.slice(1, 2)" :key="card" :card="card" />
+        </v-dialog>
         <v-img
           src="../../public/images/octopusWealth.png"
           width="150"
