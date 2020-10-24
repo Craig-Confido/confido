@@ -1,33 +1,41 @@
 /* eslint-disable */
 <template>
-  <v-container>
-    <v-img :src="`${feature.img}`" height="340" />
-    <v-card-text color="white" class="overline">Featured</v-card-text>
-    <h1 class="title ma-4" color="primary--text">{{ feature.title }}</h1>
-    <v-card-text color="primary--text">{{ feature.text }}</v-card-text>
-    <v-row class="mx-auto justify-center">
-      <v-btn
-        :to="`${feature.url}`"
-        class="mb-4 btn--outlined font-weight-bold"
-        outlined
-        color="accent"
-        rounded
-        width="150"
-        height="50"
-        >Read more</v-btn
-      >
+  <v-main class="blog-900 mt-0 pt-4">
+    <v-img
+      :src="featuredposts.metadata.hero.imgix_url"
+      height="240"
+      class="img post-shadow"
+    />
+    <v-row class="text-left pl-lg-12">
+      <v-col cols="12">
+        <h1 class="title my-4" color="primary--text">
+          {{ featuredposts.title }}
+        </h1>
+        <v-chip class="tag px-4 py-2 my-4" color="secondary">
+          <strong>{{ featuredposts.metadata.tag }}</strong>
+        </v-chip>
+      </v-col>
     </v-row>
-  </v-container>
+    <v-row class="text-left px-lg-12">
+      <v-col cols="12">
+        <section
+          color="primary--text"
+          v-html="featuredposts.content"
+          class="justify-left"
+        />
+      </v-col>
+    </v-row>
+  </v-main>
 </template>
 
 <script>
 export default {
   name: "Featured",
   props: {
-    feature: {
-      type: String,
-      default: "No posts are loaded",
-    },
-  },
+    featuredposts: {
+      type: Object,
+      default: "No posts are loaded"
+    }
+  }
 };
 </script>

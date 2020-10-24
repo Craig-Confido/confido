@@ -8,7 +8,7 @@
           class="d-flex d-md-none mx-md-16"
           alt="image of people"
         />
-        <v-col cols="12" sm="7">
+        <v-col cols="12" sm="6">
           <v-carousel
             cycle
             continuous
@@ -16,12 +16,12 @@
             light
             hide-delimiters
             :show-arrows="false"
-            height="400px"
+            height="300px"
           >
             <v-carousel-item v-for="title in titles" :key="title">
               <v-sheet color="transparent" class="px-8">
                 <v-row>
-                  <h1 class="display-2 font-weight-bold my-16 py-16">
+                  <h1 class="text-h4 font-weight-bold my-16 py-16">
                     <strong>{{ title.title }}</strong>
                   </h1>
                 </v-row>
@@ -30,7 +30,7 @@
           </v-carousel>
           <v-btn
             @click="$vuetify.goTo('#search')"
-            class="mt-16 mr-4 btn--outlined font-weight-bold"
+            class="mt-0 mr-4 btn--outlined font-weight-bold"
             outlined
             color="accent"
             rounded
@@ -40,7 +40,7 @@
           >
           <v-btn
             @click="$vuetify.goTo('#onsite')"
-            class="mt-16 mr-4 btn--outlined font-weight-bold"
+            class="mt-0 mr-4 btn--outlined font-weight-bold"
             outlined
             color="success"
             rounded
@@ -49,7 +49,8 @@
             >On-site</v-btn
           >
         </v-col>
-        <v-col cols="12" sm="5">
+        <v-spacer />
+        <v-col cols="12" sm="4">
           <v-img
             src="../../public/images/placeholder.svg"
             class="d-none d-md-flex mx-md-16"
@@ -59,7 +60,7 @@
       </v-row>
     </section>
     <v-row
-      class="mt-10 full-width-green px-auto py-16 white--text"
+      class="mt-10 full-width-green px-auto py-8 white--text"
       no-gutters
       style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55)"
     >
@@ -86,7 +87,7 @@
           >mdi-clock-check-outline</v-icon
         >
         <h1>
-          &lt;4
+          Under 4
         </h1>
         <h3>Weeks to hire</h3>
       </v-col>
@@ -111,9 +112,7 @@
       </v-col>
       <v-col cols="12" sm="8">
         <h2>
-          Working exclusively with Seed and Series A stage startups to
-          efficiently deliver a shortlist of 3 candidates within 4 weeks that
-          you will make a hire from.
+          Working exclusively with Seed and Series A startups to efficiently deliver a shortlist of three candidates within four weeks that you will make a hire from.
         </h2>
       </v-col>
       <v-col cols="12" sm="4" class="text-right">
@@ -131,32 +130,28 @@
       <v-col cols="12">
         <v-card class="pa-8 my-2 white--text text-left card-shadow">
           <v-card-title class="headline font-weight-bold primary--text"
-            >Why choose search?</v-card-title
+            >Why Search?</v-card-title
           >
           <v-card-text class="text-h6 primary--text"
-            >We know it can be hard to attract top talent when you have no brand
-            presence in the market. Search allows you to make critical hires,
-            efficiently and effortlessly, at pace. We work with you to craft a
-            compelling message then headhunt the passive talent market to find
-            you the best.</v-card-text
+            >We know it can be hard to attract top talent when you have no brand presence in the market. Search allows you to make critical hires efficiently and effortlessly, at pace. We work with you to craft a compelling message, then headhunt the passive talent market to find you the best.</v-card-text
           >
           <v-row class="primary--text mx-auto text-center mt-4">
             <v-col cols="6" sm="4">
-              <v-icon class="secondary--text ml-4 text-h2"
+              <v-icon class="secondary--text text-h2"
                 >mdi-clock-check-outline</v-icon
               >
               <h1>&lt;4 weeks</h1>
               <h3>Average time to hire</h3>
             </v-col>
             <v-col cols="6" sm="4">
-              <v-icon class="secondary--text ml-4 text-h2"
+              <v-icon class="secondary--text text-h2"
                 >mdi-check-circle-outline</v-icon
               >
               <h1>83% of hires</h1>
               <h3>Made from initial shortlist</h3>
             </v-col>
             <v-col cols="6" sm="4">
-              <v-icon class="secondary--text ml-4 text-h2"
+              <v-icon class="secondary--text text-h2"
                 >mdi-trophy-outline</v-icon
               >
               <h1>98%</h1>
@@ -171,18 +166,20 @@
         <ColorWideCard v-for="card in purpleCards" :key="card" :card="card" />
       </v-col>
     </v-row>
-    <v-col cols="12" md="6" class="mt-8">
-      <v-text class="text-h4 font-weight-bold">Case studies.</v-text>
-      <v-card color="transparent" flat>
-        <v-row class="ma-4">
+    <v-col cols="12" md="12" class="mt-8">
+       <p class="text-h4 font-weight-bold">Case studies.</p>
+      <v-card-text class="primary--text text-h5"
+          >Learn more from the teams we've scaled</v-card-text
+        >
+        <v-row class="ma-4" no-gutters>
           <v-col cols="12" md="4">
               <v-dialog
-                v-model="benefex"
+                v-model="showing"
                 width="1000px"
                 class="overflow-hidden"
               >
                 <template v-slot:activator="{ on, attrs }">
-                <div class="circle pointer">
+                <div class="circle pointer my-8">
                   <v-img
                     src="../../public/images/benefex.png"
                     width="150"
@@ -198,7 +195,7 @@
               </v-dialog>
               </v-col>
               <v-col cols="12" md="4">
-              <div class="circle pointer">
+              <div class="circle pointer my-8">
                 <v-img
                   src="../../public/images/thirdSpace.png"
                   width="150"
@@ -215,7 +212,7 @@
                 class="overflow-hidden"
               >
                 <template v-slot:activator="{ on, attrs }">
-                <div class="circle pointer">
+                <div class="circle pointer my-8">
                   <v-img
                     src="../../public/images/vision-box.svg"
                     width="150"
@@ -288,10 +285,6 @@
               </v-dialog>
             </v-col>
           </v-row>
-          <v-card-text class="primary--text text-h5"
-            >Learn more from the teams we've scaled</v-card-text
-          >
-        </v-card>
       </v-col>
     </v-row>
     <v-row
@@ -305,8 +298,7 @@
       </v-col>
       <v-col cols="12" sm="7">
         <h2>
-          Partnering onsite with Series B and C stage startups to sustainably
-          scale product and tech teams.
+          Partnering on-site with Series B and C startups to sustainably scale product and tech teams.
         </h2>
       </v-col>
       <v-col cols="12" sm="5" class="text-right">
@@ -324,7 +316,7 @@
       <v-col cols="12">
         <v-card class="pa-8 my-2 white--text text-left card-shadow">
           <v-card-title class="headline font-weight-bold primary--text"
-            >Why choose search?</v-card-title
+            >Why On-site?</v-card-title
           >
           <v-card-text class="text-h6 primary--text"
             >Going through sustained growth phases is challenging. You need to start thinking about talent more strategically, whilst continuing to grow headcount month on month. Onsite provides you with the dedicated expertise that enables you to plan for the long term, alongside achieving your hiring goals in the short term.</v-card-text
@@ -334,7 +326,7 @@
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-cash-multiple</v-icon
               >
-              <h1>40% cost saving</h1>
+              <h1>40% saving</h1>
               <h3>compared to agency spend</h3>
             </v-col>
             <v-col cols="6" sm="3">
@@ -348,7 +340,7 @@
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-clock-check-outline</v-icon
               >
-              <h1>&gt; 20%</h1>
+              <h1>+20%</h1>
               <h3>improvement on time to hire</h3>
             </v-col>
             <v-col cols="6" sm="3">
@@ -367,12 +359,14 @@
         <ColorWideCard v-for="card in greenCards" :key="card" :card="card" />
       </v-col>
     </v-row>
-    <v-col cols="12" md="6" class="mt-8">
-      <v-text class="text-h4 font-weight-bold">Case studies.</v-text>
-      <v-card color="transparent" flat>
+    <v-col cols="12" md="12" class="mt-8">
+      <p class="text-h4 font-weight-bold">Case studies.</p>
+      <v-card-text class="primary--text text-h5"
+          >Learn more from the teams we've scaled</v-card-text
+        >
         <v-row class="ma-4">
           <v-col cols="12" md="4">
-            <div class="circle pointer">
+            <div class="circle pointer my-8">
               <v-img
                 src="../../public/images/curve.png"
                 width="150"
@@ -385,7 +379,7 @@
           <v-col cols="12" md="4">
             <v-dialog v-model="unmind" width="1000px" class="overflow-hidden">
               <template v-slot:activator="{ on, attrs }">
-                <div class="circle pointer">
+                <div class="circle pointer my-8">
                   <v-img
                     src="../../public/images/unmind.png"
                     class="circle"
@@ -466,7 +460,7 @@
                 class="overflow-hidden"
               >
               <template v-slot:activator="{ on, attrs }">
-              <div class="circle pointer">
+              <div class="circle pointer my-8">
                 <v-img
                   src="../../public/images/feedr.webp"
                   width="150"
@@ -482,10 +476,6 @@
           </v-dialog>
           </v-col>
         </v-row>
-        <v-card-text class="primary--text text-h5"
-          >Learn more from the teams we've scaled</v-card-text
-        >
-      </v-card>
     </v-col>
     <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
       <v-col cols="12">
@@ -602,7 +592,7 @@ export default {
       purpleCards: [
         {
           color: "accent",
-          accentColor: "secondary",
+          accentColor: "white",
           title: "Process.",
           tab1: "Brief workshop",
           tab2: "Headhunting",

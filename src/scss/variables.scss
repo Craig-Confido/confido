@@ -76,3 +76,26 @@ $material-light: (
 .br-15 {
   border-radius: 15px !important;
 }
+
+.underline {
+  border-bottom: 3px solid currentColor;
+}
+
+.quote {
+  position: relative;
+  &:before {
+    content: "“";
+    color: #FF65BD;
+    font-family: Times; 
+    font-size: 4em;
+  }
+  &:after {
+    content: "”";
+    padding-left: 8px;
+    color: #FF65BD;
+    position: absolute;
+    top: 100%;
+    font-family: Times; 
+    font-size: 4em;
+  }
+}

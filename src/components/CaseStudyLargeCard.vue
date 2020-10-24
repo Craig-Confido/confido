@@ -1,6 +1,6 @@
 /* eslint-disable */
 <template>
-  <v-card>
+  <v-card color="#f1f1ff">
     <v-img
       :src="`${card.image}`"
       height="200"

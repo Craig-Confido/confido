@@ -8,7 +8,7 @@
           class="d-flex d-md-none mx-md-16"
           alt="image of people"
         />
-        <v-col cols="12" sm="7">
+        <v-col cols="12" sm="6">
           <v-carousel
             cycle
             continuous
@@ -16,12 +16,12 @@
             light
             hide-delimiters
             :show-arrows="false"
-            height="400px"
+            height="300px"
           >
             <v-carousel-item v-for="title in titles" :key="title">
               <v-sheet color="transparent" class="px-8">
                 <v-row>
-                  <h1 class="display-2 font-weight-bold my-16 py-16">
+                  <h1 class="text-h4 font-weight-bold my-16 py-16">
                     <strong>{{ title.title }}</strong>
                   </h1>
                 </v-row>
@@ -30,7 +30,7 @@
           </v-carousel>
           <v-btn
             @click="$vuetify.goTo('#product')"
-            class="mt-16 mr-4 btn--outlined font-weight-bold"
+            class="mt-0 mr-4 btn--outlined font-weight-bold"
             outlined
             color="accent"
             rounded
@@ -40,7 +40,7 @@
           >
           <v-btn
             @click="$vuetify.goTo('#engineering')"
-            class="mt-16 mr-4 btn--outlined font-weight-bold"
+            class="mt-0 mr-4 btn--outlined font-weight-bold"
             outlined
             color="success"
             rounded
@@ -49,7 +49,8 @@
             >Tech</v-btn
           >
         </v-col>
-        <v-col cols="12" sm="5">
+        <v-spacer />
+        <v-col cols="12" sm="4">
           <v-img
             src="../../public/images/placeholder.svg"
             class="d-none d-md-flex mx-md-16"
@@ -59,7 +60,7 @@
       </v-row>
     </section>
     <v-row
-      class="mt-10 full-width-blue px-auto py-16 white--text"
+      class="mt-10 full-width-blue px-auto py-8 white--text"
       no-gutters
       style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);"
     >
@@ -74,15 +75,15 @@
       <v-icon class="text-h3 white--text mb-2"
           >mdi-account-group-outline</v-icon
         >
-        <h1>&lt; 3</h1>
+        <h1>Max. 3</h1>
         <h3>Candidates in process per role</h3>
       </v-col>
       <v-col cols="6" sm="3" class="px-4 px-md-none">
       <v-icon class="text-h3 white--text mb-2"
           >mdi-account-voice</v-icon
         >
-        <h1>&lt; 2</h1>
-        <h3>Weeks average Interview process</h3>
+        <h1>2 week</h1>
+        <h3>Average Interview process</h3>
       </v-col>
       <v-col cols="6" sm="3" class="px-4 px-md-none">
       <v-icon class="text-h3 white--text mb-2"
@@ -118,7 +119,7 @@
       <v-col cols="12">
         <v-card class="pa-8 my-2 white--text text-left card-shadow">
           <v-card-title class="headline font-weight-bold primary--text"
-            >Why work with us?</v-card-title
+            >Why work with Confido?</v-card-title
           >
           <v-card-text class="text-h6 primary--text"
             >We only represent startups that care about building their teams the right way. We ensure our clients are committed to making the right hires, with efficient interview processes, detailed feedback and 24-hour turnaround on decisions.</v-card-text

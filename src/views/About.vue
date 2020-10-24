@@ -2,25 +2,25 @@
 <template>
   <v-container fluid class="pa-0 ma-0">
     <section class="mx-4 mx-lg-16">
-      <v-row class="text-left mt-4 mt-md-16">
+      <v-row class="text-left mt-4 my-md-16">
         <v-img
           src="../../public/images/placeholder.svg"
           class="d-flex d-md-none mx-md-16"
           alt="image of people"
         />
-        <v-col cols="12" sm="7">
+        <v-col cols="12" sm="7" class="mt-md-16">
           <h1
-            class="display-1 mb-3 mt-3 font-weight-bold"
+            class="text-h3  text-md-h1 font-weight-bold"
             aria-label="Intro text"
           >
             The tech for good talent partner.
           </h1>
           <h2 class="text-h5 my-8">
             Confido's mission is to connect people with the same
-            <span class="success--text"> <strong>values</strong></span> and a
-            shared <span class="secondary--text"><strong>purpose</strong></span>
+            <span class="accent--text"> <strong>values</strong></span> and a
+            shared <span class="success--text"><strong>purpose</strong></span>
             to build a better future,
-            <span class="accent--text"> <strong>together</strong></span
+            <span class="secondary--text"> <strong>together</strong></span
             >.
           </h2>
           <v-row class="mt-12 mx-0">
@@ -56,69 +56,80 @@
       </v-row>
     </section>
     <v-row
-      class="mt-10 text-left full-width-green mx-auto px-6 px-md-16 py-16 white--text"
+      class="full-width-green mx-auto px-6 px-md-16 py-8 white--text"
       no-gutters
       style="box-shadow: 0px 0px 70px rgba(100, 181, 246, 0.55)"
     >
-      <v-col cols="12" sm="3">
-        <h1 class="mb-4">What we do.</h1>
-        <h3>
-          We scale Product and Tech teams for Seed to Series B startups building
-          tech for good products.
+      <v-col cols="12" md="4">
+        <h1 class="mb-4 text-left">What we do.</h1>
+        <h3 class="text-left" style="line-height: 2em">
+          Scale <span class="green--text text--accent-2">Product and Tech</span> teams <br />for <span class="green--text text--accent-2">Seed to Series B</span> startups <br />building <span class="green--text text--accent-2">tech for good</span> products.
         </h3>
       </v-col>
-      <v-col cols="12" sm="3" class="d-md-flex d-none"></v-col>
-      <v-col cols="6" sm="3" class="mt-8 mt-md-0">
+      <v-spacer />
+    <v-row class="my-auto text-center">
+      <v-col cols="12" md="3" class="mt-8 mt-md-0">
+        <v-icon class="white--text text-h3 mb-2">mdi-rocket-launch-outline</v-icon>
         <h2>
           20+
-          <v-icon class="white--text ml-4">mdi-rocket-launch-outline</v-icon>
         </h2>
         <h3>Startups scaled</h3>
-        <h2 class="mt-4">
+      </v-col>
+      <v-col cols="12" md="3" class="mt-8 mt-md-0">
+        <v-icon class="white--text text-h3 mb-2">mdi-clock-check-outline</v-icon>
+        <h2>
           &lt;4
-          <v-icon class="white--text ml-4">mdi-clock-check-outline</v-icon>
         </h2>
         <h3>Weeks to hire</h3>
       </v-col>
-      <v-col cols="6" sm="3" class="mt-8 mt-md-0">
+      <v-col cols="12" md="3" class="mt-8 mt-md-0">
+        <v-icon class="white--text text-h3 mb-2">mdi-account-group-outline</v-icon>
         <h2>
           70+
-          <v-icon class="white--text ml-4">mdi-account-group-outline</v-icon>
         </h2>
         <h3>Hires made</h3>
-        <h2 class="mt-4">
+      </v-col>
+      <v-col cols="12" md="3" class="mt-8 mt-md-0">
+        <v-icon class="white--text text-h3 mb-2">mdi-check-circle-outline</v-icon>
+        <h2>
           97.5%
-          <v-icon class="white--text ml-4">mdi-check-circle-outline</v-icon>
         </h2>
         <h3>Success rate</h3>
       </v-col>
+      </v-row>
     </v-row>
     <v-row class="mx-0 white--text" no-gutters>
       <v-carousel
         cycle
         continuous
-        class="mx-0 py-0"
+        class="mx-0"
         hide-delimiter-background
         light
-        :show-arrows="false"
+        :show-arrows-on-hover="true"
       >
         <v-carousel-item
           v-for="quote in quotes"
           :key="quote"
           class="px-0 mx-0 px-md-16 mx-md-16"
         >
-          <v-sheet color="transparent" height="100%" class="px-0 px-md-16">
+          <v-sheet color="transparent" height="100%" class="px-0 px-md-16 py-auto">
             <v-row
-              class="fill-height px-4 mx-0 mx-md-6 mx-lg-16"
+              class="fill-height px-4 px-0 mx-6 mx-lg-16"
               align="center"
               justify="center"
             >
-              <v-text class="headline text--primary">
-                <strong>{{ quote.content }}</strong>
+              <v-text>
+                <p class="text-h6 text-md-h5 mt-md-16 mb-0 pb-0 text--primary">
+                  <strong class="quote">
+                    {{ quote.content }}
+                  </strong>
+                </p>
+                <p class="text-h5 mt-12 mb-8 secondary--text">
+                  <strong>
+                  {{ quote.advocate }}
+                  </strong>
+                </p>
               </v-text>
-              <v-text class="text-h5 mb-8 secondary--text"
-                ><strong>{{ quote.advocate }}</strong></v-text
-              >
             </v-row>
           </v-sheet>
         </v-carousel-item>
@@ -127,6 +138,28 @@
     <v-row class="mx-0 mx-md-6 mx-lg-16">
       <v-col cols="12">
         <Logos :logo="logo" />
+    <v-row class="mx-auto justify-center">
+      <v-btn
+        to="/startups"
+        class="ma-2 px-6 btn--outlined font-weight-black"
+        outlined
+        color="accent"
+        rounded
+        width="auto"
+        height="50"
+        >Scale your team</v-btn
+      >
+      <v-btn
+        to="/talent"
+        class="ma-2 px-6 btn--outlined font-weight-black"
+        outlined
+        color="success"
+        rounded
+        width="auto"
+        height="50"
+        >Join a startup</v-btn
+      >
+    </v-row>
       </v-col>
     </v-row>
     <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
@@ -143,7 +176,7 @@
           <v-card-title class="headline font-weight-bold"
             >We are Confido.</v-card-title
           >
-          <v-card-text class="text-h6 mb-14 white--text">
+          <v-card-text class="text-h6 white--text">
             <p>
               <v-icon class="mr-4 white--text">mdi-head-check-outline</v-icon>
               Your advisor, mentor and friend.
@@ -162,16 +195,6 @@
               Helping to build a better future, together.
             </p>
           </v-card-text>
-          <v-card-actions>
-            <v-btn
-              class="font-weight-bold px-4 mx-auto primary--text"
-              elevation="0"
-              color="white"
-              rounded
-              to="/startups"
-              >Scale your team</v-btn
-            >
-          </v-card-actions>
         </v-card>
       </v-col>
       <v-col cols="12" md="6">
@@ -182,7 +205,7 @@
           <v-card-title class="headline font-weight-bold"
             >We are your confidant.</v-card-title
           >
-          <v-card-text class="text-h6 mb-14 white--text">
+          <v-card-text class="text-h6 white--text">
             <p>
               <v-icon class="mr-4 white--text"
                 >mdi-chart-bell-curve-cumulative</v-icon
@@ -210,16 +233,6 @@
               Champion values and mindset over skill.
             </p>
           </v-card-text>
-          <v-card-actions>
-            <v-btn
-              class="font-weight-bold px-4 mx-auto primary--text"
-              elevation="0"
-              color="white"
-              rounded
-              to="/talent"
-              >Accellerate your career</v-btn
-            >
-          </v-card-actions>
         </v-card>
       </v-col>
     </v-row>

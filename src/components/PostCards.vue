@@ -1,7 +1,5 @@
 /* eslint-disable */
 <template>
-  <!--<v-card :to="`hub/posts/${post.slug}`" rel="noreferrer" hover class="text-left card-shadow">-->
-  <!--<router-link :to="'/hub/posts/' + post.slug" style="text-decoration: none">-->
   <v-card :to="`/hub/post/${post.slug}`" hover class="text-left card-shadow">
     <v-img :src="post.metadata.hero.imgix_url" height="240" />
     <h1 class="title mt-4 mb-2 mx-4 px-4" color="primary--text">

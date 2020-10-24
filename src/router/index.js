@@ -31,6 +31,12 @@ const routes = [
     component: () => import('../views/PostView.vue')
   },
   {
+    path: '/hub/featured/:slug',
+    name: 'FeaturedPostView',
+    props: true,
+    component: () => import('../views/FeaturedPostView.vue')
+  },
+  {
     path: '/privacy',
     name: 'Privacy',
     component: () => import('../views/Privacy.vue')
