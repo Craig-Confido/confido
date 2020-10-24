@@ -8,7 +8,7 @@
     <v-row class="mx-4 my-4 d-none d-md-flex">
       <v-dialog
         v-model="benefex"
-        width="2000px"
+        width="1000px"
         class="overflow-hidden"
       >
         <template v-slot:activator="{ on, attrs }">
@@ -73,7 +73,7 @@
       />
     <v-dialog
       v-model="houseKeep"
-      width="2000px"
+      width="1000px"
       class="overflow-hidden"
     >
       <template v-slot:activator="{ on, attrs }">
@@ -118,7 +118,7 @@
       <v-col cols="6">
         <v-dialog
         v-model="benefex"
-        width="2000px"
+        width="1000px"
         class="overflow-hidden"
       >
         <template v-slot:activator="{ on, attrs }">
@@ -153,7 +153,7 @@
         />
         <v-dialog
       v-model="benefex"
-      width="2000px"
+      width="1000px"
       class="overflow-hidden"
     >
       <template v-slot:activator="{ on, attrs }">
@@ -237,54 +237,54 @@ export default {
         {
           tech: true,
           product: true,
-          image: "../images/benefex.png",
+          image: "../images/benefex-white.png",
           title: "Benefex build workplace tech that transforms the employee experience, and focuses on improving employee wellbeing.",
           subtitle: "Hires made by Confido",
           boxOneTitle: "Tech",
           boxOneTextOne: "Java Engineer",
           boxOneTextTwo: "Frontend Engineer",
           boxOneTextThree: "Go Backend Engineer",
-          boxOneTextFour: "VP of Engineering",
-          boxOneTextFive: "2x QA Automation Engineers",
-          boxOneTextSix: "2x Platform / iOS-Mobile Lead",
+          boxOneTextFour: "QA Lead Engineer",
+          boxOneTextFive: "VP of Engineering",
+          boxOneTextSix: "2x QA Automation Engineers",
+          boxOneTextSeven: "2x Platform / iOS-Mobile Lead",
           boxTwoTitle: "Product",
           boxTwoTextOne: "QA Lead",
           boxTwoTextTwo: "UX Design Lead",
           boxTwoTextThree: "Product Designer",
+          boxTwoTextFour: "Product Manager",
           quote: "Confido have partnered with us in the truest sense. Craig and his team have taken the time to get a deep understanding of our culture and vision for the future of Benefex, helping us grow our Product Engineering tribe more in the last six months than we achieved with others over the previous twelve.",
           person: "Paul Smith – CTO, Benefex",
-          icon1: "mdi-account-group-outline",
+          hiresMade: "14",
+          icon1: "mdi-account-group",
           label1: "12 key new hires",
-          icon2: "mdi-clock-check-outline",
+          icon2: "mdi-clock-check",
           label2: "Hire time reduced from 12+ weeks to 4-6",
-          icon3: "mdi-check-circle-outline",
-          label3: "100% success rate across all hires",
+          icon3: "mdi-charity",
+          label3: "Built out leadership team",
+          icon4: "mdi-check-circle",
+          label4: "100% success rate across all hires",
         },
         {
           tech: true,
           product: false,
-          image: "../images/houseKeep.png",
+          image: "../images/houseKeep-white.png",
           title: "Housekeep is a B2C marketplace connecting business and  home owners with trusted cleaners.",
           subtitle: "Hires made by Confido",
           boxOneTitle: "Tech",
           boxOneTextOne: "Frontend Developer",
           boxOneTextTwo: "Senior Backend Developer",
-          boxOneTextThree: "",
-          boxOneTextFour: "",
-          boxOneTextFive: "",
-          boxOneTextSix: "",
-          boxTwoTitle: "",
-          boxTwoTextOne: "",
-          boxTwoTextTwo: "",
-          boxTwoTextThree: "",
           quote: "Craig and his team quickly understood the profile we were looking for in terms of technology, seniority and, crucially, culture. They were able to go beyond this by advising on how to communicate our brand and the opportunity to the market, and build out an efficient process to attract the top tier candidates we wanted.",
           person: "Avin Rabheru – CEO, Housekeep",
-          icon1: "mdi-rocket-launch-outline",
-          label1: "First dedicated frontend hire",
-          icon2: "mdi-account-group-outline",
-          label2: "Each hire made from shortlist of 3 candidates",
-          icon3: "mdi-check-circle-outline",
+          hiresMade: "2",
+          icon1: "mdi-account-group-outline",
+          label1: "Each hire made from shortlist of 3 candidates",
+          icon2: "mdi-rocket-launch-outline",
+          label2: "First dedicated frontend hire",
+          icon3: "mdi-percent",
           label3: "100% submittal to interview ratio",
+          icon4: "mdi-check-circle-outline",
+          label4: "100% success rate across all hires",
         }
       ],
     }

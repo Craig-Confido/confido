@@ -1,6 +1,17 @@
 <template>
   <v-row class="mx-4 mx-lg-16">
     <v-col cols="12" md="12">
+      <v-row class="text-left">
+        <v-btn 
+            text
+            @click="$router.go(-1)" 
+          >
+          <v-icon class="mr-2">
+            mdi-arrow-left
+          </v-icon>
+          Back to all posts
+        </v-btn>
+      </v-row>
       <Featured :featuredposts="featuredposts" />
     </v-col>
   </v-row>

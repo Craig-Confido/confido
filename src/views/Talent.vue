@@ -341,7 +341,7 @@
         class="mx-0 py-0"
         hide-delimiter-background
         light
-        :show-arrows="false"
+        :show-arrows-on-hover="true"
       >
         <v-carousel-item
           v-for="quote in quotes"
@@ -354,12 +354,18 @@
               align="center"
               justify="center"
             >
-              <v-text class="headline text--primary">
-                <strong>{{ quote.content }}</strong>
+            <v-text>
+                <p class="text-h6 text-md-h5 mt-md-16 mb-0 pb-0 text--primary">
+                  <strong class="quote">
+                    {{ quote.content }}
+                  </strong>
+                </p>
+                <p class="text-h5 mt-12 mb-8 secondary--text">
+                  <strong>
+                  {{ quote.advocate }}
+                  </strong>
+                </p>
               </v-text>
-              <v-text class="text-h5 mb-8 secondary--text"
-                ><strong>{{ quote.advocate }}</strong></v-text
-              >
             </v-row>
           </v-sheet>
         </v-carousel-item>
