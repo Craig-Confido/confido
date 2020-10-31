@@ -2,15 +2,15 @@
 <template>
   <v-container fluid class="pa-0 ma-0">
     <section class="mx-4 mx-lg-16">
-      <v-row class="text-left mt-4 my-md-16">
+      <v-row class="text-left mt-4">
         <v-img
           src="../../public/images/placeholder.svg"
           class="d-flex d-md-none mx-md-16"
           alt="image of people"
         />
-        <v-col cols="12" sm="7" class="mt-md-16">
+        <v-col cols="12" sm="5" class="mt-md-16">
           <h1
-            class="text-h3  text-md-h1 font-weight-bold"
+            class="text-h3  text-md-h2 font-weight-bold"
             aria-label="Intro text"
           >
             The tech for good talent partner.
@@ -46,7 +46,8 @@
             >
           </v-row>
         </v-col>
-        <v-col cols="12" sm="5">
+        <v-spacer />
+        <v-col cols="12" sm="4">
           <v-img
             src="../../public/images/placeholder.svg"
             class="d-none d-md-flex mx-md-16"
@@ -56,7 +57,7 @@
       </v-row>
     </section>
     <v-row
-      class="full-width-green mx-auto px-6 px-md-16 py-8 white--text"
+      class="full-width-green mt-10 mx-auto px-6 px-md-16 py-8 mb-0 white--text"
       no-gutters
       style="box-shadow: 0px 0px 70px rgba(100, 181, 246, 0.55)"
     >
@@ -69,36 +70,36 @@
       <v-spacer />
     <v-row class="my-auto text-center">
       <v-col cols="12" md="3" class="mt-8 mt-md-0">
-        <v-icon class="white--text text-h3 mb-2">mdi-rocket-launch-outline</v-icon>
-        <h2>
+        <v-icon class="white--text text-h2 mb-2">mdi-rocket-launch-outline</v-icon>
+        <h1>
           20+
-        </h2>
+        </h1>
         <h3>Startups scaled</h3>
       </v-col>
       <v-col cols="12" md="3" class="mt-8 mt-md-0">
-        <v-icon class="white--text text-h3 mb-2">mdi-clock-check-outline</v-icon>
-        <h2>
-          &lt;4
-        </h2>
-        <h3>Weeks to hire</h3>
+        <v-icon class="white--text text-h2 mb-2">mdi-clock-check-outline</v-icon>
+        <h1>
+          4 weeks
+        </h1>
+        <h3>Average to hire</h3>
       </v-col>
       <v-col cols="12" md="3" class="mt-8 mt-md-0">
-        <v-icon class="white--text text-h3 mb-2">mdi-account-group-outline</v-icon>
-        <h2>
+        <v-icon class="white--text text-h2 mb-2">mdi-account-group-outline</v-icon>
+        <h1>
           70+
-        </h2>
+        </h1>
         <h3>Hires made</h3>
       </v-col>
       <v-col cols="12" md="3" class="mt-8 mt-md-0">
-        <v-icon class="white--text text-h3 mb-2">mdi-check-circle-outline</v-icon>
-        <h2>
+        <v-icon class="white--text text-h2 mb-2">mdi-check-circle-outline</v-icon>
+        <h1>
           97.5%
-        </h2>
+        </h1>
         <h3>Success rate</h3>
       </v-col>
       </v-row>
     </v-row>
-    <v-row class="mx-0 white--text" no-gutters>
+    <v-row class="mx-0 mt-0 white--text" no-gutters>
       <v-carousel
         cycle
         continuous
@@ -293,7 +294,7 @@ export default {
         {
           content:
             "It's a pleasure working with Confido. Simply put, they deliver. Confido have sourced universally high-quality candidates, then worked seamlessly with us to manage a candidate-centred interview process and close offers. Highly recommended.",
-          advocate: "Sam Stagg - CTO, TSL"
+          advocate: "Sam Stagg - CTO, Three Stage Learning"
         },
         {
           content:
