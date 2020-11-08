@@ -15,11 +15,13 @@
         eager
       />
     </v-col>
-    <v-col cols="12" md="9">
+    <v-col cols="12" md="8">
       <h2 class="text-h6 mx-0 mx-md-6 mx-lg-16 white--text">{{ card.title }}</h2>
-          <!-- <div class="text-center">
-            <v-btn class="btn--outlined font-weight-bold px-8 py-4 my-8" outlined rounded color="white" @click="card.dialog = false">Close</v-btn>
-          </div> -->
+    </v-col>
+    <v-col cols="1">
+    <div class="mt-2">
+      <v-icon large color="white" @click="$router.go()">mdi-close-circle-outline</v-icon>
+    </div>
     </v-col>
   </v-row>
   </div>
