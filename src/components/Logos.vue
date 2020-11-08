@@ -403,6 +403,7 @@ export default {
     return {
       cards: [
         {
+          dialog: false,
           tech: true,
           product: false,
           image: "../images/benefex-white.png",
@@ -642,6 +643,11 @@ export default {
         }
       ],
     }
+  },
+  methods: {
+      close() {
+        this.$emit('close');
+      }            
   }
 };
 </script>

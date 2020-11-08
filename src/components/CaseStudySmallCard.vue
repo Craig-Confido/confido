@@ -1,6 +1,7 @@
 /* eslint-disable */
 <template>
   <v-card
+    v-model="card.dialog"
     color="#f1f1ff"
     class=" text-left card-shadow"
   >
@@ -17,7 +18,7 @@
     <v-col cols="12" md="9">
       <h2 class="text-h6 mx-0 mx-md-6 mx-lg-16 white--text">{{ card.title }}</h2>
           <!-- <div class="text-center">
-            <v-btn class="btn--outlined font-weight-bold px-8 py-4 my-8" outlined rounded color="white" >Back</v-btn>
+            <v-btn class="btn--outlined font-weight-bold px-8 py-4 my-8" outlined rounded color="white" @click="card.dialog = false">Close</v-btn>
           </div> -->
     </v-col>
   </v-row>

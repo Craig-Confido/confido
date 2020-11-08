@@ -75,13 +75,13 @@
           >mdi-clock-outline</v-icon
         >
         <h1>2 week</h1>
-        <h3>Average Interview process</h3>
+        <h3>Average interview process</h3>
       </v-col>
       <v-col cols="6" sm="3" class="px-4 px-md-none">
       <v-icon class="text-h2 white--text mb-2"
           >mdi-check-circle-outline</v-icon
         >
-        <h1>97.5%</h1>
+        <h1>98%</h1>
         <h3>Success rate</h3>
       </v-col>
     </v-row>
@@ -142,7 +142,7 @@
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-account-voice</v-icon
               >
-              <h1>Candidate feedback</h1>
+              <h1>Feedback</h1>
               <h3>guaranteed</h3>
             </v-col>
           </v-row>
@@ -581,59 +581,8 @@ export default {
           text3: "Out interview processes have a maximum of three stages that will be completed within two weeks, with detailed interview feedback.",
           text4: "We'll support you from offer to onboarding to ensure a seamless start with your new employer.",
         }
-      ],
-      status: null,
-        name: null,
-        email: null,
-        message: null,
-        title: null,
-        valid: false,
-        nameRules: [
-            (v) => !!v || "Name is required",
-            (v) => v.length >= 3 || "Name must be at least than three characters",
-        ],
-        emailRules: [
-            (v) => !!v || "E-mail is required",
-            (v) => /.+@.+/.test(v) || "E-mail must be valid",
-        ],
-        messageRules: [
-            (v) => !!v || "Message is required",
-            (v) => v.length <= 1000 || "Message must be less than 1000 characters",
-        ],
+      ]
     };
   },
-  methods: {
-    sendForm: function (event) {
-        event.preventDefault();
-
-        fetch("https://formcarry.com/s/R9fKjLvH_g6E", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json",
-                },
-                body: JSON.stringify({
-                    Name: this.name,
-                    Email: this.email,
-                    Role: this.title,
-                    Message: this.message,
-                }),
-            })
-            .then((response) => response.json())
-            .then((response) => {
-                if (response.code === 200) {
-                    this.status = "success";
-                } else {
-                    // Formcarry error
-                    this.status = "error";
-                }
-            })
-            // network error
-            .catch(() => (this.status = "error"));
-    },
-    reset() {
-        this.$refs.form.reset();
-    },
-  }
 };
 </script>

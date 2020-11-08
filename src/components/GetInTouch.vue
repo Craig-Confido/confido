@@ -1,6 +1,6 @@
 /* eslint-disable */
 <template>
-<v-card class="pa-8 my-2 white--text text-left card-shadow" style="border: 4px solid #3EC1B9">
+<v-card class="pa-8 my-2 white--text text-left card-shadow">
   <v-row>
     <v-col cols="12">
       <v-card-title class="headline font-weight-bold primary--text" v-if="!status">Contact us.</v-card-title>
@@ -24,15 +24,19 @@
           </v-col>
         </v-row>
         <v-card-actions>
-          <v-btn v-if="!valid || null " disabled type="submit" class="btn--outlined font-weight-bold mx-auto px-8 py-0" outlined color="gray" rounded>
-            Send
-          </v-btn>
-          <v-btn v-else type="submit" class="btn--outlined font-weight-bold mx-auto px-8 py-0" outlined color="secondary" rounded>
-            Send
-          </v-btn>
-          <v-btn @click="reset" class="btn--outlined font-weight-bold mx-auto px-8 py-0" outlined color="primary" rounded>
-            Reset
-          </v-btn>
+            <v-spacer />
+                <v-col cols="12" class="mx-auto text-center">
+                    <v-btn v-if="!valid || null " disabled type="submit" class="btn--outlined font-weight-bold mx-2 px-8 py-0" outlined color="gray" rounded>
+                        Send
+                    </v-btn>
+                    <v-btn v-else type="submit" class="btn--outlined font-weight-bold mx-2 px-8 py-0" outlined color="secondary" rounded>
+                        Send
+                    </v-btn>
+                    <v-btn @click="reset" class="btn--outlined font-weight-bold mx-2 px-8 py-0" outlined color="primary" rounded>
+                        Reset
+                    </v-btn>
+                </v-col>
+            <v-spacer />
         </v-card-actions>
       </v-form>
       <h2 v-if="status === 'success'" class="primary--text mx-auto my-4">

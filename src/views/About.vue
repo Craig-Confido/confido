@@ -92,7 +92,7 @@
       <v-col cols="12" md="3" class="mt-8 mt-md-0">
         <v-icon class="white--text text-h2 mb-2">mdi-check-circle-outline</v-icon>
         <h1>
-          97.5%
+          98%
         </h1>
         <h3>Success rate</h3>
       </v-col>
@@ -203,7 +203,7 @@
           class="pa-8 my-2 white--text text-left card-shadow"
         >
           <v-card-title class="headline font-weight-bold"
-            >We are your confidant.</v-card-title
+            >Our values.</v-card-title
           >
           <v-card-text class="text-h6 white--text">
             <p>

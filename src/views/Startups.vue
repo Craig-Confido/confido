@@ -13,10 +13,10 @@
             class="text-h3  text-md-h2 font-weight-bold"
             aria-label="Intro text"
           >
-            Need a talent partner who truly understands startups?
+            Finally, a talent partner who truly understands startups.
           </h1>
           <h2 class="text-h5 my-8">
-            Whether you're making a critical hire, building a core squad or scaling up teams, we're here for you.
+            Whether you're making a critical hire, building a core team or scaling up squads, we're here for you.
           </h2>
         <v-row class="mt-12 mx-0">
           <v-btn
@@ -88,7 +88,7 @@
           >mdi-check-circle-outline</v-icon
         >
         <h1>
-          97.5%
+          98%
         </h1>
         <h3>Success rate</h3>
       </v-col>
@@ -168,7 +168,7 @@
     <v-col cols="12" md="12" class="mt-8">
       <p class="text-h4 font-weight-bold">Case studies.</p>
       <v-card-text class="primary--text text-h5"
-          >Learn more from the teams we've scaled</v-card-text
+          >Learn more from the teams we've built</v-card-text
         >
         <v-row class="ma-4 mx-md-auto">
           <v-spacer />
@@ -253,7 +253,7 @@
       </v-col>
       <v-col cols="12" sm="7">
         <h2>
-          Partnering onsite with Series B and C startups to sustainably scale product and tech teams.
+          Partnering with Series B and C startups to enable sustainable long-term scaling of product and tech teams.
         </h2>
       </v-col>
       <v-col cols="12" sm="5" class="text-right">
@@ -274,7 +274,7 @@
             >Why Onsite?</v-card-title
           >
           <v-card-text class="text-h6 primary--text"
-            >Going through sustained growth phases is challenging. You need to start thinking about talent more strategically, whilst continuing to grow headcount month on month. Onsite provides you with the dedicated expertise that enables you to plan for the long term, alongside achieving your hiring goals in the short term.</v-card-text
+            >Going from 50 hires to 100, to 200 and above is tough. You need to start thinking about talent more strategically, whilst continuing to grow headcount each month. Onsite provides you with the expertise you need to plan for the long term, alongside hitting your hiring goals in the short and medium term.</v-card-text
           >
           <v-row class="primary--text mx-auto text-center mt-4">
             <v-col cols="6" sm="3">
@@ -288,7 +288,7 @@
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-finance</v-icon
               >
-              <h1>3x acceleration</h1>
+              <h1>3x increase</h1>
               <h3>in hiring velocity</h3>
             </v-col>
             <v-col cols="6" sm="3">
@@ -302,7 +302,7 @@
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-account-group</v-icon
               >
-              <h1>Increased</h1>
+              <h1>Improved</h1>
               <h3>team diversity</h3>
             </v-col>
           </v-row>
@@ -317,7 +317,7 @@
     <v-col cols="12" md="12" class="mt-8">
       <p class="text-h4 font-weight-bold">Case studies.</p>
       <v-card-text class="primary--text text-h5"
-          >Learn more from the teams we've scaled</v-card-text
+          >Learn more from the teams we've scaled.</v-card-text
         >
         <v-row class="ma-4 mx-md-auto">
           <v-spacer />
@@ -629,8 +629,8 @@ export default {
           icon2: "mdi-magnify",
           icon3: "mdi-account-clock",
           icon4: "mdi-account-group",
-          text1: "To kick things off, we'll spend two to three hours with your Senior team to identify what truly makes you unique. We'll then go to market as an extension of your brand to attract the best candidates for you.",
-          text2: "While most recruiters focus on the active 10% of the candidate market, we’ll open up the hidden 90% for you. We take a structured approach to breaking down the local market based on your hiring needs, which allows us to unearth talent that’s harder to find.",
+          text1: "We'll spend 2-3 hours with your team to truly understand what makes you unique. This allows us to go to market as an extension of your brand and attract the top talent.",
+          text2: "While most recruiters focus on the active 10% of the candidate market, we’ll open up the hidden 90% for you. We take a structured approach to breaking down the local market based on your hiring needs, which allows us to unearth the hardest to find talent.",
           text3: "We’ll provide you with a shortlist of our top three candidates to interview. We focus on a streamlined interview process that can be completed within two weeks. As well as assessing the candidates, we’ll also showcase the benefits of working for you.",
           text4: "Once you’ve selected your new starter, we’ll work with you both to ensure the onboarding process is as seamless as possible. This includes handling offer negotiation, notice periods, onboarding and integration with the team.",
         }
@@ -654,58 +654,7 @@ export default {
           text4: "Our team will conduct regular evaluations and data analysis to drive further improvements.",
         }
       ],
-      status: null,
-        name: null,
-        email: null,
-        message: null,
-        title: null,
-        valid: false,
-        nameRules: [
-            (v) => !!v || "Name is required",
-            (v) => v.length >= 3 || "Name must be at least than three characters",
-        ],
-        emailRules: [
-            (v) => !!v || "E-mail is required",
-            (v) => /.+@.+/.test(v) || "E-mail must be valid",
-        ],
-        messageRules: [
-            (v) => !!v || "Message is required",
-            (v) => v.length <= 1000 || "Message must be less than 1000 characters",
-        ],
     };
   },
-  methods: {
-    sendForm: function (event) {
-        event.preventDefault();
-
-        fetch("https://formcarry.com/s/R9fKjLvH_g6E", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    Accept: "application/json",
-                },
-                body: JSON.stringify({
-                    Name: this.name,
-                    Email: this.email,
-                    Role: this.title,
-                    Message: this.message,
-                }),
-            })
-            .then((response) => response.json())
-            .then((response) => {
-                if (response.code === 200) {
-                    this.status = "success";
-                } else {
-                    // Formcarry error
-                    this.status = "error";
-                }
-            })
-            // network error
-            .catch(() => (this.status = "error"));
-    },
-    reset() {
-        this.$refs.form.reset();
-    },
-  }
 };
 </script>
