@@ -6,9 +6,22 @@
       {{ post.title }}
     </h1>
     <div class="mx-4 ml-4 px-4">
-      <v-chip class="tag px-4 py-2" color="secondary">
-        <strong>{{ post.metadata.tag }}</strong>
-      </v-chip>
+      <v-row class="text-left">
+      <v-col cols="3">
+        <v-chip class="tag px-4" color="secondary">
+          <strong>{{ post.metadata.tag }}</strong>
+        </v-chip>
+      </v-col>
+      <v-col cols="3">
+        <p class="mt-1 caption">{{ post.metadata.publicationdate }}</p>
+      </v-col>
+      <v-col cols="3">
+        <p class="mt-1 caption">{{ post.metadata.author }}</p>
+      </v-col>
+      <v-col cols="3">
+        <p class="mt-1 caption">{{ post.metadata.readtime }}</p>
+      </v-col>
+    </v-row>
     </div>
     <v-card-text
       color="primary--text"

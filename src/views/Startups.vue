@@ -4,11 +4,11 @@
     <section class="mx-4 mx-lg-16">
       <v-row class="text-left mt-4">
         <v-img
-          src="../../public/images/placeholder.svg"
+          src="../../public/images/startupsVisual.png"
           class="d-flex d-md-none mx-md-16"
           alt="image of people"
         />
-        <v-col cols="12" sm="8" class="mt-md-16">
+        <v-col cols="12" sm="7" class="mt-md-16">
           <h1
             class="text-h3  text-md-h2 font-weight-bold"
             aria-label="Intro text"
@@ -42,9 +42,9 @@
           </v-row>
         </v-col>
         <v-spacer />
-        <v-col cols="12" sm="4">
+        <v-col cols="12" sm="5">
           <v-img
-            src="../../public/images/placeholder.svg"
+            src="../../public/images/startupsVisual.png"
             class="d-none d-md-flex mx-md-16"
             alt="image of people"
           />
@@ -166,12 +166,13 @@
       </v-col>
     </v-row>
     <v-col cols="12" md="12" class="mt-8">
-       <p class="text-h4 font-weight-bold">Case studies.</p>
+      <p class="text-h4 font-weight-bold">Case studies.</p>
       <v-card-text class="primary--text text-h5"
           >Learn more from the teams we've scaled</v-card-text
         >
-        <v-row class="ma-4" no-gutters>
-          <v-col cols="12" md="4">
+        <v-row class="ma-4 mx-md-auto">
+          <v-spacer />
+          <v-col cols="12" md="2">
               <v-dialog
                 v-model="benefex"
                 width="1000px"
@@ -193,7 +194,7 @@
                   <CaseStudyLargeCard v-for="card in caseStudyCards.slice(0,1)" :key="card" :card="card" />
               </v-dialog>
               </v-col>
-              <v-col cols="12" md="4">
+              <v-col cols="12" md="2">
               <v-dialog
               v-model="thirdSpace"
               width="1000px"
@@ -215,7 +216,7 @@
                   <CaseStudyLargeCard v-for="card in caseStudyCards.slice(1,2)" :key="card" :card="card" />
               </v-dialog>
               </v-col>
-              <v-col cols="12" md="4">
+              <v-col cols="12" md="2">
               <v-dialog
                 v-model="visionbox"
                 width="1000px"
@@ -237,6 +238,7 @@
                   <CaseStudyLargeCard v-for="card in caseStudyCards.slice(2,3)" :key="card" :card="card" />
               </v-dialog>
             </v-col>
+            <v-spacer />
           </v-row>
       </v-col>
     </v-row>
@@ -317,8 +319,9 @@
       <v-card-text class="primary--text text-h5"
           >Learn more from the teams we've scaled</v-card-text
         >
-        <v-row class="ma-4">
-          <v-col cols="12" md="4">
+        <v-row class="ma-4 mx-md-auto">
+          <v-spacer />
+          <v-col cols="12" md="2">
             <v-dialog
               v-model="curve"
               width="1000px"
@@ -340,7 +343,7 @@
                 <CaseStudyLargeCard v-for="card in caseStudyCards.slice(3,4)" :key="card" :card="card" />
             </v-dialog>
           </v-col>
-          <v-col cols="12" md="4">
+          <v-col cols="12" md="2">
             <v-dialog v-model="unmind" width="1000px" class="overflow-hidden">
               <template v-slot:activator="{ on, attrs }">
                 <div class="circle pointer my-8">
@@ -358,8 +361,8 @@
               <CaseStudyLargeCard v-for="card in caseStudyCards.slice(4,5)" :key="card" :card="card" />
           </v-dialog>
           </v-col>
-          <v-col cols="12" md="4">
-             <v-dialog
+          <v-col cols="12" md="2">
+            <v-dialog
                 v-model="feedr"
                 width="1000px"
                 class="overflow-hidden"
@@ -380,15 +383,10 @@
               <CaseStudyLargeCard v-for="card in caseStudyCards.slice(5,6)" :key="card" :card="card" />
           </v-dialog>
           </v-col>
+          <v-spacer />
         </v-row>
     </v-col>
-    <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
-      <v-col cols="12">
-        <h1>Get in touch.</h1>
-        <h2>We'd love to hear from you</h2>
-      </v-col>
-    </v-row>
-    <v-row class="mx-0 mx-md-6 mx-lg-16">
+    <v-row class="mx-0 mx-md-6 mx-lg-16 mb-12">
       <v-col cols="12">
         <GetInTouch :contact="contact" />
       </v-col>
@@ -656,7 +654,58 @@ export default {
           text4: "Our team will conduct regular evaluations and data analysis to drive further improvements.",
         }
       ],
+      status: null,
+        name: null,
+        email: null,
+        message: null,
+        title: null,
+        valid: false,
+        nameRules: [
+            (v) => !!v || "Name is required",
+            (v) => v.length >= 3 || "Name must be at least than three characters",
+        ],
+        emailRules: [
+            (v) => !!v || "E-mail is required",
+            (v) => /.+@.+/.test(v) || "E-mail must be valid",
+        ],
+        messageRules: [
+            (v) => !!v || "Message is required",
+            (v) => v.length <= 1000 || "Message must be less than 1000 characters",
+        ],
     };
+  },
+  methods: {
+    sendForm: function (event) {
+        event.preventDefault();
+
+        fetch("https://formcarry.com/s/R9fKjLvH_g6E", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    Name: this.name,
+                    Email: this.email,
+                    Role: this.title,
+                    Message: this.message,
+                }),
+            })
+            .then((response) => response.json())
+            .then((response) => {
+                if (response.code === 200) {
+                    this.status = "success";
+                } else {
+                    // Formcarry error
+                    this.status = "error";
+                }
+            })
+            // network error
+            .catch(() => (this.status = "error"));
+    },
+    reset() {
+        this.$refs.form.reset();
+    },
   }
 };
 </script>

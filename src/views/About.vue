@@ -4,11 +4,11 @@
     <section class="mx-4 mx-lg-16">
       <v-row class="text-left mt-4">
         <v-img
-          src="../../public/images/placeholder.svg"
+          src="../../public/images/homeVisual.png"
           class="d-flex d-md-none mx-md-16"
           alt="image of people"
         />
-        <v-col cols="12" sm="5" class="mt-md-16">
+        <v-col cols="12" sm="7" class="mt-md-16">
           <h1
             class="text-h3  text-md-h2 font-weight-bold"
             aria-label="Intro text"
@@ -47,9 +47,9 @@
           </v-row>
         </v-col>
         <v-spacer />
-        <v-col cols="12" sm="4">
+        <v-col cols="12" sm="5">
           <v-img
-            src="../../public/images/placeholder.svg"
+            src="../../public/images/homeVisual.png"
             class="d-none d-md-flex mx-md-16"
             alt="image of people"
           />
@@ -64,10 +64,9 @@
       <v-col cols="12" md="4">
         <h1 class="mb-4 text-left">What we do.</h1>
         <h3 class="text-left" style="line-height: 2em">
-          Scale <span class="green--text text--accent-2">Product and Tech</span> teams <br />for <span class="green--text text--accent-2">Seed to Series B</span> startups <br />building <span class="green--text text--accent-2">tech for good</span> products.
+          Scale <span class="text-h5 font-weight-bold">Product and Tech</span> teams <br />for <span class="text-h5 font-weight-bold">Seed to Series B</span> startups <br />building <span class="text-h5 font-weight-bold">tech for good</span> products.
         </h3>
       </v-col>
-      <v-spacer />
     <v-row class="my-auto text-center">
       <v-col cols="12" md="3" class="mt-8 mt-md-0">
         <v-icon class="white--text text-h2 mb-2">mdi-rocket-launch-outline</v-icon>
@@ -142,22 +141,22 @@
     <v-row class="mx-auto justify-center">
       <v-btn
         to="/startups"
-        class="ma-2 px-6 btn--outlined font-weight-black"
+        class="mx-12 px-6 btn--outlined font-weight-black"
         outlined
         color="accent"
         rounded
-        width="auto"
-        height="50"
+        width="250"
+        height="60"
         >Scale your team</v-btn
       >
       <v-btn
         to="/talent"
-        class="ma-2 px-6 btn--outlined font-weight-black"
+        class="mx-12 px-6 btn--outlined font-weight-black"
         outlined
         color="success"
         rounded
-        width="auto"
-        height="50"
+        width="250"
+        height="60"
         >Join a startup</v-btn
       >
     </v-row>
@@ -200,7 +199,7 @@
       </v-col>
       <v-col cols="12" md="6">
         <v-card
-          color="secondary"
+          color="success"
           class="pa-8 my-2 white--text text-left card-shadow"
         >
           <v-card-title class="headline font-weight-bold"
@@ -237,13 +236,7 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
-      <v-col cols="12">
-        <h1>Get in touch.</h1>
-        <h2>We'd love to hear from you</h2>
-      </v-col>
-    </v-row>
-    <v-row class="mx-0 mx-md-6 mx-lg-16">
+    <v-row class="mx-0 mx-md-6 mx-lg-16 mb-12">
       <v-col cols="12">
         <GetInTouch :contact="contact" />
       </v-col>

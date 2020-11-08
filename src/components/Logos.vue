@@ -4,7 +4,7 @@
     color="white"
     class="pt-8 px-4 py-4 pa-md-8 py-md-8 my-4 my-md-16 card-shadow"
   >
-    <h1 class="mb-0 mb-md-12 ml-3 text-left">Startups we've scaled.</h1>
+    <h1 class="mb-0 mb-md-4 ml-3 text-left">Startups we've scaled.</h1>
     <v-row class="mx-4 my-4 d-none d-md-flex">
       <v-dialog
         v-model="benefex"
@@ -14,7 +14,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/benefex.png"
-            width="150"
+            width="150px"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
@@ -404,7 +404,7 @@ export default {
       cards: [
         {
           tech: true,
-          product: true,
+          product: false,
           image: "../images/benefex-white.png",
           title: "Benefex build workplace tech that transforms the employee experience, and focuses on improving employee wellbeing.",
           cols4: true,
@@ -418,11 +418,12 @@ export default {
           label4: "100% success rate across all hires",
           hiresMade: "14",
           subtitle: "Hires made by Confido",
-          techTitle: "Tech",
-          techText: "Java Engineer, Frontend Engineer, Go Backend Engineer, QA Lead Engineer, VP of Engineering, 2x QA Automation Engineers, 2x Platform / iOS-Mobile Lead",
-          productTitle: "Product",
-          productText: "QA Lead, UX Design Lead, Product Designer, Product Manager",
-          quote: "Confido have partnered with us in the truest sense. Craig and his team have taken the time to get a deep understanding of our culture and vision for the future of Benefex, helping us grow our Product Engineering tribe more in the last six months than we achieved with others over the previous twelve.",
+          overviewText: "Benefex needed a partner that knew how to attract product-minded engineers in a small local market. Since summer 2018, we’ve sourced over 14 Benefex-ers across Dev, QA, Platform, Product and UX. We’ve built out their next leadership layer with a VP of Engineering and Chapter Leads, and hired their third squad to build a brand new product.",
+          // techTitle: "Tech",
+          // techText: "Java Engineer, Frontend Engineer, Go Backend Engineer, QA Lead Engineer, VP of Engineering, 2x QA Automation Engineers, 2x Platform / iOS-Mobile Lead",
+          // productTitle: "Product",
+          // productText: "QA Lead, UX Design Lead, Product Designer, Product Manager",
+          // quote: "Confido have partnered with us in the truest sense. Craig and his team have taken the time to get a deep understanding of our culture and vision for the future of Benefex, helping us grow our Product Engineering tribe more in the last six months than we achieved with others over the previous twelve.",
           person: "Paul Smith – CTO, Benefex",
         },
         {

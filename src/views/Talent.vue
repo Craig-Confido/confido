@@ -4,11 +4,11 @@
     <section class="mx-4 mx-lg-16">
       <v-row class="text-left mt-4">
         <v-img
-          src="../../public/images/placeholder.svg"
+          src="../../public/images/talentVisual.png"
           class="d-flex d-md-none mx-md-16"
           alt="image of people"
         />
-        <v-col cols="12" sm="8" class="mt-md-16">
+        <v-col cols="12" sm="7" class="mt-md-16">
           <h1
             class="text-h3  text-md-h2 font-weight-bold"
             aria-label="Intro text"
@@ -42,9 +42,9 @@
           </v-row>
         </v-col>
         <v-spacer />
-        <v-col cols="12" sm="4">
+        <v-col cols="12" sm="5">
           <v-img
-            src="../../public/images/placeholder.svg"
+            src="../../public/images/talentVisual.png"
             class="d-none d-md-flex mx-md-16"
             alt="image of people"
           />
@@ -52,7 +52,7 @@
       </v-row>
     </section>
     <v-row
-      class="mt-10 full-width-blue px-auto py-8 white--text"
+      class="mt-10 full-width-green px-auto py-8 white--text"
       no-gutters
       style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55);"
     >
@@ -72,7 +72,7 @@
       </v-col>
       <v-col cols="6" sm="3" class="px-4 px-md-none">
       <v-icon class="text-h2 white--text mb-2"
-          >mdi-account-voice</v-icon
+          >mdi-clock-outline</v-icon
         >
         <h1>2 week</h1>
         <h3>Average Interview process</h3>
@@ -149,7 +149,7 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row class="mx-0 mt-0 white--text" no-gutters>
+    <v-row class="mx-0 mt-0 pt-0 white--text mb-12" no-gutters>
       <v-carousel
         cycle
         continuous
@@ -163,7 +163,7 @@
           :key="quote"
           class="px-0 mx-0 px-md-16 mx-md-16"
         >
-          <v-sheet color="transparent" height="100%" class="px-0 px-md-16 py-auto">
+          <v-sheet color="transparent" height="80%" class="px-0 px-md-16 py-0">
             <v-row
               class="fill-height px-4 px-0 mx-6 mx-lg-16"
               align="center"
@@ -222,7 +222,7 @@
               •
             </h1>
             <p>
-               Head of Design | Head of UX
+              Head of Design | Head of UX
             </p>
             <h1 class="accent--text mb-3">
               •
@@ -294,32 +294,32 @@
           <v-card-text class="text-h6 white--text">
           <v-row>
             <v-col cols="12" md="6">
-              <h3>
+              <h4>
                 <v-icon class="text-h4 mr-4 white--text">mdi-check-circle-outline</v-icon>
                 Relentless focus on delivering value.
-              </h3>
-              <h3>
+              </h4>
+              <h4>
                 <v-icon class="text-h4 mr-4 white--text">mdi-charity</v-icon>
                 Committed to the team and mission.
-              </h3>
-              <h3>
+              </h4>
+              <h4>
                 <v-icon class="text-h4 mr-4 white--text">mdi-lightbulb</v-icon>
                 Focus on quality and best practice.
-              </h3>
+              </h4>
             </v-col>
             <v-col cols="12" md="6">
-              <h3>
+              <h4>
               <v-icon class="text-h4 mr-4 white--text">mdi-book-open-variant</v-icon>
               Driven by the need to keep learning and improving.
-              </h3>
-              <h3>
+              </h4>
+              <h4>
                 <v-icon class="text-h4 mr-4 white--text">mdi-account-group-outline</v-icon>
                 Appreciation for others and the role they play.
-              </h3>
-              <h3>
+              </h4>
+              <h4>
                 <v-icon class="text-h4 mr-4 white--text">mdi-earth</v-icon>
                 Passion for Tech for Good.
-              </h3>
+              </h4>
             </v-col>
           </v-row>
           </v-card-text>
@@ -478,14 +478,7 @@
         </v-row> 
       </v-card>
     </v-col> -->
-    
-    <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
-      <v-col cols="12">
-        <h1>Get in touch.</h1>
-        <h2>We'd love to hear from you</h2>
-      </v-col>
-    </v-row>
-    <v-row class="mx-0 mx-md-6 mx-lg-16">
+    <v-row class="mx-0 mx-md-6 mx-lg-16 mb-12">
       <v-col cols="12">
         <GetInTouch :contact="contact" />
       </v-col>
@@ -588,8 +581,59 @@ export default {
           text3: "Out interview processes have a maximum of three stages that will be completed within two weeks, with detailed interview feedback.",
           text4: "We'll support you from offer to onboarding to ensure a seamless start with your new employer.",
         }
-      ]
+      ],
+      status: null,
+        name: null,
+        email: null,
+        message: null,
+        title: null,
+        valid: false,
+        nameRules: [
+            (v) => !!v || "Name is required",
+            (v) => v.length >= 3 || "Name must be at least than three characters",
+        ],
+        emailRules: [
+            (v) => !!v || "E-mail is required",
+            (v) => /.+@.+/.test(v) || "E-mail must be valid",
+        ],
+        messageRules: [
+            (v) => !!v || "Message is required",
+            (v) => v.length <= 1000 || "Message must be less than 1000 characters",
+        ],
     };
   },
+  methods: {
+    sendForm: function (event) {
+        event.preventDefault();
+
+        fetch("https://formcarry.com/s/R9fKjLvH_g6E", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    Name: this.name,
+                    Email: this.email,
+                    Role: this.title,
+                    Message: this.message,
+                }),
+            })
+            .then((response) => response.json())
+            .then((response) => {
+                if (response.code === 200) {
+                    this.status = "success";
+                } else {
+                    // Formcarry error
+                    this.status = "error";
+                }
+            })
+            // network error
+            .catch(() => (this.status = "error"));
+    },
+    reset() {
+        this.$refs.form.reset();
+    },
+  }
 };
 </script>

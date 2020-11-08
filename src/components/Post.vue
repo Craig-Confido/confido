@@ -11,10 +11,24 @@
         <h1 class="title my-4" color="primary--text">
           {{ post.title }}
         </h1>
-        <v-chip class="tag px-4 py-2 my-4" color="secondary">
+      </v-col>
+    </v-row>
+    <v-row class="text-left pl-lg-12">
+      <v-col cols="2">
+        <v-chip class="tag px-4" color="secondary">
           <strong>{{ post.metadata.tag }}</strong>
         </v-chip>
       </v-col>
+      <v-col cols="2">
+        <p class="ml-2 mt-1">{{ post.metadata.publicationdate }}</p>
+      </v-col>
+      <v-col cols="2">
+        <p class="ml-2 mt-1">{{ post.metadata.author }}</p>
+      </v-col>
+      <v-col cols="2">
+        <p class="ml-2 mt-1">{{ post.metadata.readtime }}</p>
+      </v-col>
+      <v-spacer />
     </v-row>
     <v-row class="text-left px-lg-12">
       <v-col cols="12">
