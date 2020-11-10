@@ -3,7 +3,8 @@
 <v-card class="pa-8 my-2 white--text text-left card-shadow">
   <v-row>
     <v-col cols="12">
-      <v-card-title class="headline font-weight-bold primary--text" v-if="!status">Contact us.</v-card-title>
+      <v-card-title class="headline font-weight-bold primary--text" v-if="!status">Get in touch.</v-card-title>
+      <v-card-title class="title pt-0 mt-0 font-weight-bold primary--text" v-if="!status">We'd love to hear from you.</v-card-title>
       <v-form v-if="!status" v-model="valid" ref="form" @submit="sendForm" lazy-validation>
         <v-row>
           <v-col cols="6">
