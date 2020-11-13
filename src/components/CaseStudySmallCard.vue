@@ -81,25 +81,13 @@
             </v-col>
             <v-col cols="12" md="10">
               <v-card flat color="white" class="mt-2 br-15">
-                <div v-if="card.tech == true">
+                <div>
                 <v-row class="ml-4 mr-3">
-                  <!-- <v-icon color="secondary">mdi-cog</v-icon> -->
-                  <!-- <h2 class="primary--text my-4 mx-2">{{ card.techTitle }}</h2> -->
                   <h2 class="primary--text my-4 mx-2">Overview</h2>
                 </v-row>
                 <v-row class="ml-4 mr-3">
-                  <!-- <p class="primary--text">{{ card.techText }}</p> -->
                   <p class="primary--text">{{ card.overviewText }}</p>
                 </v-row>
-                </div>
-                <div v-if="card.product == true">
-                  <v-row class="ml-4 mr-3">
-                    <v-icon color="secondary">mdi-lightbulb</v-icon>
-                    <h2 class="primary--text my-4 mx-2">{{ card.productTitle }}</h2>
-                  </v-row>
-                  <v-row class="ml-4 mr-3">
-                    <p class="primary--text">{{ card.productText }}</p>
-                  </v-row>
                 </div>
               </v-card>
             </v-col>

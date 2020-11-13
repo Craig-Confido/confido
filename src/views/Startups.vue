@@ -170,9 +170,9 @@
       <v-card-text class="primary--text text-h5"
           >Learn more from the teams we've built</v-card-text
         >
-        <v-row class="ma-4 mx-md-auto">
+        <v-row class="my-4 mx-md-0">
           <v-spacer />
-          <v-col cols="12" md="2">
+          <v-col cols="12" md="4" lg="2">
               <v-dialog
                 v-model="benefex"
                 width="1000px"
@@ -194,7 +194,7 @@
                   <CaseStudyLargeCard v-for="card in caseStudyCards.slice(0,1)" :key="card" :card="card" />
               </v-dialog>
               </v-col>
-              <v-col cols="12" md="2">
+              <v-col cols="12" md="4" lg="2">
               <v-dialog
               v-model="thirdSpace"
               width="1000px"
@@ -216,7 +216,7 @@
                   <CaseStudyLargeCard v-for="card in caseStudyCards.slice(1,2)" :key="card" :card="card" />
               </v-dialog>
               </v-col>
-              <v-col cols="12" md="2">
+              <v-col cols="12" md="4" lg="2">
               <v-dialog
                 v-model="visionbox"
                 width="1000px"
@@ -319,9 +319,9 @@
       <v-card-text class="primary--text text-h5"
           >Learn more from the teams we've scaled.</v-card-text
         >
-        <v-row class="ma-4 mx-md-auto">
+        <v-row class="my-4 mx-md-0">
           <v-spacer />
-          <v-col cols="12" md="2">
+          <v-col cols="12" md="4" lg="2">
             <v-dialog
               v-model="curve"
               width="1000px"
@@ -343,7 +343,7 @@
                 <CaseStudyLargeCard v-for="card in caseStudyCards.slice(3,4)" :key="card" :card="card" />
             </v-dialog>
           </v-col>
-          <v-col cols="12" md="2">
+          <v-col cols="12" md="4" lg="2">
             <v-dialog v-model="unmind" width="1000px" class="overflow-hidden">
               <template v-slot:activator="{ on, attrs }">
                 <div class="circle pointer my-8">
@@ -361,7 +361,7 @@
               <CaseStudyLargeCard v-for="card in caseStudyCards.slice(4,5)" :key="card" :card="card" />
           </v-dialog>
           </v-col>
-          <v-col cols="12" md="2">
+          <v-col cols="12" md="4" lg="2">
             <v-dialog
                 v-model="feedr"
                 width="1000px"
@@ -429,19 +429,16 @@ export default {
           challenge3: "What did they need to change to find the best candidates?",
           solution1Icon: "mdi-file-document",
           solution1Title: "Brief workshop",
-          solution1: "Week 1",
           solution1Text: "We spent time with the senior management team to build a detailed brief playing to Benefex’s strengths within the local market.",
           solution2Icon: "mdi-magnify",
           solution2Title: "Search report",
-          solution2: "Week 3",
           solution2Text: "We shared data on who was hiring, including salary packages and benefits, and how Benefex compared. We also evaluated the local talent demographic.",
           solution3Icon: "mdi-cog",
           solution3Title: "Search alignment",
-          solution3: "Week 4",
           solution3Text: "Based on the search report, we noticed that all the companies in the area were hiring at the same level, which was where the local market was smallest.",
           resultText: "We adjusted the search based on the market intel and made all 3 hires within 6 weeks. Since then, we’ve completed over 13 successful searches and continue to work exclusively on all product and engineering hires.",
           result1Icon: "mdi-trophy",
-          result1Text: "13 searches completed in 2 years",
+          result1Text: "13 hires made in 2 years",
           result2Icon: "mdi-account-group",
           result2Text: "Built out leadership team",
           result3Icon: "mdi-check-circle",
@@ -460,19 +457,16 @@ export default {
           challenge3: "With peaks in growth and tight timelines, TSL needed a partner they could trust to deliver on critical hires.",
           solution1Icon: "mdi-file-document",
           solution1Title: "Brief workshop",
-          solution1: "",
           solution1Text: "We worked with TSL to understand their unique mission and culture, then tied that with the product and tech motivators top candidates would be looking for.",
           solution2Icon: "mdi-magnify",
           solution2Title: "Search process",
-          solution2: "",
           solution2Text: "We focussed on headhunting candidates with a passion for social impact products.",
           solution3Icon: "mdi-cog",
           solution3Title: "Flexibility",
-          solution3: "",
           solution3Text: "We were able to provide top talent through a blend of search hires and interim consultants.",
-          resultText: "We provided TSL with a blended team of interim consultants and permanent hires to build the MVP for their 2nd product within a tight timeline. Once the MVP was launched, we worked with the leadership team to build out the core permanent team. This consisted of six hires.",
+          resultText: "We've helped TSL build out their core engineering team, whilst providing specialist interim consultants when needed. This has enabled them to increase user acquisition and secure further funding.",
           result1Icon: "mdi-account-group",
-          result1Text: "12+ hires made over 2 years",
+          result1Text: "8 hires made over 2 years",
           result2Icon: "mdi-clock",
           result2Text: "5 weeks average time to hire",
           result3Icon: "mdi-trophy",
@@ -491,17 +485,14 @@ export default {
           challenge3: "The team needed to recruit a large number of people, across different skill sets in a 4 month window.",
           solution1Icon: "mdi-file-document",
           solution1Title: "Talent branding",
-          solution1: "",
           solution1Text: "We worked together to create a compelling story to attract local and overseas talent.",
           solution2Icon: "mdi-magnify",
           solution2Title: "Process planning",
-          solution2: "",
           solution2Text: "We agreed a streamlined three stage process that would be completed within two weeks. We also confirmed packages to attract international talent.",
           solution3Icon: "mdi-cog",
           solution3Title: "Search process",
-          solution3: "",
           solution3Text: "We dedicated multiple Confido resources to the project to run local and international searches in parallel.",
-          resultText: "We successfully made multiple hires across Development, QA, DevOps, and Management.  We took a top down approach, helped the CTO build the senior management team before scaling the teams. We also built the DevOps and Automated Testing functions from scratch.",
+          resultText: "We successfully made multiple hires across Development, QA, DevOps, and Management.  We took a top down approach to help the CTO build the senior management team before scaling the teams beneath. We also built the DevOps and Automated Testing functions from scratch.",
           result1Icon: "mdi-account-group",
           result1Text: "11 hires made within 13 weeks",
           result2Icon: "mdi-clock",
@@ -522,23 +513,20 @@ export default {
           challenge3: "The team was silo’d and needed to be more closely aligned with the business.",
           solution1Icon: "mdi-file-document",
           solution1Title: "Process planning",
-          solution1: "",
           solution1Text: "Firstly, we reviewed the growth needed vs the current hiring process and implemented changes to allow for interview capacity and scalability.",
           solution2Icon: "mdi-magnify",
           solution2Title: "Headhunting",
-          solution2: "",
           solution2Text: "We then focussed on headhunting through direct sourcing methods to ensure both a cultural and technical fit.",
           solution3Icon: "mdi-cog",
           solution3Title: "Scaling and diversity",
-          solution3: "",
-          solution3Text: "Ramping up a small team of interim consultants was next, whilst also focusing on longer term permanent hires. We then worked with the leadership team to map current state vs future state in therms of diversity. We set up partnerships with MeetUps and communities in order to make Curve more accessible. ",
-          resultText: "Within four months we provided Curve with: A clear reporting structure between business and Talent leading which reduced delays in process, clear metrics for managing performance of the Talent team and individual OKR’s set, 4 critical hires. Confido were then asked to act at Interim Head of Talent whilst Curve recruiting a permanent hire. During this time we were asked to managed the Talent Function and worked with Finance to agree the workforce planning and budgets for 2020-21.",
+          solution3Text: "We worked with key stakeholders and the internal Talent team to ensure the right data was being tracked and reported, and the Talent team were set up for success. We then worked with the leadership team to map current state VS future state in terms of diversity. We set up partnerships with MeetUps and communities in order to make Curve more accessible.",
+          resultText: "Within four months, we provided Curve with four critical hires. During this time we were asked to act as the interim Head of Talent and worked with the Finance team to agree the workforce planning and budgets for 2020-21. We developed a clear reporting structure between key stakeholders and the Talent team, which reduced process delays. We also rolled out clear metrics for performance management of the Talent team and individual OKR’s.",
           result1Icon: "mdi-lightbulb",
-          result1Text: "Acted as interim Head of Talent",
+          result1Text: "Increased fill rate by 20%",
           result2Icon: "mdi-rocket-launch",
-          result2Text: "Developed OKRs for the Talent team",
+          result2Text: "Reduced time to hire by 26%",
           result3Icon: "mdi-account-group",
-          result3Text: "Created reporting strategy for key stakeholders",
+          result3Text: "46% of new starters were diverse hires",
         },
         {
           image: "https://images.ctfassets.net/c3tzxbn050pi/2OCGE5PFSfeGMJnN1O3FzP/7f9bca77ef15334ef2ffeb74e61cc506/All-your-cards-in-one.jpg?w=510&h=650&q=80&fm=webp",
@@ -549,21 +537,18 @@ export default {
           challenge1: "Finding Full Stack Engineers that were aligned to their mission whilst also meeting the high technical bar.",
           challenge2Title: "Scalability",
           challenge2: "Putting in place a process that would allow for this many hires with the number of interviewers available.",
-          challenge3Title: "",
-          challenge3: "",
+          challenge3Title: "Diversity",
+          challenge3: "Unmind were committed to building a diverse and inclusive team. They wanted to ensure this was represented in their tech team.",
           solution1Icon: "mdi-file-document",
           solution1Title: "Process planning",
-          solution1: "",
           solution1Text: "Reviewed the growth vs current hiring process and implemented changes to allow for interview capacity and scalability",
           solution2Icon: "mdi-magnify",
           solution2Title: "Headhunting",
-          solution2: "",
           solution2Text: "Focus on direct sourcing methods to ensure cultural and technical fit (referrals, cord, headhunting)",
           solution3Icon: "mdi-cog",
           solution3Title: "Scaling and diversity",
-          solution3: "",
-          solution3Text: "We initially ramped up a small team of interim consultants whilst focusing on longer term permanent hires. We then worked with the leadership team to map current state vs future state of diversity. Set up partnerships with MeetUps and communities.",
-          resultText: "Squads 3 and 4, hired within 4 months Project extended to focus on other key engineering hires and further squad growth Improved team diversity",
+          solution3Text: "While sourcing the perfect candidates, we ramped-up a small team of interim consultants so we could focus on securing permanent hires. Working with the leadership team, we mapped out how Unmind could improve the diversity of their team. This involved setting up partnerships and meetups with different communities.",
+          resultText: "We successfully built out Unmind's third and fourth squads within four months. The project was then extended to focus on other key engineering hires and further squad growth. The team's diversity was also improved through our new hires.",
           result1Icon: "mdi-account-group",
           result1Text: "24 hires made in 6 months",
           result2Icon: "mdi-clock",
@@ -575,32 +560,29 @@ export default {
           image: "https://images.unsplash.com/photo-1543352632-5a4b24e4d2a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3625&q=80",
           logo: "../images/feedr-white.png",
           title: "Feedr is on a mission to make it easier for people to get healthy, delicious food at the office, every day.",
-          brief: "Benefex are a fast growing product company based in Southampton. In 18 months they used over 10 recruitment partners with little to no success. They needed a partner they could rely on to help them attract top product and tech talent and deliver 5-10 hires per year.",
-          challenge1Title: "Lack of market intel",
-          challenge1: "Who else was hiring, what for, and for how much?",
-          challenge2Title: "Attracting the right people",
-          challenge2: "How could Benefex appear more attractive?",
-          challenge3Title: "Securing top tier candidates",
-          challenge3: "What did they need to change to find the best candidates?",
+          brief: "Following acquisition, Feedr needed to double their product and engineering teams within a three month timeline. They wanted a talent partner who could help them scale quickly, whilst running a streamlined process that offered a positive candidate experience.",
+          challenge1Title: "Candidate calibre",
+          challenge1: "The bar was high, and the candidates coming through their current channels were not experienced enough.",
+          challenge2Title: "Hiring velocity",
+          challenge2: "They needed the ability to make 10+ hires in three months without overloading the VP of Engineering.",
+          challenge3Title: "Diversity",
+          challenge3: "Feedr also wanted to improve the diversity of their team through their new hires.",
           solution1Icon: "mdi-file-document",
           solution1Title: "Brief workshop",
-          solution1: "Week 1",
-          solution1Text: "We spent time with the senior management team to build a detailed brief playing to Benefex’s strengths within the local market.",
+          solution1Text: "Working with the COO and VP of Engineering, we created a tight brief to ensure we were aligned on the technical calibre required.",
           solution2Icon: "mdi-magnify",
-          solution2Title: "Search report",
-          solution2: "Week 3",
-          solution2Text: "We shared data on who was hiring, including salary packages and benefits, and how Benefex compared. We also evaluated the local talent demographic.",
+          solution2Title: "Headhunting",
+          solution2Text: "We then took a top down approach to hiring, securing the Lead Developers first, then the Mid-level Developers. Employing this process allowed us to spread the interviews across three stakeholders.",
           solution3Icon: "mdi-cog",
-          solution3Title: "Search alignment",
-          solution3: "Week 4",
-          solution3Text: "Based on the search report, we noticed that all the companies in the area were hiring at the same level, which was where the local market was smallest.",
-          resultText: "We adjusted the search based on the market intel and made all 3 hires within 6 weeks. Since then, we’ve completed over 13 successful searches and continue to work exclusively on all product and engineering hires.",
-          result1Icon: "mdi-trophy",
-          result1Text: "13 searches completed in 2 years",
-          result2Icon: "mdi-account-group",
-          result2Text: "Built out leadership team",
-          result3Icon: "mdi-check-circle",
-          result3Text: "100% success rate on all searches",
+          solution3Title: "Streamlining feedback and improving diversity",
+          solution3Text: "A deadline of 24-hours was agreed to deliver feedback and organise next steps in order to streamline the hiring process. We ensured that one in every three of Feedr's new starters were diverse hires to boost inclusivity within the team.",
+          resultText: "We successfully doubled the size of Feedr's product and engineering team within a 14 week period. We achieved a maximum of five candidates per hire, with a 98% submittal to first interview ratio and nearly 50% of the hires being diverse candidates.",
+          result1Icon: "mdi-finance",
+          result1Text: "Increased hiring velocity by 4x",
+          result2Icon: "mdi-clock",
+          result2Text: "12 hires made in 14 weeks",
+          result3Icon: "mdi-account-group",
+          result3Text: "44% of new starters were diverse hires",
         }
       ],
       contact: [],

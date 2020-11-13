@@ -8,32 +8,24 @@
       <v-form v-if="!status" v-model="valid" ref="form" @submit="sendForm" lazy-validation>
         <v-row>
           <v-col cols="6">
-            <v-text-field v-model="name" :rules="nameRules" label="Name *" required class="mx-4 white px-2 py-4" />
+            <v-text-field v-model="name" :rules="nameRules" label="Name *" required class="mx-4 white px-2" />
+            <v-text-field v-model="email" :rules="emailRules" label="Email *" required class="mx-4 white px-2" />
+            <v-text-field v-model="title" label="Job title" class="mx-4 white px-2" />
           </v-col>
           <v-col cols="6">
-            <v-text-field v-model="email" :rules="emailRules" label="Email *" required class="mx-4 white px-2 py-4" />
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col cols="12">
-            <v-text-field v-model="title" label="Job title" class="mx-4 white px-2 py-4" />
-          </v-col>
-        </v-row>
-        <v-row>
-          <v-col cols="12">
-            <v-textarea v-model="message" :rules="messageRules" :counter="1000" label="Your message *" required class="mx-4 white px-2 py-4" />
+            <v-textarea v-model="message" :rules="messageRules" :counter="1000" label="Your message *" required class="mx-4 white px-2" />
           </v-col>
         </v-row>
         <v-card-actions>
             <v-spacer />
                 <v-col cols="12" class="mx-auto text-center">
-                    <v-btn v-if="!valid || null " disabled type="submit" class="btn--outlined font-weight-bold mx-2 px-8 py-0" outlined color="gray" rounded>
+                    <v-btn v-if="!valid || null " disabled type="submit" class="btn--outlined font-weight-bold mx-2 px-8 py-0 mt-2 mt-sm-0" outlined color="gray" rounded>
                         Send
                     </v-btn>
-                    <v-btn v-else type="submit" class="btn--outlined font-weight-bold mx-2 px-8 py-0" outlined color="secondary" rounded>
+                    <v-btn v-else type="submit" class="btn--outlined font-weight-bold mx-2 px-8 py-0 mt-2 mt-sm-0" outlined color="secondary" rounded>
                         Send
                     </v-btn>
-                    <v-btn @click="reset" class="btn--outlined font-weight-bold mx-2 px-8 py-0" outlined color="primary" rounded>
+                    <v-btn @click="reset" class="btn--outlined font-weight-bold mx-2 px-8 py-0 mt-2 mt-sm-0" outlined color="primary" rounded>
                         Reset
                     </v-btn>
                 </v-col>

@@ -7,7 +7,7 @@
       gradient="to top right, rgba(100,115,201,1), rgba(25,32,72, .7)"
     >
     <v-row>
-      <v-col cols="12" md="4">
+      <v-col cols="12" md="3">
       <v-img
         :src="`${card.logo}`"
         width="150"
@@ -19,6 +19,11 @@
       <v-col cols="12" md="8">
       <h4 class="white--text mt-16 mr-8 text-left">{{ card.title }}</h4>
       </v-col>
+          <v-col cols="1">
+    <div class="mt-2">
+      <v-icon large color="white" @click="$router.go()">mdi-close-circle-outline</v-icon>
+    </div>
+    </v-col>
       </v-row>
     </v-img>
     <v-card-text class="text-left mt-4 px-8 pt-4">
@@ -54,7 +59,6 @@
           </v-col>
           <v-col cols="12" md="2">
             <h3 class="primary--text">{{ card.solution1Title }}</h3>
-            <p class="primary--text">{{ card.solution1 }}</p>
           </v-col>
           <v-col cols="12" md="8">
             <p class="primary--text">{{ card.solution1Text }}</p>
@@ -66,7 +70,6 @@
           </v-col>
           <v-col cols="12" md="2">
             <h3 class="primary--text">{{ card.solution2Title }}</h3>
-            <p class="primary--text">{{ card.solution2 }}</p>
           </v-col>
           <v-col cols="12" md="8">
             <p class="primary--text">{{ card.solution2Text }}</p>
@@ -78,7 +81,6 @@
           </v-col>
           <v-col cols="12" md="2">
             <h3 class="primary--text">{{ card.solution3Title }}</h3>
-            <p class="primary--text">{{ card.solution3 }}</p>
           </v-col>
           <v-col cols="12" md="8">
             <p class="primary--text">{{ card.solution3Text }}</p>

@@ -149,12 +149,13 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row class="mx-0 mt-0 pt-0 white--text mb-12" no-gutters>
+    <v-row class="mx-0 my-0 py-0 white--text" no-gutters>
       <v-carousel
         cycle
         continuous
         class="mx-0"
         hide-delimiter-background
+        hide-delimiters
         light
         :show-arrows-on-hover="true"
       >
@@ -163,23 +164,36 @@
           :key="quote"
           class="px-0 mx-0 px-md-16 mx-md-16"
         >
-          <v-sheet color="transparent" height="80%" class="px-0 px-md-16 py-0">
+          <v-sheet color="transparent" height="100%" class="px-0 px-md-16 py-0">
             <v-row
               class="fill-height px-4 px-0 mx-6 mx-lg-16"
               align="center"
               justify="center"
             >
               <v-text>
-                <p class="text-h6 text-md-h5 mt-md-16 mb-0 pb-0 text--primary">
+                <p class="text-h6 text-md-h5 mt-md-16 my-0 py-0 text--primary">
                   <strong class="quote">
                     {{ quote.content }}
                   </strong>
                 </p>
-                <p class="text-h5 mt-12 mb-8 secondary--text">
-                  <strong>
-                  {{ quote.advocate }}
-                  </strong>
-                </p>
+                <v-row 
+                  class="text-h5 mt-12 mb-8 mx-auto" 
+                  align="center"
+                  justify="center"
+                >
+                <v-spacer />
+                    <v-col cols="2">
+                      <v-img :src="`${quote.image}`" width="100" height="auto" class="float-right" />
+                    </v-col>
+                    <v-col cols="5">
+                      <p class="secondary--text text-left">
+                        <strong>
+                        {{ quote.advocate }}
+                        </strong>
+                      </p>
+                    </v-col>
+                  <v-spacer />
+                </v-row>
               </v-text>
             </v-row>
           </v-sheet>
@@ -200,13 +214,13 @@
       <v-col cols="12" md="6">
         <v-card
           color="white"
-          class="px-8 py-4 my-2 primary--text text-left card-shadow"
+          class="px-8 py-4 my-2 primary--text text-center card-shadow"
         >
-          <v-card-title class="headline font-weight-bold "
-            >Product.
-            <v-spacer />
-            <v-icon color="secondary">mdi-lightbulb</v-icon>
-            </v-card-title>
+          <h2 class="headline text-center my-4 font-weight-bold"
+            >
+            <v-icon color="secondary" class="mr-2">mdi-lightbulb</v-icon>
+            Product.
+          </h2>
           <v-divider />
           <v-card-text class="text-h6 primary--text text-center">
             <p>
@@ -242,13 +256,13 @@
       <v-col cols="12" md="6">
         <v-card
           color="white"
-          class="px-8 py-4 my-2 primary--text text-left card-shadow"
+          class="px-8 py-4 my-2 primary--text text-center card-shadow"
         >
-          <v-card-title class="headline font-weight-bold"
-            >Tech.
-            <v-spacer />
-            <v-icon color="secondary">mdi-cog</v-icon>
-            </v-card-title>
+          <h2 class="headline text-center my-4 font-weight-bold"
+            >
+            <v-icon color="secondary" class="mr-2">mdi-cog</v-icon>
+            Tech.
+          </h2>
           <v-divider />
           <v-card-text class="text-h6 primary--text text-center">
             <p>
@@ -294,32 +308,32 @@
           <v-card-text class="text-h6 white--text">
           <v-row>
             <v-col cols="12" md="6">
-              <h4>
-                <v-icon class="text-h4 mr-4 white--text">mdi-check-circle-outline</v-icon>
+              <p>
+                <v-icon class="mr-4 white--text">mdi-check-circle-outline</v-icon>
                 Relentless focus on delivering value.
-              </h4>
-              <h4>
-                <v-icon class="text-h4 mr-4 white--text">mdi-charity</v-icon>
+              </p>
+              <p>
+                <v-icon class="mr-4 white--text">mdi-charity</v-icon>
                 Committed to the team and mission.
-              </h4>
-              <h4>
-                <v-icon class="text-h4 mr-4 white--text">mdi-lightbulb</v-icon>
+              </p>
+              <p>
+                <v-icon class="mr-4 white--text">mdi-lightbulb</v-icon>
                 Focus on quality and best practice.
-              </h4>
+              </p>
             </v-col>
             <v-col cols="12" md="6">
-              <h4>
-              <v-icon class="text-h4 mr-4 white--text">mdi-book-open-variant</v-icon>
+              <p>
+              <v-icon class="mr-4 white--text">mdi-book-open-variant</v-icon>
               Driven by the need to keep learning and improving.
-              </h4>
-              <h4>
-                <v-icon class="text-h4 mr-4 white--text">mdi-account-group-outline</v-icon>
+              </p>
+              <p>
+                <v-icon class="mr-4 white--text">mdi-account-group-outline</v-icon>
                 Appreciation for others and the role they play.
-              </h4>
-              <h4>
-                <v-icon class="text-h4 mr-4 white--text">mdi-earth</v-icon>
+              </p>
+              <p>
+                <v-icon class="mr-4 white--text">mdi-earth</v-icon>
                 Passion for Tech for Good.
-              </h4>
+              </p>
             </v-col>
           </v-row>
           </v-card-text>
@@ -510,48 +524,81 @@ export default {
       quotes: [
         {
           content:
+            "Confido are one of the best recruiters I've worked with, showing a genuine interest in both the company and myself. They struck the perfect balance between staying on top of moving the process along, while never making me feel like I was being hassled, and got the entire process sorted within a couple of weeks. I'm looking forward to working with them again in the future.",
+          advocate: "Leanne Patmore, Frontend Lead",
+          image: "../images/people/leanne.png"
+        },
+        {
+          content:
+            "Confido spent the time to listen to my needs, and asked all the right questions in order to find out what exactly I was looking for. When it came time to interview, they were always there to give helpful pointers, and they were very engaged. I would definitely recommend Confido to anyone looking for a new job.",
+          advocate: "Yusuf Osman, Tech Lead",
+          image: "../images/people/yusuf.png"
+        },
+        {
+          content:
+            "Confido have been one of the best recruiters I've worked with and I have nothing but praise for them. I would totally recommend him if you're either looking for a new job or a company looking to hire.",
+          advocate: "Fernando de Freitas, Senior Developer",
+          image: "../images/people/fernando.png"
+        },
+        {
+          content:
+            "Confido made the whole searching process so much easier. From the beginning I could tell they really cared about my interests. They were open and clear and managed my expectations with each stage of the process. I couldn't recommend a recruiter more!",
+          advocate: "Bella Dear, Full Stack Engineer",
+          image: "../images/people/bella.png"
+        },
+        {
+          content:
+            "I wasn’t looking to change roles when I was head hunted by Confido but can honestly say that if it wasn’t for the time and effort they put in explaining every detail about the role and company, I wouldn’t have applied.  The great communication and feedback continued through the multiple stage process and really helped me secure a fantastic new position at a great company.",
+          advocate: "James Fairhead, VP of Engineering",
+          image: "../images/people/james.png"
+        },
+        {
+          content:
+            "I've recently been working with Confido on a Head of QA position; where he has seamlessly ensured that the process was smooth for both me, my family, and of course the hiring company. In fact; if you want results within days and not weeks; I highly recommend Confido as someone who will get the job done.",
+          advocate: "Chris Curtis, Head of DevOps and QA",
+          image: "../images/people/chris.png"
+        },
+        {
+          content:
             "Confido ensured my journey through the recruitment process was not only smooth, but also pleasant and swift. They always acted with my interests in mind and were quick to resolve any issues.",
-          advocate: "Jacob, Frontend Chapter Lead"
+          advocate: "Jacob King, Frontend Chapter Lead",
+          image: "../images/people/jacob.png"
         },
         {
           content:
             "I couldn't recommend Confido more. They have honestly been one of the best, if not the best recruiter I have worked with. They gave constant feedback, took lots of time to listen and really thought about what I wanted and needed and where would work well for me.",
-          advocate: "Abi, Software Engineer"
-        },
-        {
-          content:
-            "Confido has been one of the best recruiters I've worked with and I have nothing but praise for them. I’ll definitely be in touch for any future job hunt.",
-          advocate: "Fernando, Senior Software Engineer"
+          advocate: "Abi Travers, Software Engineer",
+          image: "../images/people/abi.png"
         },
         {
           content:
             "From our first interaction, Confido took the time to get to know me and what I care about and matched me with companies that share my values.",
-          advocate: "Harris, Senior Software Engineer"
+          advocate: "Harris G, Senior Software Engineer",
+          image: "../images/people/harris.png"
         },
         {
           content:
             "I've now secured a role at a company that resonates with my personal values regarding people and how they should be treated. I cannot recommend Confido enough.",
-          advocate: "Lou, Lead QA Engineer"
+          advocate: "Lou Robinson, Lead QA Engineer",
+          image: "../images/people/lou.png"
         },
         {
           content:
             "Confido is the best business I've worked with when looking for new career opportunities. From initial contact through to receiving an offer, the experience was painless and I was treated with care and attention.",
-          advocate: "Karl, Product Designer"
+          advocate: "Karl Koch, Product Designer",
+          image: "../images/people/karl.png"
         },
         {
           content:
             "Confido’s communication and feedback was excellent throughout the hiring process. Most importantly, they took the time understand my situation and provided invaluable advice to help me make my decision.",
-          advocate: "Stu, Senior Product Manager"
-        },
-        {
-          content:
-            "Confido’s attention to detail and fantastic communication throughout the whole process was second to none. They supported me throughout the whole process and kept me up to date with everything that was going on.",
-          advocate: "Lee, QA Lead"
+          advocate: "Stu Crew, Senior Product Manager",
+          image: "../images/people/stu.png"
         },
         {
           content:
             "It was an absolute pleasure to work with Confido. They made the process of finding a new role as pain-free and relaxed as possible. They also take the time to get to know candidates; I felt that they really understood my personality, skills and career goals.",
-          advocate: "Amyce, QA Automation Engineer"
+          advocate: "Dr Amyce Aurora-Smith, QA Automation Engineer",
+          image: "../images/people/amyce.png"
         },
       ],
       titles: [
