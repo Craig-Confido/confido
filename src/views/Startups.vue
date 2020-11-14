@@ -93,7 +93,7 @@
         <h3>Success rate</h3>
       </v-col>
     </v-row>
-    <v-row class="d-none d-md-flex mx-0 mx-md-6 mx-lg-16">
+    <v-row class="d-none d-md-flex mx-0 mx-md-6 mx-lg-16 my-16">
       <v-col cols="12">
         <Logos :logo="logo" />
       </v-col>
@@ -132,29 +132,29 @@
               <v-icon class="secondary--text text-h2"
                 >mdi-account-group-outline</v-icon
               >
-              <h1 class="text-h5 text-md-h1">3 candidate</h1>
-              <h3 class="text-md-h1">Limit per role</h3>
+              <h1 class="text-h5 text-md-h4">3 candidate</h1>
+              <h3 class="text-md-h6">Limit per role</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text text-h2"
                 >mdi-clock-check-outline</v-icon
               >
-              <h1 class="text-h5 text-md-h1">4 weeks</h1>
-              <h3 class="text-md-h1">Average time to hire</h3>
+              <h1 class="text-h5 text-md-h4">4 weeks</h1>
+              <h3 class="text-md-h6">Average time to hire</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text text-h2"
                 >mdi-check-circle-outline</v-icon
               >
-              <h1 class="text-h5 text-md-h1">83% of hires</h1>
-              <h3 class="text-md-h1">Made from initial shortlist</h3>
+              <h1 class="text-h5 text-md-h4">83% of hires</h1>
+              <h3 class="text-md-h6">Made from initial shortlist</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text text-h2"
                 >mdi-trophy-outline</v-icon
               >
-              <h1 class="text-h5 text-md-h1">98%</h1>
-              <h3 class="text-md-h1">Success rate</h3>
+              <h1 class="text-h5 text-md-h4">98%</h1>
+              <h3 class="text-md-h6">Success rate</h3>
             </v-col>
           </v-row>
         </v-card>
@@ -281,29 +281,29 @@
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-cash-multiple</v-icon
               >
-              <h1 class="text-h5 text-md-h1">40% saving</h1>
-              <h3 class="text-md-h1">compared to agency spend</h3>
+              <h1 class="text-h5 text-md-h4">40% saving</h1>
+              <h3 class="text-md-h6">compared to agency spend</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-finance</v-icon
               >
-              <h1 class="text-h5 text-md-h1">3x increase</h1>
-              <h3 class="text-md-h1">in hiring velocity</h3>
+              <h1 class="text-h5 text-md-h4">3x increase</h1>
+              <h3 class="text-md-h6">in hiring velocity</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-clock-check-outline</v-icon
               >
-              <h1 class="text-h5 text-md-h1">+20%</h1>
-              <h3 class="text-md-h1">improvement on time to hire</h3>
+              <h1 class="text-h5 text-md-h4">+20%</h1>
+              <h3 class="text-md-h6">improvement on time to hire</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-account-group</v-icon
               >
-              <h1 class="text-h5 text-md-h1">Improved</h1>
-              <h3 class="text-md-h1">team diversity</h3>
+              <h1 class="text-h5 text-md-h4">Improved</h1>
+              <h3 class="text-md-h6">team diversity</h3>
             </v-col>
           </v-row>
         </v-card>
@@ -417,6 +417,7 @@ export default {
       unmind: false,
       caseStudyCards: [
         {
+          cols3: true,
           image: "https://www.confidotalent.com/application/files/7815/6090/5476/Benefex_onehub.jpg",
           logo: "../images/benefex-white.png",
           title: "Benefex build workplace tech that transforms the employee experience, and focuses on improving employee wellbeing.",
@@ -445,6 +446,7 @@ export default {
           result3Text: "100% success rate on all searches",
         },
         {
+          cols3: true,
           image: "https://thirdspacelearning.com/wp-content/uploads/2020/09/wsr.jpg",
           logo: "../images/thirdspace-white.png",
           title: "Third Space Learning are the largest provider of 1-to-1 maths tutor support in the UK.",
@@ -473,6 +475,7 @@ export default {
           result3Text: "100% success rate on searches",
         },
         {
+          cols3: true,
           image: "https://thirdspacelearning.com/wp-content/uploads/2020/09/wsr.jpg",
           logo: "../images/visionbox-white.png",
           title: "Vision-box are creating a world where everyone can travel seamlessly without the need for physical documentation using cutting edge biometrics and cyber security.",
@@ -501,6 +504,7 @@ export default {
           result3Text: "Hiring accelerated by 10x",
         },
         {
+          cols3: false,
           image: "https://images.ctfassets.net/c3tzxbn050pi/2OCGE5PFSfeGMJnN1O3FzP/7f9bca77ef15334ef2ffeb74e61cc506/All-your-cards-in-one.jpg?w=510&h=650&q=80&fm=webp",
           logo: "../images/curve-white.png",
           title: "Curve is on a mission to simplify the way people spend, send, see and save money. Curve allows the user to combine their accounts and cards through the Curve app.",
@@ -518,18 +522,24 @@ export default {
           solution2Title: "Headhunting",
           solution2Text: "We then focussed on headhunting through direct sourcing methods to ensure both a cultural and technical fit.",
           solution3Icon: "mdi-cog",
-          solution3Title: "Scaling and diversity",
-          solution3Text: "We worked with key stakeholders and the internal Talent team to ensure the right data was being tracked and reported, and the Talent team were set up for success. We then worked with the leadership team to map current state VS future state in terms of diversity. We set up partnerships with MeetUps and communities in order to make Curve more accessible.",
+          solution3Title: "Scaling",
+          solution3Text: "We worked with key stakeholders and the internal Talent team to ensure the right data was being tracked and reported, and the Talent team were set up for success.",
+          solution4Icon: "mdi-cog",
+          solution4Title: "Improving diversity",
+          solution4Text: "We then worked with the leadership team to map current state VS future state in terms of diversity. We set up partnerships with MeetUps and communities in order to make Curve more accessible.",
           resultText: "Within four months, we provided Curve with four critical hires. During this time we were asked to act as the interim Head of Talent and worked with the Finance team to agree the workforce planning and budgets for 2020-21. We developed a clear reporting structure between key stakeholders and the Talent team, which reduced process delays. We also rolled out clear metrics for performance management of the Talent team and individual OKR’s.",
           result1Icon: "mdi-lightbulb",
           result1Text: "Increased fill rate by 20%",
           result2Icon: "mdi-rocket-launch",
           result2Text: "Reduced time to hire by 26%",
-          result3Icon: "mdi-account-group",
-          result3Text: "46% of new starters were diverse hires",
+          result3Icon: "mdi-cash-multiple",
+          result3Text: "Reduced agency spend by £175k",
+          result4Icon: "mdi-account-group",
+          result4Text: "46% of new starters were diverse hires",
         },
         {
-          image: "https://images.ctfassets.net/c3tzxbn050pi/2OCGE5PFSfeGMJnN1O3FzP/7f9bca77ef15334ef2ffeb74e61cc506/All-your-cards-in-one.jpg?w=510&h=650&q=80&fm=webp",
+          cols3: false,
+          image: "https://confidotalent.com/application/files/3615/6224/8669/unmind_1.png",
           logo: "../images/unmind-white.png",
           title: "Unmind is a workplace mental health platform. They empower employees to measure, understand, and improve their mental wellbeing.",
           brief: "Unmind needed to grow their engineering squads from 2 to 4 to deliver on their product roadmap. They needed a dedicated Talent Manager for a period of 6 months to oversee this growth.",
@@ -546,8 +556,11 @@ export default {
           solution2Title: "Headhunting",
           solution2Text: "Focus on direct sourcing methods to ensure cultural and technical fit (referrals, cord, headhunting)",
           solution3Icon: "mdi-cog",
-          solution3Title: "Scaling and diversity",
-          solution3Text: "While sourcing the perfect candidates, we ramped-up a small team of interim consultants so we could focus on securing permanent hires. Working with the leadership team, we mapped out how Unmind could improve the diversity of their team. This involved setting up partnerships and meetups with different communities.",
+          solution3Title: "Scaling",
+          solution3Text: "While sourcing the perfect candidates, we ramped-up a small team of interim consultants so we could focus on securing permanent hires.",
+          solution4Icon: "mdi-cog",
+          solution4Title: "Improving diversity",
+          solution4Text: "Working with the leadership team, we mapped out how Unmind could improve the diversity of their team. This involved setting up partnerships and meetups with different communities.",
           resultText: "We successfully built out Unmind's third and fourth squads within four months. The project was then extended to focus on other key engineering hires and further squad growth. The team's diversity was also improved through our new hires.",
           result1Icon: "mdi-account-group",
           result1Text: "24 hires made in 6 months",
@@ -555,8 +568,11 @@ export default {
           result2Text: "Improved time to hire by 25%",
           result3Icon: "mdi-cash-multiple",
           result3Text: "£75k cost saving VS agency spend",
+          result4Icon: "mdi-account-group",
+          result4Text: "Improved team diversity",
         },
         {
+          cols3: false,
           image: "https://images.unsplash.com/photo-1543352632-5a4b24e4d2a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3625&q=80",
           logo: "../images/feedr-white.png",
           title: "Feedr is on a mission to make it easier for people to get healthy, delicious food at the office, every day.",
@@ -574,15 +590,20 @@ export default {
           solution2Title: "Headhunting",
           solution2Text: "We then took a top down approach to hiring, securing the Lead Developers first, then the Mid-level Developers. Employing this process allowed us to spread the interviews across three stakeholders.",
           solution3Icon: "mdi-cog",
-          solution3Title: "Streamlining feedback and improving diversity",
-          solution3Text: "A deadline of 24-hours was agreed to deliver feedback and organise next steps in order to streamline the hiring process. We ensured that one in every three of Feedr's new starters were diverse hires to boost inclusivity within the team.",
+          solution3Title: "Streamlining feedback",
+          solution3Text: "A deadline of 24-hours was agreed to deliver feedback and organise next steps in order to streamline the hiring process.",
+          solution4Icon: "mdi-cog",
+          solution4Title: "Improving diversity",
+          solution4Text: "We ensured that one in every three of Feedr's new starters were diverse hires to boost inclusivity within the team.",
           resultText: "We successfully doubled the size of Feedr's product and engineering team within a 14 week period. We achieved a maximum of five candidates per hire, with a 98% submittal to first interview ratio and nearly 50% of the hires being diverse candidates.",
           result1Icon: "mdi-finance",
           result1Text: "Increased hiring velocity by 4x",
           result2Icon: "mdi-clock",
           result2Text: "12 hires made in 14 weeks",
-          result3Icon: "mdi-account-group",
-          result3Text: "44% of new starters were diverse hires",
+          result3Icon: "mdi-cash-multiple",
+          result3Text: "37.5% cost saving VS agency spend",
+          result4Icon: "mdi-account-group",
+          result4Text: "44% of new starters were diverse hires",
         }
       ],
       contact: [],

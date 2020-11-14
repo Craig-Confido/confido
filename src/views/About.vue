@@ -65,7 +65,7 @@
         <h1 class="mb-4 text-left">What we do.</h1>
         <h2 class="text-left">
           Product and Tech hiring.<br />
-          Seed to Series B Startups.<br />
+          Seed to Series B startups.<br />
           Tech for Good products.<br />
         </h2>
       </v-col>
@@ -100,11 +100,11 @@
       </v-col>
       </v-row>
     </v-row>
-    <v-row class="mx-0 mt-0 white--text" no-gutters>
+    <v-row class="mx-0 mt-0 pt-0 pb-0 mb-0 white--text" no-gutters>
       <v-carousel
         cycle
         continuous
-        class="mx-0"
+        class="mx-0 my-0 py-0"
         hide-delimiter-background
         hide-delimiters
         light
@@ -113,21 +113,21 @@
         <v-carousel-item
           v-for="quote in quotes"
           :key="quote"
-          class="px-0 mx-0 px-md-16 mx-md-16"
+          class="px-0 mx-0 px-md-16 mx-md-16 my-0 py-0"
         >
-          <v-sheet color="transparent" height="100%" class="px-0 px-md-16 py-0">
+          <v-sheet color="transparent" height="100%" class="px-0 px-md-16 py-0 my-0">
             <v-row
               class="fill-height px-4 px-0 mx-6 mx-lg-16"
               align="center"
               justify="center"
             >
               <v-text>
-                <p class="text-h6 text-md-h5 mt-md-16 mb-0 pb-0 text--primary">
+                <p class="text-h6 text-md-h5 mt-md-0 mb-0 pb-0 text--primary">
                   <strong class="quote">
                     {{ quote.content }}
                   </strong>
                 </p>
-                <p class="text-h5 mt-12 mb-8 secondary--text">
+                <p class="text-h5 mt-12 mb-0 secondary--text">
                   <strong>
                   {{ quote.advocate }}
                   </strong>
@@ -138,7 +138,7 @@
         </v-carousel-item>
       </v-carousel>
     </v-row>
-    <v-row class="mx-0 mx-md-6 mx-lg-16">
+    <v-row class="mx-0 mx-md-6 mx-lg-16 mt-0 pt-0">
       <v-col cols="12">
         <Logos :logo="logo" />
     <v-row class="mx-auto justify-center">

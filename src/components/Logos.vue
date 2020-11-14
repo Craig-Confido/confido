@@ -2,7 +2,7 @@
 <template>
   <v-card
     color="white"
-    class="pt-8 px-4 py-4 pa-md-8 py-md-8 my-4 my-md-16 card-shadow"
+    class="pt-8 px-4 py-4 pa-md-8 py-md-8 my-0 card-shadow"
   >
     <h1 class="mb-0 mb-md-4 ml-3 text-left">Startups we've scaled.</h1>
     <v-row class="mx-4 my-4 d-none d-md-flex">
@@ -558,7 +558,7 @@ export default {
           hiresMade: "12",
           subtitle: "Hires made by Confido",
           overviewText: "Vision-Box needed to accelerate their engineering hiring after struggling with direct hiring and local partners. Within 13 weeks we made 11 hires across Dev, QA, Release and DevOps, including five Head of departments. We were able to attract both local and international candidates.",
-          quote: "Simply put, if you’re a startup that needs to make hire, you need to speak to Confido! I’ve worked with Confido twice now. Once, building a team for an early-stage startup from the ground up. Then now, scaling a team for a global business. Both times, Confido have delivered to my high expectations.",
+          quote: "Simply put, if you’re a startup that needs to make hires, you need to speak to Confido! I’ve worked with Confido twice now. Once, building a team for an early-stage startup from the ground up. Then now, scaling a team for a global business. Both times, Confido have delivered to my high expectations.",
           person: "Andrea Candian – CTO, Vision-Box",
         },
         {
