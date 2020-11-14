@@ -141,7 +141,7 @@
     <v-row class="mx-0 mx-md-6 mx-lg-16 mt-0 pt-0">
       <v-col cols="12">
         <Logos :logo="logo" />
-    <v-row class="mx-auto justify-center">
+    <v-row class="mx-auto justify-center mt-8">
       <v-btn
         to="/startups"
         class="mx-12 px-6 btn--outlined font-weight-black mt-2 mt-sm-0"
