@@ -179,7 +179,7 @@
           <v-card-title class="headline font-weight-bold"
             >We are Confido.</v-card-title
           >
-          <v-card-text class="text-h6 white--text">
+          <v-card-text class="text-md-h6 white--text">
             <p>
               <v-icon class="mr-4 white--text">mdi-head-check-outline</v-icon>
               Your advisor, mentor and friend.
@@ -208,7 +208,7 @@
           <v-card-title class="headline font-weight-bold"
             >Our values.</v-card-title
           >
-          <v-card-text class="text-h6 white--text">
+          <v-card-text class="text-md-h6 white--text">
             <p>
               <v-icon class="mr-4 white--text"
                 >mdi-chart-bell-curve-cumulative</v-icon

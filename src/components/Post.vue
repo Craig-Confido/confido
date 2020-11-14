@@ -14,18 +14,18 @@
       </v-col>
     </v-row>
     <v-row class="text-left pl-lg-12">
-      <v-col cols="2">
+      <v-col cols="6" md="2">
         <v-chip class="tag px-4" color="secondary">
           <strong>{{ post.metadata.tag }}</strong>
         </v-chip>
       </v-col>
-      <v-col cols="2">
+      <v-col cols="6" md="2">
         <p class="ml-2 mt-1">{{ post.metadata.publicationdate }}</p>
       </v-col>
-      <v-col cols="2">
+      <v-col cols="6" md="2">
         <p class="ml-2 mt-1">{{ post.metadata.author }}</p>
       </v-col>
-      <v-col cols="2">
+      <v-col cols="6" md="2">
         <p class="ml-2 mt-1">{{ post.metadata.readtime }}</p>
       </v-col>
       <v-spacer />

@@ -132,29 +132,29 @@
               <v-icon class="secondary--text text-h2"
                 >mdi-account-group-outline</v-icon
               >
-              <h1>3 candidate</h1>
-              <h3>Limit per role</h3>
+              <h1 class="text-h5 text-md-h1">3 candidate</h1>
+              <h3 class="text-md-h1">Limit per role</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text text-h2"
                 >mdi-clock-check-outline</v-icon
               >
-              <h1>4 weeks</h1>
-              <h3>Average time to hire</h3>
+              <h1 class="text-h5 text-md-h1">4 weeks</h1>
+              <h3 class="text-md-h1">Average time to hire</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text text-h2"
                 >mdi-check-circle-outline</v-icon
               >
-              <h1>83% of hires</h1>
-              <h3>Made from initial shortlist</h3>
+              <h1 class="text-h5 text-md-h1">83% of hires</h1>
+              <h3 class="text-md-h1">Made from initial shortlist</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text text-h2"
                 >mdi-trophy-outline</v-icon
               >
-              <h1>98%</h1>
-              <h3>Success rate</h3>
+              <h1 class="text-h5 text-md-h1">98%</h1>
+              <h3 class="text-md-h1">Success rate</h3>
             </v-col>
           </v-row>
         </v-card>
@@ -281,29 +281,29 @@
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-cash-multiple</v-icon
               >
-              <h1>40% saving</h1>
-              <h3>compared to agency spend</h3>
+              <h1 class="text-h5 text-md-h1">40% saving</h1>
+              <h3 class="text-md-h1">compared to agency spend</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-finance</v-icon
               >
-              <h1>3x increase</h1>
-              <h3>in hiring velocity</h3>
+              <h1 class="text-h5 text-md-h1">3x increase</h1>
+              <h3 class="text-md-h1">in hiring velocity</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-clock-check-outline</v-icon
               >
-              <h1>+20%</h1>
-              <h3>improvement on time to hire</h3>
+              <h1 class="text-h5 text-md-h1">+20%</h1>
+              <h3 class="text-md-h1">improvement on time to hire</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-account-group</v-icon
               >
-              <h1>Improved</h1>
-              <h3>team diversity</h3>
+              <h1 class="text-h5 text-md-h1">Improved</h1>
+              <h3 class="text-md-h1">team diversity</h3>
             </v-col>
           </v-row>
         </v-card>

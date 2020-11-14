@@ -60,29 +60,29 @@
       <v-icon class="text-h2 white--text mb-2"
           >mdi-rocket-launch-outline</v-icon
         >
-        <h1>Exclusive</h1>
-        <h3>Startup relationships</h3>
+        <h1 class="text-h5 text-md-h1">Exclusive</h1>
+        <h3 class="text-md-h1">Startup relationships</h3>
       </v-col>
       <v-col cols="6" sm="3" class="px-4 px-md-none">
       <v-icon class="text-h2 white--text mb-2"
           >mdi-account-group-outline</v-icon
         >
-        <h1>3 candidate</h1>
-        <h3>Limit per role</h3>
+        <h1 class="text-h5 text-md-h1">3 candidate</h1>
+        <h3 class="text-md-h1">Limit per role</h3>
       </v-col>
       <v-col cols="6" sm="3" class="px-4 px-md-none">
       <v-icon class="text-h2 white--text mb-2"
           >mdi-clock-outline</v-icon
         >
-        <h1>2 week</h1>
-        <h3>Average interview process</h3>
+        <h1 class="text-h5 text-md-h1">2 week</h1>
+        <h3 class="text-md-h1">Average interview process</h3>
       </v-col>
       <v-col cols="6" sm="3" class="px-4 px-md-none">
       <v-icon class="text-h2 white--text mb-2"
           >mdi-check-circle-outline</v-icon
         >
-        <h1>98%</h1>
-        <h3>Success rate</h3>
+        <h1 class="text-h5 text-md-h1">98%</h1>
+        <h3 class="text-md-h1">Success rate</h3>
       </v-col>
     </v-row>
     <v-row class="d-none d-md-flex mx-md-16 mx-md-6 mx-lg-16">
@@ -110,7 +110,7 @@
     <v-row class="mx-0 mx-md-6 mx-lg-16">
       <v-col cols="12">
         <v-card class="pa-8 my-2 white--text text-left card-shadow">
-          <v-card-title class="headline font-weight-bold primary--text"
+          <v-card-title class="text-md-h3 font-weight-bold primary--text"
             >Why work with Confido?</v-card-title
           >
           <v-card-text class="text-h6 primary--text"
@@ -121,29 +121,29 @@
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-account-group</v-icon
               >
-              <h1>3 candidate</h1>
-              <h3>limit per role</h3>
+              <h1 class="text-h5 text-md-h1">3 candidate</h1>
+              <h3 class="text-md-h1">limit per role</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-clock-check-outline</v-icon
               >
-              <h1>2 week total</h1>
-              <h3>completed interview process</h3>
+              <h1 class="text-h5 text-md-h1">2 week total</h1>
+              <h3 class="text-md-h1">completed interview process</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-charity</v-icon
               >
-              <h1>Exclusive</h1>
-              <h3>client relationships</h3>
+              <h1 class="text-h5 text-md-h1">Exclusive</h1>
+              <h3 class="text-md-h1">client relationships</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text ml-4 text-h2"
                 >mdi-account-voice</v-icon
               >
-              <h1>Feedback</h1>
-              <h3>guaranteed</h3>
+              <h1 class="text-h5 text-md-h1">Feedback</h1>
+              <h3 class="text-md-h1">guaranteed</h3>
             </v-col>
           </v-row>
         </v-card>
@@ -171,21 +171,21 @@
               justify="center"
             >
               <v-text>
-                <p class="text-h6 text-md-h5 mt-md-16 my-0 py-0 text--primary">
+                <p class="text-md-h6 text-md-h5 mt-md-16 my-0 py-0 text--primary">
                   <strong class="quote">
                     {{ quote.content }}
                   </strong>
                 </p>
                 <v-row 
-                  class="text-h5 mt-12 mb-8 mx-auto" 
+                  class="text-md-h5 mt-12 mb-8 mx-auto" 
                   align="center"
                   justify="center"
                 >
                 <v-spacer />
-                    <v-col cols="2">
-                      <v-img :src="`${quote.image}`" width="100" height="auto" class="float-right" />
+                    <v-col cols="6" md="6">
+                      <v-img :src="`${quote.image}`" width="100" height="auto" class="float-right" eager />
                     </v-col>
-                    <v-col cols="5">
+                    <v-col cols="6" md="5">
                       <p class="secondary--text text-left">
                         <strong>
                         {{ quote.advocate }}
@@ -305,7 +305,7 @@
           <v-card-title class="headline font-weight-bold"
             >Values we look for.</v-card-title
           >
-          <v-card-text class="text-h6 white--text">
+          <v-card-text class="text-md-h6 white--text">
           <v-row>
             <v-col cols="12" md="6">
               <p>

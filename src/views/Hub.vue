@@ -7,6 +7,13 @@
       </v-col>
     </v-row>
     <section class="ma-4 ma-lg-16">
+      <!-- <v-row class="my-4">
+        <v-col cols="6" md="2" v-for="post in posts" :key="post._id">
+          <v-chip class="tag px-4 mx-0" color="secondary">
+            <strong>{{ post.metadata.tag }}</strong>
+          </v-chip>
+        </v-col>
+      </v-row> -->
       <v-row class="mt-3 mb-5">
         <v-col v-for="post in posts" :key="post._id" cols="12" md="4">
           <PostCards :post="post" class="justify-center" />
