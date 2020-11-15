@@ -375,7 +375,7 @@ export default {
         {
           content:
             "Confido spent the time to listen to my needs, and asked all the right questions in order to find out what exactly I was looking for. When it came time to interview, they were always there to give helpful pointers, and they were very engaged. I would definitely recommend Confido to anyone looking for a new job.",
-          advocate: "Yusuf O – Tech Lead",
+          advocate: "Yusuf O. – Tech Lead",
           image: "../images/people/yusuf.png"
         },
         {
