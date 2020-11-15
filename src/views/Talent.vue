@@ -381,67 +381,67 @@ export default {
         {
           content:
             "Confido have been one of the best recruiters I've worked with and I have nothing but praise for them. I would totally recommend him if you're either looking for a new job or a company looking to hire.",
-          advocate: "Fernando de Freitas, Senior Developer",
+          advocate: "Fernando F. – Senior Developer",
           image: "../images/people/fernando.png"
         },
         {
           content:
             "Confido made the whole searching process so much easier. From the beginning I could tell they really cared about my interests. They were open and clear and managed my expectations with each stage of the process. I couldn't recommend a recruiter more!",
-          advocate: "Bella Dear, Full Stack Engineer",
+          advocate: "Bella D. – Full Stack Engineer",
           image: "../images/people/bella.png"
         },
         {
           content:
             "I wasn’t looking to change roles when I was head hunted by Confido but can honestly say that if it wasn’t for the time and effort they put in explaining every detail about the role and company, I wouldn’t have applied.  The great communication and feedback continued through the multiple stage process and really helped me secure a fantastic new position at a great company.",
-          advocate: "James Fairhead, VP of Engineering",
+          advocate: "James F. – VP of Engineering",
           image: "../images/people/james.png"
         },
         {
           content:
             "I've recently been working with Confido on a Head of QA position; where he has seamlessly ensured that the process was smooth for both me, my family, and of course the hiring company. In fact; if you want results within days and not weeks; I highly recommend Confido as someone who will get the job done.",
-          advocate: "Chris Curtis, Head of DevOps and QA",
+          advocate: "Chris C. – Head of DevOps and QA",
           image: "../images/people/chris.png"
         },
         {
           content:
             "Confido ensured my journey through the recruitment process was not only smooth, but also pleasant and swift. They always acted with my interests in mind and were quick to resolve any issues.",
-          advocate: "Jacob King, Frontend Chapter Lead",
+          advocate: "Jacob K. – Frontend Chapter Lead",
           image: "../images/people/jacob.png"
         },
         {
           content:
             "I couldn't recommend Confido more. They have honestly been one of the best, if not the best recruiter I have worked with. They gave constant feedback, took lots of time to listen and really thought about what I wanted and needed and where would work well for me.",
-          advocate: "Abi Travers, Software Engineer",
+          advocate: "Abi T. – Software Engineer",
           image: "../images/people/abi.png"
         },
         {
           content:
             "From our first interaction, Confido took the time to get to know me and what I care about and matched me with companies that share my values.",
-          advocate: "Harris G, Senior Software Engineer",
+          advocate: "Harris G. – Senior Software Engineer",
           image: "../images/people/harris.png"
         },
         {
           content:
             "I've now secured a role at a company that resonates with my personal values regarding people and how they should be treated. I cannot recommend Confido enough.",
-          advocate: "Lou Robinson, Lead QA Engineer",
+          advocate: "Lou R. – Lead QA Engineer",
           image: "../images/people/lou.png"
         },
         {
           content:
             "Confido is the best business I've worked with when looking for new career opportunities. From initial contact through to receiving an offer, the experience was painless and I was treated with care and attention.",
-          advocate: "Karl Koch, Product Designer",
+          advocate: "Karl K. – Product Designer",
           image: "../images/people/karl.png"
         },
         {
           content:
             "Confido’s communication and feedback was excellent throughout the hiring process. Most importantly, they took the time understand my situation and provided invaluable advice to help me make my decision.",
-          advocate: "Stu Crew, Senior Product Manager",
+          advocate: "Stu C. – Senior Product Manager",
           image: "../images/people/stu.png"
         },
         {
           content:
             "It was an absolute pleasure to work with Confido. They made the process of finding a new role as pain-free and relaxed as possible. They also take the time to get to know candidates; I felt that they really understood my personality, skills and career goals.",
-          advocate: "Dr Amyce Aurora-Smith, QA Automation Engineer",
+          advocate: "Dr Amyce A-S. – QA Automation Engineer",
           image: "../images/people/amyce.png"
         },
       ],
