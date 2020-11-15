@@ -269,6 +269,11 @@ export default {
         },
         {
           content:
+            "Unmind needed to double the engineering team in a short time frame. Confido quickly calibrated on what we needed and we saw hires made within the first few weeks. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
+          advocate: "Phil Mullan – CTO, Unmind"
+        },
+        {
+          content:
             "Confido have partnered with us in the truest sense. Helping us grow more in the last six months than we achieved with others over the previous twelve.",
           advocate: "Paul Smith – CTO, Benefex"
         },
@@ -276,11 +281,6 @@ export default {
           content:
             "It's a pleasure working with Confido. Simply put, they deliver. Confido have sourced universally high-quality candidates, then worked seamlessly with us to manage a candidate-centred interview process and close offers. Highly recommended.",
           advocate: "Sam Stagg - CTO, Third Space Learning"
-        },
-        {
-          content:
-            "Unmind needed to double the engineering team in a short time frame. Confido quickly calibrated on what we needed and we saw hires made within the first few weeks. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
-          advocate: "Phil Mullan – CTO, Unmind"
         },
         {
           content:
