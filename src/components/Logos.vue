@@ -453,7 +453,7 @@ export default {
           hiresMade: "2",
           subtitle: "Hires made by Confido",
           overviewText: "Preparing for growth and a new product launch, HomeHero needed to invest in their product team. We were able to help them attract a top Head of Product and Product Designer to enable them to launch their newest service offering to the market.",
-          quote: "You rarely come across a recruiter as efficient as Confido. I had the pleasure of working with them to help us find a new Product Designer to join our team. Craig has the fantastic ability to ask pertinent questions to properly understand a job brief and then only send through candidates that meet our high standard. We had a shortlist of candidates within 48 hours and we were able to put a job offer out within a week. I can wholeheartedly recommend Confido to help grow your team.",
+          quote: "You rarely come across a recruiter as efficient as Confido. I had the pleasure of working with them to help us find a new Product Designer to join our team. The Confido team have the fantastic ability to ask pertinent questions to properly understand a job brief and then only send through candidates that meet our high standard. We had a shortlist of candidates within 48 hours and we were able to put a job offer out within a week. I can wholeheartedly recommend Confido to help grow your team.",
           person: "David Riley – Head of Design, HomeHero",
         },
         {
@@ -471,7 +471,7 @@ export default {
           hiresMade: "24",
           subtitle: "Hires made by Confido",
           overviewText: "We’ve supported Unmind through Seed and Series A funding rounds. Initially, we hired three Full Stack Engineers to join the core team, then later doubled their squads from two to four. Overall, we’ve helped them make over 24 hires, mainly Full Stack Engineers, Lead Engineers and Engineering Managers.",
-          quote: "Unmind had huge growth plans following Series A investment and needed to double the engineering team in a short time frame whilst retaining our core values and safeguarding our culture. We needed an embedded talent partner that would lead our end-to-end candidate experience for engineering at the same time as delivering on the ambitious growth plans.",
+          quote: "Unmind had huge growth plans following Series A investment and needed to double the engineering team in a short time frame whilst retaining our core values and safeguarding our culture. We needed an embedded talent partner that would lead our end-to-end candidate experience for engineering at the same time as delivering on the ambitious growth plans. Confido partnered with us in the truest sense and delivered on both levels. As acting members of the team, the Confido team were natural Unminders. They quickly calibrated on what we needed and we saw hires made within the first few weeks. They also worked closely with key stakeholders across the business on wider initiatives like our referral policy. What clearly stood out was that Confido ensured we had a diverse candidate pipeline that were aligned with our company values. They put together a structure and set of processes that will continue to help us grow in the long term. It made complete sense to extend Confido as our growth continued to accelerate, and they also made sure there was a seamless transition as our new Head of People joined. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
           person: "Phil Mullan – CTO, Unmind",
         },
         {
@@ -489,8 +489,10 @@ export default {
           hiresMade: "4",
           subtitle: "Hires made by Confido",
           overviewText: "Following their Series B funding round, Curve needed to attract top engineers whilst re-structuring their talent function for long term success. We helped make a number of hires, before moving into an interim Head of Talent role. This involved working with key stakeholders to ensure their talent team was structured for sustainable growth.",
-          quote: "The team at Confido are unlike any other recruitment business I have worked with. This was important in more ways than I can express, from both a personal and Curve standpoint. Confido's ability to quickly connect with people and business functions ensured consistent delivery of solutions that could and have been relied upon. Whether it’s a hiring goal, upskilling internal talent teams, or working with budget holders to effectively workforce and scenario plan, Confido have partnered with us in every sense of the word. Sharp, resourceful and totally committed. Great job.",
+          quote: "The team at Confido are unlike any other recruitment business I have worked with. This was important in more ways than I can express, from both a personal and Curve standpoint. Confido's ability to quickly connect with people and business functions ensured consistent delivery of solutions that could and have been relied upon. Whether it’s a hiring goal, upskilling internal talent teams, or working with budget holders to effectively workforce and scenario plan, Confido have partnered with us in every sense of the word. Sharp, resourceful and totally committed. Great job. ",
+          quote2: "The team at Confido are unlike any other recruitment business I have worked with. This was important in more ways than I can express, from both a personal and Curve standpoint. Confido's ability to quickly connect with people and business functions ensured consistent delivery of solutions that could and have been relied upon. Whether it’s a hiring goal, upskilling internal talent teams, or working with budget holders to effectively workforce and scenario plan, Confido have partnered with us in every sense of the word. Sharp, resourceful and totally committed. Great job. ",
           person: "Matt Collinge – CTO, Curve",
+          person2: "Kate James – Head of People, Curve",
         },
         {
           image: "../images/matr.png",
@@ -523,7 +525,7 @@ export default {
           hiresMade: "8",
           subtitle: "Hires made by Confido",
           overviewText: "Third Space Learning needed to build out their core product and engineering team to enable growth into new markets. We’ve helped them hire eight people across Dev, DevOps, Product and UX.",
-          quote: "It's a pleasure working with Confido. Simply put, they deliver. At Third Space Learning we've filled multiple engineering positions through Craig and his team over the past six months, covering full-stack, frontend and DevOps, and contract and permanent roles.",
+          quote: "It's a pleasure working with Confido. Simply put, they deliver. At Third Space Learning we've filled multiple engineering positions through Confido over the past six months, covering full-stack, frontend and DevOps, and both contract and permanent roles. Confido have sourced universally high-quality candidates, then worked seamlessly with us to manage a candidate-centred interview process and close offers. Confido have approached the whole process as a true partnership, and that has definitely helped us overcome the inevitable bumps in the road that happen when growing a team. I look forward to working with Confido in future - highly recommended.",
           person: "Sam Stagg – CTO, Third Space Learning",
         },
         {
@@ -540,7 +542,7 @@ export default {
           hiresMade: "2",
           subtitle: "Hires made by Confido",
           overviewText: "Octopus Wealth required a Technical Co-Founder to help them build out their engineering team, they needed a top tier tech leader within a short timeframe. The hire was made from a shortlist of three candidates within three weeks. ",
-          quote: "Confido worked really closely with me to help me find our new Head of Engineering. The most important aspect for me was calibrating with Confido really quickly on what we were looking for. within days of spec’ing out the role, we were seeing CVs and meeting potential candidates, so we could quickly agree and hone in what we were looking for.",
+          quote: "Confido worked really closely with me to help me find our new Head of Engineering. The most important aspect for me was calibrating with Confido really quickly on what we were looking for. Within days of spec’ing out the role, we were seeing CVs and meeting potential candidates so we could quickly agree and hone-in on what we were looking for. The Confido team were really keen to understand exactly what I was looking for from the start, and as a result the candidates we met were all high caliber and very credible. This meant the whole process was much quicker than I’ve experienced on similar searches in the past.",
           person: "Richard Wazacz – CEO, Octopus Wealth",
         },
         {
@@ -558,7 +560,7 @@ export default {
           hiresMade: "12",
           subtitle: "Hires made by Confido",
           overviewText: "Vision-Box needed to accelerate their engineering hiring after struggling with direct hiring and local partners. Within 13 weeks we made 11 hires across Dev, QA, Release and DevOps, including five Head of departments. We were able to attract both local and international candidates.",
-          quote: "Simply put, if you’re a startup that needs to make hires, you need to speak to Confido! I’ve worked with Confido twice now. Once, building a team for an early-stage startup from the ground up. Then now, scaling a team for a global business. Both times, Confido have delivered to my high expectations.",
+          quote: "Simply put, if you’re a startup that needs to make hire, you need to speak to Confido! I’ve worked with Confido twice now. Once, building a team for an early-stage startup from the ground up. Then now, scaling a team for a global business. Both times, Confido have delivered to my high expectations. At Vision-Box, I needed to scale my team quickly, with top engineers. When I joined, we’d only made one hire in six months and I didn’t know the local market in Lisbon. Confido acted as a true recruiting partner. Not only did they attract some of the best engineers I’ve come across, but they fed back valuable intel about the local market and what our competitors were doing. Simply put, if you’re a startup that needs to make hires, you need to speak to Confido! I’ve In 3 months we were able to make 11 hires. Half of the candidates were non-Portuguese nationals and we hired our first female Engineering Manager. We also reduced time to hire by 30%.",
           person: "Andrea Candian – CTO, Vision-Box",
         },
         {
@@ -576,8 +578,10 @@ export default {
           hiresMade: "12",
           subtitle: "Hires made by Confido",
           overviewText: "Following their acquisition, Feedr needed to double the size of their product and engineering teams within a three month timeframe. We tripled the previous hiring speed to make 12 hires in 14 weeks across product management, development and QA.",
-          quote: "From day one, it felt like Craig was a natural extension of our brand/business that we could trust to go to market on our behalf. He partnered with us to learn about our team and what we needed in our hires, working closely with the full team in screening, interviewing, and finding the right candidate fit.",
+          quote: "Working with Confido was incredibly helpful when we needed to double the size of our engineering and product teams within a period of 3 months. From day one, it felt like the Confido team was a natural extension of our brand/business that we could trust to go to market on our behalf. They partnered with us to learn about our team and what we needed in our hires, working closely with the full team in screening, interviewing, and finding the right candidate fit. As a result, we were able to achieve our demanding hiring goals, bringing in top engineers that will help take the product to the next level. Outside of hiring, Confido provided clear hiring data and metrics that we could action, and supported our strategic focus on building a diverse and inclusive team, ensuring we achieved an agreed ratio of diverse hires. We very rarely work with recruiters, but I'd recommend working with the team at Confido.",
+          quote2: "I have really enjoyed working with Confido. We needed to scale a small startup team about 3x in a short space of time, but didn't want to compromise on the quality of candidates. We'd tried alternative recruitment arrangements but hadn't seen results until we engaged Confido. Not only did they source quality candidates, but they were engaged throughout the interview process and gave really useful insight into our whole process.",
           person: "Lyz Swanton – COO, Feedr",
+          person2: "Mark Somerfield – VP of Engineering, Feedr",
         },
         {
           image: "../images/wagestream-white.png",

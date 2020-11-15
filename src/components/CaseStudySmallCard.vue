@@ -104,6 +104,10 @@
                 <p class="secondary--text mt-2">
                   <strong>{{ card.person }}</strong>
                 </p>
+                <em class="quote">{{ card.quote2 }} </em>
+                <p class="secondary--text mt-2">
+                  <strong>{{ card.person2 }}</strong>
+                </p>
               </v-card-text>
           </v-row>
       </v-col>
