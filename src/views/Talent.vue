@@ -340,7 +340,7 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row class="mx-0 mx-md-6 mx-lg-16 mb-12">
+    <v-row class="mx-0 mx-md-6 mx-lg-16 mb-12" id="getInTouch">
       <v-col cols="12">
         <GetInTouch :contact="contact" />
       </v-col>

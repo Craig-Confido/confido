@@ -16,7 +16,7 @@
         class="white--text d-md-none"
       ></v-app-bar-nav-icon>
       <v-btn
-        v-for="link in links.slice(1, 4)"
+        v-for="link in links.slice(0, 4)"
         :key="`${link.label}--page-link`"
         class="my-2 mx-8 white--text d-none d-md-flex"
         text
@@ -26,13 +26,11 @@
       </v-btn>
       <v-spacer class="d-none d-md-flex" />
       <v-btn
-        v-for="link in links.slice(0, 1)"
-        :key="`${link.label}--page-link`"
         class="my-2 mx-1 white--text d-none d-md-flex"
         text
-        :to="link.url"
+        @click="$vuetify.goTo('#getInTouch')"
       >
-        <v-text class="font-weight-medium">{{ link.label }}</v-text>
+        <v-text class="font-weight-medium">Contact</v-text>
       </v-btn>
       <v-btn
         v-for="social in socials"
@@ -77,6 +75,16 @@
             <v-list-item-content class="font-weight-medium white--text">{{
               link.label
             }}</v-list-item-content>
+          </v-list-item>
+          <v-list-item
+              class="my-2 mx-1 white--text"
+              text
+              @click="$vuetify.goTo('#getInTouch')"
+          >
+            <v-list-item-icon class="white--text">
+              <v-icon class="white--text text-left">mdi-human-greeting-proximity</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content class="font-weight-medium white--text">Contact</v-list-item-content>
           </v-list-item>
           <v-list-item
             v-for="social in socials"

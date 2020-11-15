@@ -417,7 +417,7 @@ export default {
           hiresMade: "14",
           subtitle: "Hires made by Confido",
           overviewText: "Benefex needed a partner that knew how to attract product-minded engineers in a small local market. Since summer 2018, we’ve sourced over 14 Benefex-ers across Dev, QA, Platform, Product and UX. We’ve built out their next leadership layer with a VP of Engineering and Chapter Leads, and hired their third squad to build a brand new product.",
-          quote: "Confido have partnered with us in the truest sense. Craig and his team have taken the time to get a deep understanding of our culture and vision for the future of Benefex, helping us grow our Product Engineering tribe more in the last six months than we achieved with others over the previous twelve.",
+          quote: "Confido have partnered with us in the truest sense. The team have taken the time to get a deep understanding of our culture and vision for the future of Benefex, helping us grow our Product Engineering tribe more in the last six months than we achieved with others over the previous twelve. Whether the role has been in Engineering, Product or Leadership, Confido have demonstrated an emotional intelligence with candidates that I have not seen previously. In a location with a limited pool of majority passive candidates, Confido have shown a unique ability to marry the needs of Benefex and a candidate’s true career drivers. This has resulted in not just an increase to our tribe’s numbers, but enabled us to find true Benefex’ers who have both the skillset, drive to improve themselves and personality that makes our culture what it is today. In my role as CTO, Confido have been a reliable source of market trends and a constructive sounding board for what the market can provide at a particular time. This has enabled us to find the right balance in the roles and skillsets we use to grow Benefex in a sustainable way. Without them, I am sure we wouldn’t be as far along our journey as we currently are; long may it continue.",
           person: "Paul Smith – CTO, Benefex",
         },
         {
@@ -435,7 +435,7 @@ export default {
           hiresMade: "2",
           subtitle: "Hires made by Confido",
           overviewText: "Housekeep needed to make two critical hires to fit within their small, tightknit team. Quality and time were of the essence for this project, so moving fast without compromising on talent calibre was key. Within five weeks, we connected Housekeep with two great engineers to add further backend and frontend capacity.",
-          quote: "Craig and his team quickly understood the profile we were looking for in terms of technology, seniority and, crucially, culture. They were able to go beyond this by advising on how to communicate our brand and the opportunity to the market, and build out an efficient process to attract the top tier candidates we wanted. We're delighted to have made two hires very quickly and are continuing to work together. I'd highly recommend Craig and Confido.",
+          quote: "Craig and his team quickly understood the profile we were looking for in terms of technology, seniority and, crucially, culture. They were able to go beyond this by advising on how to communicate our brand and the opportunity to the market, and build out an efficient process to attract the top tier candidates we wanted. We're delighted to have made two hires very quickly and are continuing to work together. I'd highly recommend Confido.",
           person: "Avin Rabheru – CEO, Housekeep",
         },
         {

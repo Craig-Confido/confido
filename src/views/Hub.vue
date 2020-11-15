@@ -20,12 +20,23 @@
         </v-col>
       </v-row>
     </section>
+        <v-row
+      class="my-16 full-width-green"
+      no-gutters
+      style="height: 8px"
+    ></v-row>
+        <v-row class="mx-0 mx-md-6 mx-lg-16 mb-12" id="getInTouch">
+      <v-col cols="12">
+        <GetInTouch :contact="contact" />
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
 import PostCards from "../components/PostCards";
 import FeaturedPost from "../components/FeaturedPost";
+import GetInTouch from "../components/GetInTouch";
 
 const Cosmic = require("cosmicjs");
 const api = Cosmic();
@@ -39,11 +50,13 @@ export default {
   name: "Hub",
   components: {
     PostCards,
-    FeaturedPost
+    FeaturedPost,
+    GetInTouch
   },
   data() {
     return {
       loading: false,
+      contact: [],
       posts: {},
       featuredposts: {}
     };
