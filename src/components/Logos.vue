@@ -457,6 +457,7 @@ export default {
           person: "David Riley – Head of Design, HomeHero",
         },
         {
+          secondQuote: false,
           image: "../images/unmind-white.png",
           title: "Unmind is a workplace mental health platform. They empower employees to measure, understand, and improve their mental wellbeing.",
           cols4: true,
@@ -473,8 +474,11 @@ export default {
           overviewText: "We’ve supported Unmind through Seed and Series A funding rounds. Initially, we hired three Full Stack Engineers to join the core team, then later doubled their squads from two to four. Overall, we’ve helped them make over 24 hires, mainly Full Stack Engineers, Lead Engineers and Engineering Managers.",
           quote: "Unmind had huge growth plans following Series A investment and needed to double the engineering team in a short time frame whilst retaining our core values and safeguarding our culture. We needed an embedded talent partner that would lead our end-to-end candidate experience for engineering at the same time as delivering on the ambitious growth plans. Confido partnered with us in the truest sense and delivered on both levels. As acting members of the team, the Confido team were natural Unminders. They quickly calibrated on what we needed and we saw hires made within the first few weeks. They also worked closely with key stakeholders across the business on wider initiatives like our referral policy. What clearly stood out was that Confido ensured we had a diverse candidate pipeline that were aligned with our company values. They put together a structure and set of processes that will continue to help us grow in the long term. It made complete sense to extend Confido as our growth continued to accelerate, and they also made sure there was a seamless transition as our new Head of People joined. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
           person: "Phil Mullan – CTO, Unmind",
+          quote2: "Unmind needed to double the engineering team in a short time frame. Confido quickly calibrated on what we needed and we saw hires made within the first few weeks. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
+          person2: "Phil Mullan – CTO, Unmind"
         },
         {
+          secondQuote: true,
           image: "../images/curve-white.png",
           title: "Curve is on a mission to simplify the way people spend, send, see and save money. Curve allows the user to combine their accounts and cards through the Curve app.",
           cols4: true,
@@ -490,7 +494,7 @@ export default {
           subtitle: "Hires made by Confido",
           overviewText: "Following their Series B funding round, Curve needed to attract top engineers whilst re-structuring their talent function for long term success. We helped make a number of hires, before moving into an interim Head of Talent role. This involved working with key stakeholders to ensure their talent team was structured for sustainable growth.",
           quote: "The team at Confido are unlike any other recruitment business I have worked with. This was important in more ways than I can express, from both a personal and Curve standpoint. Confido's ability to quickly connect with people and business functions ensured consistent delivery of solutions that could and have been relied upon. Whether it’s a hiring goal, upskilling internal talent teams, or working with budget holders to effectively workforce and scenario plan, Confido have partnered with us in every sense of the word. Sharp, resourceful and totally committed. Great job. ",
-          quote2: "The team at Confido are unlike any other recruitment business I have worked with. This was important in more ways than I can express, from both a personal and Curve standpoint. Confido's ability to quickly connect with people and business functions ensured consistent delivery of solutions that could and have been relied upon. Whether it’s a hiring goal, upskilling internal talent teams, or working with budget holders to effectively workforce and scenario plan, Confido have partnered with us in every sense of the word. Sharp, resourceful and totally committed. Great job. ",
+          quote2: "Appointing a recruitment partner is a challenge; finding one you can trust with your business as if it were their own is near impossible. Confido live up to the high expectations they set for themselves and they have been instrumental in helping Curve hire people that not only have the skills, but also fit our culture and company values. Beyond hiring, Confido have worked closely with myself and the People Ops team to improve our recruitment processes, use of data and documentation, driving consistency and improving the relationships talent has across the business. Highly recommended.",
           person: "Matt Collinge – CTO, Curve",
           person2: "Kate James – Head of People, Curve",
         },
@@ -560,7 +564,7 @@ export default {
           hiresMade: "12",
           subtitle: "Hires made by Confido",
           overviewText: "Vision-Box needed to accelerate their engineering hiring after struggling with direct hiring and local partners. Within 13 weeks we made 11 hires across Dev, QA, Release and DevOps, including five Head of departments. We were able to attract both local and international candidates.",
-          quote: "Simply put, if you’re a startup that needs to make hire, you need to speak to Confido! I’ve worked with Confido twice now. Once, building a team for an early-stage startup from the ground up. Then now, scaling a team for a global business. Both times, Confido have delivered to my high expectations. At Vision-Box, I needed to scale my team quickly, with top engineers. When I joined, we’d only made one hire in six months and I didn’t know the local market in Lisbon. Confido acted as a true recruiting partner. Not only did they attract some of the best engineers I’ve come across, but they fed back valuable intel about the local market and what our competitors were doing. Simply put, if you’re a startup that needs to make hires, you need to speak to Confido! I’ve In 3 months we were able to make 11 hires. Half of the candidates were non-Portuguese nationals and we hired our first female Engineering Manager. We also reduced time to hire by 30%.",
+          quote: "I’ve worked with Confido twice now. Once, building a team for an early-stage startup from the ground up. Then now, scaling a team for a global business. Both times, Confido have delivered to my high expectations. At Vision-Box, I needed to scale my team quickly, with top engineers. When I joined, we’d only made one hire in six months and I didn’t know the local market in Lisbon. Confido acted as a true recruiting partner, not only did they attract some of the best engineers I’ve come across, but they fed back valuable intel about the local market and what our competitors were doing. We were able to make 10+ hires in the first 3 months and speed up our hiring. Honestly, if you’re a startup that needs to make hires, you need to speak to Confido!",
           person: "Andrea Candian – CTO, Vision-Box",
         },
         {

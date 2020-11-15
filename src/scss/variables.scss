@@ -82,6 +82,25 @@ $material-light: (
   border-bottom: 3px solid currentColor;
 }
 
+.clearQuote {
+  position: relative;
+  &:before {
+    content: "“";
+    color: #f1f1ff;
+    font-family: Times; 
+    font-size: 4em;
+  }
+  &:after {
+    content: "”";
+    padding-left: 8px;
+    color: #f1f1ff;
+    position: absolute;
+    top: 100%;
+    font-family: Times; 
+    font-size: 4em;
+  }
+}
+
 .quote {
   position: relative;
   &:before {
