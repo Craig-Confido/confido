@@ -21,6 +21,7 @@
     <v-col cols="1">
     <div class="mt-2">
       <v-icon large color="white" @click="$router.go()">mdi-close-circle-outline</v-icon>
+      <!-- <v-icon large color="white" @click="close">mdi-close-circle-outline</v-icon> -->
     </div>
     </v-col>
   </v-row>
@@ -104,8 +105,10 @@
                 <p class="secondary--text mt-2">
                   <strong>{{ card.person }}</strong>
                 </p>
-                <em class="quote">{{ card.quote2 }} </em>
-                <p class="secondary--text mt-2">
+                <em class="quote" v-if="quote2">{{ card.quote2 }}</em>
+                <em v-else>{{ card.quote2 }}</em>
+                <p class="secondary--text mt-2" v-if="person2">
+                <p v-else class="secondary--text mt-2">
                   <strong>{{ card.person2 }}</strong>
                 </p>
               </v-card-text>
