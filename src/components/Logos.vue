@@ -497,7 +497,7 @@ export default {
           person2: "Kate James – Head of People, Curve",
         },
         {
-          image: "../images/matr.png",
+          image: "../images/matr-white.png",
           title: "Matr provide affordable, online one-to-one tutoring to families. This includes online maths tuition used by over 50000 UK children for SATs, 11+ and secondary school.",
           icon1: "mdi-lightbulb",
           label1: "Built out the core team",
