@@ -279,6 +279,11 @@ export default {
         },
         {
           content:
+            "Unmind needed to double the engineering team in a short time frame. Confido quickly calibrated on what we needed and we saw hires made within the first few weeks. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
+          advocate: "Phil Mullan – CTO, Unmind"
+        },
+        {
+          content:
             "Whether it’s a hiring goal, upskilling internal talent teams, or working with budget holders to effectively workforce and scenario plan, Confido have partnered with us in every sense of the word. Sharp, resourceful and totally committed. Great job.",
           advocate: "Matt Collinge - CTO, Curve"
         },

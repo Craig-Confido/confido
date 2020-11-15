@@ -473,9 +473,7 @@ export default {
           subtitle: "Hires made by Confido",
           overviewText: "We’ve supported Unmind through Seed and Series A funding rounds. Initially, we hired three Full Stack Engineers to join the core team, then later doubled their squads from two to four. Overall, we’ve helped them make over 24 hires, mainly Full Stack Engineers, Lead Engineers and Engineering Managers.",
           quote: "Unmind had huge growth plans following Series A investment and needed to double the engineering team in a short time frame whilst retaining our core values and safeguarding our culture. We needed an embedded talent partner that would lead our end-to-end candidate experience for engineering at the same time as delivering on the ambitious growth plans. Confido partnered with us in the truest sense and delivered on both levels. As acting members of the team, the Confido team were natural Unminders. They quickly calibrated on what we needed and we saw hires made within the first few weeks. They also worked closely with key stakeholders across the business on wider initiatives like our referral policy. What clearly stood out was that Confido ensured we had a diverse candidate pipeline that were aligned with our company values. They put together a structure and set of processes that will continue to help us grow in the long term. It made complete sense to extend Confido as our growth continued to accelerate, and they also made sure there was a seamless transition as our new Head of People joined. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
-          person: "Phil Mullan – CTO, Unmind",
-          quote2: "Unmind needed to double the engineering team in a short time frame. Confido quickly calibrated on what we needed and we saw hires made within the first few weeks. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
-          person2: "Phil Mullan – CTO, Unmind"
+          person: "Phil Mullan – CTO, Unmind"
         },
         {
           secondQuote: true,
