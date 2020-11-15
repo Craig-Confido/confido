@@ -275,7 +275,7 @@ export default {
         {
           content:
             "It's a pleasure working with Confido. Simply put, they deliver. Confido have sourced universally high-quality candidates, then worked seamlessly with us to manage a candidate-centred interview process and close offers. Highly recommended.",
-          advocate: "Sam Stagg - CTO, Three Stage Learning"
+          advocate: "Sam Stagg - CTO, Third Space Learning"
         },
         {
           content:

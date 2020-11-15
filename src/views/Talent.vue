@@ -340,158 +340,6 @@
         </v-card>
       </v-col>
     </v-row>
-   <!-- <v-col cols="12" class="mt-8">
-      <v-card color="transparent" flat>
-      <v-row>
-      <v-col cols="12" md="6">
-        <v-text class="text-h5 font-weight-bold">Product.</v-text>
-      </v-col>
-      <v-col cols="12" md="6">
-        <v-text class="text-h5 font-weight-bold">Tech.</v-text>
-      </v-col>
-      </v-row>
-        <v-row class="ma-4">
-          <v-col cols="12" md="2">
-            <div class="circle pointer">
-              <v-img
-                src="../../public/images/benefex.png"
-                width="150"
-                contain
-                eager
-                class="circle"
-              />
-            </div>
-            <h3 class="mt-2">Product Designer</h3>
-          </v-col>
-          <v-col cols="12" md="2">
-            <v-dialog v-model="thirdSpace" width="1000px" class="overflow-hidden">
-              <template v-slot:activator="{ on, attrs }">
-                <div class="circle pointer">
-                  <v-img
-                    src="../../public/images/thirdSpace.png"
-                    class="circle"
-                    width="150"
-                    contain
-                    eager
-                    v-bind="attrs"
-                    v-on="on"
-                  />
-                </div>
-                <h3 class="mt-2">Head of Design</h3>
-              </template>
-              <v-card>
-                <v-img
-                  src="https://www.confidotalent.com/application/files/3615/6224/8669/unmind_1.png"
-                  height="200"
-                  gradient="to top right, rgba(100,115,201,1), rgba(25,32,72, .7)"
-                >
-                  <v-img
-                    src="../../public/images/thirdspace-white.png"
-                    width="150"
-                    contain
-                    eager
-                    class="startups mt-16"
-                  />
-                </v-img>
-                <h2 class="primary--text px-8 pt-8">
-                  Mobile and Web Team Scaling
-                </h2>
-                <v-card-text class="text-left mt-4 px-8 pt-0">
-                  <h3 class="primary--text">The Challenge</h3>
-                  <p>
-                    To scale their cross-platform product, the CTO needed to
-                    make some key React Native hires & a mobile SME. Having
-                    exhausted direct & referral networks, AI platforms and other
-                    agencies without success, he turned to Confido.
-                  </p>
-                  <h3 class="primary--text">Key stats</h3>
-                  <ul>
-                    <li>Shortlist within 3 weeks</li>
-                    <li>100% CV to interview ratio</li>
-                    <li>90% CV to final interview</li>
-                    <li>4 offers, 3 acceptances</li>
-                    <li>
-                      Average times from submission to offer reduced from 4 to 2
-                      weeks.
-                    </li>
-                  </ul>
-                  <h3 class="primary--text mt-4">The Result</h3>
-                  <p>
-                    Following successful hires, Confido is now an exclusive
-                    hiring partner for the wider engineering team.
-                  </p>
-                  <h3 class="primary--text">About Unmind</h3>
-                  <p>
-                    Unmind's B2B workplace wellness platform is shown to
-                    decrease stress, enhance sleep, and improve business
-                    performance of your employees.
-                  </p>
-                </v-card-text>
-                <v-card-actions>
-                  <v-spacer />
-                  <v-btn
-                    color="primary"
-                    text
-                    class="px-4 py-2"
-                    @click="thirdSpace = false"
-                    >Close</v-btn
-                  >
-                  <v-spacer />
-                </v-card-actions>
-              </v-card>
-            </v-dialog>
-          </v-col>
-          <v-col cols="12" md="2">
-            <div class="circle pointer">
-              <v-img
-                src="../../public/images/matr.png"
-                width="150"
-                contain
-                eager
-                class="circle"
-              />
-            </div>
-            <h3 class="mt-2">Visual Designer</h3>
-          </v-col>
-          <v-col cols="12" md="2">
-            <div class="circle pointer">
-              <v-img
-                src="../../public/images/feedr.webp"
-                width="150"
-                contain
-                eager
-                class="circle"
-              />
-            </div>
-            <h3 class="mt-2">Senior Developer</h3>
-          </v-col>
-          <v-col cols="12" md="2">
-            <div class="circle pointer">
-              <v-img
-                src="../../public/images/houseKeep.png"
-                width="150"
-                contain
-                eager
-                class="circle"
-              />
-            </div>
-            <h3 class="mt-2">Frontend Developer</h3>
-          </v-col>
-          <v-col cols="12" md="2">
-            <div class="circle pointer">
-              <v-img
-                src="../../public/images/unmind.png"
-                width="150"
-                contain
-                eager
-                class="circle"
-              />
-            </div>
-            <h3 class="mt-2">Lead Engineer</h3>
-          </v-col>
-        </v-row> 
-      </v-card>
-    </v-col> -->
     <v-row class="mx-0 mx-md-6 mx-lg-16 mb-12">
       <v-col cols="12">
         <GetInTouch :contact="contact" />
@@ -516,22 +364,18 @@ export default {
   },
   data() {
     return {
-      // benefex: false,
-      // visionbox: false,
-      // thirdSpace: false,
-      // unmind: false,
       contact: [],
       quotes: [
         {
           content:
             "Confido are one of the best recruiters I've worked with, showing a genuine interest in both the company and myself. They struck the perfect balance between staying on top of moving the process along, while never making me feel like I was being hassled, and got the entire process sorted within a couple of weeks. I'm looking forward to working with them again in the future.",
-          advocate: "Leanne Patmore, Frontend Lead",
+          advocate: "Leanne P. – Frontend Lead",
           image: "../images/people/leanne.png"
         },
         {
           content:
             "Confido spent the time to listen to my needs, and asked all the right questions in order to find out what exactly I was looking for. When it came time to interview, they were always there to give helpful pointers, and they were very engaged. I would definitely recommend Confido to anyone looking for a new job.",
-          advocate: "Yusuf Osman, Tech Lead",
+          advocate: "Yusuf O – Tech Lead",
           image: "../images/people/yusuf.png"
         },
         {
