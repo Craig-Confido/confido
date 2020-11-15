@@ -100,7 +100,7 @@
               align="center"
               justify="center"
             >
-              <v-card-text class="text-h6 text--primary">
+              <v-card-text class="text--primary">
                 <em class="quote">{{ card.quote }} </em>
                 <p class="secondary--text mt-2">
                   <strong>{{ card.person }}</strong>
