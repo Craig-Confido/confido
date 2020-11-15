@@ -441,7 +441,7 @@ export default {
         {
           content:
             "It was an absolute pleasure to work with Confido. They made the process of finding a new role as pain-free and relaxed as possible. They also take the time to get to know candidates; I felt that they really understood my personality, skills and career goals.",
-          advocate: "Dr Amyce A-S. – QA Automation Engineer",
+          advocate: "Amyce A. – QA Automation Engineer",
           image: "../images/people/amyce.png"
         },
       ],
