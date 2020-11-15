@@ -324,7 +324,7 @@ export default {
           image: "../images/people/abi.png"
         },
         {
-          content: "I'm pleased to say that in my time of need, Confido showed a great interest in my personal situation and took the time to walk me through the companies that they were working. It was clear from the way that they spoke about each of them that they’re truly invested in each and every client that they work with. My expectations were managed throughout, and I'm pleased to say that I've now secured a role at a company that resonates with my personal values regarding people and how they should be treated. I cannot recommend Confido enough. Out of all of the recruitment processes I've been through in my career, this was the most effortless and I daresay enjoyable.",
+          content: "I'm pleased to say that in my time of need, Confido showed a great interest in my personal situation and took the time to walk me through the companies that they were working. My expectations were managed throughout, and I'm pleased to say that I've now secured a role at a company that resonates with my personal values regarding people and how they should be treated. I cannot recommend Confido enough. Out of all of the recruitment processes I've been through, this was the most effortless and I daresay enjoyable.",
           advocate: "Lou R. – Lead QA Engineer",
           image: "../images/people/lou.png"
         },
