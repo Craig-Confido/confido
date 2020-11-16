@@ -63,7 +63,7 @@
   <v-row class="mx-0 mx-md-6 mx-lg-16 my-0">
     <v-col cols="12">
       <v-card class="pa-8 my-0 white--text text-left card-shadow">
-        <v-card-title class="text-md-h3 font-weight-bold primary--text">Why work with Confido?</v-card-title>
+        <v-card-title class="headline font-weight-bold primary--text">Why work with Confido?</v-card-title>
         <v-card-text class="text-h6 primary--text">We ensure our clients are committed to making the right hires, with efficient interview processes, detailed feedback and 24-hour turnaround on decisions.</v-card-text>
         <v-row class="primary--text mx-auto text-center mt-4">
           <v-col cols="6" sm="3">
@@ -286,7 +286,7 @@ export default {
         {
           content: "Confido are one of the most professional recruiters I have ever worked with. Unlike the typical service, they truly put my interests to being the highest priority. They took the time to really understand what my career goals were and tailored every future conversation to help me achieve my goals. What more can I say. highly recommended!",
           advocate: "Anzel L. – Platform Architect",
-          image: "../images/people/fernando.png"
+          image: "../images/people/anzel.png"
         },
         {
           content: "After having been laid off during the worst recession in living memory, I wasn't 100% sure what to do next. Confido called me as soon as they found out and discussed a few options with me. Within a week, Confido had found me my first consulting gig and made some useful introductions for future work too. I've known Confido for a couple of years now and I'd strongly recommend their services to anyone looking for their next gig in the startup world, or anyone hiring in the startup space.",
