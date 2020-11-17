@@ -366,7 +366,7 @@ export default {
         icon4: "mdi-account-group",
         text1: "We'll spend 30-40 minutes to understand what motivates you, what you enjoy doing and how you want to progress your career.",
         text2: "Following the discovery call, we'll share startups that meet your criteria, that share your values and will help you advance your career.",
-        text3: "Out interview processes have a maximum of three stages that will be completed within two weeks, with detailed interview feedback.",
+        text3: "Our interview processes have a maximum of three stages that will be completed within two weeks, with detailed interview feedback.",
         text4: "We'll support you from offer to onboarding to ensure a seamless start with your new employer.",
       }]
     };
