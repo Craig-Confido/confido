@@ -195,7 +195,7 @@
       </v-dialog>
     </v-row>
 
-    <v-row class="d-flex d-md-none">
+    <v-row class="mx-4 my-4 d-flex d-md-none">
       <v-col cols="6">
         <v-dialog
         v-model="benefex"
