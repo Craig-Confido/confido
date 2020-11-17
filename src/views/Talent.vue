@@ -13,7 +13,7 @@
         </h2>
         <v-row class="mt-12 mx-0">
           <v-btn @click="$vuetify.goTo('#talent')" class="mt-0 mr-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="150" height="50">Talent</v-btn>
-          <v-btn @click="$vuetify.goTo('#roles')" class="mt-0 btn--outlined font-weight-bold" outlined color="success" rounded width="200" height="50">Roles we cover</v-btn>
+          <v-btn @click="$vuetify.goTo('#roles')" class="mt-2 mt-sm-0 btn--outlined font-weight-bold" outlined color="success" rounded width="200" height="50">Roles we cover</v-btn>
         </v-row>
       </v-col>
       <v-spacer />
