@@ -12,8 +12,8 @@
           Work with people who share your values, care about product and will help you accelerate your career.
         </h2>
         <v-row class="mt-12 mx-0">
-          <v-btn @click="$vuetify.goTo('#product')" class="mt-0 mr-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="150" height="50">Product</v-btn>
-          <v-btn @click="$vuetify.goTo('#engineering')" class="mt-0 mr-4 btn--outlined font-weight-bold" outlined color="success" rounded width="150" height="50">Tech</v-btn>
+          <v-btn @click="$vuetify.goTo('#talent')" class="mt-0 mr-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="150" height="50">Talent</v-btn>
+          <v-btn @click="$vuetify.goTo('#roles')" class="mt-0 mr-4 btn--outlined font-weight-bold" outlined color="success" rounded width="200" height="50">Roles we cover</v-btn>
         </v-row>
       </v-col>
       <v-spacer />
@@ -49,7 +49,7 @@
       <Logos :logo="logo" />
     </v-col>
   </v-row>
-  <v-row class="text-left mt-8 mt-md-0 mx-0 mx-md-6 mx-lg-16">
+  <v-row id="talent" class="text-left mt-8 mt-md-0 mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>Talent.</h1>
     </v-col>
@@ -126,7 +126,7 @@
       <ColorWideCard v-for="card in cards" :key="card" :card="card" />
     </v-col>
   </v-row>
-  <v-row class="text-left mt-8 mt-md-0 mx-0 mx-md-6 mx-lg-16">
+  <v-row id="roles" class="text-left mt-8 mt-md-0 mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>Roles we cover.</h1>
     </v-col>
