@@ -1,15 +1,22 @@
 import Vue from 'vue';
 import App from './App.vue';
 import vuetify from './plugins/vuetify';
+import VueAnalytics from 'vue-ua';
 import router from './router';
 import './registerServiceWorker';
 import 'vue-material-design-icons/styles.css';
-import VueAnalytics from 'vue-analytics';
 
 Vue.config.productionTip = false;
 
 Vue.use(VueAnalytics, {
-  id: 'UA-117426148-1'
+  // [Required] The name of your app as specified in Google Analytics.
+  appName: 'Confido (new)',
+  // [Required] The version of your app.
+  appVersion: '1.0',
+  // [Required] Your Google Analytics tracking ID.
+  trackingId: 'G-PH3Y6TK0PQ',
+  // If you're using vue-router, pass the router instance here.
+  vueRouter: router,
 });
 
 new Vue({
