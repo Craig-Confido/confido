@@ -15,7 +15,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/benefex.png"
-            width="150px"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -32,7 +32,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/thirdSpace.png"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -49,7 +49,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/feedr.webp"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -66,7 +66,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/matr.png"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -83,7 +83,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/unmind.png"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -100,7 +100,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/wagestream.png"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -117,7 +117,7 @@
       <template v-slot:activator="{ on, attrs }">
       <v-img
         src="../../public/images/homehero.svg"
-        width="150"
+        max-width="150"
         contain
         class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
         v-bind="attrs"
@@ -134,7 +134,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/curve.png"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -151,7 +151,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/vision-box.svg"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -168,7 +168,7 @@
       <template v-slot:activator="{ on, attrs }">
         <v-img
           src="../../public/images/houseKeep.png"
-          width="150"
+          max-width="150"
           contain
           class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
           v-bind="attrs"
@@ -185,7 +185,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/octopusWealth.png"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -206,7 +206,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/benefex.png"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -223,7 +223,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/thirdSpace.png"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -240,7 +240,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/feedr.webp"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -257,7 +257,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/matr.png"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -274,7 +274,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/unmind.png"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -293,7 +293,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/wagestream.png"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -310,7 +310,7 @@
       <template v-slot:activator="{ on, attrs }">
       <v-img
         src="../../public/images/homehero.svg"
-        width="150"
+        max-width="150"
         contain
         class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
         v-bind="attrs"
@@ -327,7 +327,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/curve.png"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -344,7 +344,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/vision-box.svg"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
@@ -361,7 +361,7 @@
       <template v-slot:activator="{ on, attrs }">
         <v-img
           src="../../public/images/houseKeep.png"
-          width="150"
+          max-width="150"
           contain
           class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
           v-bind="attrs"
@@ -378,7 +378,7 @@
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/octopusWealth.png"
-            width="150"
+            max-width="150"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
