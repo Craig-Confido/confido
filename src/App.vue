@@ -106,21 +106,6 @@
     </v-app-bar>
     <v-content id="intro">
       <router-view />
-      <v-speed-dial v-model="fab" fixed bottom right alt="Scroll to top">
-        <template v-slot:activator>
-          <v-btn
-            v-model="fab"
-            color="accent"
-            style="opacity: 0.7"
-            fab
-            @click="$vuetify.goTo('#intro')"
-          >
-            <v-icon>mdi-arrow-up</v-icon>
-          </v-btn>
-        </template>
-      </v-speed-dial>
-    </v-content>
-    <v-footer class="success">
       <v-snackbar
       v-model="snackbar"
       light
@@ -137,6 +122,21 @@
         </v-btn>
       </template>
     </v-snackbar>
+      <v-speed-dial v-model="fab" fixed bottom right alt="Scroll to top">
+        <template v-slot:activator>
+          <v-btn
+            v-model="fab"
+            color="accent"
+            style="opacity: 0.7"
+            fab
+            @click="$vuetify.goTo('#intro')"
+          >
+            <v-icon>mdi-arrow-up</v-icon>
+          </v-btn>
+        </template>
+      </v-speed-dial>
+    </v-content>
+    <v-footer class="success">
       <v-row>
         <v-col cols="12">
           <v-btn
