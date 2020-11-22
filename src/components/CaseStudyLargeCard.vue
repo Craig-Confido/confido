@@ -18,6 +18,7 @@
       </v-col>
       <v-col cols="12" md="8">
       <h4 class="white--text mt-16 mr-8 text-left">{{ card.title }}</h4>
+      <p class="mr-8 text-left"><a :href="`${card.url}`" target="_blank" class="white--text">{{ card.url }}</a></p>
       </v-col>
           <v-col cols="1">
     <div class="mt-2">
@@ -27,7 +28,7 @@
       </v-row>
     </v-img>
     <v-card-text class="text-left mt-4 px-8 pt-4">
-      <h2 class="primary--text">The brief</h2>
+      <h2 class="primary--text">The Situation</h2>
       <p class="primary--text mt-2">
         {{ card.brief }}
       </p>

@@ -121,6 +121,22 @@
       </v-speed-dial>
     </v-content>
     <v-footer class="success">
+      <v-snackbar
+      v-model="snackbar"
+      light
+      :timeout="timeout"
+    >
+      By continuing to use this site, you accept our <a href="/privacy" class="text-decoration-underline">privacy and cookies policy.</a>
+      <template>
+        <v-btn
+          color="secondary"
+          text
+          @click="snackbar = false"
+        >
+          Close
+        </v-btn>
+      </template>
+    </v-snackbar>
       <v-row>
         <v-col cols="12">
           <v-btn
@@ -148,8 +164,8 @@ export default {
   name: "App",
   data() {
     return {
-      multiLine: true,
       snackbar: true,
+      timeout: -1,
       drawer: false,
       group: null,
       links: [

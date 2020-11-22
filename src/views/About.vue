@@ -30,9 +30,9 @@
               outlined
               color="accent"
               rounded
-              width="150"
+              width="250"
               height="50"
-              >Startups</v-btn
+              >Scale your team</v-btn
             >
             <v-btn
               to="/talent"
@@ -40,9 +40,9 @@
               outlined
               color="success"
               rounded
-              width="150"
+              width="250"
               height="50"
-              >Talent</v-btn
+              >Join a startup</v-btn
             >
           </v-row>
         </v-col>

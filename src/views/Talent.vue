@@ -12,8 +12,8 @@
           Work with people who share your values, care about product and will help you accelerate your career.
         </h2>
         <v-row class="mt-12 mx-0">
-          <v-btn @click="$vuetify.goTo('#talent')" class="mt-0 mr-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="150" height="50">Talent</v-btn>
-          <v-btn @click="$vuetify.goTo('#roles')" class="mt-2 mt-sm-0 btn--outlined font-weight-bold" outlined color="success" rounded width="200" height="50">Roles we cover</v-btn>
+          <v-btn @click="$vuetify.goTo('#why')" class="mt-0 mr-4 btn--outlined font-weight-bold" outlined color="accent" rounded width="250" height="50">Why work with us?</v-btn>
+          <v-btn @click="$vuetify.goTo('#process')" class="mt-2 mt-sm-0 btn--outlined font-weight-bold" outlined color="success" rounded width="250" height="50">Our process</v-btn>
         </v-row>
       </v-col>
       <v-spacer />
@@ -49,7 +49,7 @@
       <Logos :logo="logo" />
     </v-col>
   </v-row>
-  <v-row id="talent" class="text-left mt-8 mt-md-0 mx-0 mx-md-6 mx-lg-16">
+  <v-row class="text-left mt-8 mt-md-0 mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>Talent.</h1>
     </v-col>
@@ -57,10 +57,10 @@
       <h2>We care about getting to know you as an individual and what makes you tick. Then, we connect you with a startup that aligns with your career goals and values.</h2>
     </v-col>
     <v-col cols="12" sm="6" class="text-right">
-      <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="secondary" rounded href="mailto:contact@confidotalent.com?subject=Talent: I'd like to know more about available roles">Get in touch</v-btn>
+      <v-btn class="btn--outlined font-weight-bold mx-auto px-8 py-4" outlined color="secondary" rounded @click="$vuetify.goTo('#getInTouch')">Get in touch</v-btn>
     </v-col>
   </v-row>
-  <v-row class="mx-0 mx-md-6 mx-lg-16 my-0">
+  <v-row id="why" class="mx-0 mx-md-6 mx-lg-16 my-0">
     <v-col cols="12">
       <v-card class="pa-8 my-0 white--text text-left card-shadow">
         <v-card-title class="headline font-weight-bold primary--text">Why work with Confido?</v-card-title>
@@ -121,12 +121,12 @@
       </v-carousel-item>
     </v-carousel>
   </v-row>
-  <v-row class="mx-0 mx-md-6 mx-lg-16">
+  <v-row id="process" class="mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <ColorWideCard v-for="card in cards" :key="card" :card="card" />
     </v-col>
   </v-row>
-  <v-row id="roles" class="text-left mt-8 mt-md-0 mx-0 mx-md-6 mx-lg-16">
+  <v-row class="text-left mt-8 mt-md-0 mx-0 mx-md-6 mx-lg-16">
     <v-col cols="12">
       <h1>Roles we cover.</h1>
     </v-col>

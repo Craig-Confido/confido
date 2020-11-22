@@ -4,19 +4,20 @@
     color="white"
     class="pt-8 px-4 py-4 pa-md-8 py-md-8 my-0 card-shadow"
   >
-    <h1 class="mb-0 mb-md-4 ml-3 text-left">Startups we've scaled.</h1>
-    <v-row class="mx-4 my-4 d-none d-md-flex">
+    <h1 class="mb-0 ml-3 text-left">Startups we've scaled.</h1>
+    <h4 class="mt-0 ml-3 text-left">Click a logo to see the case study.</h4>
+    <v-row class="mx-4 my-4 d-none d-sm-flex">
       <v-dialog
         v-model="benefex"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/benefex.png"
             width="150px"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -25,15 +26,15 @@
         </v-dialog>
       <v-dialog
         v-model="thirdSpace"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/thirdSpace.png"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -42,15 +43,15 @@
       </v-dialog>
       <v-dialog
         v-model="feedr"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/feedr.webp"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -59,15 +60,15 @@
       </v-dialog>
       <v-dialog
         v-model="matr"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/matr.png"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -76,15 +77,15 @@
       </v-dialog>
       <v-dialog
         v-model="unmind"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/unmind.png"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -93,15 +94,15 @@
       </v-dialog>
       <v-dialog
         v-model="wagestream"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/wagestream.png"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -110,15 +111,15 @@
       </v-dialog>
     <v-dialog
         v-model="homehero"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
       <template v-slot:activator="{ on, attrs }">
       <v-img
         src="../../public/images/homehero.svg"
         width="150"
         contain
-        class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+        class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
         v-bind="attrs"
         v-on="on"
       />
@@ -127,15 +128,15 @@
       </v-dialog>
       <v-dialog
         v-model="curve"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/curve.png"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -144,15 +145,15 @@
       </v-dialog>
       <v-dialog
         v-model="visionBox"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/vision-box.svg"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -161,15 +162,15 @@
       </v-dialog>
     <v-dialog
       v-model="houseKeep"
-      width="1000px"
-      class="overflow-hidden"
+      max-width="1000px"
+      overflow-hidden
     >
       <template v-slot:activator="{ on, attrs }">
         <v-img
           src="../../public/images/houseKeep.png"
           width="150"
           contain
-          class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+          class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
           v-bind="attrs"
           v-on="on"
         />
@@ -178,15 +179,15 @@
         </v-dialog>
       <v-dialog
         v-model="octopusWealth"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/octopusWealth.png"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -195,19 +196,19 @@
       </v-dialog>
     </v-row>
 
-    <v-row class="mx-4 my-4 d-flex d-md-none">
+    <v-row class="mx-4 my-4 d-flex d-sm-none">
       <v-col cols="6">
         <v-dialog
         v-model="benefex"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/benefex.png"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -216,15 +217,15 @@
         </v-dialog>
       <v-dialog
         v-model="thirdSpace"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/thirdSpace.png"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -233,15 +234,15 @@
       </v-dialog>
       <v-dialog
         v-model="feedr"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/feedr.webp"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -250,15 +251,15 @@
       </v-dialog>
       <v-dialog
         v-model="matr"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/matr.png"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -267,15 +268,15 @@
       </v-dialog>
       <v-dialog
         v-model="unmind"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/unmind.png"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -286,15 +287,15 @@
     <v-col cols="6">
         <v-dialog
         v-model="wagestream"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/wagestream.png"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -303,15 +304,15 @@
       </v-dialog>
     <v-dialog
         v-model="homehero"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
       <template v-slot:activator="{ on, attrs }">
       <v-img
         src="../../public/images/homehero.svg"
         width="150"
         contain
-        class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+        class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
         v-bind="attrs"
         v-on="on"
       />
@@ -320,15 +321,15 @@
       </v-dialog>
       <v-dialog
         v-model="curve"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/curve.png"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -337,15 +338,15 @@
       </v-dialog>
       <v-dialog
         v-model="visionBox"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/vision-box.svg"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />
@@ -354,15 +355,15 @@
       </v-dialog>
     <v-dialog
       v-model="houseKeep"
-      width="1000px"
-      class="overflow-hidden"
+      max-width="1000px"
+      overflow-hidden
     >
       <template v-slot:activator="{ on, attrs }">
         <v-img
           src="../../public/images/houseKeep.png"
           width="150"
           contain
-          class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+          class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
           v-bind="attrs"
           v-on="on"
         />
@@ -371,15 +372,15 @@
         </v-dialog>
       <v-dialog
         v-model="octopusWealth"
-        width="1000px"
-        class="overflow-hidden"
+        max-width="1000px"
+        overflow-hidden
       >
         <template v-slot:activator="{ on, attrs }">
           <v-img
             src="../../public/images/octopusWealth.png"
             width="150"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
             v-bind="attrs"
             v-on="on"
           />

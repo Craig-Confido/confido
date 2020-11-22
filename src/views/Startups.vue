@@ -113,7 +113,7 @@
           outlined
           color="secondary"
           rounded
-          href="mailto:contact@confidotalent.com?subject=Startup: I'd like to know more about how Search services work"
+          @click="$vuetify.goTo('#getInTouch')"
           >Get in touch</v-btn
         >
       </v-col>
@@ -262,7 +262,7 @@
           outlined
           color="secondary"
           rounded
-          href="mailto:contact@confidotalent.com?subject=Startup: I'd like to know more about how onsite services work"
+          @click="$vuetify.goTo('#getInTouch')"
           >Get in touch</v-btn
         >
       </v-col>
@@ -418,9 +418,10 @@ export default {
       caseStudyCards: [
         {
           cols3: true,
-          image: "https://www.confidotalent.com/application/files/7815/6090/5476/Benefex_onehub.jpg",
+          image: "../images/benefex-header.jpg",
           logo: "../images/benefex-white.png",
           title: "Benefex build workplace tech that transforms the employee experience, and focuses on improving employee wellbeing.",
+          url: "https://www.hellobenefex.com",
           brief: "Benefex are a fast growing product company based in Southampton. In 18 months they used over 10 recruitment partners with little to no success. They needed a partner they could rely on to help them attract top product and tech talent and deliver 5-10 hires per year.",
           challenge1Title: "Lack of market intel",
           challenge1: "Who else was hiring, what for, and for how much?",
@@ -450,6 +451,7 @@ export default {
           image: "https://thirdspacelearning.com/wp-content/uploads/2020/09/wsr.jpg",
           logo: "../images/thirdspace-white.png",
           title: "Third Space Learning are the largest provider of 1-to-1 maths tutor support in the UK.",
+          url: "https://thirdspacelearning.com",
           brief: "Third Space Learning (TSL)  needed a talent partner that could support them through various rounds of funding and growth, with most of their hiring being within product and tech.",
           challenge1Title: "Branding",
           challenge1: "Although TSL have a compelling mission, they were unknown to the talent market and needed help to reach the right people.",
@@ -476,9 +478,10 @@ export default {
         },
         {
           cols3: true,
-          image: "https://thirdspacelearning.com/wp-content/uploads/2020/09/wsr.jpg",
+          image: "https://vbbackoffice.azurewebsites.net/wp-content/uploads/2018/09/wallpaper_05-2x.jpg",
           logo: "../images/visionbox-white.png",
           title: "Vision-box are creating a world where everyone can travel seamlessly without the need for physical documentation using cutting edge biometrics and cyber security.",
+          url: "https://www.vision-box.com/",
           brief: "Vision-Box had just hired a new CTO to scale their product and engineering function by 3x. They needed a recruitment partner that could attract local and international talent to build a world class engineering function within a 3 month window.",
           challenge1Title: "Branding",
           challenge1: "Although well known locally, Vision-box didn’t have a strong reputation and were unknown internationally.",
@@ -508,6 +511,7 @@ export default {
           image: "https://images.ctfassets.net/c3tzxbn050pi/2OCGE5PFSfeGMJnN1O3FzP/7f9bca77ef15334ef2ffeb74e61cc506/All-your-cards-in-one.jpg?w=510&h=650&q=80&fm=webp",
           logo: "../images/curve-white.png",
           title: "Curve is on a mission to simplify the way people spend, send, see and save money. Curve allows the user to combine their accounts and cards through the Curve app.",
+          url: "https://www.curve.com/",
           brief: "Following their Series B, Curve had been through a period of rapid growth. They were set for another 6 months of sustained growth but wanted a partner that could provide strategic input and better visibility of hiring data, whilst still making key hires across product and engineering.",
           challenge1Title: "Scaleability",
           challenge1: "Curve needed the right data, metrics and processes in place to sustain high volume hiring.",
@@ -539,9 +543,10 @@ export default {
         },
         {
           cols3: false,
-          image: "https://confidotalent.com/application/files/3615/6224/8669/unmind_1.png",
+          image: "https://blog.unmind.com/hubfs/Personalised%20mental%20health.png",
           logo: "../images/unmind-white.png",
           title: "Unmind is a workplace mental health platform. They empower employees to measure, understand, and improve their mental wellbeing.",
+          url: "https://unmind.com",
           brief: "Unmind needed to grow their engineering squads from 2 to 4 to deliver on their product roadmap. They needed a dedicated Talent Manager for a period of 6 months to oversee this growth.",
           challenge1Title: "Assessment",
           challenge1: "Finding Full Stack Engineers that were aligned to their mission whilst also meeting the high technical bar.",
@@ -576,6 +581,7 @@ export default {
           image: "https://images.unsplash.com/photo-1543352632-5a4b24e4d2a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3625&q=80",
           logo: "../images/feedr-white.png",
           title: "Feedr is on a mission to make it easier for people to get healthy, delicious food at the office, every day.",
+          url: "https://feedr.co",
           brief: "Following acquisition, Feedr needed to double their product and engineering teams within a three month timeline. They wanted a talent partner who could help them scale quickly, whilst running a streamlined process that offered a positive candidate experience.",
           challenge1Title: "Candidate calibre",
           challenge1: "The bar was high, and the candidates coming through their current channels were not experienced enough.",
