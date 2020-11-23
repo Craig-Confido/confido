@@ -5,7 +5,7 @@
     class="pt-8 px-4 py-4 pa-md-8 py-md-8 my-0 card-shadow"
   >
     <h1 class="mb-0 ml-3 text-left">Startups we've scaled.</h1>
-    <h4 class="mt-0 ml-3 text-left">Click a logo to see the case study.</h4>
+    <h4 class="mt-0 ml-3 text-left">Click a logo to learn more.</h4>
     <v-row class="mx-4 my-4 d-none d-sm-flex">
       <v-dialog
         v-model="benefex"
@@ -17,7 +17,7 @@
             src="../../public/images/benefex.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -34,7 +34,7 @@
             src="../../public/images/thirdSpace.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -51,7 +51,7 @@
             src="../../public/images/feedr.webp"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -68,7 +68,7 @@
             src="../../public/images/matr.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -85,7 +85,7 @@
             src="../../public/images/unmind.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -102,7 +102,7 @@
             src="../../public/images/wagestream.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -119,7 +119,7 @@
         src="../../public/images/homehero.svg"
         max-width="160"
         contain
-        class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+        class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
         v-bind="attrs"
         v-on="on"
       />
@@ -136,7 +136,7 @@
             src="../../public/images/curve.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -153,7 +153,7 @@
             src="../../public/images/vision-box.svg"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -170,7 +170,7 @@
           src="../../public/images/houseKeep.png"
           max-width="160"
           contain
-          class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+          class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
           v-bind="attrs"
           v-on="on"
         />
@@ -187,7 +187,7 @@
             src="../../public/images/octopusWealth.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -208,7 +208,7 @@
             src="../../public/images/benefex.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -225,7 +225,7 @@
             src="../../public/images/thirdSpace.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -242,7 +242,7 @@
             src="../../public/images/feedr.webp"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -259,7 +259,7 @@
             src="../../public/images/matr.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -276,7 +276,7 @@
             src="../../public/images/unmind.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -295,7 +295,7 @@
             src="../../public/images/wagestream.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -312,7 +312,7 @@
         src="../../public/images/homehero.svg"
         max-width="160"
         contain
-        class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+        class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
         v-bind="attrs"
         v-on="on"
       />
@@ -329,7 +329,7 @@
             src="../../public/images/curve.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -346,7 +346,7 @@
             src="../../public/images/vision-box.svg"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
@@ -363,7 +363,7 @@
           src="../../public/images/houseKeep.png"
           max-width="160"
           contain
-          class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+          class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
           v-bind="attrs"
           v-on="on"
         />
@@ -380,7 +380,7 @@
             src="../../public/images/octopusWealth.png"
             max-width="160"
             contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer hover"
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
             v-bind="attrs"
             v-on="on"
           />
