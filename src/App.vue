@@ -106,9 +106,11 @@
     </v-app-bar>
     <v-content id="intro">
       <router-view />
-      <v-snackbar
+    <v-snackbar
       v-model="snackbar"
       light
+      fixed
+      bottom
       :timeout="timeout"
     >
       By continuing to use this site, you accept our <a href="/privacy" class="text-decoration-underline">privacy and cookies policy.</a>
