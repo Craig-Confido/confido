@@ -4,7 +4,7 @@
       <v-row class="text-left">
         <v-btn 
             text
-            @click="$router.go(-1)" 
+            to="/hub" 
           >
           <v-icon class="mr-2">
             mdi-arrow-left
