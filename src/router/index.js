@@ -7,21 +7,25 @@ const routes = [
   {
     path: '/',
     name: 'About',
+    metaTitle: 'about__',
     component: () => import('../views/About.vue')
   },
   {
     path: '/startups',
     name: 'Startups',
+    metaTitle: 'startups__',
     component: () => import('../views/Startups.vue')
   },
   {
     path: '/talent',
     name: 'Talent',
+    metaTitle: 'talent__',
     component: () => import('../views/Talent.vue')
   },
   {
     path: '/hub',
     name: 'Hub',
+    metaTitle: 'hub__',
     component: () => import('../views/Hub.vue')
   },
   {
@@ -39,6 +43,7 @@ const routes = [
   {
     path: '/privacy',
     name: 'Privacy',
+    metaTitle: 'privacy__',
     component: () => import('../views/Privacy.vue')
   }
 ]

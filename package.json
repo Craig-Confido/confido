@@ -24,6 +24,7 @@
     "vercel": "^20.0.0",
     "vue": "^2.6.11",
     "vue-material-design-icons": "^4.4.0",
+    "vue-meta": "^2.4.0",
     "vue-router": "^3.1.5",
     "vue-tag-manager": "^0.1.2",
     "vuelidate": "^0.7.5",

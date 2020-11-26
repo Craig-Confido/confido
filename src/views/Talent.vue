@@ -262,8 +262,32 @@ import GetInTouch from "../components/GetInTouch";
 import ColorCard from "../components/ColorCard";
 import ColorWideCard from "../components/ColorWideCard";
 
+import router from '../router';
+let title = 'Work with people who share your values and build better tech | Confido',
+    desc = 'We’ll connect you with a startup that alligns with your values so you can build products that make the world a better place. Get in touch to talk about Tech and Product roles.',
+    url = 'https://confidotalent.com' + (router.history.current.path === '/' ? '' : router.history.current.path),
+    image = '/images/meta/home.png';
+
 export default {
   name: "Talent",
+  metaInfo: {
+    title: title,
+    meta: [
+      { name: 'Description', content: desc },
+
+      { property: 'og:title', content: title},
+      { property: 'og:url', content: url},
+      { property: 'og:image', content: image},
+      { property: 'og:description', content: desc},
+
+      { property: 'twitter:domain', content: url},
+      { property: 'twitter:title', content: title},
+      { property: 'twitter:description', content: desc},
+      { property: 'twitter:image', content: image},
+      { property: 'twitter:url', content: url},
+      { property: 'twitter:label1', content: title},  
+    ]
+  },
   components: {
     Logos,
     GetInTouch,

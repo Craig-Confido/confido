@@ -162,8 +162,23 @@
 </template>
 
 <script>
+import router from './router';
+
+let title = 'The Tech for Good talent partner | Confido',
+    desc = 'Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good starups. We connect people with the same values and a shared purpose to build a better future, together.',
+    url = 'https://confidotalent.com' + (router.history.current.path === '/' ? '' : router.history.current.path),
+    image = '/images/meta/home.png';
+
 export default {
   name: "App",
+  metaInfo: {
+    // title will be injected into parent titleTemplate
+    title: title,
+    meta: [
+      { property: 'og:site_name', content: "Confido"},
+      { property: 'twitter:card', content: "summary_large_image"}, 
+    ]
+  },
   data() {
     return {
       snackbar: true,

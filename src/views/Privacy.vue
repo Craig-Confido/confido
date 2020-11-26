@@ -395,7 +395,31 @@
 </template>
 
 <script>
+import router from '../router';
+let title = 'Make critical Tech or Product hires and scale your startup | Confido ',
+    desc = "We scale Tech for Good startups. If you need to make critical Tech or Product hires, build core teams or scale up squads, we're here for you.",
+    url = 'https://confidotalent.com' + (router.history.current.path === '/' ? '' : router.history.current.path),
+    image = '/images/meta/home.png';
+
 export default {
   name: "Privacy",
+  metaInfo: {
+    title: title,
+    meta: [
+      { name: 'Description', content: desc },
+
+      { property: 'og:title', content: title},
+      { property: 'og:url', content: url},
+      { property: 'og:image', content: image},
+      { property: 'og:description', content: desc},
+
+      { property: 'twitter:domain', content: url},
+      { property: 'twitter:title', content: title},
+      { property: 'twitter:description', content: desc},
+      { property: 'twitter:image', content: image},
+      { property: 'twitter:url', content: url},
+      { property: 'twitter:label1', content: title},  
+    ]
+  },
 };
 </script>

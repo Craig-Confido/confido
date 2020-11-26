@@ -252,8 +252,34 @@ import Logos from "../components/Logos";
 import GetInTouch from "../components/GetInTouch";
 import CaseStudySmallCard from "../components/CaseStudySmallCard";
 
+import router from '../router';
+
+let title = 'The Tech for Good talent partner | Confido',
+    desc = 'Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good starups. We connect people with the same values and a shared purpose to build a better future, together.',
+    url = 'https://confidotalent.com' + (router.history.current.path === '/' ? '' : router.history.current.path),
+    image = '/images/meta/home.png';
+
 export default {
   name: "About",
+  metaInfo: {
+    // title will be injected into parent titleTemplate
+    title: title,
+    meta: [
+      { name: 'Description', content: desc },
+
+      { property: 'og:title', content: title},
+      { property: 'og:url', content: url},
+      { property: 'og:image', content: image},
+      { property: 'og:description', content: desc},
+
+      { property: 'twitter:domain', content: url},
+      { property: 'twitter:title', content: title},
+      { property: 'twitter:description', content: desc},
+      { property: 'twitter:image', content: image},
+      { property: 'twitter:url', content: url},
+      { property: 'twitter:label1', content: title},  
+    ]
+  },
   components: {
     Logos,
     GetInTouch,

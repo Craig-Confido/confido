@@ -46,8 +46,32 @@ const bucket = api.bucket({
   read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn"
 });
 
+import router from '../router';
+let title = 'Hub | Confido',
+    desc = "Our knowledge hub is a one-stop shop for all things Tech for Good. Explore our hub to find Founder stories and the latest news on Tech and Product hiring.",
+    url = 'https://confidotalent.com' + (router.history.current.path === '/' ? '' : router.history.current.path),
+    image = '/images/meta/home.png';
+
 export default {
   name: "Hub",
+  metaInfo: {
+    title: title,
+    meta: [
+      { name: 'Description', content: desc },
+
+      { property: 'og:title', content: title},
+      { property: 'og:url', content: url},
+      { property: 'og:image', content: image},
+      { property: 'og:description', content: desc},
+
+      { property: 'twitter:domain', content: url},
+      { property: 'twitter:title', content: title},
+      { property: 'twitter:description', content: desc},
+      { property: 'twitter:image', content: image},
+      { property: 'twitter:url', content: url},
+      { property: 'twitter:label1', content: title},  
+    ]
+  },
   components: {
     PostCards,
     FeaturedPost,
