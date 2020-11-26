@@ -1,18 +1,24 @@
 <template>
   <v-row class="mx-4 mx-lg-16">
-    <v-col cols="12" md="12">
+    <v-col
+      cols="12"
+      md="12"
+    >
       <v-row class="text-left">
         <v-btn 
-            text
-            to="/hub" 
-          >
+          text
+          to="/hub" 
+        >
           <v-icon class="mr-2">
             mdi-arrow-left
           </v-icon>
           Back to all posts
         </v-btn>
       </v-row>
-      <Post :post="post" class="justify-center" />
+      <Post
+        :post="post"
+        class="justify-center"
+      />
     </v-col>
   </v-row>
 </template>
@@ -56,7 +62,7 @@ export default {
           console.log(data);
           this.post = data.object;
           this.loading = false;
-          this.posts = posts;
+          // this.posts = posts;
         });
     }
   }

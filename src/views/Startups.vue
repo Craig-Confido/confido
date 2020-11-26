@@ -1,6 +1,9 @@
 /* eslint-disable */
 <template>
-  <v-container fluid class="pa-0 ma-0">
+  <v-container
+    fluid
+    class="pa-0 ma-0"
+  >
     <section class="mx-4 mx-lg-16">
       <v-row class="text-left mt-4">
         <v-img
@@ -8,7 +11,11 @@
           class="d-flex d-md-none mx-md-16"
           alt="image of people"
         />
-        <v-col cols="12" sm="7" class="mt-md-16">
+        <v-col
+          cols="12"
+          sm="7"
+          class="mt-md-16"
+        >
           <h1
             class="text-h3  text-md-h2 font-weight-bold"
             aria-label="Intro text"
@@ -18,31 +25,36 @@
           <h2 class="text-h5 my-8">
             Whether you're making a critical hire, building a core team or scaling up squads, we're here for you.
           </h2>
-        <v-row class="mt-12 mx-0">
-          <v-btn
-            @click="$vuetify.goTo('#search')"
-            class="mt-0 mr-4 btn--outlined font-weight-bold"
-            outlined
-            color="accent"
-            rounded
-            width="150"
-            height="50"
-            >Search</v-btn
-          >
-          <v-btn
-            @click="$vuetify.goTo('#onsite')"
-            class="mt-0 mr-4 btn--outlined font-weight-bold"
-            outlined
-            color="success"
-            rounded
-            width="150"
-            height="50"
-            >Onsite</v-btn
-          >
+          <v-row class="mt-12 mx-0">
+            <v-btn
+              class="mt-0 mr-4 btn--outlined font-weight-bold"
+              outlined
+              color="accent"
+              rounded
+              width="150"
+              height="50"
+              @click="$vuetify.goTo('#search')"
+            >
+              Search
+            </v-btn>
+            <v-btn
+              class="mt-0 mr-4 btn--outlined font-weight-bold"
+              outlined
+              color="success"
+              rounded
+              width="150"
+              height="50"
+              @click="$vuetify.goTo('#onsite')"
+            >
+              Onsite
+            </v-btn>
           </v-row>
         </v-col>
         <v-spacer />
-        <v-col cols="12" sm="5">
+        <v-col
+          cols="12"
+          sm="5"
+        >
           <v-img
             src="../../public/images/startupsVisual.png"
             class="d-none d-md-flex mx-md-16"
@@ -56,37 +68,57 @@
       no-gutters
       style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55)"
     >
-      <v-col cols="6" sm="3">
-        <v-icon class="text-h2 white--text mb-2"
-          >mdi-rocket-launch-outline</v-icon
+      <v-col
+        cols="6"
+        sm="3"
+      >
+        <v-icon
+          class="text-h2 white--text mb-2"
         >
+          mdi-rocket-launch-outline
+        </v-icon>
         <h1>
           20+
         </h1>
         <h3>Startups scaled</h3>
       </v-col>
-      <v-col cols="6" sm="3">
-        <v-icon class="text-h2 white--text mb-2"
-          >mdi-account-group-outline</v-icon
+      <v-col
+        cols="6"
+        sm="3"
+      >
+        <v-icon
+          class="text-h2 white--text mb-2"
         >
+          mdi-account-group-outline
+        </v-icon>
         <h1>
           70+
         </h1>
         <h3>Hires made</h3>
       </v-col>
-      <v-col cols="6" sm="3">
-        <v-icon class="text-h2 white--text mb-2"
-          >mdi-clock-check-outline</v-icon
+      <v-col
+        cols="6"
+        sm="3"
+      >
+        <v-icon
+          class="text-h2 white--text mb-2"
         >
+          mdi-clock-check-outline
+        </v-icon>
         <h1>
           4 weeks
         </h1>
         <h3>Average time to hire</h3>
       </v-col>
-      <v-col cols="6" sm="3">
-        <v-icon class="text-h2 white--text mb-2"
-          >mdi-check-circle-outline</v-icon
+      <v-col
+        cols="6"
+        sm="3"
+      >
+        <v-icon
+          class="text-h2 white--text mb-2"
         >
+          mdi-check-circle-outline
+        </v-icon>
         <h1>
           98%
         </h1>
@@ -98,63 +130,114 @@
         <Logos :logo="logo" />
       </v-col>
     </v-row>
-    <v-row class="text-left mt-8 mt-md-0 mx-0 mx-md-6 mx-lg-16" id="search">
+    <v-row
+      id="search"
+      class="text-left mt-8 mt-md-0 mx-0 mx-md-6 mx-lg-16"
+    >
       <v-col cols="12">
         <h1>Search.</h1>
       </v-col>
-      <v-col cols="12" sm="8">
+      <v-col
+        cols="12"
+        sm="8"
+      >
         <h2>
           Working exclusively with Seed and Series A startups to efficiently deliver a shortlist of three candidates within four weeks that you will make a hire from.
         </h2>
       </v-col>
-      <v-col cols="12" sm="4" class="text-right">
+      <v-col
+        cols="12"
+        sm="4"
+        class="text-right"
+      >
         <v-btn
           class="btn--outlined font-weight-bold mx-auto px-8 py-4"
           outlined
           color="secondary"
           rounded
           @click="$vuetify.goTo('#getInTouch')"
-          >Get in touch</v-btn
         >
+          Get in touch
+        </v-btn>
       </v-col>
     </v-row>
     <v-row class="mx-0 mx-md-6 mx-lg-16">
       <v-col cols="12">
         <v-card class="pa-8 my-2 white--text text-left card-shadow">
-          <v-card-title class="headline font-weight-bold primary--text"
-            >Why Search?</v-card-title
+          <v-card-title
+            class="headline font-weight-bold primary--text"
           >
-          <v-card-text class="text-h6 primary--text"
-            >We know it can be hard to attract top talent when you have no brand presence in the market. Search allows you to make critical hires efficiently and effortlessly, at pace. We work with you to craft a compelling message, then headhunt the passive talent market to find you the best.</v-card-text
+            Why Search?
+          </v-card-title>
+          <v-card-text
+            class="text-h6 primary--text"
           >
+            We know it can be hard to attract top talent when you have no brand presence in the market. Search allows you to make critical hires efficiently and effortlessly, at pace. We work with you to craft a compelling message, then headhunt the passive talent market to find you the best.
+          </v-card-text>
           <v-row class="primary--text mx-auto text-center mt-4">
-            <v-col cols="6" sm="3">
-              <v-icon class="secondary--text text-h2"
-                >mdi-account-group-outline</v-icon
+            <v-col
+              cols="6"
+              sm="3"
+            >
+              <v-icon
+                class="secondary--text text-h2"
               >
-              <h1 class="text-h5 text-md-h4">3 candidate</h1>
-              <h3 class="text-md-h6">Limit per role</h3>
+                mdi-account-group-outline
+              </v-icon>
+              <h1 class="text-h5 text-md-h4">
+                3 candidate
+              </h1>
+              <h3 class="text-md-h6">
+                Limit per role
+              </h3>
             </v-col>
-            <v-col cols="6" sm="3">
-              <v-icon class="secondary--text text-h2"
-                >mdi-clock-check-outline</v-icon
+            <v-col
+              cols="6"
+              sm="3"
+            >
+              <v-icon
+                class="secondary--text text-h2"
               >
-              <h1 class="text-h5 text-md-h4">4 weeks</h1>
-              <h3 class="text-md-h6">Average time to hire</h3>
+                mdi-clock-check-outline
+              </v-icon>
+              <h1 class="text-h5 text-md-h4">
+                4 weeks
+              </h1>
+              <h3 class="text-md-h6">
+                Average time to hire
+              </h3>
             </v-col>
-            <v-col cols="6" sm="3">
-              <v-icon class="secondary--text text-h2"
-                >mdi-check-circle-outline</v-icon
+            <v-col
+              cols="6"
+              sm="3"
+            >
+              <v-icon
+                class="secondary--text text-h2"
               >
-              <h1 class="text-h5 text-md-h4">83% of hires</h1>
-              <h3 class="text-md-h6">Made from initial shortlist</h3>
+                mdi-check-circle-outline
+              </v-icon>
+              <h1 class="text-h5 text-md-h4">
+                83% of hires
+              </h1>
+              <h3 class="text-md-h6">
+                Made from initial shortlist
+              </h3>
             </v-col>
-            <v-col cols="6" sm="3">
-              <v-icon class="secondary--text text-h2"
-                >mdi-trophy-outline</v-icon
+            <v-col
+              cols="6"
+              sm="3"
+            >
+              <v-icon
+                class="secondary--text text-h2"
               >
-              <h1 class="text-h5 text-md-h4">98%</h1>
-              <h3 class="text-md-h6">Success rate</h3>
+                mdi-trophy-outline
+              </v-icon>
+              <h1 class="text-h5 text-md-h4">
+                98%
+              </h1>
+              <h3 class="text-md-h6">
+                Success rate
+              </h3>
             </v-col>
           </v-row>
         </v-card>
@@ -162,45 +245,69 @@
     </v-row>
     <v-row class="mx-0 mx-md-6 mx-lg-16">
       <v-col cols="12">
-        <ColorWideCard v-for="card in purpleCards" :key="card" :card="card" />
+        <ColorWideCard
+          v-for="card in purpleCards"
+          :key="card"
+          :card="card"
+        />
       </v-col>
     </v-row>
-    <v-col cols="12" md="12" class="mt-8">
-      <p class="text-h4 font-weight-bold">Case studies.</p>
-      <v-card-text class="primary--text text-h5"
-          >Learn more from the teams we've built</v-card-text
+    <v-col
+      cols="12"
+      md="12"
+      class="mt-8"
+    >
+      <p class="text-h4 font-weight-bold">
+        Case studies.
+      </p>
+      <v-card-text
+        class="primary--text text-h5"
+      >
+        Learn more from the teams we've built
+      </v-card-text>
+      <v-row class="my-4 mx-md-0">
+        <v-spacer />
+        <v-col
+          cols="12"
+          md="4"
+          lg="2"
         >
-        <v-row class="my-4 mx-md-0">
-          <v-spacer />
-          <v-col cols="12" md="4" lg="2">
-              <v-dialog
-                v-model="benefex"
-                width="1000px"
-                class="overflow-hidden"
-              >
-                <template v-slot:activator="{ on, attrs }">
-                <div class="circle pointer my-8">
-                  <v-img
-                    src="../../public/images/benefex.png"
-                    width="150"
-                    contain
-                    eager
-                    class="circle pointer"
-                    v-bind="attrs"
-                    v-on="on"
-                  />
-                </div>
-                </template>
-                  <CaseStudyLargeCard v-for="card in caseStudyCards.slice(0,1)" :key="card" :card="card" />
-              </v-dialog>
-              </v-col>
-              <v-col cols="12" md="4" lg="2">
-              <v-dialog
-              v-model="thirdSpace"
-              width="1000px"
-              class="overflow-hidden"
-              >
-              <template v-slot:activator="{ on, attrs }">
+          <v-dialog
+            v-model="benefex"
+            width="1000px"
+            class="overflow-hidden"
+          >
+            <template v-slot:activator="{ on, attrs }">
+              <div class="circle pointer my-8">
+                <v-img
+                  src="../../public/images/benefex.png"
+                  width="150"
+                  contain
+                  eager
+                  class="circle pointer"
+                  v-bind="attrs"
+                  v-on="on"
+                />
+              </div>
+            </template>
+            <CaseStudyLargeCard
+              v-for="card in caseStudyCards.slice(0,1)"
+              :key="card"
+              :card="card"
+            />
+          </v-dialog>
+        </v-col>
+        <v-col
+          cols="12"
+          md="4"
+          lg="2"
+        >
+          <v-dialog
+            v-model="thirdSpace"
+            width="1000px"
+            class="overflow-hidden"
+          >
+            <template v-slot:activator="{ on, attrs }">
               <div class="circle pointer my-8">
                 <v-img
                   src="../../public/images/thirdSpace.png"
@@ -211,99 +318,161 @@
                   v-bind="attrs"
                   v-on="on"
                 />
-                </div>
-                </template>
-                  <CaseStudyLargeCard v-for="card in caseStudyCards.slice(1,2)" :key="card" :card="card" />
-              </v-dialog>
-              </v-col>
-              <v-col cols="12" md="4" lg="2">
-              <v-dialog
-                v-model="visionbox"
-                width="1000px"
-                class="overflow-hidden"
-              >
-                <template v-slot:activator="{ on, attrs }">
-                <div class="circle pointer my-8">
-                  <v-img
-                    src="../../public/images/vision-box.svg"
-                    width="150"
-                    contain
-                    eager
-                    class="circle pointer"
-                    v-bind="attrs"
-                    v-on="on"
-                  />
-                </div>
-                </template>
-                  <CaseStudyLargeCard v-for="card in caseStudyCards.slice(2,3)" :key="card" :card="card" />
-              </v-dialog>
-            </v-col>
-            <v-spacer />
-          </v-row>
-      </v-col>
-    </v-row>
+              </div>
+            </template>
+            <CaseStudyLargeCard
+              v-for="card in caseStudyCards.slice(1,2)"
+              :key="card"
+              :card="card"
+            />
+          </v-dialog>
+        </v-col>
+        <v-col
+          cols="12"
+          md="4"
+          lg="2"
+        >
+          <v-dialog
+            v-model="visionbox"
+            width="1000px"
+            class="overflow-hidden"
+          >
+            <template v-slot:activator="{ on, attrs }">
+              <div class="circle pointer my-8">
+                <v-img
+                  src="../../public/images/vision-box.svg"
+                  width="150"
+                  contain
+                  eager
+                  class="circle pointer"
+                  v-bind="attrs"
+                  v-on="on"
+                />
+              </div>
+            </template>
+            <CaseStudyLargeCard
+              v-for="card in caseStudyCards.slice(2,3)"
+              :key="card"
+              :card="card"
+            />
+          </v-dialog>
+        </v-col>
+        <v-spacer />
+      </v-row>
+    </v-col>
     <v-row
       class="my-16 full-width-green"
       no-gutters
       style="height: 8px"
-    ></v-row>
-    <v-row id="onsite" class="text-left mx-0 mx-md-6 mx-lg-16">
+    />
+    <v-row
+      id="onsite"
+      class="text-left mx-0 mx-md-6 mx-lg-16"
+    >
       <v-col cols="12">
         <h1>Onsite.</h1>
       </v-col>
-      <v-col cols="12" sm="7">
+      <v-col
+        cols="12"
+        sm="7"
+      >
         <h2>
           Partnering with Series B and C startups to enable sustainable long-term scaling of product and tech teams.
         </h2>
       </v-col>
-      <v-col cols="12" sm="5" class="text-right">
+      <v-col
+        cols="12"
+        sm="5"
+        class="text-right"
+      >
         <v-btn
           class="btn--outlined font-weight-bold mx-auto px-8 py-4"
           outlined
           color="secondary"
           rounded
           @click="$vuetify.goTo('#getInTouch')"
-          >Get in touch</v-btn
         >
+          Get in touch
+        </v-btn>
       </v-col>
     </v-row>
     <v-row class="mx-0 mx-md-6 mx-lg-16">
       <v-col cols="12">
         <v-card class="pa-8 my-2 white--text text-left card-shadow">
-          <v-card-title class="headline font-weight-bold primary--text"
-            >Why Onsite?</v-card-title
+          <v-card-title
+            class="headline font-weight-bold primary--text"
           >
-          <v-card-text class="text-h6 primary--text"
-            >Going from 50 hires to 100, to 200 and above is tough. You need to start thinking about talent more strategically, whilst continuing to grow headcount each month. Onsite provides you with the expertise you need to plan for the long term, alongside hitting your hiring goals in the short and medium term.</v-card-text
+            Why Onsite?
+          </v-card-title>
+          <v-card-text
+            class="text-h6 primary--text"
           >
+            Going from 50 hires to 100, to 200 and above is tough. You need to start thinking about talent more strategically, whilst continuing to grow headcount each month. Onsite provides you with the expertise you need to plan for the long term, alongside hitting your hiring goals in the short and medium term.
+          </v-card-text>
           <v-row class="primary--text mx-auto text-center mt-4">
-            <v-col cols="6" sm="3">
-              <v-icon class="secondary--text ml-4 text-h2"
-                >mdi-cash-multiple</v-icon
+            <v-col
+              cols="6"
+              sm="3"
+            >
+              <v-icon
+                class="secondary--text ml-4 text-h2"
               >
-              <h1 class="text-h5 text-md-h4">40% saving</h1>
-              <h3 class="text-md-h6">compared to agency spend</h3>
+                mdi-cash-multiple
+              </v-icon>
+              <h1 class="text-h5 text-md-h4">
+                40% saving
+              </h1>
+              <h3 class="text-md-h6">
+                compared to agency spend
+              </h3>
             </v-col>
-            <v-col cols="6" sm="3">
-              <v-icon class="secondary--text ml-4 text-h2"
-                >mdi-finance</v-icon
+            <v-col
+              cols="6"
+              sm="3"
+            >
+              <v-icon
+                class="secondary--text ml-4 text-h2"
               >
-              <h1 class="text-h5 text-md-h4">3x increase</h1>
-              <h3 class="text-md-h6">in hiring velocity</h3>
+                mdi-finance
+              </v-icon>
+              <h1 class="text-h5 text-md-h4">
+                3x increase
+              </h1>
+              <h3 class="text-md-h6">
+                in hiring velocity
+              </h3>
             </v-col>
-            <v-col cols="6" sm="3">
-              <v-icon class="secondary--text ml-4 text-h2"
-                >mdi-clock-check-outline</v-icon
+            <v-col
+              cols="6"
+              sm="3"
+            >
+              <v-icon
+                class="secondary--text ml-4 text-h2"
               >
-              <h1 class="text-h5 text-md-h4">+20%</h1>
-              <h3 class="text-md-h6">improvement on time to hire</h3>
+                mdi-clock-check-outline
+              </v-icon>
+              <h1 class="text-h5 text-md-h4">
+                +20%
+              </h1>
+              <h3 class="text-md-h6">
+                improvement on time to hire
+              </h3>
             </v-col>
-            <v-col cols="6" sm="3">
-              <v-icon class="secondary--text ml-4 text-h2"
-                >mdi-account-group</v-icon
+            <v-col
+              cols="6"
+              sm="3"
+            >
+              <v-icon
+                class="secondary--text ml-4 text-h2"
               >
-              <h1 class="text-h5 text-md-h4">Improved</h1>
-              <h3 class="text-md-h6">team diversity</h3>
+                mdi-account-group
+              </v-icon>
+              <h1 class="text-h5 text-md-h4">
+                Improved
+              </h1>
+              <h3 class="text-md-h6">
+                team diversity
+              </h3>
             </v-col>
           </v-row>
         </v-card>
@@ -311,63 +480,99 @@
     </v-row>
     <v-row class="mx-0 mx-md-6 mx-lg-16">
       <v-col cols="12">
-        <ColorWideCard v-for="card in greenCards" :key="card" :card="card" />
+        <ColorWideCard
+          v-for="card in greenCards"
+          :key="card"
+          :card="card"
+        />
       </v-col>
     </v-row>
-    <v-col cols="12" md="12" class="mt-8">
-      <p class="text-h4 font-weight-bold">Case studies.</p>
-      <v-card-text class="primary--text text-h5"
-          >Learn more from the teams we've scaled.</v-card-text
+    <v-col
+      cols="12"
+      md="12"
+      class="mt-8"
+    >
+      <p class="text-h4 font-weight-bold">
+        Case studies.
+      </p>
+      <v-card-text
+        class="primary--text text-h5"
+      >
+        Learn more from the teams we've scaled.
+      </v-card-text>
+      <v-row class="my-4 mx-md-0">
+        <v-spacer />
+        <v-col
+          cols="12"
+          md="4"
+          lg="2"
         >
-        <v-row class="my-4 mx-md-0">
-          <v-spacer />
-          <v-col cols="12" md="4" lg="2">
-            <v-dialog
-              v-model="curve"
-              width="1000px"
-              class="overflow-hidden"
-            >
-              <template v-slot:activator="{ on, attrs }">
+          <v-dialog
+            v-model="curve"
+            width="1000px"
+            class="overflow-hidden"
+          >
+            <template v-slot:activator="{ on, attrs }">
               <div class="circle pointer my-8">
-              <v-img
-                src="../../public/images/curve.png"
-                width="150"
-                contain
-                eager
-                class="circle pointer"
-                v-bind="attrs"
-                v-on="on"
-              />
+                <v-img
+                  src="../../public/images/curve.png"
+                  width="150"
+                  contain
+                  eager
+                  class="circle pointer"
+                  v-bind="attrs"
+                  v-on="on"
+                />
               </div>
-              </template>
-                <CaseStudyLargeCard v-for="card in caseStudyCards.slice(3,4)" :key="card" :card="card" />
-            </v-dialog>
-          </v-col>
-          <v-col cols="12" md="4" lg="2">
-            <v-dialog v-model="unmind" width="1000px" class="overflow-hidden">
-              <template v-slot:activator="{ on, attrs }">
-                <div class="circle pointer my-8">
-                  <v-img
-                    src="../../public/images/unmind.png"
-                    class="circle"
-                    width="150"
-                    contain
-                    eager
-                    v-bind="attrs"
-                    v-on="on"
-                  />
-                </div>
-              </template>
-              <CaseStudyLargeCard v-for="card in caseStudyCards.slice(4,5)" :key="card" :card="card" />
+            </template>
+            <CaseStudyLargeCard
+              v-for="card in caseStudyCards.slice(3,4)"
+              :key="card"
+              :card="card"
+            />
           </v-dialog>
-          </v-col>
-          <v-col cols="12" md="4" lg="2">
-            <v-dialog
-                v-model="feedr"
-                width="1000px"
-                class="overflow-hidden"
-              >
-              <template v-slot:activator="{ on, attrs }">
+        </v-col>
+        <v-col
+          cols="12"
+          md="4"
+          lg="2"
+        >
+          <v-dialog
+            v-model="unmind"
+            width="1000px"
+            class="overflow-hidden"
+          >
+            <template v-slot:activator="{ on, attrs }">
+              <div class="circle pointer my-8">
+                <v-img
+                  src="../../public/images/unmind.png"
+                  class="circle"
+                  width="150"
+                  contain
+                  eager
+                  v-bind="attrs"
+                  v-on="on"
+                />
+              </div>
+            </template>
+            <CaseStudyLargeCard
+              v-for="card in caseStudyCards.slice(4,5)"
+              :key="card"
+              :card="card"
+            />
+          </v-dialog>
+        </v-col>
+        <v-col
+          cols="12"
+          md="4"
+          lg="2"
+        >
+          <v-dialog
+            v-model="feedr"
+            width="1000px"
+            class="overflow-hidden"
+          >
+            <template v-slot:activator="{ on, attrs }">
               <div class="circle pointer my-8">
                 <v-img
                   src="../../public/images/feedr.webp"
@@ -378,15 +583,22 @@
                   v-bind="attrs"
                   v-on="on"
                 />
-            </div>
+              </div>
             </template>
-              <CaseStudyLargeCard v-for="card in caseStudyCards.slice(5,6)" :key="card" :card="card" />
+            <CaseStudyLargeCard
+              v-for="card in caseStudyCards.slice(5,6)"
+              :key="card"
+              :card="card"
+            />
           </v-dialog>
-          </v-col>
-          <v-spacer />
-        </v-row>
+        </v-col>
+        <v-spacer />
+      </v-row>
     </v-col>
-    <v-row class="mx-0 mx-md-6 mx-lg-16 mb-12" id="getInTouch">
+    <v-row
+      id="getInTouch"
+      class="mx-0 mx-md-6 mx-lg-16 mb-12"
+    >
       <v-col cols="12">
         <GetInTouch :contact="contact" />
       </v-col>
@@ -397,7 +609,7 @@
 <script>
 import Logos from "../components/Logos";
 import GetInTouch from "../components/GetInTouch";
-import ColorCard from "../components/ColorCard";
+// import ColorCard from "../components/ColorCard";
 import ColorWideCard from "../components/ColorWideCard"
 import CaseStudyLargeCard from "../components/CaseStudyLargeCard"
 
@@ -430,7 +642,7 @@ export default {
   components: {
     Logos,
     GetInTouch,
-    ColorCard,
+    // ColorCard,
     ColorWideCard,
     CaseStudyLargeCard
   },

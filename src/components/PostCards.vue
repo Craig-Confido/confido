@@ -1,21 +1,36 @@
 /* eslint-disable */
 <template>
-  <v-card :to="`/hub/post/${post.slug}`" hover class="text-left card-shadow">
-    <v-img :src="post.metadata.hero.imgix_url" height="240" />
-    <h1 class="title mt-4 mb-2 mx-4 px-4" color="primary--text">
+  <v-card
+    :to="`/hub/post/${post.slug}`"
+    hover
+    class="text-left card-shadow"
+  >
+    <v-img
+      :src="post.metadata.hero.imgix_url"
+      height="240"
+    />
+    <h1
+      class="title mt-4 mb-2 mx-4 px-4"
+      color="primary--text"
+    >
       {{ post.title }}
     </h1>
     <div class="mx-4 ml-4 px-4">
       <v-row class="text-left">
-      <v-col cols="4">
-        <v-chip class="tag px-4" color="secondary">
-          <strong>{{ post.metadata.tag }}</strong>
-        </v-chip>
-      </v-col>
-      <v-col cols="8">
-        <p class="mt-1 caption">{{ post.metadata.readtime }}</p>
-      </v-col>
-    </v-row>
+        <v-col cols="4">
+          <v-chip
+            class="tag px-4"
+            color="secondary"
+          >
+            <strong>{{ post.metadata.tag }}</strong>
+          </v-chip>
+        </v-col>
+        <v-col cols="8">
+          <p class="mt-1 caption">
+            {{ post.metadata.readtime }}
+          </p>
+        </v-col>
+      </v-row>
     </div>
     <v-card-text
       color="primary--text"
@@ -30,8 +45,9 @@
         rounded
         width="150"
         height="50"
-        >Read more</v-btn
       >
+        Read more
+      </v-btn>
     </v-card-actions>
   </v-card>
 </template>
@@ -42,7 +58,7 @@ export default {
   props: {
     post: {
       type: Object,
-      default: "No posts are loaded"
+      default: () => "No posts are loaded"
     }
   }
 };

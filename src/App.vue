@@ -1,7 +1,12 @@
 /* eslint-disable */
 <template>
   <v-app>
-    <v-app-bar app class="accent" flat height="100">
+    <v-app-bar
+      app
+      class="accent"
+      flat
+      height="100"
+    >
       <a href="/">
         <v-img
           src="./assets/Logo.svg"
@@ -12,9 +17,9 @@
       </a>
       <v-spacer />
       <v-app-bar-nav-icon
-        @click.stop="drawer = !drawer"
         class="white--text d-md-none"
-      ></v-app-bar-nav-icon>
+        @click.stop="drawer = !drawer"
+      />
       <v-btn
         v-for="link in links.slice(0, 4)"
         :key="`${link.label}--page-link`"
@@ -22,7 +27,9 @@
         text
         :to="link.url"
       >
-        <v-text class="font-weight-medium">{{ link.label }}</v-text>
+        <v-text class="font-weight-medium">
+          {{ link.label }}
+        </v-text>
       </v-btn>
       <v-spacer class="d-none d-md-flex" />
       <v-btn
@@ -30,7 +37,9 @@
         text
         @click="$vuetify.goTo('#getInTouch')"
       >
-        <v-text class="font-weight-medium">Contact</v-text>
+        <v-text class="font-weight-medium">
+          Contact
+        </v-text>
       </v-btn>
       <v-btn
         v-for="social in socials"
@@ -54,14 +63,24 @@
         app
       >
         <v-app-bar-icon
-          @click.stop="drawer = !drawer"
           class="white--text d-md-none"
+          @click.stop="drawer = !drawer"
         >
-          <v-btn class="white--text mt-7 mr-4" right absolute icon>
-            <v-icon class="text-right">mdi-close</v-icon>
+          <v-btn
+            class="white--text mt-7 mr-4"
+            right
+            absolute
+            icon
+          >
+            <v-icon class="text-right">
+              mdi-close
+            </v-icon>
           </v-btn>
         </v-app-bar-icon>
-        <v-list class="mt-16 pt-4" rounded>
+        <v-list
+          class="mt-16 pt-4"
+          rounded
+        >
           <v-list-item
             v-for="link in links.slice(0, 4)"
             :key="`${link.label}--page-link`"
@@ -70,21 +89,29 @@
             :to="link.url"
           >
             <v-list-item-icon>
-              <v-icon class="white--text">{{ link.icon }}</v-icon>
+              <v-icon class="white--text">
+                {{ link.icon }}
+              </v-icon>
             </v-list-item-icon>
-            <v-list-item-content class="font-weight-medium white--text">{{
-              link.label
-            }}</v-list-item-content>
+            <v-list-item-content class="font-weight-medium white--text">
+              {{
+                link.label
+              }}
+            </v-list-item-content>
           </v-list-item>
           <v-list-item
-              class="my-2 mx-1 white--text"
-              text
-              @click="$vuetify.goTo('#getInTouch')"
+            class="my-2 mx-1 white--text"
+            text
+            @click="$vuetify.goTo('#getInTouch')"
           >
             <v-list-item-icon class="white--text">
-              <v-icon class="white--text text-left">mdi-human-greeting-proximity</v-icon>
+              <v-icon class="white--text text-left">
+                mdi-human-greeting-proximity
+              </v-icon>
             </v-list-item-icon>
-            <v-list-item-content class="font-weight-medium white--text">Contact</v-list-item-content>
+            <v-list-item-content class="font-weight-medium white--text">
+              Contact
+            </v-list-item-content>
           </v-list-item>
           <v-list-item
             v-for="social in socials"
@@ -95,36 +122,49 @@
             :href="social.url"
           >
             <v-list-item-icon class="white--text">
-              <v-icon class="white--text text-left">{{ social.icon }}</v-icon>
+              <v-icon class="white--text text-left">
+                {{ social.icon }}
+              </v-icon>
             </v-list-item-icon>
-            <v-list-item-content class="font-weight-medium white--text">{{
-              social.label
-            }}</v-list-item-content>
+            <v-list-item-content class="font-weight-medium white--text">
+              {{
+                social.label
+              }}
+            </v-list-item-content>
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
     </v-app-bar>
     <v-content id="intro">
       <router-view />
-    <v-snackbar
-      v-model="snackbar"
-      light
-      fixed
-      bottom
-      :timeout="timeout"
-    >
-      By continuing to use this site, you accept our <a href="/privacy" class="text-decoration-underline">privacy and cookies policy.</a>
-      <template>
-        <v-btn
-          color="secondary"
-          text
-          @click="snackbar = false"
-        >
-          Close
-        </v-btn>
-      </template>
-    </v-snackbar>
-      <v-speed-dial v-model="fab" fixed bottom right alt="Scroll to top">
+      <v-snackbar
+        v-model="snackbar"
+        light
+        fixed
+        bottom
+        :timeout="timeout"
+      >
+        By continuing to use this site, you accept our <a
+          href="/privacy"
+          class="text-decoration-underline"
+        >privacy and cookies policy.</a>
+        <template>
+          <v-btn
+            color="secondary"
+            text
+            @click="snackbar = false"
+          >
+            Close
+          </v-btn>
+        </template>
+      </v-snackbar>
+      <v-speed-dial
+        v-model="fab"
+        fixed
+        bottom
+        right
+        alt="Scroll to top"
+      >
         <template v-slot:activator>
           <v-btn
             v-model="fab"
@@ -148,7 +188,9 @@
             text
             :to="link.url"
           >
-            <v-text class="font-weight-medium">{{ link.label }}</v-text>
+            <v-text class="font-weight-medium">
+              {{ link.label }}
+            </v-text>
           </v-btn>
         </v-col>
         <v-col cols="12">
@@ -162,12 +204,9 @@
 </template>
 
 <script>
-import router from './router';
+// import router from './router';
 
-let title = 'The Tech for Good talent partner | Confido',
-    desc = 'Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good starups. We connect people with the same values and a shared purpose to build a better future, together.',
-    url = 'https://confidotalent.com' + (router.history.current.path === '/' ? '' : router.history.current.path),
-    image = '/images/meta/home.png';
+let title = 'The Tech for Good talent partner | Confido'
 
 export default {
   name: "App",

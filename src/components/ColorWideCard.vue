@@ -3,9 +3,11 @@
     :color="`${card.color}`"
     class="pa-8 my-2 white--text text-left card-shadow"
   >
-    <v-card-title class="headline font-weight-bold">{{
-      card.title
-    }}</v-card-title>
+    <v-card-title class="headline font-weight-bold">
+      {{
+        card.title
+      }}
+    </v-card-title>
     <v-tabs
       :background-color="`${card.color}`"
       dark
@@ -16,7 +18,7 @@
       center
       fixed-tabs
     >
-      <v-tabs-slider :color="`${card.accentColor}`"></v-tabs-slider>
+      <v-tabs-slider :color="`${card.accentColor}`" />
       <v-tab>
         {{ card.tab1 }}
         <v-icon>
@@ -36,14 +38,18 @@
         </v-icon>
       </v-tab>
       <v-tab>
-        {{ card.tab4}}
+        {{ card.tab4 }}
         <v-icon>
           {{ card.icon4 }}
         </v-icon>
       </v-tab>
 
       <v-tab-item>
-        <v-card :color="`${card.color}`" style="border-radius: 0px !important;"  flat>
+        <v-card
+          :color="`${card.color}`"
+          style="border-radius: 0px !important;"
+          flat
+        >
           <v-card-text class="text-h6 white--text">
             <p>
               {{ card.text1 }}
@@ -52,7 +58,11 @@
         </v-card>
       </v-tab-item>
       <v-tab-item>
-        <v-card :color="`${card.color}`" style="border-radius: 0px !important;"  flat>
+        <v-card
+          :color="`${card.color}`"
+          style="border-radius: 0px !important;"
+          flat
+        >
           <v-card-text class="text-h6 white--text">
             <p>
               {{ card.text2 }}
@@ -61,7 +71,11 @@
         </v-card>
       </v-tab-item>
       <v-tab-item>
-        <v-card :color="`${card.color}`" style="border-radius: 0px !important;"  flat>
+        <v-card
+          :color="`${card.color}`"
+          style="border-radius: 0px !important;"
+          flat
+        >
           <v-card-text class="text-h6 white--text">
             <p>
               {{ card.text3 }}
@@ -70,7 +84,11 @@
         </v-card>
       </v-tab-item>
       <v-tab-item>
-        <v-card :color="`${card.color}`" style="border-radius: 0px !important;" flat>
+        <v-card
+          :color="`${card.color}`"
+          style="border-radius: 0px !important;"
+          flat
+        >
           <v-card-text class="text-h6 white--text">
             <p>
               {{ card.text4 }}

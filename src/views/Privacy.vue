@@ -3,9 +3,13 @@
   <v-container>
     <v-row class="text-left mt-0 mt-md-8">
       <v-col cols="12">
-        <h1 class="mb-8">Privacy Policy</h1>
+        <h1 class="mb-8">
+          Privacy Policy
+        </h1>
 
-        <h3 class="mb-4">WHO WE ARE AND WHAT WE DO</h3>
+        <h3 class="mb-4">
+          WHO WE ARE AND WHAT WE DO
+        </h3>
 
         <p>Confido Talent are a recruitment business as defined in the Employment Agencies and Employment Businesses Regulations 2003. We also provide the following other services including outsourcing and consultancy. We collect the personal data of the following types of people to allow us to undertake our business;</p>
 
@@ -29,7 +33,9 @@
 
         <p>We collect information about you to carry out our core business and ancillary activities.</p>
 
-        <h3 class="mb-4 mt-8">INFORMATION YOU GIVE TO US OR WE COLLECT ABOUT YOU.</h3>
+        <h3 class="mb-4 mt-8">
+          INFORMATION YOU GIVE TO US OR WE COLLECT ABOUT YOU.
+        </h3>
 
         <p>
           This is information about you that you give us by filling in forms on our site
@@ -43,7 +49,9 @@
 
         <p>The information you give us or we collect about you may include your name, address, private and corporate e-mail address and phone number, financial information, compliance documentation and references verifying your qualifications and experience and your right to work in the United Kingdom,curriculum vitae and photograph, links to your professional profiles available in the public domain e.g. LinkedIn, Twitter, business Facebook or corporate website</p>
 
-        <h3 class="mb-4 mt-8">INFORMATION WE COLLECT ABOUT YOU WHEN YOU VISIT OUR WEBSITE.</h3>
+        <h3 class="mb-4 mt-8">
+          INFORMATION WE COLLECT ABOUT YOU WHEN YOU VISIT OUR WEBSITE.
+        </h3>
 
         <ul role="list">
           <li role="listitem">
@@ -60,13 +68,17 @@
           </li>
         </ul>
 
-        <h3 class="mb-4 mt-8">INFORMATION WE OBTAIN FROM OTHER SOURCES.</h3>
+        <h3 class="mb-4 mt-8">
+          INFORMATION WE OBTAIN FROM OTHER SOURCES.
+        </h3>
 
         <p>This is information we obtain about you from other sources such as LinkedIn, corporate websites, job board websites,online CV libraries, your business card, and personal recommendations/references.We will only retain your personal information from these sources for our legitimate business interests and/or if we speak to you directly about an opportunity either by email, telephone, in person or social channel and will notify you as such. This privacy notice details our legitimate business interests and your rights as below.</p>
 
         <p>We are working closely with third parties including sub-contractors in technical, professional, payment and other services, advertising networks, analytics providers, search information providers, credit reference agencies and professional advisors. We may receive information about you from them for the purposes of our recruitment services and ancillary support services.</p>
 
-        <h3 class="mb-4 mt-8">PURPOSES OF THE PROCESSING AND THE LEGAL BASIS FOR THE PROCESSING</h3>
+        <h3 class="mb-4 mt-8">
+          PURPOSES OF THE PROCESSING AND THE LEGAL BASIS FOR THE PROCESSING
+        </h3>
 
         <p>We use information held about you in the following ways:</p>
 
@@ -93,7 +105,9 @@
           </li>
         </ul>
 
-        <h3 class="mb-4 mt-8">OUR LEGITIMATE BUSINESS INTERESTS</h3>
+        <h3 class="mb-4 mt-8">
+          OUR LEGITIMATE BUSINESS INTERESTS
+        </h3>
 
         <p>Our legitimate interests in collecting and retaining your personal data is described below:</p>
 
@@ -105,11 +119,15 @@
 
         <p>To deliver our ancillary services we need to keep this information updated and monitored for the length of time required to address the subject.</p>
 
-        <h3 class="mb-4 mt-8">CONSENT</h3>
+        <h3 class="mb-4 mt-8">
+          CONSENT
+        </h3>
 
         <p>Should we want or need to rely on consent to lawfully process your data we will request your consent orally, by email or by an online process for the specific activity we require consent for and record your response on our system. Where consent is the lawful basis for our processing you have the right to withdraw your consent to this particular processing at any time.</p>
 
-        <h3 class="mb-4 mt-8">OTHER USES WE WILL MAKE OF YOUR DATA:</h3>
+        <h3 class="mb-4 mt-8">
+          OTHER USES WE WILL MAKE OF YOUR DATA:
+        </h3>
 
         <ul role="list">
           <li role="listitem">
@@ -151,11 +169,15 @@
 
         <p>We do not undertake automated decision making or profiling. We do use our computer systems to search and identify personal data in accordance with parameters set by a person. A person will always be involved in the decision-making process.</p>
 
-        <h3 class="mb-4 mt-8">COOKIES</h3>
+        <h3 class="mb-4 mt-8">
+          COOKIES
+        </h3>
 
         <p>Our website uses cookies to distinguish you from other users of our website. This helps us to provide you with a good experience when you browse our website and allows us to improve our site. For detailed information on the cookies we use and the purposes for which we use them see our Cookie notice on our website.</p>
 
-        <h3 class="mb-4 mt-8">DISCLOSURE OF YOUR INFORMATION INSIDE AND OUTSIDE OF THE EEA</h3>
+        <h3 class="mb-4 mt-8">
+          DISCLOSURE OF YOUR INFORMATION INSIDE AND OUTSIDE OF THE EEA
+        </h3>
 
         <p>We will share your personal information with:</p>
 
@@ -229,7 +251,9 @@
           </li>
         </ul>
 
-        <h3 class="mb-4 mt-8">WHERE WE STORE AND PROCESS YOUR PERSONAL DATA</h3>
+        <h3 class="mb-4 mt-8">
+          WHERE WE STORE AND PROCESS YOUR PERSONAL DATA
+        </h3>
 
         <p>The data that we collect from you may/will be transferred to, and stored at, a destination outside the European Economic Area(&rdquo;EEA&rdquo;). It may be transferred to third parties outside of the EEA for the purpose of our recruitment services. It may/will also be processed by staff operating outside the EEA who work for us or for one of our suppliers. This includes staff engaged in, among other things, our recruitment services and the provision of support services. By submitting your personal data, you agree to this transfer, storing or processing. We will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this privacy notice.</p>
 
@@ -237,7 +261,9 @@
 
         <p>Unfortunately, the transmission of information via the internet is not completely secure. Although we will do our best to protect your personal data, we cannot guarantee the security of your data transmitted to our site; any transmission is at your own risk. Once we have received your information, we will use strict procedures and security features to try to prevent unauthorised access.</p>
 
-        <h3 class="mb-4 mt-8">RETENTION OF YOUR DATA</h3>
+        <h3 class="mb-4 mt-8">
+          RETENTION OF YOUR DATA
+        </h3>
 
         <p>We understand our legal duty to retain accurate data and only retain personal data for as long as we need it for our legitimate business interests and that you are happy for us to do so. Accordingly, we have a data retention notice and run data routines to remove data that we no longer have a legitimate business interest in maintaining.</p>
 
@@ -281,7 +307,9 @@
 
         <p>Our current retention notice is available upon request.</p>
 
-        <h3 class="mb-4 mt-8">YOUR RIGHTS</h3>
+        <h3 class="mb-4 mt-8">
+          YOUR RIGHTS
+        </h3>
 
         <p>You have the right to ask us not to process your personal data for marketing purposes. We will usually inform you (before collecting your data) if we intend to use your data for such purposes or if we intend to disclose your information to any third party for such purposes and we will collect express consent from you if legally required prior to using your personal data for marketing purposes.</p>
 
@@ -296,7 +324,9 @@
 
         <p>Our site may, from time to time, contain links to and from the websites of our partner networks, advertisers and affiliates. If you follow a link to any of these websites, please note that these websites have their own privacy policies and that we do not accept any responsibility or liability for these policies. Please check these policies before you submit any personal data to these websites.</p>
 
-        <h3 class="mb-4 mt-8">THE GDPR PROVIDES YOU WITH THE FOLLOWING RIGHTS. TO:</h3>
+        <h3 class="mb-4 mt-8">
+          THE GDPR PROVIDES YOU WITH THE FOLLOWING RIGHTS. TO:
+        </h3>
 
         <ul role="list">
           <li role="listitem">
@@ -329,7 +359,9 @@
           </li>
         </ul>
 
-        <h3 class="mb-4 mt-8">ACCESS TO INFORMATION</h3>
+        <h3 class="mb-4 mt-8">
+          ACCESS TO INFORMATION
+        </h3>
 
         <p>The Data Protection Act 1998 and the GDPR give you the right to access information held about you. We also encourage you to contact us to ensure your data is accurate and complete.</p>
 
@@ -346,11 +378,15 @@
 
         <p>No fee will apply, although you will be required to provide satisfactory proof of identify before accessing any data.</p>
 
-        <h3 class="mb-4 mt-8">CHANGES TO OUR PRIVACY NOTICE</h3>
+        <h3 class="mb-4 mt-8">
+          CHANGES TO OUR PRIVACY NOTICE
+        </h3>
 
         <p>Any changes we make to our privacy notice in the future will be posted on this page and, where appropriate, notified to you by email. Please check back frequently to see any updates or changes to our privacy notice.</p>
 
-        <h3 class="mb-4 mt-8">CONTACT</h3>
+        <h3 class="mb-4 mt-8">
+          CONTACT
+        </h3>
 
         <p>
           Questions and comments regarding this privacy notice are welcomed and should be addressed, along with requests to be removed from our database to

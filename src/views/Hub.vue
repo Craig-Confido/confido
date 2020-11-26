@@ -1,8 +1,18 @@
 /* eslint-disable */
 <template>
-  <v-container fluid class="pa-0 ma-0">
-    <v-row class="text-left" no-gutters>
-      <v-col v-for="featured in featuredposts.slice(0,1)" :key="featured._id" cols="12">
+  <v-container
+    fluid
+    class="pa-0 ma-0"
+  >
+    <v-row
+      class="text-left"
+      no-gutters
+    >
+      <v-col
+        v-for="featured in featuredposts.slice(0,1)"
+        :key="featured._id"
+        cols="12"
+      >
         <FeaturedPost :featured="featured" />
       </v-col>
     </v-row>
@@ -15,17 +25,28 @@
         </v-col>
       </v-row> -->
       <v-row class="mt-3 mb-5">
-        <v-col v-for="post in posts" :key="post._id" cols="12" md="4">
-          <PostCards :post="post" class="justify-center" />
+        <v-col
+          v-for="post in posts"
+          :key="post._id"
+          cols="12"
+          md="4"
+        >
+          <PostCards
+            :post="post"
+            class="justify-center"
+          />
         </v-col>
       </v-row>
     </section>
-        <v-row
+    <v-row
       class="my-16 full-width-green"
       no-gutters
       style="height: 8px"
-    ></v-row>
-        <v-row class="mx-0 mx-md-6 mx-lg-16 mb-12" id="getInTouch">
+    />
+    <v-row
+      id="getInTouch"
+      class="mx-0 mx-md-6 mx-lg-16 mb-12"
+    >
       <v-col cols="12">
         <GetInTouch :contact="contact" />
       </v-col>

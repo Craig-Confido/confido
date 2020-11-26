@@ -8,10 +8,16 @@
     />
     <v-row class="text-left pl-lg-12">
       <v-col cols="12">
-        <h1 class="title my-4" color="primary--text">
+        <h1
+          class="title my-4"
+          color="primary--text"
+        >
           {{ featuredposts.title }}
         </h1>
-        <v-chip class="tag px-4 py-2 my-4" color="secondary">
+        <v-chip
+          class="tag px-4 py-2 my-4"
+          color="secondary"
+        >
           <strong>{{ featuredposts.metadata.tag }}</strong>
         </v-chip>
       </v-col>
@@ -20,8 +26,8 @@
       <v-col cols="12">
         <section
           color="primary--text"
-          v-html="featuredposts.content"
           class="justify-left"
+          v-html="featuredposts.content"
         />
       </v-col>
     </v-row>
@@ -34,7 +40,7 @@ export default {
   props: {
     featuredposts: {
       type: Object,
-      default: "No posts are loaded"
+      default: () => "No posts are loaded"
     }
   }
 };

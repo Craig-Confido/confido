@@ -1,6 +1,9 @@
 /* eslint-disable */
 <template>
-  <v-container fluid class="pa-0 ma-0">
+  <v-container
+    fluid
+    class="pa-0 ma-0"
+  >
     <section class="mx-4 mx-lg-16">
       <v-row class="text-left mt-4">
         <v-img
@@ -8,7 +11,11 @@
           class="d-flex d-md-none mx-md-16"
           alt="image of people"
         />
-        <v-col cols="12" sm="7" class="mt-md-16">
+        <v-col
+          cols="12"
+          sm="7"
+          class="mt-md-16"
+        >
           <h1
             class="text-h3  text-md-h2 font-weight-bold"
             aria-label="Intro text"
@@ -20,8 +27,7 @@
             <span class="accent--text"> <strong>values</strong></span> and a
             shared <span class="success--text"><strong>purpose</strong></span>
             to build a better future,
-            <span class="secondary--text"> <strong>together</strong></span
-            >.
+            <span class="secondary--text"> <strong>together</strong></span>.
           </h2>
           <v-row class="mt-12 mx-0">
             <v-btn
@@ -32,8 +38,9 @@
               rounded
               width="250"
               height="50"
-              >Scale your team</v-btn
             >
+              Scale your team
+            </v-btn>
             <v-btn
               to="/talent"
               class="mr-4 mt-4 btn--outlined font-weight-bold"
@@ -42,12 +49,16 @@
               rounded
               width="250"
               height="50"
-              >Join a startup</v-btn
             >
+              Join a startup
+            </v-btn>
           </v-row>
         </v-col>
         <v-spacer />
-        <v-col cols="12" sm="5">
+        <v-col
+          cols="12"
+          sm="5"
+        >
           <v-img
             src="../../public/images/homeVisual.png"
             class="d-none d-md-flex mx-md-16"
@@ -61,46 +72,78 @@
       no-gutters
       style="box-shadow: 0px 0px 70px rgba(100, 181, 246, 0.55)"
     >
-      <v-col cols="12" md="4">
-        <h1 class="mb-4 text-left">What we do.</h1>
+      <v-col
+        cols="12"
+        md="4"
+      >
+        <h1 class="mb-4 text-left">
+          What we do.
+        </h1>
         <h2 class="text-left">
-          Product and Tech hiring.<br />
-          Seed to Series B startups.<br />
-          Tech for Good products.<br />
+          Product and Tech hiring.<br>
+          Seed to Series B startups.<br>
+          Tech for Good products.<br>
         </h2>
       </v-col>
-    <v-row class="my-auto text-center">
-      <v-col cols="12" md="3" class="mt-8 mt-md-0">
-        <v-icon class="white--text text-h2 mb-2">mdi-rocket-launch-outline</v-icon>
-        <h1>
-          20+
-        </h1>
-        <h3>Startups scaled</h3>
-      </v-col>
-      <v-col cols="12" md="3" class="mt-8 mt-md-0">
-        <v-icon class="white--text text-h2 mb-2">mdi-clock-check-outline</v-icon>
-        <h1>
-          4 weeks
-        </h1>
-        <h3>Average to hire</h3>
-      </v-col>
-      <v-col cols="12" md="3" class="mt-8 mt-md-0">
-        <v-icon class="white--text text-h2 mb-2">mdi-account-group-outline</v-icon>
-        <h1>
-          70+
-        </h1>
-        <h3>Hires made</h3>
-      </v-col>
-      <v-col cols="12" md="3" class="mt-8 mt-md-0">
-        <v-icon class="white--text text-h2 mb-2">mdi-check-circle-outline</v-icon>
-        <h1>
-          98%
-        </h1>
-        <h3>Success rate</h3>
-      </v-col>
+      <v-row class="my-auto text-center">
+        <v-col
+          cols="12"
+          md="3"
+          class="mt-8 mt-md-0"
+        >
+          <v-icon class="white--text text-h2 mb-2">
+            mdi-rocket-launch-outline
+          </v-icon>
+          <h1>
+            20+
+          </h1>
+          <h3>Startups scaled</h3>
+        </v-col>
+        <v-col
+          cols="12"
+          md="3"
+          class="mt-8 mt-md-0"
+        >
+          <v-icon class="white--text text-h2 mb-2">
+            mdi-clock-check-outline
+          </v-icon>
+          <h1>
+            4 weeks
+          </h1>
+          <h3>Average to hire</h3>
+        </v-col>
+        <v-col
+          cols="12"
+          md="3"
+          class="mt-8 mt-md-0"
+        >
+          <v-icon class="white--text text-h2 mb-2">
+            mdi-account-group-outline
+          </v-icon>
+          <h1>
+            70+
+          </h1>
+          <h3>Hires made</h3>
+        </v-col>
+        <v-col
+          cols="12"
+          md="3"
+          class="mt-8 mt-md-0"
+        >
+          <v-icon class="white--text text-h2 mb-2">
+            mdi-check-circle-outline
+          </v-icon>
+          <h1>
+            98%
+          </h1>
+          <h3>Success rate</h3>
+        </v-col>
       </v-row>
     </v-row>
-    <v-row class="mx-0 mt-0 pt-0 pb-0 mb-0 white--text" no-gutters>
+    <v-row
+      class="mx-0 mt-0 pt-0 pb-0 mb-0 white--text"
+      no-gutters
+    >
       <v-carousel
         cycle
         continuous
@@ -115,7 +158,11 @@
           :key="quote"
           class="px-0 mx-0 px-md-16 mx-md-16 my-0 py-0"
         >
-          <v-sheet color="transparent" height="100%" class="px-0 px-md-16 py-0 my-0">
+          <v-sheet
+            color="transparent"
+            height="100%"
+            class="px-0 px-md-16 py-0 my-0"
+          >
             <v-row
               class="fill-height px-4 px-0 mx-6 mx-lg-16"
               align="center"
@@ -129,7 +176,7 @@
                 </p>
                 <p class="text-h5 mt-12 mb-0 secondary--text">
                   <strong>
-                  {{ quote.advocate }}
+                    {{ quote.advocate }}
                   </strong>
                 </p>
               </v-text>
@@ -141,28 +188,30 @@
     <v-row class="mx-0 mx-md-6 mx-lg-16 mt-0 pt-0">
       <v-col cols="12">
         <Logos :logo="logo" />
-    <v-row class="mx-auto justify-center mt-8">
-      <v-btn
-        to="/startups"
-        class="mx-12 px-6 btn--outlined font-weight-black mt-2 mt-sm-0"
-        outlined
-        color="accent"
-        rounded
-        width="250"
-        height="60"
-        >Scale your team</v-btn
-      >
-      <v-btn
-        to="/talent"
-        class="mx-12 px-6 btn--outlined font-weight-black mt-2 mt-sm-0"
-        outlined
-        color="success"
-        rounded
-        width="250"
-        height="60"
-        >Join a startup</v-btn
-      >
-    </v-row>
+        <v-row class="mx-auto justify-center mt-8">
+          <v-btn
+            to="/startups"
+            class="mx-12 px-6 btn--outlined font-weight-black mt-2 mt-sm-0"
+            outlined
+            color="accent"
+            rounded
+            width="250"
+            height="60"
+          >
+            Scale your team
+          </v-btn>
+          <v-btn
+            to="/talent"
+            class="mx-12 px-6 btn--outlined font-weight-black mt-2 mt-sm-0"
+            outlined
+            color="success"
+            rounded
+            width="250"
+            height="60"
+          >
+            Join a startup
+          </v-btn>
+        </v-row>
       </v-col>
     </v-row>
     <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
@@ -171,75 +220,108 @@
       </v-col>
     </v-row>
     <v-row class="mx-0 mx-md-6 mx-lg-16">
-      <v-col cols="12" md="6">
+      <v-col
+        cols="12"
+        md="6"
+      >
         <v-card
           color="accent"
           class="pa-8 my-2 white--text text-left card-shadow"
         >
-          <v-card-title class="headline font-weight-bold"
-            >We are Confido.</v-card-title
+          <v-card-title
+            class="headline font-weight-bold"
           >
+            We are Confido.
+          </v-card-title>
           <v-card-text class="text-md-h6 white--text">
             <p>
-              <v-icon class="mr-4 white--text">mdi-head-check-outline</v-icon>
+              <v-icon class="mr-4 white--text">
+                mdi-head-check-outline
+              </v-icon>
               Your advisor, mentor and friend.
             </p>
             <p>
-              <v-icon class="mr-4 white--text">mdi-account-voice</v-icon>
+              <v-icon class="mr-4 white--text">
+                mdi-account-voice
+              </v-icon>
               Direct, open and straight talking,
             </p>
-            <p class="ml-11">but never judgemental.</p>
+            <p class="ml-11">
+              but never judgemental.
+            </p>
             <p>
-              <v-icon class="mr-4 white--text">mdi-account-child</v-icon> We’ve
+              <v-icon class="mr-4 white--text">
+                mdi-account-child
+              </v-icon> We’ve
               always got your back.
             </p>
             <p>
-              <v-icon class="mr-4 white--text">mdi-party-popper</v-icon>
+              <v-icon class="mr-4 white--text">
+                mdi-party-popper
+              </v-icon>
               Helping to build a better future, together.
             </p>
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="12" md="6">
+      <v-col
+        cols="12"
+        md="6"
+      >
         <v-card
           color="success"
           class="pa-8 my-2 white--text text-left card-shadow"
         >
-          <v-card-title class="headline font-weight-bold"
-            >Our values.</v-card-title
+          <v-card-title
+            class="headline font-weight-bold"
           >
+            Our values.
+          </v-card-title>
           <v-card-text class="text-md-h6 white--text">
             <p>
-              <v-icon class="mr-4 white--text"
-                >mdi-chart-bell-curve-cumulative</v-icon
+              <v-icon
+                class="mr-4 white--text"
               >
+                mdi-chart-bell-curve-cumulative
+              </v-icon>
               Use data to tell the story.
             </p>
             <p>
-              <v-icon class="mr-4 white--text">mdi-help-circle-outline</v-icon>
+              <v-icon class="mr-4 white--text">
+                mdi-help-circle-outline
+              </v-icon>
               Always understand the ‘why’.
             </p>
             <p>
-              <v-icon class="mr-4 white--text"
-                >mdi-account-clock-outline</v-icon
+              <v-icon
+                class="mr-4 white--text"
               >
+                mdi-account-clock-outline
+              </v-icon>
               Respect others and their time.
             </p>
             <p>
-              <v-icon class="mr-4 white--text">mdi-hand-okay</v-icon> Don't
+              <v-icon class="mr-4 white--text">
+                mdi-hand-okay
+              </v-icon> Don't
               overcomplicate, simplicity is key.
             </p>
             <p>
-              <v-icon class="mr-4 white--text"
-                >mdi-head-snowflake-outline</v-icon
+              <v-icon
+                class="mr-4 white--text"
               >
+                mdi-head-snowflake-outline
+              </v-icon>
               Champion values and mindset over skill.
             </p>
           </v-card-text>
         </v-card>
       </v-col>
     </v-row>
-    <v-row class="mx-0 mx-md-6 mx-lg-16 mb-12" id="getInTouch">
+    <v-row
+      id="getInTouch"
+      class="mx-0 mx-md-6 mx-lg-16 mb-12"
+    >
       <v-col cols="12">
         <GetInTouch :contact="contact" />
       </v-col>
@@ -250,7 +332,7 @@
 <script>
 import Logos from "../components/Logos";
 import GetInTouch from "../components/GetInTouch";
-import CaseStudySmallCard from "../components/CaseStudySmallCard";
+// import CaseStudySmallCard from "../components/CaseStudySmallCard";
 
 import router from '../router';
 
@@ -283,7 +365,7 @@ export default {
   components: {
     Logos,
     GetInTouch,
-    CaseStudySmallCard
+    // CaseStudySmallCard
   },
   data() {
     return {

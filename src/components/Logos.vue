@@ -4,8 +4,12 @@
     color="white"
     class="pt-8 px-4 py-4 pa-md-8 py-md-8 my-0 card-shadow"
   >
-    <h1 class="mb-0 ml-3 text-left">Startups we've scaled.</h1>
-    <h4 class="mt-0 ml-3 text-left">Click a logo to learn more.</h4>
+    <h1 class="mb-0 ml-3 text-left">
+      Startups we've scaled.
+    </h1>
+    <h4 class="mt-0 ml-3 text-left">
+      Click a logo to learn more.
+    </h4>
     <v-row class="mx-4 my-4 d-none d-sm-flex">
       <v-dialog
         v-model="benefex"
@@ -22,8 +26,12 @@
             v-on="on"
           />
         </template>
-          <CaseStudySmallCard v-for="card in cards.slice(0, 1)" :key="card" :card="card" />
-        </v-dialog>
+        <CaseStudySmallCard
+          v-for="card in cards.slice(0, 1)"
+          :key="card"
+          :card="card"
+        />
+      </v-dialog>
       <v-dialog
         v-model="thirdSpace"
         max-width="1000px"
@@ -39,7 +47,11 @@
             v-on="on"
           />
         </template>
-          <CaseStudySmallCard v-for="card in cards.slice(6, 7)" :key="card" :card="card" />
+        <CaseStudySmallCard
+          v-for="card in cards.slice(6, 7)"
+          :key="card"
+          :card="card"
+        />
       </v-dialog>
       <v-dialog
         v-model="feedr"
@@ -56,7 +68,11 @@
             v-on="on"
           />
         </template>
-          <CaseStudySmallCard v-for="card in cards.slice(9, 10)" :key="card" :card="card" />
+        <CaseStudySmallCard
+          v-for="card in cards.slice(9, 10)"
+          :key="card"
+          :card="card"
+        />
       </v-dialog>
       <v-dialog
         v-model="matr"
@@ -73,7 +89,11 @@
             v-on="on"
           />
         </template>
-          <CaseStudySmallCard v-for="card in cards.slice(5, 6)" :key="card" :card="card" />
+        <CaseStudySmallCard
+          v-for="card in cards.slice(5, 6)"
+          :key="card"
+          :card="card"
+        />
       </v-dialog>
       <v-dialog
         v-model="unmind"
@@ -90,7 +110,11 @@
             v-on="on"
           />
         </template>
-          <CaseStudySmallCard v-for="card in cards.slice(3, 4)" :key="card" :card="card" />
+        <CaseStudySmallCard
+          v-for="card in cards.slice(3, 4)"
+          :key="card"
+          :card="card"
+        />
       </v-dialog>
       <v-dialog
         v-model="wagestream"
@@ -107,24 +131,32 @@
             v-on="on"
           />
         </template>
-          <CaseStudySmallCard v-for="card in cards.slice(10, 11)" :key="card" :card="card" />
+        <CaseStudySmallCard
+          v-for="card in cards.slice(10, 11)"
+          :key="card"
+          :card="card"
+        />
       </v-dialog>
-    <v-dialog
+      <v-dialog
         v-model="homehero"
         max-width="1000px"
         overflow-hidden
       >
-      <template v-slot:activator="{ on, attrs }">
-      <v-img
-        src="../../public/images/homehero.svg"
-        max-width="160"
-        contain
-        class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-        v-bind="attrs"
-        v-on="on"
-      />
-      </template>
-        <CaseStudySmallCard v-for="card in cards.slice(2, 3)" :key="card" :card="card" />
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            src="../../public/images/homehero.svg"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <CaseStudySmallCard
+          v-for="card in cards.slice(2, 3)"
+          :key="card"
+          :card="card"
+        />
       </v-dialog>
       <v-dialog
         v-model="curve"
@@ -141,7 +173,11 @@
             v-on="on"
           />
         </template>
-          <CaseStudySmallCard v-for="card in cards.slice(4, 5)" :key="card" :card="card" />
+        <CaseStudySmallCard
+          v-for="card in cards.slice(4, 5)"
+          :key="card"
+          :card="card"
+        />
       </v-dialog>
       <v-dialog
         v-model="visionBox"
@@ -158,25 +194,33 @@
             v-on="on"
           />
         </template>
-          <CaseStudySmallCard v-for="card in cards.slice(8, 9)" :key="card" :card="card" />
-      </v-dialog>
-    <v-dialog
-      v-model="houseKeep"
-      max-width="1000px"
-      overflow-hidden
-    >
-      <template v-slot:activator="{ on, attrs }">
-        <v-img
-          src="../../public/images/houseKeep.png"
-          max-width="160"
-          contain
-          class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-          v-bind="attrs"
-          v-on="on"
+        <CaseStudySmallCard
+          v-for="card in cards.slice(8, 9)"
+          :key="card"
+          :card="card"
         />
-      </template>
-          <CaseStudySmallCard v-for="card in cards.slice(1, 2)" :key="card" :card="card" />
-        </v-dialog>
+      </v-dialog>
+      <v-dialog
+        v-model="houseKeep"
+        max-width="1000px"
+        overflow-hidden
+      >
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            src="../../public/images/houseKeep.png"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <CaseStudySmallCard
+          v-for="card in cards.slice(1, 2)"
+          :key="card"
+          :card="card"
+        />
+      </v-dialog>
       <v-dialog
         v-model="octopusWealth"
         max-width="1000px"
@@ -192,201 +236,249 @@
             v-on="on"
           />
         </template>
-          <CaseStudySmallCard v-for="card in cards.slice(7, 8)" :key="card" :card="card" />
+        <CaseStudySmallCard
+          v-for="card in cards.slice(7, 8)"
+          :key="card"
+          :card="card"
+        />
       </v-dialog>
     </v-row>
 
     <v-row class="mx-4 my-4 d-flex d-sm-none">
       <v-col cols="6">
         <v-dialog
-        v-model="benefex"
-        max-width="1000px"
-        overflow-hidden
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-img
-            src="../../public/images/benefex.png"
-            max-width="160"
-            contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-            v-bind="attrs"
-            v-on="on"
+          v-model="benefex"
+          max-width="1000px"
+          overflow-hidden
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-img
+              src="../../public/images/benefex.png"
+              max-width="160"
+              contain
+              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+              v-bind="attrs"
+              v-on="on"
+            />
+          </template>
+          <CaseStudySmallCard
+            v-for="card in cards.slice(0, 1)"
+            :key="card"
+            :card="card"
           />
-        </template>
-          <CaseStudySmallCard v-for="card in cards.slice(0, 1)" :key="card" :card="card" />
         </v-dialog>
-      <v-dialog
-        v-model="thirdSpace"
-        max-width="1000px"
-        overflow-hidden
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-img
-            src="../../public/images/thirdSpace.png"
-            max-width="160"
-            contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-            v-bind="attrs"
-            v-on="on"
-          />
-        </template>
-          <CaseStudySmallCard v-for="card in cards.slice(6, 7)" :key="card" :card="card" />
-      </v-dialog>
-      <v-dialog
-        v-model="feedr"
-        max-width="1000px"
-        overflow-hidden
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-img
-            src="../../public/images/feedr.webp"
-            max-width="160"
-            contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-            v-bind="attrs"
-            v-on="on"
-          />
-        </template>
-          <CaseStudySmallCard v-for="card in cards.slice(9, 10)" :key="card" :card="card" />
-      </v-dialog>
-      <v-dialog
-        v-model="matr"
-        max-width="1000px"
-        overflow-hidden
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-img
-            src="../../public/images/matr.png"
-            max-width="160"
-            contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-            v-bind="attrs"
-            v-on="on"
-          />
-        </template>
-          <CaseStudySmallCard v-for="card in cards.slice(5, 6)" :key="card" :card="card" />
-      </v-dialog>
-      <v-dialog
-        v-model="unmind"
-        max-width="1000px"
-        overflow-hidden
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-img
-            src="../../public/images/unmind.png"
-            max-width="160"
-            contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-            v-bind="attrs"
-            v-on="on"
-          />
-        </template>
-          <CaseStudySmallCard v-for="card in cards.slice(3, 4)" :key="card" :card="card" />
-      </v-dialog>
-    </v-col>
-    <v-col cols="6">
         <v-dialog
-        v-model="wagestream"
-        max-width="1000px"
-        overflow-hidden
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-img
-            src="../../public/images/wagestream.png"
-            max-width="160"
-            contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-            v-bind="attrs"
-            v-on="on"
+          v-model="thirdSpace"
+          max-width="1000px"
+          overflow-hidden
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-img
+              src="../../public/images/thirdSpace.png"
+              max-width="160"
+              contain
+              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+              v-bind="attrs"
+              v-on="on"
+            />
+          </template>
+          <CaseStudySmallCard
+            v-for="card in cards.slice(6, 7)"
+            :key="card"
+            :card="card"
           />
-        </template>
-          <CaseStudySmallCard v-for="card in cards.slice(10, 11)" :key="card" :card="card" />
-      </v-dialog>
-    <v-dialog
-        v-model="homehero"
-        max-width="1000px"
-        overflow-hidden
-      >
-      <template v-slot:activator="{ on, attrs }">
-      <v-img
-        src="../../public/images/homehero.svg"
-        max-width="160"
-        contain
-        class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-        v-bind="attrs"
-        v-on="on"
-      />
-      </template>
-        <CaseStudySmallCard v-for="card in cards.slice(2, 3)" :key="card" :card="card" />
-      </v-dialog>
-      <v-dialog
-        v-model="curve"
-        max-width="1000px"
-        overflow-hidden
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-img
-            src="../../public/images/curve.png"
-            max-width="160"
-            contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-            v-bind="attrs"
-            v-on="on"
-          />
-        </template>
-          <CaseStudySmallCard v-for="card in cards.slice(4, 5)" :key="card" :card="card" />
-      </v-dialog>
-      <v-dialog
-        v-model="visionBox"
-        max-width="1000px"
-        overflow-hidden
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-img
-            src="../../public/images/vision-box.svg"
-            max-width="160"
-            contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-            v-bind="attrs"
-            v-on="on"
-          />
-        </template>
-          <CaseStudySmallCard v-for="card in cards.slice(8, 9)" :key="card" :card="card" />
-      </v-dialog>
-    <v-dialog
-      v-model="houseKeep"
-      max-width="1000px"
-      overflow-hidden
-    >
-      <template v-slot:activator="{ on, attrs }">
-        <v-img
-          src="../../public/images/houseKeep.png"
-          max-width="160"
-          contain
-          class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-          v-bind="attrs"
-          v-on="on"
-        />
-      </template>
-          <CaseStudySmallCard v-for="card in cards.slice(1, 2)" :key="card" :card="card" />
         </v-dialog>
-      <v-dialog
-        v-model="octopusWealth"
-        max-width="1000px"
-        overflow-hidden
-      >
-        <template v-slot:activator="{ on, attrs }">
-          <v-img
-            src="../../public/images/octopusWealth.png"
-            max-width="160"
-            contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-            v-bind="attrs"
-            v-on="on"
+        <v-dialog
+          v-model="feedr"
+          max-width="1000px"
+          overflow-hidden
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-img
+              src="../../public/images/feedr.webp"
+              max-width="160"
+              contain
+              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+              v-bind="attrs"
+              v-on="on"
+            />
+          </template>
+          <CaseStudySmallCard
+            v-for="card in cards.slice(9, 10)"
+            :key="card"
+            :card="card"
           />
-        </template>
-          <CaseStudySmallCard v-for="card in cards.slice(7, 8)" :key="card" :card="card" />
-      </v-dialog>
+        </v-dialog>
+        <v-dialog
+          v-model="matr"
+          max-width="1000px"
+          overflow-hidden
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-img
+              src="../../public/images/matr.png"
+              max-width="160"
+              contain
+              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+              v-bind="attrs"
+              v-on="on"
+            />
+          </template>
+          <CaseStudySmallCard
+            v-for="card in cards.slice(5, 6)"
+            :key="card"
+            :card="card"
+          />
+        </v-dialog>
+        <v-dialog
+          v-model="unmind"
+          max-width="1000px"
+          overflow-hidden
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-img
+              src="../../public/images/unmind.png"
+              max-width="160"
+              contain
+              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+              v-bind="attrs"
+              v-on="on"
+            />
+          </template>
+          <CaseStudySmallCard
+            v-for="card in cards.slice(3, 4)"
+            :key="card"
+            :card="card"
+          />
+        </v-dialog>
+      </v-col>
+      <v-col cols="6">
+        <v-dialog
+          v-model="wagestream"
+          max-width="1000px"
+          overflow-hidden
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-img
+              src="../../public/images/wagestream.png"
+              max-width="160"
+              contain
+              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+              v-bind="attrs"
+              v-on="on"
+            />
+          </template>
+          <CaseStudySmallCard
+            v-for="card in cards.slice(10, 11)"
+            :key="card"
+            :card="card"
+          />
+        </v-dialog>
+        <v-dialog
+          v-model="homehero"
+          max-width="1000px"
+          overflow-hidden
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-img
+              src="../../public/images/homehero.svg"
+              max-width="160"
+              contain
+              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+              v-bind="attrs"
+              v-on="on"
+            />
+          </template>
+          <CaseStudySmallCard
+            v-for="card in cards.slice(2, 3)"
+            :key="card"
+            :card="card"
+          />
+        </v-dialog>
+        <v-dialog
+          v-model="curve"
+          max-width="1000px"
+          overflow-hidden
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-img
+              src="../../public/images/curve.png"
+              max-width="160"
+              contain
+              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+              v-bind="attrs"
+              v-on="on"
+            />
+          </template>
+          <CaseStudySmallCard
+            v-for="card in cards.slice(4, 5)"
+            :key="card"
+            :card="card"
+          />
+        </v-dialog>
+        <v-dialog
+          v-model="visionBox"
+          max-width="1000px"
+          overflow-hidden
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-img
+              src="../../public/images/vision-box.svg"
+              max-width="160"
+              contain
+              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+              v-bind="attrs"
+              v-on="on"
+            />
+          </template>
+          <CaseStudySmallCard
+            v-for="card in cards.slice(8, 9)"
+            :key="card"
+            :card="card"
+          />
+        </v-dialog>
+        <v-dialog
+          v-model="houseKeep"
+          max-width="1000px"
+          overflow-hidden
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-img
+              src="../../public/images/houseKeep.png"
+              max-width="160"
+              contain
+              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+              v-bind="attrs"
+              v-on="on"
+            />
+          </template>
+          <CaseStudySmallCard
+            v-for="card in cards.slice(1, 2)"
+            :key="card"
+            :card="card"
+          />
+        </v-dialog>
+        <v-dialog
+          v-model="octopusWealth"
+          max-width="1000px"
+          overflow-hidden
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-img
+              src="../../public/images/octopusWealth.png"
+              max-width="160"
+              contain
+              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+              v-bind="attrs"
+              v-on="on"
+            />
+          </template>
+          <CaseStudySmallCard
+            v-for="card in cards.slice(7, 8)"
+            :key="card"
+            :card="card"
+          />
+        </v-dialog>
       </v-col>
     </v-row>
   </v-card>
