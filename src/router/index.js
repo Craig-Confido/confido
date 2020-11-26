@@ -7,25 +7,21 @@ const routes = [
   {
     path: '/',
     name: 'About',
-    metaTitle: 'about__',
     component: () => import('../views/About.vue')
   },
   {
     path: '/startups',
     name: 'Startups',
-    metaTitle: 'startups__',
     component: () => import('../views/Startups.vue')
   },
   {
     path: '/talent',
     name: 'Talent',
-    metaTitle: 'talent__',
     component: () => import('../views/Talent.vue')
   },
   {
     path: '/hub',
     name: 'Hub',
-    metaTitle: 'hub__',
     component: () => import('../views/Hub.vue')
   },
   {
@@ -43,7 +39,6 @@ const routes = [
   {
     path: '/privacy',
     name: 'Privacy',
-    metaTitle: 'privacy__',
     component: () => import('../views/Privacy.vue')
   },
   // 301 redirects
@@ -73,6 +68,12 @@ const routes = [
   { path: '/hub/post/ux-design-and-startups-volume-2-do-we-need-user-research', redirect: '/hub/post/ux-design-and-startups-volume-2-do-we-need-user-research' },
   { path: '/knowledgehub/confido-q-aspiring-cto-what-does-it-take-how-do-you-get-there', redirect: '/hub/post/confido-qa-aspiring-cto-what-does-it-take-how-do-you-get-there' },
 
+  // 404 redirect
+  {
+    path: '*',
+    name: '404 Error',
+    component: () => import('../views/error.vue')
+  }
 ]
 
 const router = new VueRouter({
