@@ -117,7 +117,7 @@ export default {
       bucket
         .getObjects({
           type: "posts",
-          props: "_id,slug,title,content,metadata"
+          props: "_id,slug,title,content,metadata,seo_metaimage,seo_metadescription,seo_metatitle"
         })
         .then(data => {
           const posts = data.objects;
@@ -131,7 +131,7 @@ export default {
       bucket
         .getObjects({
           type: "featuredposts",
-          props: "_id,slug,title,content,metadata"
+          props: "_id,slug,title,content,metadata,seo_metaimage,seo_metadescription,seo_metatitle"
         })
         .then(data => {
           const featuredposts = data.objects;

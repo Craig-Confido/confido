@@ -56,7 +56,7 @@ export default {
           slug: this.slug
         })
         .then(data => {
-          console.log(data);
+          // console.log(data);
           this.featuredposts = data.object;
           this.loading = false;
           // this.featuredposts = featuredposts;

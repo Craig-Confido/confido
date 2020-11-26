@@ -67,6 +67,7 @@
 </template>
 
 <script>
+// import router from '../router';
 export default {
   name: "Post",
   props: {
@@ -74,6 +75,31 @@ export default {
       type: Object,
       default: () => "No posts are loaded"
     }
-  }
+  },
+  // not quite working yet
+  // metaInfo () {
+  //   let title = this?.post?.seo_metatitle,
+  //       desc = "desc " + this?.post?.seo_metadescription,
+  //       url = 'https://confidotalent.com' + (router.history.current.path === '/' ? '' : router.history.current.path),
+  //       image = this?.post?.seo_metaimage;
+  //   return {
+  //     title: title,
+  //     meta: [
+  //       { name: 'Description', content: desc },
+
+  //       { property: 'og:title', content: title},
+  //       { property: 'og:url', content: url},
+  //       { property: 'og:image', content: image},
+  //       { property: 'og:description', content: desc},
+
+  //       { property: 'twitter:domain', content: url},
+  //       { property: 'twitter:title', content: title},
+  //       { property: 'twitter:description', content: desc},
+  //       { property: 'twitter:image', content: image},
+  //       { property: 'twitter:url', content: url},
+  //       { property: 'twitter:label1', content: title}, 
+  //     ],
+  //   }
+  // }
 };
 </script>

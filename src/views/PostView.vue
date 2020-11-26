@@ -59,7 +59,7 @@ export default {
           slug: this.slug
         })
         .then(data => {
-          console.log(data);
+          // console.log(data);
           this.post = data.object;
           this.loading = false;
           // this.posts = posts;
