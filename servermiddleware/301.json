@@ -1,0 +1,22 @@
+[
+    { "from": "/about", "to": "/" },
+    { "from": "/contact", "to": "/" },
+    { "from": "/knowledgehub", "to": "/hub" },
+    { "from": "/privacy-cookies-policy", "to": "/privacy" },
+    { "from": "/contact/newsletter-signup", "to": "/" },
+    { "from": "/knowledgehub/what-is-a-startup", "to": "/hub/what-is-a-startup" },
+    { "from": "/knowledgehub/UK-Tech-startups-need-you", "to": "/hub/uk-tech-startups-boom-startups-need-you" },
+    { "from": "/knowledgehub/introducing-new-confido-website-and-blog", "to": "/hub/uk-tech-startups-boom-startups-need-you" },
+    { "from": "/knowledgehub/startup-hiring-trends-2020-edition", "to": "/hub/startup-hiring-trends-2020-edition" },
+    { "from": "/knowledgehub/scaling-ux-teams-and-mentoring-design-talent", "to": "/hub/confido-qa-scaling-ux-teams-and-mentoring-design-talent" },
+    { "from": "/knowledgehub/building-startup-brand-lessons-learnt-starting-scratch", "to": "/hub" },
+    { "from": "/knowledgehub/what-does-it-mean-be-woman-tech", "to": "/hub/confido-qa-what-does-it-mean-to-be-a-woman-in-tech" },
+    { "from": "/knowledgehub/how-do-you-grow-empowered-engineering-team-q", "to": "/hub/confido-qa-how-do-you-grow-an-empowered-engineering-team" },
+    { "from": "/knowledgehub/stand-out-startups-what-qualities-are-they-really-looking", "to": "/hub/stand-out-to-startups-what-questions-are-they-really-looking-for" },
+    { "from": "/knowledgehub/ux-design-and-startups-volume-5-introducing-service-design", "to": "/hub/ux-design-and-startups-volume-5-introducing-service-design" },
+    { "from": "/knowledgehub/ux-design-and-startups-we-need-ux-designer", "to": "/hub/_ux-design-and-startups-volume-1-we-need-a-ux-designer__" },
+    { "from": "/knowledgehub/how-transition-software-engineering-product-leadership-confido-q-james-fairhead", "to": "/hub/how-do-you-move-from-a-software-engineer-to-a-product-leader-confido-qa-with-james-fairhead" },
+    { "from": "/knowledgehub/confido-q-healthy-mind-powerful-changing-narrative-around-workplace-mental-health", "to": "/hub/confido-qa-the-power-of-a-healthy-mind-changing-the-narrative-around-workplace-mental-health" },
+    { "from": "/knowledgehub/confido-q-healthy-mind-powerful-changing-narrative-around-workplace-mental-health", "to": "/hub/confido-qa-the-power-of-a-healthy-mind-changing-the-narrative-around-workplace-mental-health" },
+    { "from": "/knowledgehub/confido-q-aspiring-cto-what-does-it-take-how-do-you-get-there", "to": "/hub/confido-qa-aspiring-cto-what-does-it-take-how-do-you-get-there" }
+  ]
