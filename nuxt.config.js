@@ -128,41 +128,7 @@ export default {
       }
     }
   },
-
-  // Generate manual pages
-  // generate: {
-  //   routes() {
-
-
-  //     // app.apolloProvider.defaultClient.query({
-  //     //   query: getObject,
-  //     //   variables: { slug: route.params.id },
-  //     // });
-
-  //     return axios.get('https://graphql.cosmicjs.com/v2',{
-  //       query: `{
-  //         getObjects(
-  //           bucket_slug: "confido"
-  //           input: 
-  //             { limit: 50, read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn", type: "posts" }
-  //         ) {
-  //           objects {
-  //             _id
-  //             slug
-  //             title
-  //             content
-  //             metadata
-  //           }
-  //         }
-  //       }`,
-  //     }).then(res => {
-  //       console.log(res);
-  //       const objects = res.data.getObjects
-  //       return objects.map(post => {
-  //         console.log(post)
-  //         return '/hub/' + post.slug
-  //       })
-  //     })
-  //   }
-  // }
+  generate: {
+    fallback: '404.html'
+  }
 }
