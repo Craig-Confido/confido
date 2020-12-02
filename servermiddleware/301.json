@@ -18,5 +18,15 @@
     { "from": "/knowledgehub/how-transition-software-engineering-product-leadership-confido-q-james-fairhead", "to": "/hub/how-do-you-move-from-a-software-engineer-to-a-product-leader-confido-qa-with-james-fairhead" },
     { "from": "/knowledgehub/confido-q-healthy-mind-powerful-changing-narrative-around-workplace-mental-health", "to": "/hub/confido-qa-the-power-of-a-healthy-mind-changing-the-narrative-around-workplace-mental-health" },
     { "from": "/knowledgehub/confido-q-healthy-mind-powerful-changing-narrative-around-workplace-mental-health", "to": "/hub/confido-qa-the-power-of-a-healthy-mind-changing-the-narrative-around-workplace-mental-health" },
-    { "from": "/knowledgehub/confido-q-aspiring-cto-what-does-it-take-how-do-you-get-there", "to": "/hub/confido-qa-aspiring-cto-what-does-it-take-how-do-you-get-there" }
+    { "from": "/knowledgehub/confido-q-aspiring-cto-what-does-it-take-how-do-you-get-there", "to": "/hub/confido-qa-aspiring-cto-what-does-it-take-how-do-you-get-there" },
+
+
+    { "from": "/hub/featured/what-is-tech-for-good", "to": "/hub/what-is-tech-for-good" },
+    { "from": "/hub/featured/bringing-our-new-brand-to-life-2", "to": "/hub/bringing-our-new-brand-to-life-2" },
+    { "from": "/hub/post/confido-20-the-tech-for-good-talent-partner", "to": "/hub/confido-20-the-tech-for-good-talent-partner" },
+    
+    { "from": "/hub/post/startup-hiring-trends-2020-edition", "to": "/hub/startup-hiring-trends-2020-edition" },
+    { "from": "/hub/post/three-steps-to-remote-employee-onboarding-success", "to": "/hub/three-steps-to-remote-employee-onboarding-success" },
+    { "from": "/hub/post/confido-qa-scaling-ux-teams-and-mentoring-design-talent", "to": "/hub/confido-qa-scaling-ux-teams-and-mentoring-design-talent" },
+    { "from": "/hub/post/confido-qa-aspiring-cto-what-does-it-take-how-do-you-get-there", "to": "/hub/confido-qa-aspiring-cto-what-does-it-take-how-do-you-get-there" }
   ]
