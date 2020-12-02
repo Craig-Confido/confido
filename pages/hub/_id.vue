@@ -47,16 +47,6 @@ export default {
     Post,
     GetInTouch
   },
-// created(){
-//       var slug = this.$route.params.id
-//       this.$store.dispatch('getBlog',slug)
-//     },
-//    computed: {
-//       blog(){
-//         return this.$store.getters.getSelectedBlog
-//       }
-//   },
-//   contact:[],
   async asyncData({ app, route, redirect }) {
     let data = {};
     try {

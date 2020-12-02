@@ -1,5 +1,4 @@
 <template>
-  <v-app>
   <v-container
     fluid
     class="pa-0 ma-0"
@@ -30,7 +29,6 @@
       </v-col>
     </v-row>
   </v-container>
-  </v-app>
 </template>
 
 <script>

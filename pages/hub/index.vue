@@ -65,8 +65,6 @@ import PostCards from "../../components/PostCards";
 import FeaturedPost from "../../components/FeaturedPost";
 import GetInTouch from "../../components/GetInTouch";
 
-import getObjects from "../../queries/getObjects";
-
 let title = 'Hub',
     desc = "Our knowledge hub is a one-stop shop for all things Tech for Good. Explore our hub to find Founder stories and the latest news on Tech and Product hiring.",
     url = 'https://confidotalent.com/hub',
@@ -82,12 +80,6 @@ const bucket = api.bucket({
 });
 
 export default {
-//   apollo: {
-//     getObjects: {
-//       prefetch: true,
-//       query: getObjects,
-//     },
-//   },
    computed: {
       blogs(){
         return this.$store.getters.getBlog

@@ -30,6 +30,9 @@ export default {
       { hid: 'twitter:label1', property: 'twitter:label1', content: 'Make critical Tech or Product hires and scale your startup | Confido.'}
     ],
     link: [
+      // fonts
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,500;0,700;1,400&display=swap' },
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css' },
       { rel: 'icon', type: 'image/png', size:'16x16', href: '/favicon-16x16.png' },
       { rel: 'icon', type: 'image/png', size:'32x32', href: '/favicon-32x32.png' },
       { rel: 'icon', type: 'image/png', size:'180x180', href: '/apple-touch-icon.png' },
@@ -101,6 +104,7 @@ export default {
   // Vuetify module configuration (https://go.nuxtjs.dev/config-vuetify)
   vuetify: {
     treeShake: true, // makes dev slow...! but needed to render custum styling
+    defaultAssets: false,
     customVariables: ['~/assets/variables.scss'],
     theme: {
       light: true,

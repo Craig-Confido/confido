@@ -29,6 +29,13 @@ function getBlogs () {
   return bucket.getObjectsByType(params);
 }
 
+function getBlogsFeatured () {
+  const params = {
+    type_slug: 'featuredposts'
+  };
+  return bucket.getObjectsByType(params);
+}
+
 // function getSearchData(){
 //   return bucket.getObjects();
 // }
@@ -94,4 +101,4 @@ function getBlogs () {
 // }
 
 // export default {getGlobals,getPages,getBlogs,getSearchData,contactForm}
-export default {getBlogs}
+export default {getBlogs, getBlogsFeatured}
