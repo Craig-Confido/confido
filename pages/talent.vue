@@ -416,22 +416,22 @@
                 cols="12"
                 md="6"
               >
+                <p>
                   <v-icon class="mr-4 white--text">
                     mdi-check-circle-outline
                   </v-icon>
-                <p>
                   Relentless focus on delivering value.
                 </p>
+                <p>
                   <v-icon class="mr-4 white--text">
                     mdi-charity
                   </v-icon>
-                <p>
                   Committed to the team and mission.
                 </p>
+                <p>
                   <v-icon class="mr-4 white--text">
                     mdi-lightbulb
                   </v-icon>
-                <p>
                   Focus on quality and best practice.
                 </p>
               </v-col>
@@ -439,22 +439,22 @@
                 cols="12"
                 md="6"
               >
+                <p>
                   <v-icon class="mr-4 white--text">
                     mdi-book-open-variant
                   </v-icon>
-                <p>
                   Driven by the need to keep learning and improving.
                 </p>
+                <p>
                   <v-icon class="mr-4 white--text">
                     mdi-account-group-outline
                   </v-icon>
-                <p>
                   Appreciation for others and the role they play.
                 </p>
+                <p>
                   <v-icon class="mr-4 white--text">
                     mdi-earth
                   </v-icon>
-                <p>
                   Passion for Tech for Good.
                 </p>
               </v-col>
