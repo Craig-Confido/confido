@@ -1,0 +1,32 @@
+{
+    "redirects": [
+        { "source": "/about", "destination": "/" },
+        { "source": "/contact", "destination": "/" },
+        { "source": "/knowledgehub", "destination": "/hub" },
+        { "source": "/privacy-cookies-policy", "destination": "/privacy" },
+        { "source": "/contact/newsletter-signup", "destination": "/" },
+
+        { "source": "/knowledgehub/what-is-a-startup", "destination": "/hub/what-is-a-startup" },
+        { "source": "/knowledgehub/UK-Tech-startups-need-you", "destination": "/hub/uk-tech-startups-boom-startups-need-you" },
+        { "source": "/knowledgehub/introducing-new-confido-website-and-blog", "destination": "/uk-tech-startups-boom-startups-need-you" },
+        { "source": "/startup-hiring-trends-2020-edition", "destination": "/startup-hiring-trends-2020-edition" },
+        { "source": "/knowledgehub/scaling-ux-teams-and-mentoring-design-talent", "destination": "/hub/confido-qa-scaling-ux-teams-and-mentoring-design-talent" },
+        { "source": "/knowledgehub/what-does-it-mean-be-woman-tech", "destination": "/hub/confido-qa-what-does-it-mean-to-be-a-woman-in-tech" },
+        { "source": "/knowledgehub/how-do-you-grow-empowered-engineering-team-qme", "destination": "/hub/confido-qa-how-do-you-grow-an-empowered-engineering-team" },
+        { "source": "/knowledgehub/stand-out-startups-what-qualities-are-they-really-looking", "destination": "/hub/stand-out-to-startups-what-questions-are-they-really-looking-for" },
+        { "source": "/knowledgehub/ux-design-and-startups-volume-5-introducing-service-design", "destination": "/hub/ux-design-and-startups-volume-5-introducing-service-design" },
+        { "source": "/knowledgehub/ux-design-and-startups-we-need-ux-designer", "destination": "/hub/_ux-design-and-startups-volume-1-we-need-a-ux-designer__" },
+        { "source": "/knowledgehub/how-transition-software-engineering-product-leadership-confido-q-james-fairhead", "destination": "/hub/how-do-you-move-from-a-software-engineer-to-a-product-leader-confido-qa-with-james-fairhead" },
+        { "source": "/knowledgehub/confido-q-healthy-mind-powerful-changing-narrative-around-workplace-mental-health", "destination": "/hub/confido-qa-the-power-of-a-healthy-mind-changing-the-narrative-around-workplace-mental-health" },
+        { "source": "/knowledgehub/confido-q-healthy-mind-powerful-changing-narrative-around-workplace-mental-health", "destination": "/hub/confido-qa-the-power-of-a-healthy-mind-changing-the-narrative-around-workplace-mental-health" },
+        { "source": "/knowledgehub/confido-q-aspiring-cto-what-does-it-take-how-do-you-get-there", "destination": "/hub/confido-qa-aspiring-cto-what-does-it-take-how-do-you-get-there" },
+        { "source": "/hub/featured/what-is-tech-for-good", "destination": "/hub/what-is-tech-for-good" },
+        { "source": "/hub/featured/bringing-our-new-brand-to-life-2", "destination": "/hub/bringing-our-new-brand-to-life-2" },
+        { "source": "/hub/post/confido-20-the-tech-for-good-talent-partner", "destination": "/hub/confido-20-the-tech-for-good-talent-partner" },
+
+        { "source": "/hub/post/startup-hiring-trends-2020-edition", "destination": "/hub/startup-hiring-trends-2020-edition" },
+        { "source": "/hub/post/three-steps-to-remote-employee-onboarding-success", "destination": "/hub/three-steps-to-remote-employee-onboarding-success" },
+        { "source": "/hub/post/confido-qa-scaling-ux-teams-and-mentoring-design-talent", "destination": "/hub/confido-qa-scaling-ux-teams-and-mentoring-design-talent" },
+        { "source": "/hub/post/confido-qa-aspiring-cto-what-does-it-take-how-do-you-get-there", "destination": "/hub/confido-qa-aspiring-cto-what-does-it-take-how-do-you-get-there" }
+    ]
+  }
