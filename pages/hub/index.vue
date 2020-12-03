@@ -6,11 +6,10 @@
     <v-row
       class="text-left"
       no-gutters
-      v-if="featuredposts"
+      v-if="blogs.FeaturedPosts"
     >
       <v-col
-        
-        v-for="(featured, index) in featuredposts.slice(0,1)"
+        v-for="(featured, index) in blogs.FeaturedPosts.slice(0,1)"
         :key="featured._id + index"
         cols="12"
       >
@@ -25,9 +24,9 @@
           </v-chip>
         </v-col>
       </v-row> -->
-      <v-row class="mt-3 mb-5" v-if="blogs">
+      <v-row class="mt-3 mb-5" v-if="blogs.blogList">
         <v-col
-          v-for="post in blogs" :key="post.id"
+          v-for="post in blogs.blogList" :key="post.id"
           cols="12"
           md="4"
         >
@@ -70,22 +69,25 @@ let title = 'Hub',
     url = 'https://confidotalent.com/hub',
     image = 'https://confidotalent.com/images/meta/home.png';
 
-// HACK -> To get Featured posts
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
-// Set these values, found in Bucket > Settings after logging in at https://app.cosmicjs.com/login
-const bucket = api.bucket({
-  slug: "confido",
-  read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn"
-});
-
 export default {
    computed: {
       blogs(){
-          let blogs = this.$store.getters.getBlog;
-          console.log(blogs);
+        // Get all blog posts
+        let blogs = this.$store.getters.getBlog;
+        let FeaturedPosts = [];
+        let blogList = [];
 
-        return blogs;
+        // Filter Featured
+        blogs.forEach(function (blog) {
+
+          if(blog.metadata.featured && FeaturedPosts.length <= 0){
+              FeaturedPosts.push(blog);   
+          } else {
+            blogList.push(blog);  
+          }
+        });
+
+        return {blogList: blogList, FeaturedPosts: FeaturedPosts};
       }
   },
   name: "Hub",
@@ -116,28 +118,8 @@ export default {
   data() {
     return {
       loading: false,
-      contact: [],
-      featuredposts: {}
+      contact: []
     };
   },
-  created() {
-    this.fetchFeaturedData();
-  },
-  methods: {
-    fetchFeaturedData() {
-      this.error = this.featuredposts = null;
-      this.loading = true;
-      bucket
-        .getObjects({
-          type: "featuredposts",
-          props: "_id,slug,title,content,metadata"
-        })
-        .then(data => {
-          const featuredposts = data.objects;
-          this.loading = false;
-          this.featuredposts = featuredposts;
-        });
-    }
-  }
 };
 </script>

@@ -24,17 +24,18 @@ const bucket = api.bucket({
 
 function getBlogs () {
   const params = {
-    type_slug: 'posts'
+    type_slug: 'posts',
+    limit: '100'
   };
   return bucket.getObjectsByType(params);
 }
 
-function getBlogsFeatured () {
-  const params = {
-    type_slug: 'featuredposts'
-  };
-  return bucket.getObjectsByType(params);
-}
+// function getBlogsFeatured () {
+//   const params = {
+//     type_slug: 'featuredposts'
+//   };
+//   return bucket.getObjectsByType(params);
+// }
 
 // function getSearchData(){
 //   return bucket.getObjects();
@@ -101,4 +102,4 @@ function getBlogsFeatured () {
 // }
 
 // export default {getGlobals,getPages,getBlogs,getSearchData,contactForm}
-export default {getBlogs, getBlogsFeatured}
+export default {getBlogs}

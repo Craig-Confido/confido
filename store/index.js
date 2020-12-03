@@ -75,7 +75,6 @@ const state = {
 //   },
 //   page:{},
   blogs: {},
-  blogsFeatured:{},
   blog: {},
 //   search: {},
 //   search_data: [],
@@ -151,9 +150,6 @@ const mutations = {
   SET_BLOGS : (state,payload) => {
     state.blogs = payload
   },
-  SET_BLOGSFEATURED : (state,payload) => {
-    state.blogsFeatured = payload
-  },
 //   SET_SEARCH_DATA: (state, payload) => {
 //     state.search_data = payload
 //   },
@@ -181,8 +177,6 @@ const actions = {
     // const Pages = PagesResponse.objects;
     const BlogsResponse = await Request.getBlogs();
     const Blogs = BlogsResponse.objects;
-    const BlogsResponseFeatured = await Request.getBlogsFeatured();
-    const BlogsFeatured = BlogsResponseFeatured.objects;
     // const SearchResponse = await Request.getSearchData();
     // const Search = SearchResponse.objects;
     // const Response = await Request.getGlobals();
@@ -192,9 +186,6 @@ const actions = {
     // }
     if(Blogs){
       context.commit('SET_BLOGS', Blogs)
-    }
-    if(BlogsFeatured){
-      context.commit('SET_BLOGSFEATURED', BlogsFeatured)
     }
     // if(Pages){
     //   context.commit('SET_PAGE',Pages)
@@ -252,14 +243,6 @@ const actions = {
   getBlog(context,payload){
     // Nomral Blogs
     this.state.blogs.forEach(element => {
-      if(element.slug == payload){
-        context.commit('SET_SELECTED_BLOG',element)
-      }else{
-        context.commit('SET_SELECTED_BLOG',null)
-      }
-    });
-    // featured blogs
-    this.state.blogsFeatured.forEach(element => {
       if(element.slug == payload){
         context.commit('SET_SELECTED_BLOG',element)
       }else{
