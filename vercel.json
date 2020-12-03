@@ -27,6 +27,7 @@
         { "source": "/hub/post/startup-hiring-trends-2020-edition", "destination": "/hub/startup-hiring-trends-2020-edition" },
         { "source": "/hub/post/three-steps-to-remote-employee-onboarding-success", "destination": "/hub/three-steps-to-remote-employee-onboarding-success" },
         { "source": "/hub/post/confido-qa-scaling-ux-teams-and-mentoring-design-talent", "destination": "/hub/confido-qa-scaling-ux-teams-and-mentoring-design-talent" },
-        { "source": "/hub/post/confido-qa-aspiring-cto-what-does-it-take-how-do-you-get-there", "destination": "/hub/confido-qa-aspiring-cto-what-does-it-take-how-do-you-get-there" }
+        { "source": "/hub/post/confido-qa-aspiring-cto-what-does-it-take-how-do-you-get-there", "destination": "/hub/confido-qa-aspiring-cto-what-does-it-take-how-do-you-get-there" },
+        { "source": "/hub/post/what-is-tech-for-good", "destination": "/hub/what-is-tech-for-good" }
     ]
   }

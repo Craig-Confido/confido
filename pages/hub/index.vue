@@ -82,7 +82,10 @@ const bucket = api.bucket({
 export default {
    computed: {
       blogs(){
-        return this.$store.getters.getBlog
+          let blogs = this.$store.getters.getBlog;
+          console.log(blogs);
+
+        return blogs;
       }
   },
   name: "Hub",
