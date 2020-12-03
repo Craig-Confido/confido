@@ -1,6 +1,7 @@
+// ONLY WORKS FOR SPA Not Static Pages so using vercel.json instead to define redirects
 const redirects = require('./301.json');
 module.exports = function (req, res, next) {
-  
+
   const redirect = redirects.find(r => r.from === req.url);
   if (redirect) {
     console.log(`redirect: ${redirect.from} => ${redirect.to}`);
