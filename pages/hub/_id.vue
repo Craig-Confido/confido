@@ -54,10 +54,11 @@ export default {
         query: getPost,
         variables: { slug: route.params.id },
       });
-      const data = d.data;
-    //   console.log("data", data);
+      const slug = { slug: route.params.id }
+      const data = {...d.data.getObject, ...slug};
+        
       return {
-        page: data.getObject,
+        page: data,
       };
     } catch (error) {
       console.log("error", error);
