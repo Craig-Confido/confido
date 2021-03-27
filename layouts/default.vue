@@ -137,6 +137,7 @@
         fixed
         bottom
         :timeout="timeout"
+        class="cookieBanner"
       >
         By continuing to use this site, you accept our <a
           href="/privacy"

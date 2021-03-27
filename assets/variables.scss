@@ -131,3 +131,10 @@ $material-light: (
     font-size: 4em;
   }
 }
+
+@media only screen and (max-width: 960px) {
+  .cookieBanner > .v-snack__wrapper {
+    max-width: 100%;
+    min-width: auto;
+  }
+}
