@@ -138,3 +138,18 @@ $material-light: (
     min-width: auto;
   }
 }
+
+@media only screen and (max-width: 960px) {
+  .fr-video {
+    max-width:100%;
+
+    > iframe {
+      max-width:100%;
+      height:auto;
+    }
+  }
+
+  .blog-900 .v-main__wrap p img {
+    max-width:100%;
+  }
+}
