@@ -342,7 +342,7 @@ import Logos from "../components/Logos";
 import GetInTouch from "../components/GetInTouch";
 
 let title = 'The Tech for Good talent partner',
-    desc = 'Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good starups. We connect people with the same values and a shared purpose to build a better future, together.',
+    desc = 'Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good startups. We connect people with the same values and a shared purpose to build a better future, together.',
     url = 'https://confidotalent.com';
 
 export default {
