@@ -5,7 +5,7 @@
       height="200"
       gradient="to top right, rgba(100,115,201,1), rgba(25,32,72, .7)"
     >
-      <v-row>
+      <v-row class="pt-4">
         <v-col cols="12" md="3" class="text-center">
           <v-img
             :src="`${card.logo}`"
@@ -24,13 +24,6 @@
               card.url
             }}</a>
           </p>
-        </v-col>
-        <v-col cols="1">
-          <div class="mt-2">
-            <v-icon large color="white" @click="$router.go()">
-              mdi-close-circle-outline
-            </v-icon>
-          </div>
         </v-col>
       </v-row>
     </v-img>

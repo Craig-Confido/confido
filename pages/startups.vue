@@ -185,7 +185,7 @@
         <v-row class="my-4 mx-md-0 text-center">
           <v-spacer />
           <v-col cols="12" md="4" lg="2">
-            <v-dialog width="1000px" class="overflow-hidden">
+            <v-dialog width="1000px" class="overflow-hidden" v-model="benefex">
               <template v-slot:activator="{ on, attrs }">
                 <div class="circle pointer my-8">
                   <v-img
@@ -199,6 +199,13 @@
                   />
                 </div>
               </template>
+              <div style="position: fixed; width: 1000px; z-index: 2">
+                <v-col cols="1" class="ml-auto">
+                  <v-icon large color="white" @click="benefex = false">
+                    mdi-close-circle-outline
+                  </v-icon>
+                </v-col>
+              </div>
               <CaseStudyLargeCard
                 v-for="(card, index_2) in caseStudyCards.slice(0, 1)"
                 :key="card.title + index_2"
@@ -207,7 +214,11 @@
             </v-dialog>
           </v-col>
           <v-col cols="12" md="4" lg="2">
-            <v-dialog width="1000px" class="overflow-hidden">
+            <v-dialog
+              width="1000px"
+              class="overflow-hidden"
+              v-model="thirdSpace"
+            >
               <template v-slot:activator="{ on, attrs }">
                 <div class="circle pointer my-8">
                   <v-img
@@ -221,6 +232,13 @@
                   />
                 </div>
               </template>
+              <div style="position: fixed; width: 1000px; z-index: 2">
+                <v-col cols="1" class="ml-auto">
+                  <v-icon large color="white" @click="thirdSpace = false">
+                    mdi-close-circle-outline
+                  </v-icon>
+                </v-col>
+              </div>
               <CaseStudyLargeCard
                 v-for="(card, index_3) in caseStudyCards.slice(1, 2)"
                 :key="card.title + index_3"
@@ -229,7 +247,11 @@
             </v-dialog>
           </v-col>
           <v-col cols="12" md="4" lg="2">
-            <v-dialog width="1000px" class="overflow-hidden">
+            <v-dialog
+              width="1000px"
+              class="overflow-hidden"
+              v-model="visionBox"
+            >
               <template v-slot:activator="{ on, attrs }">
                 <div class="circle pointer my-8">
                   <v-img
@@ -243,6 +265,13 @@
                   />
                 </div>
               </template>
+              <div style="position: fixed; width: 1000px; z-index: 2">
+                <v-col cols="1" class="ml-auto">
+                  <v-icon large color="white" @click="visionBox = false">
+                    mdi-close-circle-outline
+                  </v-icon>
+                </v-col>
+              </div>
               <CaseStudyLargeCard
                 v-for="(card, index_4) in caseStudyCards.slice(2, 3)"
                 :key="card.title + index_4"
@@ -346,7 +375,7 @@
         <v-row class="my-4 mx-md-0 text-center">
           <v-spacer />
           <v-col cols="12" md="4" lg="2">
-            <v-dialog width="1000px" class="overflow-hidden">
+            <v-dialog width="1000px" class="overflow-hidden" v-model="curve">
               <template v-slot:activator="{ on, attrs }">
                 <div class="circle pointer my-8">
                   <v-img
@@ -360,6 +389,13 @@
                   />
                 </div>
               </template>
+              <div style="position: fixed; width: 1000px; z-index: 2">
+                <v-col cols="1" class="ml-auto">
+                  <v-icon large color="white" @click="curve = false">
+                    mdi-close-circle-outline
+                  </v-icon>
+                </v-col>
+              </div>
               <CaseStudyLargeCard
                 v-for="(card, index_6) in caseStudyCards.slice(3, 4)"
                 :key="card.title + index_6"
@@ -368,7 +404,7 @@
             </v-dialog>
           </v-col>
           <v-col cols="12" md="4" lg="2">
-            <v-dialog width="1000px" class="overflow-hidden">
+            <v-dialog width="1000px" class="overflow-hidden" v-model="unmind">
               <template v-slot:activator="{ on, attrs }">
                 <div class="circle pointer my-8">
                   <v-img
@@ -382,6 +418,13 @@
                   />
                 </div>
               </template>
+              <div style="position: fixed; width: 1000px; z-index: 2">
+                <v-col cols="1" class="ml-auto">
+                  <v-icon large color="white" @click="unmind = false">
+                    mdi-close-circle-outline
+                  </v-icon>
+                </v-col>
+              </div>
               <CaseStudyLargeCard
                 v-for="(card, index_7) in caseStudyCards.slice(4, 5)"
                 :key="card.title + index_7"
@@ -390,7 +433,7 @@
             </v-dialog>
           </v-col>
           <v-col cols="12" md="4" lg="2">
-            <v-dialog width="1000px" class="overflow-hidden">
+            <v-dialog width="1000px" class="overflow-hidden" v-model="feedr">
               <template v-slot:activator="{ on, attrs }">
                 <div class="circle pointer my-8">
                   <v-img
@@ -404,6 +447,13 @@
                   />
                 </div>
               </template>
+              <div style="position: fixed; width: 1000px; z-index: 2">
+                <v-col cols="1" class="ml-auto">
+                  <v-icon large color="white" @click="feedr = false">
+                    mdi-close-circle-outline
+                  </v-icon>
+                </v-col>
+              </div>
               <CaseStudyLargeCard
                 v-for="(card, index_8) in caseStudyCards.slice(5, 6)"
                 :key="card.title + index_8"
@@ -472,8 +522,11 @@ export default {
   data() {
     return {
       benefex: false,
-      visionbox: false,
+      thirdSpace: false,
+      visionBox: false,
+      curve: false,
       unmind: false,
+      feedr: false,
       caseStudyCards: [
         {
           cols3: true,
