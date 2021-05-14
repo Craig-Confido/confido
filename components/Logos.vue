@@ -307,7 +307,7 @@
         <div
           style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
         >
-          <v-col cols="1" class="ml-auto">
+          <v-col cols="1">
             <v-icon large color="white" @click="allplants = false">
               mdi-close-circle-outline
             </v-icon>

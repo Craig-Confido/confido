@@ -200,7 +200,7 @@
                 </div>
               </template>
               <div style="position: fixed; width: 1000px; z-index: 2">
-                <v-col cols="1" class="ml-auto">
+                <v-col cols="1" class="mr-auto">
                   <v-icon large color="white" @click="benefex = false">
                     mdi-close-circle-outline
                   </v-icon>
@@ -233,7 +233,7 @@
                 </div>
               </template>
               <div style="position: fixed; width: 1000px; z-index: 2">
-                <v-col cols="1" class="ml-auto">
+                <v-col cols="1" class="mr-auto">
                   <v-icon large color="white" @click="thirdSpace = false">
                     mdi-close-circle-outline
                   </v-icon>
@@ -266,7 +266,7 @@
                 </div>
               </template>
               <div style="position: fixed; width: 1000px; z-index: 2">
-                <v-col cols="1" class="ml-auto">
+                <v-col cols="1" class="mr-auto">
                   <v-icon large color="white" @click="visionBox = false">
                     mdi-close-circle-outline
                   </v-icon>
@@ -390,7 +390,7 @@
                 </div>
               </template>
               <div style="position: fixed; width: 1000px; z-index: 2">
-                <v-col cols="1" class="ml-auto">
+                <v-col cols="1" class="mr-auto">
                   <v-icon large color="white" @click="curve = false">
                     mdi-close-circle-outline
                   </v-icon>
@@ -419,7 +419,7 @@
                 </div>
               </template>
               <div style="position: fixed; width: 1000px; z-index: 2">
-                <v-col cols="1" class="ml-auto">
+                <v-col cols="1" class="mr-auto">
                   <v-icon large color="white" @click="unmind = false">
                     mdi-close-circle-outline
                   </v-icon>
@@ -448,7 +448,7 @@
                 </div>
               </template>
               <div style="position: fixed; width: 1000px; z-index: 2">
-                <v-col cols="1" class="ml-auto">
+                <v-col cols="1" class="mr-auto">
                   <v-icon large color="white" @click="feedr = false">
                     mdi-close-circle-outline
                   </v-icon>
