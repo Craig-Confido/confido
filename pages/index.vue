@@ -1,8 +1,5 @@
 <template>
-  <v-container
-    fluid
-    class="pa-0 ma-0"
-  >
+  <v-container fluid class="pa-0 ma-0">
     <section class="mx-4 mx-lg-16">
       <v-row class="text-left mt-4">
         <v-img
@@ -10,11 +7,7 @@
           class="d-flex d-md-none mx-md-16"
           alt="image of people"
         />
-        <v-col
-          cols="12"
-          sm="7"
-          class="mt-md-16"
-        >
+        <v-col cols="12" sm="7" class="mt-md-16">
           <h1
             class="text-h3  text-md-h2 font-weight-bold"
             aria-label="Intro text"
@@ -26,7 +19,8 @@
             <span class="accent--text"> <strong>values</strong></span> and a
             shared <span class="success--text"><strong>purpose</strong></span>
             to build a better future,
-            <span class="secondary--text"> <strong>together</strong></span>.
+            <span class="secondary--text"> <strong>together</strong></span
+            >.
           </h2>
           <v-row class="mt-12 mx-0">
             <v-btn
@@ -54,10 +48,7 @@
           </v-row>
         </v-col>
         <v-spacer />
-        <v-col
-          cols="12"
-          sm="5"
-        >
+        <v-col cols="12" sm="5">
           <v-img
             :src="require('../static/images/homeVisual.png')"
             class="d-none d-md-flex mx-md-16"
@@ -71,25 +62,18 @@
       no-gutters
       style="box-shadow: 0px 0px 70px rgba(100, 181, 246, 0.55)"
     >
-      <v-col
-        cols="12"
-        md="4"
-      >
+      <v-col cols="12" md="4">
         <h1 class="mb-4 text-left">
           What we do.
         </h1>
         <h2 class="text-left">
-          Product and Tech hiring.<br>
-          Seed to Series B startups.<br>
-          Tech for Good products.<br>
+          Product and Tech hiring.<br />
+          Seed to Series B startups.<br />
+          Tech for Good products.<br />
         </h2>
       </v-col>
       <v-row class="my-auto text-center">
-        <v-col
-          cols="12"
-          md="3"
-          class="mt-8 mt-md-0"
-        >
+        <v-col cols="12" md="3" class="mt-8 mt-md-0">
           <v-icon class="white--text text-h2 mb-2">
             mdi-rocket-launch-outline
           </v-icon>
@@ -98,11 +82,7 @@
           </h1>
           <h3>Startups scaled</h3>
         </v-col>
-        <v-col
-          cols="12"
-          md="3"
-          class="mt-8 mt-md-0"
-        >
+        <v-col cols="12" md="3" class="mt-8 mt-md-0">
           <v-icon class="white--text text-h2 mb-2">
             mdi-clock-check-outline
           </v-icon>
@@ -111,24 +91,16 @@
           </h1>
           <h3>Average to hire</h3>
         </v-col>
-        <v-col
-          cols="12"
-          md="3"
-          class="mt-8 mt-md-0"
-        >
+        <v-col cols="12" md="3" class="mt-8 mt-md-0">
           <v-icon class="white--text text-h2 mb-2">
             mdi-account-group-outline
           </v-icon>
           <h1>
-            70+
+            100+
           </h1>
           <h3>Hires made</h3>
         </v-col>
-        <v-col
-          cols="12"
-          md="3"
-          class="mt-8 mt-md-0"
-        >
+        <v-col cols="12" md="3" class="mt-8 mt-md-0">
           <v-icon class="white--text text-h2 mb-2">
             mdi-check-circle-outline
           </v-icon>
@@ -139,10 +111,7 @@
         </v-col>
       </v-row>
     </v-row>
-    <v-row
-      class="mx-0 mt-0 pt-0 pb-0 mb-0 white--text"
-      no-gutters
-    >
+    <v-row class="mx-0 mt-0 pt-0 pb-0 mb-0 white--text" no-gutters>
       <v-carousel
         cycle
         continuous
@@ -167,16 +136,16 @@
               align="center"
               justify="center"
             >
-                <p class="text-h6 text-md-h5 mt-md-0 mb-0 pb-0 text--primary">
-                  <strong class="quote">
-                    {{ quote.content }}
-                  </strong>
-                </p>
-                <p class="text-h5 mt-12 mb-0 secondary--text">
-                  <strong>
-                    {{ quote.advocate }}
-                  </strong>
-                </p>
+              <p class="text-h6 text-md-h5 mt-md-0 mb-0 pb-0 text--primary">
+                <strong class="quote">
+                  {{ quote.content }}
+                </strong>
+              </p>
+              <p class="text-h5 mt-12 mb-0 secondary--text">
+                <strong>
+                  {{ quote.advocate }}
+                </strong>
+              </p>
             </v-row>
           </v-sheet>
         </v-carousel-item>
@@ -217,21 +186,15 @@
       </v-col>
     </v-row>
     <v-row class="mx-0 mx-md-6 mx-lg-16">
-      <v-col
-        cols="12"
-        md="6"
-      >
+      <v-col cols="12" md="6">
         <v-card
           color="accent"
           class="pa-8 my-2 white--text text-left card-shadow"
         >
-          <v-card-title
-            class="headline font-weight-bold"
-          >
+          <v-card-title class="headline font-weight-bold">
             We are Confido.
           </v-card-title>
           <v-card-text class="text-md-h6 white--text">
-            
             <p>
               <v-icon class="mr-4 white--text">
                 mdi-head-check-outline
@@ -266,25 +229,17 @@
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col
-        cols="12"
-        md="6"
-      >
+      <v-col cols="12" md="6">
         <v-card
           color="success"
           class="pa-8 my-2 white--text text-left card-shadow"
         >
-          <v-card-title
-            class="headline font-weight-bold"
-          >
+          <v-card-title class="headline font-weight-bold">
             Our values.
           </v-card-title>
           <v-card-text class="text-md-h6 white--text">
-
             <p>
-              <v-icon
-                class="mr-4 white--text"
-              >
+              <v-icon class="mr-4 white--text">
                 mdi-chart-bell-curve-cumulative
               </v-icon>
               Use data to tell the story.
@@ -298,26 +253,21 @@
             </p>
 
             <p>
-              <v-icon
-                class="mr-4 white--text"
-              >
+              <v-icon class="mr-4 white--text">
                 mdi-account-clock-outline
               </v-icon>
               Respect others and their time.
             </p>
 
             <p>
-            <v-icon class="mr-4 white--text">
+              <v-icon class="mr-4 white--text">
                 mdi-hand-okay
               </v-icon>
-               Don't
-              overcomplicate, simplicity is key.
+              Don't overcomplicate, simplicity is key.
             </p>
 
             <p>
-            <v-icon
-                class="mr-4 white--text"
-              >
+              <v-icon class="mr-4 white--text">
                 mdi-head-snowflake-outline
               </v-icon>
               Champion values and mindset over skill.
@@ -326,10 +276,7 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row
-      id="getInTouch"
-      class="mx-0 mx-md-6 mx-lg-16 mb-12"
-    >
+    <v-row id="getInTouch" class="mx-0 mx-md-6 mx-lg-16 mb-12">
       <v-col cols="12">
         <GetInTouch :contact="contact" />
       </v-col>
@@ -341,31 +288,37 @@
 import Logos from "../components/Logos";
 import GetInTouch from "../components/GetInTouch";
 
-let title = 'The Tech for Good talent partner',
-    desc = 'Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good startups. We connect people with the same values and a shared purpose to build a better future, together.',
-    url = 'https://confidotalent.com';
+let title = "The Tech for Good talent partner",
+  desc =
+    "Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good startups. We connect people with the same values and a shared purpose to build a better future, together.",
+  url = "https://confidotalent.com";
 
 export default {
   scrollToTop: true,
   head: {
     title: title,
     meta: [
-      { hid: 'description', name: 'description', content: desc },
+      { hid: "description", name: "description", content: desc },
 
-      { hid: 'og:title', property: 'og:title', content: title},
-      { hid: 'og:url', property: 'og:url', content: url},
-      { hid: 'og:description', property: 'og:description', content: desc},
+      { hid: "og:title", property: "og:title", content: title },
+      { hid: "og:url", property: "og:url", content: url },
+      { hid: "og:description", property: "og:description", content: desc },
 
-      { property: 'twitter:domain', content: url},
-      { hid: 'twitter:title', property: 'twitter:title', content: title},
-      { hid: 'twitter:description', property: 'twitter:description', content: desc},
-      { hid: 'twitter:url', property: 'twitter:url', content: url},
-      { hid: 'twitter:label1', property: 'twitter:label1', content: title},  
-    ], link: [ { rel: 'canonical', href: url} ]
+      { property: "twitter:domain", content: url },
+      { hid: "twitter:title", property: "twitter:title", content: title },
+      {
+        hid: "twitter:description",
+        property: "twitter:description",
+        content: desc,
+      },
+      { hid: "twitter:url", property: "twitter:url", content: url },
+      { hid: "twitter:label1", property: "twitter:label1", content: title },
+    ],
+    link: [{ rel: "canonical", href: url }],
   },
   components: {
     Logos,
-    GetInTouch
+    GetInTouch,
   },
   data() {
     return {
@@ -373,51 +326,56 @@ export default {
         {
           content:
             "We needed to scale a small startup team about 3x in a short space of time but didn't want to compromise on the quality of candidates. We'd tried alternative recruitment arrangements but hadn't seen results until we engaged Confido.",
-          advocate: "Mark Somerfield - VP of Engineering, Feedr"
+          advocate: "Mark Somerfield - VP of Engineering, Feedr",
         },
         {
           content:
             "Unmind needed to double the engineering team in a short time frame. Confido quickly calibrated on what we needed and we saw hires made within the first few weeks. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
-          advocate: "Phil Mullan – CTO, Unmind"
+          advocate: "Phil Mullan – CTO, Unmind",
         },
         {
           content:
             "Confido have partnered with us in the truest sense. Helping us grow more in the last six months than we achieved with others over the previous twelve.",
-          advocate: "Paul Smith – CTO, Benefex"
+          advocate: "Paul Smith – CTO, Benefex",
         },
         {
           content:
             "It's a pleasure working with Confido. Simply put, they deliver. Confido have sourced universally high-quality candidates, then worked seamlessly with us to manage a candidate-centred interview process and close offers. Highly recommended.",
-          advocate: "Sam Stagg - CTO, Third Space Learning"
+          advocate: "Sam Stagg - CTO, Third Space Learning",
         },
         {
           content:
             "Whether it’s a hiring goal, upskilling internal talent teams, or working with budget holders to effectively workforce and scenario plan, Confido have partnered with us in every sense of the word. Sharp, resourceful and totally committed. Great job.",
-          advocate: "Matt Collinge - CTO, Curve"
+          advocate: "Matt Collinge - CTO, Curve",
         },
         {
           content:
             "We had a shortlist of candidates within 48 hours and we were able to put a job offer out within a week. I can wholeheartedly recommend Confido to help grow your team.",
-          advocate: "David Riley - Head of Design, HomeHero"
+          advocate: "David Riley - Head of Design, HomeHero",
         },
         {
           content:
             "Confido have been a true partner to us over the last 18 months, both in advice and execution for a number of key hires across the engineering and product teams. I’d recommend them highly to anyone needing to scale up their product and engineering functions.",
-          advocate: "Tom Hooper - CEO, Matr"
+          advocate: "Tom Hooper - CEO, Matr",
         },
         {
           content:
             "Confido were able to go beyond the norm by advising on how to communicate our brand and the opportunity to the market, and build out an efficient process to attract the top tier candidates we wanted.",
-          advocate: "Avin Rabheru - CEO, Housekeep"
+          advocate: "Avin Rabheru - CEO, Housekeep",
         },
         {
           content:
             "Confido worked really closely with me to help me find our new Head of Engineering. The candidates we met were all high calibre and very credible. The whole process was much quicker than I’ve experienced on similar searches in the past.",
-          advocate: "Richard Wazacz - CEO, Octopus Wealth"
+          advocate: "Richard Wazacz - CEO, Octopus Wealth",
+        },
+        {
+          content:
+            "We had an urgent position to fill that we had been struggling with for 12 months. Confido came on and helped us to redefine the role and brief to better fit the market before carrying out a fantastic headhunting search that yielded a really diverse set of candidates. They also provided a huge amount of help with the process itself so that candidates always felt in to the loop, many of whom commenting on how well run everything was. From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.",
+          advocate: "Adam Dunkley – Director of Technology, Allplants",
         },
       ],
-      contact: []
+      contact: [],
     };
-  }
+  },
 };
 </script>
