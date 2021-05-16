@@ -1,19 +1,14 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      class="accent"
-      flat
-      height="100"
-    >
-      <a href="/">
+    <v-app-bar app class="accent" flat height="100">
+      <NuxtLink to="/">
         <v-img
           :src="require('../assets/Logo.svg')"
           max-height="300"
           max-width="300"
           contain
         />
-      </a>
+      </NuxtLink>
       <v-spacer />
       <v-app-bar-nav-icon
         class="white--text d-md-none"
@@ -59,19 +54,11 @@
           class="white--text d-md-none"
           @click.stop="drawer = !drawer"
         >
-          <v-icon
-            class="white--text mt-7 mr-4 text-right"
-            right
-            absolute
-            icon
-          >
-              mdi-close
+          <v-icon class="white--text mt-7 mr-4 text-right" right absolute icon>
+            mdi-close
           </v-icon>
         </v-app-bar-nav-icon>
-        <v-list
-          class="mt-16 pt-4"
-          rounded
-        >
+        <v-list class="mt-16 pt-4" rounded>
           <v-list-item
             v-for="(link, index_3) in links.slice(0, 4)"
             :key="link.url + index_3"
@@ -85,9 +72,7 @@
               </v-icon>
             </v-list-item-icon>
             <v-list-item-content class="font-weight-medium white--text">
-              {{
-                link.label
-              }}
+              {{ link.label }}
             </v-list-item-content>
           </v-list-item>
           <v-list-item
@@ -118,16 +103,13 @@
               </v-icon>
             </v-list-item-icon>
             <v-list-item-content class="font-weight-medium white--text">
-              {{
-                social.label
-              }}
+              {{ social.label }}
             </v-list-item-content>
           </v-list-item>
         </v-list>
       </v-navigation-drawer>
     </v-app-bar>
 
-    
     <v-main id="intro">
       <nuxt />
 
@@ -139,26 +121,17 @@
         :timeout="timeout"
         class="cookieBanner"
       >
-        By continuing to use this site, you accept our <a
-          href="/privacy"
-          class="text-decoration-underline"
-        >privacy and cookies policy.</a>
+        By continuing to use this site, you accept our
+        <a href="/privacy" class="text-decoration-underline"
+          >privacy and cookies policy.</a
+        >
         <template>
-          <v-btn
-            color="secondary"
-            text
-            @click="snackbar = false"
-          >
+          <v-btn color="secondary" text @click="snackbar = false">
             Close
           </v-btn>
         </template>
       </v-snackbar>
-      <v-speed-dial
-        fixed
-        bottom
-        right
-        alt="Scroll to top"
-      >
+      <v-speed-dial fixed bottom right alt="Scroll to top">
         <template v-slot:activator>
           <v-btn
             color="accent"
@@ -172,7 +145,6 @@
       </v-speed-dial>
     </v-main>
 
-
     <v-footer class="success text-center">
       <v-row>
         <v-col cols="12">
@@ -183,7 +155,7 @@
             text
             :to="link.url"
           >
-              {{ link.label }}
+            {{ link.label }}
           </v-btn>
         </v-col>
         <v-col cols="12">
@@ -207,8 +179,8 @@ export default {
       links: [
         {
           icon: "mdi-information",
-          label: "About",
-          url: "/",
+          label: "Impact",
+          url: "/impact",
         },
         {
           icon: "mdi-sprout",

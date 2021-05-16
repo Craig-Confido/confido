@@ -2,30 +2,25 @@
   <v-card
     :to="`/hub/${post.slug}`"
     hover
-    class="text-left card-shadow"
+    class="text-left card-shadow d-flex flex-column justify-between pb-4"
+    height="600"
   >
     <v-img
       v-if="post.metadata"
       :src="post.metadata.hero.imgix_url"
       height="240"
     />
-    <h1
-      class="title mt-4 mb-2 mx-4 px-4"
-      color="primary--text"
-    >
+    <h1 class="title mt-4 mb-2 mx-4 px-4" color="primary--text">
       {{ post.title }}
     </h1>
     <div class="mx-4 ml-4 px-4">
       <v-row class="text-left">
-        <v-col cols="4">
-          <v-chip
-            class="tag px-4"
-            color="secondary"
-          >
+        <v-col cols="6" md="4">
+          <v-chip class="rounded-pill px-4" color="secondary">
             <strong>{{ post.metadata.tag }}</strong>
           </v-chip>
         </v-col>
-        <v-col cols="8">
+        <v-col cols="6" md="8">
           <p class="mt-1 caption">
             {{ post.metadata.readtime }}
           </p>
@@ -37,9 +32,9 @@
       class="px-8"
       v-html="post.metadata.content"
     />
-    <v-card-actions class="mx-auto justify-center">
+    <v-card-actions class="mx-auto">
       <v-btn
-        class="mb-4 btn--outlined font-weight-bold"
+        class="btn--outlined font-weight-bold"
         outlined
         color="accent"
         rounded
@@ -58,8 +53,10 @@ export default {
   props: {
     post: {
       type: Object,
-      default: () => {"No posts are loaded"}
-    }
-  }
+      default: () => {
+        "No posts are loaded";
+      },
+    },
+  },
 };
 </script>
