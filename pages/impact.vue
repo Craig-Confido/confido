@@ -122,7 +122,7 @@
       </v-col>
     </v-row>
 
-    <v-row class="mx-0 mx-md-6 mx-lg-8">
+    <v-row class="mx-0 mx-md-6 mx-lg-16">
       <v-col cols="12" md="6" v-for="impact in impacts" :key="impact.title">
         <v-card class="text-left" flat color="transparent">
           <v-row>
