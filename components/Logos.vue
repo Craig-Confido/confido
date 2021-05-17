@@ -317,8 +317,9 @@
         </template>
         <div
           style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
         >
-          <v-col cols="1">
+          <v-col cols="1" class="mr-auto ml-1">
             <v-icon large color="white" @click="allplants = false">
               mdi-close-circle-outline
             </v-icon>
