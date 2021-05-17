@@ -6,6 +6,9 @@
           :src="require('../static/images/impactImage.png')"
           class="d-flex d-md-none mx-md-16 "
           alt="image of people"
+          height="100"
+          width="100"
+          contain
         />
         <v-col cols="12" sm="7" class="mt-md-16">
           <h1
@@ -15,23 +18,18 @@
             Our impact statement.
           </h1>
           <h2 class="text-h5 my-8">
-            While our
-            <span class="accent--text"> <strong>purpose</strong></span> is to
-            support tech for good startups and the
-            <span class="success--text"><strong>amazing</strong></span> work
-            they do, we think it’s just as important to make an impact as a
-            business
-            <span class="secondary--text"><strong>outside</strong></span> of the
-            office, too.
+            While our purpose is to support tech for good startups and the
+            amazing work they do, we think it’s just as important to make an
+            impact as a business outside of the office, too.
           </h2>
         </v-col>
         <v-spacer />
-        <v-col cols="12" sm="5">
+        <v-col cols="12" sm="5" class="my-auto">
           <v-img
             :src="require('../static/images/impactImage.png')"
-            class="d-none d-md-flex mx-md-auto"
-            height="340"
-            width="340"
+            class="d-none d-md-flex mx-auto my-auto"
+            height="240"
+            width="240"
             contain
             alt="image of people"
           />
@@ -54,32 +52,32 @@
             <v-col cols="6" sm="3" class="d-flex mx-auto">
               <v-img
                 :src="require('../static/images/no-poverty.png')"
-                height="160"
-                width="160"
+                height="100"
+                width="100"
                 contain
               />
             </v-col>
             <v-col cols="6" sm="3" class="d-flex mx-auto">
               <v-img
                 :src="require('../static/images/clean-water.png')"
-                height="160"
-                width="160"
+                height="100"
+                width="100"
                 contain
               />
             </v-col>
             <v-col cols="6" sm="3" class="d-flex mx-auto">
               <v-img
                 :src="require('../static/images/climate-action.png')"
-                height="160"
-                width="160"
+                height="100"
+                width="100"
                 contain
               />
             </v-col>
             <v-col cols="6" sm="3" class="d-flex mx-auto">
               <v-img
                 :src="require('../static/images/life-below.png')"
-                height="160"
-                width="160"
+                height="100"
+                width="100"
                 contain
               />
             </v-col>
@@ -89,27 +87,27 @@
             through:
           </v-card-text>
           <v-row class="primary--text mx-auto text-center mt-4">
-            <v-col cols="4">
+            <v-col cols="12" md="4">
               <v-icon class="secondary--text text-h2">
                 mdi-leaf
               </v-icon>
-              <h3 class="text-md-h6">
+              <h6 class="text-h6">
                 Becoming carbon neutral and plastic-free
-              </h3>
+              </h6>
             </v-col>
-            <v-col cols="4">
+            <v-col cols="12" md="4">
               <v-icon class="secondary--text text-h2">
                 mdi-account-group
               </v-icon>
-              <h3 class="text-md-h6">Organising four Impact Days a year</h3>
+              <h6 class="text-h6">Organising four Impact Days a year</h6>
             </v-col>
-            <v-col cols="4">
+            <v-col cols="12" md="4">
               <v-icon class="secondary--text text-h2">
                 mdi-charity
               </v-icon>
-              <h3 class="text-md-h6">
+              <h6 class="text-h6">
                 Donating at least 2% of our profits to charity
-              </h3>
+              </h6>
             </v-col>
           </v-row>
         </v-card>
@@ -123,25 +121,25 @@
     </v-row>
 
     <v-row class="mx-0 mx-md-6 mx-lg-16">
-      <v-col cols="12" md="6" v-for="impact in impacts" :key="impact.title">
+      <v-col cols="12" v-for="impact in impacts" :key="impact.title">
         <v-card class="text-left" flat color="transparent">
           <v-row>
-            <v-col cols="12" md="6">
+            <v-col cols="12" md="4">
               <v-card class="pa-8 my-2 text-left card-shadow" min-height="360">
                 <v-img
                   :src="`${impact.image}`"
-                  height="160"
                   width="160"
                   contain
-                  class="mx-auto rounded-xl"
+                  class="mx-auto"
                 />
-                <v-card-text class="text-h6 primary--text">
+                <v-card-text class="text-h6 primary--text text-center">
                   {{ impact.task }}
                 </v-card-text>
               </v-card>
             </v-col>
-            <v-col cols="12" md="6" class="my-auto">
-              <h4 class="text-h4 primary--text">{{ impact.title }}</h4>
+            <v-col cols="12" md="8" class="my-auto">
+              <v-img :src="`${impact.logo}`" width="160" contain />
+              <h4 class="text-h4 primary--text pt-8">{{ impact.title }}</h4>
               <p class="text-h6 primary--text">
                 {{ impact.content }}
               </p>
@@ -175,12 +173,11 @@
       </v-col>
     </v-row>
 
-    <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
+    <!-- <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
       <v-col cols="12">
         <h1>Team impact days.</h1>
       </v-col>
     </v-row>
-
     <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
       <v-col cols="12">
         <v-row>
@@ -201,7 +198,7 @@
           </v-col>
         </v-row>
       </v-col>
-    </v-row>
+    </v-row> -->
 
     <v-row id="getInTouch" class="mx-0 mx-md-6 mx-lg-16 mb-12">
       <v-col cols="12">
@@ -249,35 +246,39 @@ export default {
     return {
       impacts: [
         {
-          image: "../images/beam-logo.png",
+          logo: "../images/beam-logo.png",
           task:
             "Supporting at least one homeless person a month back into work",
           title: "About Beam",
+          image: "../images/beam.png",
           content:
             "Beam is the world’s first platform that crowdfunds training for homeless people and supports them into stable work. Our monthly donations help Beam's community hit their funding goals for a brighter future.",
           link: "https://beam.org/ConfidoTalent",
         },
         {
-          image: "../images/charity-water-logo.png",
+          logo: "../images/charity-water-logo.png",
           task: "Providing 50 people with clean drinking water for 10 years",
           title: "About charity: water",
+          image: "../images/charity-water.png",
           content:
             "By donating to charity: water's The Spring community, each year we’re able to help 50 people gain access to clean drinking water. Over 47000 people will get clean water each month thanks to Spring members.",
-          link: "https://www.charitywater.org/craig-turner",
+          link: "https://www.charitywater.org/confido-talent",
         },
         {
-          image: "../images/ecologi-logo.png",
+          logo: "../images/ecologi-logo.png",
           task:
             "Offsetting our carbon footprint by planting 12 trees per employee per month",
           title: "About Ecologi",
+          image: "../images/ecologi.png",
           content:
             "Ecologi calculates our team's collective carbon footprint and enables us to offset it through planting trees. That funding directly impacts atmospheric CO2 levels.",
           link: "https://ecologi.com/confidotalent",
         },
         {
-          image: "../images/cleanhub-logo.png",
+          logo: "../images/cleanhub-logo.png",
           task: "3,000 kg of ocean-bound plastic recovered each year",
           title: "About Cleanhub",
+          image: "../images/cleanhub.png",
           content:
             "Cleanhub enables the safe collection and recovery of ocean-bound plastic waste. The contribution supports clean environments and creates sustainable jobs in the global south.",
           link: "https://confidotalent.cleanhub.io/",

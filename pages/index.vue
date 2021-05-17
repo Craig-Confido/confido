@@ -370,7 +370,7 @@ export default {
         },
         {
           content:
-            "We had an urgent position to fill that we had been struggling with for 12 months. Confido came on and helped us to redefine the role and brief to better fit the market before carrying out a fantastic headhunting search that yielded a really diverse set of candidates. They also provided a huge amount of help with the process itself so that candidates always felt in to the loop, many of whom commenting on how well run everything was. From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.",
+            "From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.",
           advocate: "Adam Dunkley – Director of Technology, Allplants",
         },
       ],

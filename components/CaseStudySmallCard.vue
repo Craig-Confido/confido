@@ -78,7 +78,10 @@
             </p>
           </div>
           <h3 class="primary--text mt-2">
-            <strong>Hires made <br />by Confido</strong>
+            <strong v-if="card.hiresMade > 1"
+              >Hires made <br />by Confido</strong
+            >
+            <strong v-else>Hire made <br />by Confido</strong>
           </h3>
         </v-col>
         <v-col cols="12" md="10">

@@ -20,8 +20,9 @@
         </template>
         <div
           style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
         >
-          <v-col cols="1" class="ml-auto">
+          <v-col cols="1" class="mr-auto ml-1">
             <v-icon large color="white" @click="benefex = false">
               mdi-close-circle-outline
             </v-icon>
@@ -46,8 +47,9 @@
         </template>
         <div
           style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
         >
-          <v-col cols="1" class="ml-auto">
+          <v-col cols="1" class="mr-auto ml-1">
             <v-icon large color="white" @click="thirdSpace = false">
               mdi-close-circle-outline
             </v-icon>
@@ -72,8 +74,9 @@
         </template>
         <div
           style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
         >
-          <v-col cols="1" class="ml-auto">
+          <v-col cols="1" class="mr-auto ml-1">
             <v-icon large color="white" @click="feedr = false">
               mdi-close-circle-outline
             </v-icon>
@@ -98,8 +101,9 @@
         </template>
         <div
           style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
         >
-          <v-col cols="1" class="ml-auto">
+          <v-col cols="1" class="mr-auto ml-1">
             <v-icon large color="white" @click="matr = false">
               mdi-close-circle-outline
             </v-icon>
@@ -124,8 +128,9 @@
         </template>
         <div
           style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
         >
-          <v-col cols="1" class="ml-auto">
+          <v-col cols="1" class="mr-auto ml-1">
             <v-icon large color="white" @click="unmind = false">
               mdi-close-circle-outline
             </v-icon>
@@ -150,8 +155,9 @@
         </template>
         <div
           style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
         >
-          <v-col cols="1" class="ml-auto">
+          <v-col cols="1" class="mr-auto ml-1">
             <v-icon large color="white" @click="wagestream = false">
               mdi-close-circle-outline
             </v-icon>
@@ -176,8 +182,9 @@
         </template>
         <div
           style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
         >
-          <v-col cols="1" class="ml-auto">
+          <v-col cols="1" class="mr-auto ml-1">
             <v-icon large color="white" @click="homehero = false">
               mdi-close-circle-outline
             </v-icon>
@@ -202,8 +209,9 @@
         </template>
         <div
           style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
         >
-          <v-col cols="1" class="ml-auto">
+          <v-col cols="1" class="mr-auto ml-1">
             <v-icon large color="white" @click="curve = false">
               mdi-close-circle-outline
             </v-icon>
@@ -228,8 +236,9 @@
         </template>
         <div
           style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
         >
-          <v-col cols="1" class="ml-auto">
+          <v-col cols="1" class="mr-auto ml-1">
             <v-icon large color="white" @click="visionBox = false">
               mdi-close-circle-outline
             </v-icon>
@@ -254,8 +263,9 @@
         </template>
         <div
           style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
         >
-          <v-col cols="1" class="ml-auto">
+          <v-col cols="1" class="mr-auto ml-1">
             <v-icon large color="white" @click="houseKeep = false">
               mdi-close-circle-outline
             </v-icon>
@@ -280,8 +290,9 @@
         </template>
         <div
           style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
         >
-          <v-col cols="1" class="ml-auto">
+          <v-col cols="1" class="mr-auto ml-1">
             <v-icon large color="white" @click="octopusWealth = false">
               mdi-close-circle-outline
             </v-icon>
@@ -321,7 +332,7 @@
       </v-dialog>
     </v-row>
 
-    <v-row class="mx-4 my-4 d-flex d-sm-none">
+    <!-- <v-row class="mx-4 my-4 d-flex d-sm-none">
       <v-col cols="6">
         <v-dialog max-width="1000px" overflow-hidden v-model="benefex">
           <template v-slot:activator="{ on, attrs }">
@@ -638,7 +649,7 @@
           />
         </v-dialog>
       </v-col>
-    </v-row>
+    </v-row> -->
   </v-card>
 </template>
 
