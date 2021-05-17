@@ -124,8 +124,11 @@
       <v-col cols="12" v-for="impact in impacts" :key="impact.title">
         <v-card class="text-left" flat color="transparent">
           <v-row>
-            <v-col cols="12" md="4">
-              <v-card class="pa-8 my-2 text-left card-shadow" min-height="360">
+            <v-col cols="12" md="4" class="my-auto">
+              <v-card
+                class="d-flex flex-column pa-8 my-auto text-left card-shadow"
+                min-height="360"
+              >
                 <v-img
                   :src="`${impact.image}`"
                   width="160"
