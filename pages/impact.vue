@@ -45,10 +45,11 @@
           </v-card-title>
           <v-card-text class="text-h6 primary--text">
             Each year we choose four of the UN's SDG's (Sustainable Development
-            Goals) to support. This year, we're focussing on: No Poverty, Clean
-            Water, Climate Action, and Life Below Water.
+            Goals) to support. This year, we're focussing on:
+            <strong>No Poverty, Clean Water, Climate Action,</strong> and
+            <strong>Life Below Water</strong>.
           </v-card-text>
-          <v-row class="primary--text mx-auto text-center mt-4">
+          <!-- <v-row class="primary--text mx-auto text-center mt-4">
             <v-col cols="6" sm="3" class="d-flex mx-auto">
               <v-img
                 :src="require('../static/images/no-poverty.png')"
@@ -81,7 +82,7 @@
                 contain
               />
             </v-col>
-          </v-row>
+          </v-row> -->
           <v-card-text class="text-h6 primary--text">
             We're now working on making a positive impact in these areas
             through:
@@ -114,48 +115,50 @@
       </v-col>
     </v-row>
 
-    <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
-      <v-col cols="12">
+    <v-row class="text-left mx-0 mx-md-6 mx-lg-16 pt-md-8">
+      <v-col cols="12" md="7">
         <h1>Great causes we support.</h1>
+      </v-col>
+      <v-spacer cols="0" md="1" />
+      <v-col cols="0" md="4" class="d-none d-md-flex mx-md-auto">
+        <h1 class="text-center mx-md-auto pr-8">Our impact.</h1>
       </v-col>
     </v-row>
 
     <v-row class="mx-0 mx-md-6 mx-lg-16">
       <v-col cols="12" v-for="impact in impacts" :key="impact.title">
-        <v-card class="text-left" flat color="transparent">
+        <v-card
+          class="d-flex flex-column pa-8 my-auto text-left card-shadow"
+          min-height="360"
+        >
           <v-row>
-            <v-col cols="12" md="4" class="my-auto">
-              <v-card
-                class="d-flex flex-column pa-8 my-auto text-left card-shadow"
-                min-height="360"
-              >
-                <v-img
-                  :src="`${impact.image}`"
-                  width="160"
-                  contain
-                  class="mx-auto"
-                />
-                <v-card-text class="text-h6 primary--text text-center">
-                  {{ impact.task }}
-                </v-card-text>
-              </v-card>
-            </v-col>
-            <v-col cols="12" md="8" class="my-auto">
+            <v-col cols="12" md="7" class="my-auto">
               <v-img :src="`${impact.logo}`" width="160" contain />
-              <h4 class="text-h4 primary--text pt-8">{{ impact.title }}</h4>
-              <p class="text-h6 primary--text">
+              <p class="text-h6 primary--text pt-md-8">
                 {{ impact.content }}
               </p>
               <a :href="`${impact.link}`" target="_blank" no-referrer
                 >Learn more.</a
               >
             </v-col>
+            <v-spacer cols="0" md="1" />
+            <v-col cols="12" md="4" class="my-auto">
+              <v-img
+                :src="`${impact.image}`"
+                width="160"
+                contain
+                class="mx-auto"
+              />
+              <v-card-text class="text-h6 secondary--text text-center">
+                <strong>{{ impact.task }}</strong>
+              </v-card-text>
+            </v-col>
           </v-row>
         </v-card>
       </v-col>
     </v-row>
 
-    <v-row class="mx-0 mx-md-6 mx-lg-16">
+    <v-row class="mx-0 mx-md-6 mx-lg-16 mt-md-8">
       <v-col cols="12">
         <v-card
           color="accent"
