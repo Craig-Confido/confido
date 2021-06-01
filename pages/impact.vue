@@ -46,8 +46,10 @@
           <v-card-text class="text-h6 primary--text">
             Each year we choose four of the UN's SDG's (Sustainable Development
             Goals) to support. This year, we're focussing on:
-            <strong>No Poverty, Clean Water, Climate Action,</strong> and
-            <strong>Life Below Water</strong>.
+            <strong class="secondary--text"
+              >No Poverty, Clean Water, Climate Action,</strong
+            >
+            and <strong class="secondary--text">Life Below Water</strong>.
           </v-card-text>
           <!-- <v-row class="primary--text mx-auto text-center mt-4">
             <v-col cols="6" sm="3" class="d-flex mx-auto">
