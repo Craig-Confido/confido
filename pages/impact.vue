@@ -15,7 +15,7 @@
             class="text-h3  text-md-h2 font-weight-bold"
             aria-label="Intro text"
           >
-            Our impact statement.
+            Our commitment to balancing planet and profit.
           </h1>
           <h2 class="text-h5 my-8">
             While our purpose is to support tech for good startups and the
