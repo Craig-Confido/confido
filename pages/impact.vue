@@ -219,10 +219,10 @@
 <script>
 import GetInTouch from "../components/GetInTouch";
 
-let title = "The Tech for Good talent partner",
+let title = "Our commitment to balancing planet and profit",
   desc =
-    "Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good startups. We connect people with the same values and a shared purpose to build a better future, together.",
-  url = "https://confidotalent.com";
+    "While our purpose is to support tech for good startups and the amazing work they do, we think it’s just as important to make an impact as a business outside of the office, too.",
+  url = "https://confidotalent.com/impact";
 
 export default {
   scrollToTop: true,
