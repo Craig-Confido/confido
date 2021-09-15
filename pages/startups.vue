@@ -55,32 +55,34 @@
     </section>
 
     <v-row
-      class="mt-10 full-width-green px-auto py-8 white--text"
+      class="mt-10 full-width-green py-8 white--text text-center"
       no-gutters
+      align-content="center"
+      justify="center"
       style="box-shadow: 0px 0px 70px rgba(46, 49, 174, 0.55)"
     >
-      <v-col cols="6" sm="3" class="px-4 px-md-none">
+      <v-col cols="6" sm="3" class="px-auto mx-auto">
         <v-icon class="text-h2 white--text mb-2">
           mdi-rocket-launch-outline
         </v-icon>
-        <h1>20+</h1>
+        <h1>25+</h1>
         <h3>Startups scaled</h3>
       </v-col>
-      <v-col cols="6" sm="3" class="px-4 px-md-none">
+      <v-col cols="6" sm="3" class="px-auto mx-auto">
         <v-icon class="text-h2 white--text mb-2">
           mdi-account-group-outline
         </v-icon>
-        <h1>100+</h1>
+        <h1>130+</h1>
         <h3>Hires made</h3>
       </v-col>
-      <v-col cols="6" sm="3" class="px-4 px-md-none">
+      <v-col cols="6" sm="3" class="px-auto mx-auto mt-2 mt-md-none">
         <v-icon class="text-h2 white--text mb-2">
           mdi-clock-check-outline
         </v-icon>
         <h1>4 weeks</h1>
         <h3>Average time to hire</h3>
       </v-col>
-      <v-col cols="6" sm="3" class="px-4 px-md-none">
+      <v-col cols="6" sm="3" class="px-auto mx-auto mt-2 mt-md-none">
         <v-icon class="text-h2 white--text mb-2">
           mdi-check-circle-outline
         </v-icon>
@@ -599,7 +601,7 @@ export default {
           resultText:
             "We've helped TSL build out their core engineering team, whilst providing specialist interim consultants when needed. This has enabled them to increase user acquisition and secure further funding.",
           result1Icon: "mdi-account-group",
-          result1Text: "9 hires made over 2 years",
+          result1Text: "12 hires made over 2 years",
           result2Icon: "mdi-clock",
           result2Text: "5 weeks average time to hire",
           result3Icon: "mdi-trophy",
@@ -729,7 +731,7 @@ export default {
           resultText:
             "We successfully built out Unmind's third and fourth squads within four months. The project was then extended to focus on other key engineering hires and further squad growth. The team's diversity was also improved through our new hires.",
           result1Icon: "mdi-account-group",
-          result1Text: "24 hires made in 6 months",
+          result1Text: "27 hires made in 6 months",
           result2Icon: "mdi-clock",
           result2Text: "Improved time to hire by 25%",
           result3Icon: "mdi-cash-multiple",

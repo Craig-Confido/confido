@@ -78,7 +78,7 @@
             mdi-rocket-launch-outline
           </v-icon>
           <h1>
-            20+
+            25+
           </h1>
           <h3>Startups scaled</h3>
         </v-col>
@@ -96,7 +96,7 @@
             mdi-account-group-outline
           </v-icon>
           <h1>
-            100+
+            130+
           </h1>
           <h3>Hires made</h3>
         </v-col>
@@ -372,6 +372,16 @@ export default {
           content:
             "From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.",
           advocate: "Adam Dunkley – Director of Technology, Allplants",
+        },
+        {
+          content:
+            "Straight away we noticed a difference, they felt more like an in-house recruitment expert than an external recruiter. It was a real pleasure to work with Confido. We could trust them in representing our brand and attracting high calibre candidates for what was a critical hire for us.",
+          advocate: "Adnan Ebrahim - CEO/Co-founder, MindLabs",
+        },
+        {
+          content:
+            "Working with Confido was amazing. The things I appreciated most were the diligence and flexibility. They held us accountable throughout the entire process to make it was a great experience for candidates as well. I'm looking forward to welcoming our new team members soon and working with Craig as we continue to grow.",
+          advocate: "Joel Tasche – CEO/Founder, CLEANHUB",
         },
       ],
       contact: [],

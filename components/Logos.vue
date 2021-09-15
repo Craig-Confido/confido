@@ -754,7 +754,7 @@ export default {
           label3: "Cost saving of over £75k",
           icon4: "mdi-account-group-outline",
           label4: "Improved team diversity",
-          hiresMade: "24",
+          hiresMade: "27",
           subtitle: "Hires made by Confido",
           overviewText:
             "We’ve supported Unmind through Seed and Series A funding rounds. Initially, we hired three Full Stack Engineers to join the core team, then later doubled their squads from two to four. Overall, we’ve helped them make over 24 hires, mainly Full Stack Engineers, Lead Engineers and Engineering Managers.",
@@ -819,7 +819,7 @@ export default {
           label3: "100% success rate",
           icon4: "",
           label4: "",
-          hiresMade: "9",
+          hiresMade: "12",
           subtitle: "Hires made by Confido",
           overviewText:
             "Third Space Learning needed to build out their core product and engineering team to enable growth into new markets. We’ve helped them hire eight people across Dev, DevOps, Product and UX.",
