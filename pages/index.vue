@@ -360,11 +360,6 @@ export default {
         },
         {
           content:
-            "Confido were able to go beyond the norm by advising on how to communicate our brand and the opportunity to the market, and build out an efficient process to attract the top tier candidates we wanted.",
-          advocate: "Avin Rabheru - CEO, Housekeep",
-        },
-        {
-          content:
             "Confido worked really closely with me to help me find our new Head of Engineering. The candidates we met were all high calibre and very credible. The whole process was much quicker than I’ve experienced on similar searches in the past.",
           advocate: "Richard Wazacz - CEO, Octopus Wealth",
         },
