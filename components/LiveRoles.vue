@@ -1,0 +1,45 @@
+<template>
+  <v-card color="white" class="px-2 py-2 my-0 card-shadow">
+    <div class="d-flex justify-space-between">
+      <v-card-title
+        ><strong>{{ role.title }}</strong></v-card-title
+      >
+      <v-btn class="accent rounded px-4 mt-4 mr-4"
+        ><a
+          :href="
+            `mailto:contact@confidotalent.com?subject=${role.title +
+              ' @ ' +
+              role.metadata.company}`
+          "
+          style="text-decoration: none;"
+          class="white--text"
+          >Apply now</a
+        ></v-btn
+      >
+    </div>
+    <v-card-text>
+      <div class="d-flex">
+        <p class="pr-4">{{ role.metadata.location }}</p>
+        <p class="grey--text text--darken-1">
+          <strong>{{ role.metadata.company }}</strong>
+        </p>
+      </div>
+      <div class="d-block">
+        <p v-html="role.content"></p>
+      </div>
+    </v-card-text>
+  </v-card>
+</template>
+<script>
+export default {
+  name: "Roles",
+  props: {
+    role: {
+      type: Object,
+      default: () => {
+        "No roles are loaded";
+      },
+    },
+  },
+};
+</script>

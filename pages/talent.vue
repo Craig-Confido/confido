@@ -90,6 +90,16 @@
       </v-col>
     </v-row>
     <v-row class="d-none d-md-flex mx-0 mx-md-6 mx-lg-16 my-16">
+      <v-row class="mx-lg-1">
+        <v-col cols="12">
+          <h1>Open roles.</h1>
+        </v-col>
+        <v-col v-for="role in roles" :key="role._id" cols="12" md="4">
+          <LiveRoles :role="role" />
+        </v-col>
+      </v-row>
+    </v-row>
+    <v-row class="text-left mt-8 mt-md-0 mx-0 mx-md-6 mx-lg-16 my-16">
       <v-col cols="12">
         <Logos />
       </v-col>
@@ -446,12 +456,11 @@ export default {
   components: {
     Logos,
     GetInTouch,
-    // ColorCard,
     ColorWideCard,
   },
   data() {
     return {
-      liveRoles: {},
+      roles: {},
       contact: [],
       quotes: [
         {
@@ -574,10 +583,10 @@ export default {
     };
   },
   created() {
-    this.fetchLiveRoles();
+    this.getRoles();
   },
   methods: {
-    async fetchLiveRoles() {
+    async getRoles() {
       this.error = this.role = null;
       this.loading = true;
       await bucket
@@ -586,7 +595,7 @@ export default {
             type: "roles",
           },
           props: "_id,slug,title,content,metadata,created_at,modified_at",
-          sort: "created_at",
+          sort: "-created_at",
         })
         .then((data) => {
           const roles = data.objects;
