@@ -591,6 +591,7 @@ export default {
       this.loading = true;
       await bucket
         .getObjects({
+          limit: 3,
           query: {
             type: "roles",
           },
