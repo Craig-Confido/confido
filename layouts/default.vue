@@ -15,7 +15,7 @@
         @click.stop="drawer = !drawer"
       />
       <v-btn
-        v-for="(link, index_1) in links.slice(0, 4)"
+        v-for="(link, index_1) in links.slice(0, 5)"
         :key="link.label + index_1"
         class="my-2 mx-8 white--text d-none d-md-flex font-weight-medium"
         text
@@ -51,16 +51,18 @@
         app
       >
         <v-app-bar-nav-icon
-          class="white--text d-md-none"
+          class="white--text d-md-none mt-7 ml-4"
+          right
+          absolute
           @click.stop="drawer = !drawer"
         >
-          <v-icon class="white--text mt-7 mr-4 text-right" right absolute icon>
+          <v-icon class="white--text" absolute icon>
             mdi-close
           </v-icon>
         </v-app-bar-nav-icon>
         <v-list class="mt-16 pt-4" rounded>
           <v-list-item
-            v-for="(link, index_3) in links.slice(0, 4)"
+            v-for="(link, index_3) in links.slice(0, 5)"
             :key="link.url + index_3"
             class="my-2 mx-0 white--text"
             text
@@ -177,6 +179,11 @@ export default {
       drawer: false,
       group: null,
       links: [
+        {
+          icon: "mdi-domain",
+          label: "About",
+          url: "/about",
+        },
         {
           icon: "mdi-information",
           label: "Impact",

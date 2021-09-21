@@ -3,7 +3,7 @@
     <div
       height="250px"
       style="background-color:#7B7DF6;"
-      class="mx-0 my-0"
+      class="mx-0 my-0 pt-4"
       no-gutters
     >
       <v-row class="pa-8">

@@ -410,6 +410,13 @@ let title = "Work with people who share your values and build better tech",
   url = "https://confidotalent.com/talent",
   image = "https://confidotalent.com/images/meta/talent.png";
 
+const Cosmic = require("cosmicjs");
+const api = Cosmic();
+const bucket = api.bucket({
+  slug: "confido",
+  read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn",
+});
+
 export default {
   scrollToTop: true,
   name: "Talent",
@@ -444,6 +451,7 @@ export default {
   },
   data() {
     return {
+      liveRoles: {},
       contact: [],
       quotes: [
         {
@@ -564,6 +572,28 @@ export default {
         },
       ],
     };
+  },
+  created() {
+    this.fetchLiveRoles();
+  },
+  methods: {
+    async fetchLiveRoles() {
+      this.error = this.role = null;
+      this.loading = true;
+      await bucket
+        .getObjects({
+          query: {
+            type: "roles",
+          },
+          props: "_id,slug,title,content,metadata,created_at,modified_at",
+          sort: "created_at",
+        })
+        .then((data) => {
+          const roles = data.objects;
+          this.loading = false;
+          this.roles = roles;
+        });
+    },
   },
 };
 </script>
