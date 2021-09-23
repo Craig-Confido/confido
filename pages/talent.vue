@@ -31,7 +31,7 @@
               Why work with us?
             </v-btn>
             <v-btn
-              class="mt-2 mt-sm-0 btn--outlined font-weight-bold"
+              class="mt-2 mr-4 mt-sm-0 btn--outlined font-weight-bold"
               outlined
               color="success"
               rounded
@@ -40,6 +40,17 @@
               @click="$vuetify.goTo('#process')"
             >
               Our process
+            </v-btn>
+            <v-btn
+              class="mt-2 mt-sm-0 btn--outlined font-weight-bold"
+              outlined
+              color="secondary"
+              rounded
+              width="250"
+              height="50"
+              @click="$vuetify.goTo('#roles')"
+            >
+              Live roles
             </v-btn>
           </v-row>
         </v-col>
@@ -89,12 +100,18 @@
         <h3>Success rate</h3>
       </v-col>
     </v-row>
-    <v-row class="d-none d-md-flex mx-0 mx-md-6 mx-lg-16 my-16">
+    <v-row class="d-none d-md-flex mx-0 mx-md-6 mx-lg-16 my-16" id="roles">
       <v-row class="mx-lg-1">
         <v-col cols="12">
           <h1>Open roles.</h1>
         </v-col>
-        <v-col v-for="role in roles" :key="role._id" cols="12" md="4">
+        <v-col
+          v-for="role in roles"
+          :key="role._id"
+          cols="12"
+          md="4"
+          style="overflow-x: scroll; overflow-y: hidden"
+        >
           <LiveRoles :role="role" />
         </v-col>
       </v-row>
@@ -591,7 +608,7 @@ export default {
       this.loading = true;
       await bucket
         .getObjects({
-          limit: 3,
+          // limit: 3,
           query: {
             type: "roles",
           },

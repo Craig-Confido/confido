@@ -252,6 +252,7 @@ export default {
   },
   data() {
     return {
+      contact: {},
       roles: {},
       benefits: [
         {
@@ -286,7 +287,7 @@ export default {
         .getObjects({
           limit: 3,
           query: {
-            type: "roles",
+            type: "careers",
           },
           props: "_id,slug,title,content,metadata,created_at,modified_at",
           sort: "-created_at",

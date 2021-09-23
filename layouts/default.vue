@@ -180,11 +180,6 @@ export default {
       group: null,
       links: [
         {
-          icon: "mdi-domain",
-          label: "About",
-          url: "/about",
-        },
-        {
           icon: "mdi-information",
           label: "Impact",
           url: "/impact",
@@ -198,6 +193,11 @@ export default {
           icon: "mdi-account-group",
           label: "Talent",
           url: "/talent",
+        },
+        {
+          icon: "mdi-domain",
+          label: "Careers",
+          url: "/careers",
         },
         {
           icon: "mdi-id-card",
