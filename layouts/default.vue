@@ -180,7 +180,7 @@ export default {
       group: null,
       links: [
         {
-          icon: "mdi-information",
+          icon: "mdi-alpha-i-circle",
           label: "Impact",
           url: "/impact",
         },

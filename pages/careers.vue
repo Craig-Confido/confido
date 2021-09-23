@@ -68,7 +68,101 @@
             place.
           </v-card-text>
         </v-card>
-        <!-- !TODO: TIMELINE -->
+        <v-row>
+          <v-col cols="12">
+            <div class="pa-8 my-0 text-center">
+              <v-row
+                class="primary--text mx-auto text-center mt-4 d-flex justify-center"
+              >
+                <v-col cols="12" md="3">
+                  <h1 class="pb-4">2018</h1>
+                  <v-row>
+                    <v-col cols="12" md="6">
+                      <v-icon class="secondary--text text-h3">
+                        mdi-license
+                      </v-icon>
+                      <p class="primary--text">
+                        Confido founded
+                      </p>
+                    </v-col>
+                    <v-col cols="12" md="6">
+                      <v-icon class="secondary--text text-h3">
+                        mdi-account-group
+                      </v-icon>
+                      <p class="primary--text">
+                        Began working with Benefex, Housekeep and Third Space
+                        Learning
+                      </p>
+                    </v-col>
+                  </v-row>
+                </v-col>
+                <v-col cols="12" md="3">
+                  <h1 class="pb-4">2019</h1>
+                  <v-row>
+                    <v-col cols="12" md="6">
+                      <v-icon class="secondary--text text-h3">
+                        mdi-domain
+                      </v-icon>
+                      <p class="primary--text">
+                        Launched our “Onsite” solution
+                      </p>
+                    </v-col>
+                    <v-col cols="12" md="6">
+                      <v-icon class="secondary--text text-h3">
+                        mdi-office-building-marker-outline
+                      </v-icon>
+                      <p class="primary--text">
+                        Won our first “Onsite” projects with Curve and Unmind
+                      </p>
+                    </v-col>
+                  </v-row>
+                </v-col>
+                <v-col cols="12" md="3">
+                  <h1 class="pb-4">2020</h1>
+                  <v-row>
+                    <v-col cols="12" md="6">
+                      <v-icon class="secondary--text text-h3">
+                        mdi-charity
+                      </v-icon>
+                      <p class="primary--text">
+                        Refined our focus to Tech for Good startups
+                      </p>
+                    </v-col>
+                    <v-col cols="12" md="6">
+                      <v-icon class="secondary--text text-h3">
+                        mdi-trophy
+                      </v-icon>
+                      <p class="primary--text">
+                        Record year for the team
+                      </p>
+                    </v-col>
+                  </v-row>
+                </v-col>
+                <v-col cols="12" md="3">
+                  <h1 class="pb-4">2021</h1>
+                  <v-row>
+                    <v-col cols="12" md="6">
+                      <v-icon class="secondary--text text-h3">
+                        mdi-alpha-b-circle-outline
+                      </v-icon>
+                      <p class="primary--text">
+                        Worked with our first B Corp, allplants
+                      </p>
+                    </v-col>
+                    <v-col cols="12" md="6">
+                      <v-icon class="secondary--text text-h3">
+                        mdi-alpha-i-circle
+                      </v-icon>
+                      <p class="primary--text">
+                        Implemented our Impact Strategy
+                      </p>
+                    </v-col>
+                  </v-row>
+                </v-col>
+              </v-row>
+            </div>
+          </v-col>
+        </v-row>
         <v-row>
           <v-col cols="12">
             <h1 class="mt-6 mb-4">Working with us.</h1>

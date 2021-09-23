@@ -428,7 +428,6 @@
 <script>
 import Logos from "../components/Logos";
 import GetInTouch from "../components/GetInTouch";
-// import ColorCard from "../components/ColorCard";
 import ColorWideCard from "../components/ColorWideCard";
 
 let title = "Work with people who share your values and build better tech",
@@ -608,7 +607,6 @@ export default {
       this.loading = true;
       await bucket
         .getObjects({
-          // limit: 3,
           query: {
             type: "roles",
           },
