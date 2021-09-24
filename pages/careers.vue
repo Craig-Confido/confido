@@ -20,7 +20,7 @@
           </h2>
           <v-row class="mt-12 mx-0">
             <v-btn
-              class="mt-0 mr-4 btn--outlined font-weight-bold"
+              class="mb-2 mb-sm-0 mr-4 btn--outlined font-weight-bold"
               outlined
               color="accent"
               rounded
@@ -31,13 +31,13 @@
               Benefits
             </v-btn>
             <v-btn
-              class="mt-2 mt-sm-0 btn--outlined font-weight-bold"
+              to="/talent"
+              class="btn--outlined font-weight-bold"
               outlined
-              color="success"
+              color="secondary"
               rounded
               width="250"
               height="50"
-              @click="$vuetify.goTo('#roles')"
             >
               Live roles
             </v-btn>
