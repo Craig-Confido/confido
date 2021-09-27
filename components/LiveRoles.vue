@@ -1,4 +1,4 @@
-<template>
+<template v-if="role.metadata">
   <v-card color="white" class="px-2 py-2 my-0 card-shadow">
     <div class="d-flex justify-space-between">
       <v-card-title

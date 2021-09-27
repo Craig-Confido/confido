@@ -277,7 +277,7 @@
             />
           </v-col>
         </v-row>
-        <v-row class="mt-3 mb-5 px-4" id="roles">
+        <v-row v-if="roles" class="mt-3 mb-5 px-4" id="roles">
           <v-col cols="12">
             <h1>Open roles.</h1>
             <h3>
@@ -292,6 +292,23 @@
           </v-col>
           <v-col v-for="role in roles" :key="role._id" cols="12" md="4">
             <LiveRoles :role="role" />
+          </v-col>
+        </v-row>
+        <v-row v-else class="mt-3 mb-5 px-4" id="roles">
+          <v-col cols="12">
+            <h1>Open roles.</h1>
+            <h3>
+              Can’t see something that suits you? Drop us a note on
+              <a
+                style="text-decoration: none;"
+                href="mailto:contact@confidotalent.com?subject=Open%20roles"
+                class="secondary--text"
+                >contact@confidotalent.com</a
+              >, we’d love to hear from you.
+            </h3>
+          </v-col>
+          <v-col cols="12">
+            <p class="text-h6">No roles currently available</p>
           </v-col>
         </v-row>
       </v-row>
