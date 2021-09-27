@@ -20,7 +20,7 @@
     <v-card-text>
       <div class="d-flex">
         <p class="pr-4">{{ role.metadata.location }}</p>
-        <p class="pr-4">/</p>
+        <p class="pr-4" v-show="role.metadata.company">/</p>
         <a :href="`${role.metadata.link}`">
           <p class="grey--text text--darken-1">
             <strong>{{ role.metadata.company }}</strong>
