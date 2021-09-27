@@ -105,13 +105,7 @@
         <v-col cols="12">
           <h1>Open roles.</h1>
         </v-col>
-        <v-col
-          v-for="role in roles"
-          :key="role._id"
-          cols="12"
-          md="4"
-          style="overflow-x: scroll; overflow-y: hidden"
-        >
+        <v-col v-for="role in roles" :key="role._id" cols="12" md="4">
           <LiveRoles :role="role" />
         </v-col>
       </v-row>

@@ -31,13 +31,13 @@
               Benefits
             </v-btn>
             <v-btn
-              to="/talent"
               class="btn--outlined font-weight-bold"
               outlined
               color="secondary"
               rounded
               width="250"
               height="50"
+              @click="$vuetify.goTo('#roles')"
             >
               Live roles
             </v-btn>
