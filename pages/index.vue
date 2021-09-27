@@ -25,7 +25,7 @@
           <v-row class="mt-12 mx-0">
             <v-btn
               to="/startups"
-              class="mr-4 mb-2 mb-sm-0 btn--outlined font-weight-black"
+              class="mr-4 mb-2 btn--outlined font-weight-black"
               outlined
               color="accent"
               rounded
@@ -36,7 +36,7 @@
             </v-btn>
             <v-btn
               to="/talent"
-              class="mr-4 mb-2 mb-sm-0 btn--outlined font-weight-bold"
+              class="mr-4 mb-2 btn--outlined font-weight-bold"
               outlined
               color="success"
               rounded

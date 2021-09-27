@@ -20,7 +20,7 @@
           </h2>
           <v-row class="mt-12 mx-0">
             <v-btn
-              class="mb-2 mb-sm-0 mr-4 btn--outlined font-weight-bold"
+              class="mb-2 mr-4 btn--outlined font-weight-bold"
               outlined
               color="accent"
               rounded
@@ -31,7 +31,7 @@
               Why work with us?
             </v-btn>
             <v-btn
-              class="mb-2 mb-sm-0 mr-4 btn--outlined font-weight-bold"
+              class="mb-2 mr-4 btn--outlined font-weight-bold"
               outlined
               color="success"
               rounded
