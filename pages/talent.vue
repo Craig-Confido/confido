@@ -20,7 +20,7 @@
           </h2>
           <v-row class="mt-12 mx-0">
             <v-btn
-              class="mt-0 mr-4 btn--outlined font-weight-bold"
+              class="mb-2 mr-4 btn--outlined font-weight-bold"
               outlined
               color="accent"
               rounded
@@ -31,7 +31,7 @@
               Why work with us?
             </v-btn>
             <v-btn
-              class="mt-2 mt-sm-0 btn--outlined font-weight-bold"
+              class="mb-2 mr-4 btn--outlined font-weight-bold"
               outlined
               color="success"
               rounded
@@ -40,6 +40,17 @@
               @click="$vuetify.goTo('#process')"
             >
               Our process
+            </v-btn>
+            <v-btn
+              class="btn--outlined font-weight-bold"
+              outlined
+              color="secondary"
+              rounded
+              width="250"
+              height="50"
+              @click="$vuetify.goTo('#roles')"
+            >
+              Live roles
             </v-btn>
           </v-row>
         </v-col>
@@ -419,7 +430,6 @@
 <script>
 import Logos from "../components/Logos";
 import GetInTouch from "../components/GetInTouch";
-// import ColorCard from "../components/ColorCard";
 import ColorWideCard from "../components/ColorWideCard";
 
 let title = "Work with people who share your values and build better tech",

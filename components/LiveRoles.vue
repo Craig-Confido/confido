@@ -1,4 +1,4 @@
-<template>
+<template v-if="role.metadata">
   <v-card color="white" class="px-2 py-2 my-0 card-shadow">
     <div class="d-flex justify-space-between">
       <v-card-title
@@ -20,9 +20,12 @@
     <v-card-text>
       <div class="d-flex">
         <p class="pr-4">{{ role.metadata.location }}</p>
-        <p class="grey--text text--darken-1">
-          <strong>{{ role.metadata.company }}</strong>
-        </p>
+        <p class="pr-4" v-show="role.metadata.company">/</p>
+        <a :href="`${role.metadata.link}`">
+          <p class="grey--text text--darken-1">
+            <strong>{{ role.metadata.company }}</strong>
+          </p>
+        </a>
       </div>
       <div class="d-block">
         <p v-html="role.content"></p>

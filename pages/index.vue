@@ -25,7 +25,7 @@
           <v-row class="mt-12 mx-0">
             <v-btn
               to="/startups"
-              class="mr-4 mt-4 btn--outlined font-weight-black"
+              class="mr-4 mb-2 btn--outlined font-weight-black"
               outlined
               color="accent"
               rounded
@@ -36,7 +36,7 @@
             </v-btn>
             <v-btn
               to="/talent"
-              class="mr-4 mt-4 btn--outlined font-weight-bold"
+              class="mr-4 mb-2 btn--outlined font-weight-bold"
               outlined
               color="success"
               rounded
@@ -44,6 +44,17 @@
               height="50"
             >
               Join a startup
+            </v-btn>
+            <v-btn
+              to="/talent"
+              class="btn--outlined font-weight-bold"
+              outlined
+              color="secondary"
+              rounded
+              width="250"
+              height="50"
+            >
+              Live roles
             </v-btn>
           </v-row>
         </v-col>

@@ -15,7 +15,7 @@
         @click.stop="drawer = !drawer"
       />
       <v-btn
-        v-for="(link, index_1) in links.slice(0, 4)"
+        v-for="(link, index_1) in links.slice(0, 5)"
         :key="link.label + index_1"
         class="my-2 mx-8 white--text d-none d-md-flex font-weight-medium"
         text
@@ -62,7 +62,7 @@
         </v-app-bar-nav-icon>
         <v-list class="mt-16 pt-4" rounded>
           <v-list-item
-            v-for="(link, index_3) in links.slice(0, 4)"
+            v-for="(link, index_3) in links.slice(0, 5)"
             :key="link.url + index_3"
             class="my-2 mx-0 white--text"
             text
@@ -179,13 +179,8 @@ export default {
       drawer: false,
       group: null,
       links: [
-        // {
-        //   icon: "mdi-domain",
-        //   label: "About",
-        //   url: "/about",
-        // },
         {
-          icon: "mdi-information",
+          icon: "mdi-alpha-i-circle",
           label: "Impact",
           url: "/impact",
         },
@@ -198,6 +193,11 @@ export default {
           icon: "mdi-account-group",
           label: "Talent",
           url: "/talent",
+        },
+        {
+          icon: "mdi-domain",
+          label: "Careers",
+          url: "/careers",
         },
         {
           icon: "mdi-id-card",

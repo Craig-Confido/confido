@@ -331,326 +331,61 @@
           :card="card"
         />
       </v-dialog>
+      <v-dialog max-width="1000px" overflow-hidden v-model="mindlabs">
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            :src="require('../static/images/mindlabs.png')"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <div
+          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
+        >
+          <v-col cols="1" class="mr-auto ml-1">
+            <v-icon large color="white" @click="mindlabs = false">
+              mdi-close-circle-outline
+            </v-icon>
+          </v-col>
+        </div>
+        <CaseStudySmallCard
+          v-for="(card, index_23) in cards.slice(12, 13)"
+          :key="index_23"
+          :card="card"
+        />
+      </v-dialog>
+      <v-dialog max-width="1000px" overflow-hidden v-model="cleanhub">
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            :src="require('../static/images/cleanhub-logo.png')"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <div
+          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
+        >
+          <v-col cols="1" class="mr-auto ml-1">
+            <v-icon large color="white" @click="cleanhub = false">
+              mdi-close-circle-outline
+            </v-icon>
+          </v-col>
+        </div>
+        <CaseStudySmallCard
+          v-for="(card, index_23) in cards.slice(13, 14)"
+          :key="index_23"
+          :card="card"
+        />
+      </v-dialog>
     </v-row>
-
-    <!-- <v-row class="mx-4 my-4 d-flex d-sm-none">
-      <v-col cols="6">
-        <v-dialog max-width="1000px" overflow-hidden v-model="benefex">
-          <template v-slot:activator="{ on, attrs }">
-            <v-img
-              :src="require('../static/images/benefex.png')"
-              max-width="160"
-              contain
-              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-              v-bind="attrs"
-              v-on="on"
-            />
-          </template>
-          <div
-            style="background-color:#7B7DF6; position: fixed; width: 100%; z-index: 2"
-          >
-            <v-col class="mx-auto">
-              <v-icon large color="white" @click="benefex = false">
-                mdi-close-circle-outline
-              </v-icon>
-            </v-col>
-          </div>
-          <CaseStudySmallCard
-            v-for="(card, index_12) in cards.slice(0, 1)"
-            :key="index_12"
-            :card="card"
-          />
-        </v-dialog>
-        <v-dialog max-width="1000px" overflow-hidden v-model="thirdSpace">
-          <template v-slot:activator="{ on, attrs }">
-            <v-img
-              :src="require('../static/images/thirdSpace.png')"
-              max-width="160"
-              contain
-              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-              v-bind="attrs"
-              v-on="on"
-            />
-          </template>
-          <div
-            style="background-color:#7B7DF6; position: fixed; width: 100%; z-index: 2"
-          >
-            <v-col class="mx-auto">
-              <v-icon large color="white" @click="thirdSpace = false">
-                mdi-close-circle-outline
-              </v-icon>
-            </v-col>
-          </div>
-          <CaseStudySmallCard
-            v-for="(card, index_13) in cards.slice(6, 7)"
-            :key="index_13"
-            :card="card"
-          />
-        </v-dialog>
-        <v-dialog max-width="1000px" overflow-hidden v-model="feedr">
-          <template v-slot:activator="{ on, attrs }">
-            <v-img
-              :src="require('../static/images/feedr.webp')"
-              max-width="160"
-              contain
-              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-              v-bind="attrs"
-              v-on="on"
-            />
-          </template>
-          <div
-            style="background-color:#7B7DF6; position: fixed; width: 100%; z-index: 2"
-          >
-            <v-col class="mx-auto">
-              <v-icon large color="white" @click="feedr = false">
-                mdi-close-circle-outline
-              </v-icon>
-            </v-col>
-          </div>
-          <CaseStudySmallCard
-            v-for="(card, index_14) in cards.slice(9, 10)"
-            :key="index_14"
-            :card="card"
-          />
-        </v-dialog>
-        <v-dialog max-width="1000px" overflow-hidden v-model="matr">
-          <template v-slot:activator="{ on, attrs }">
-            <v-img
-              :src="require('../static/images/matr.png')"
-              max-width="160"
-              contain
-              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-              v-bind="attrs"
-              v-on="on"
-            />
-          </template>
-          <div
-            style="background-color:#7B7DF6; position: fixed; width: 100%; z-index: 2"
-          >
-            <v-col class="mx-auto">
-              <v-icon large color="white" @click="matr = false">
-                mdi-close-circle-outline
-              </v-icon>
-            </v-col>
-          </div>
-          <CaseStudySmallCard
-            v-for="(card, index_15) in cards.slice(5, 6)"
-            :key="index_15"
-            :card="card"
-          />
-        </v-dialog>
-        <v-dialog max-width="1000px" overflow-hidden v-model="unmind">
-          <template v-slot:activator="{ on, attrs }">
-            <v-img
-              :src="require('../static/images/unmind.png')"
-              max-width="160"
-              contain
-              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-              v-bind="attrs"
-              v-on="on"
-            />
-          </template>
-          <div
-            style="background-color:#7B7DF6; position: fixed; width: 100%; z-index: 2"
-          >
-            <v-col class="mx-auto">
-              <v-icon large color="white" @click="unmind = false">
-                mdi-close-circle-outline
-              </v-icon>
-            </v-col>
-          </div>
-          <CaseStudySmallCard
-            v-for="(card, index_16) in cards.slice(3, 4)"
-            :key="index_16"
-            :card="card"
-          />
-        </v-dialog>
-        <v-dialog max-width="1000px" overflow-hidden v-model="allplants">
-          <template v-slot:activator="{ on, attrs }">
-            <v-img
-              :src="require('../static/images/allplants.png')"
-              max-width="160"
-              contain
-              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-              v-bind="attrs"
-              v-on="on"
-            />
-          </template>
-          <div
-            style="background-color:#7B7DF6; position: fixed; width: 100%; z-index: 2"
-          >
-            <v-col class="mx-auto">
-              <v-icon large color="white" @click="allplants = false">
-                mdi-close-circle-outline
-              </v-icon>
-            </v-col>
-          </div>
-          <CaseStudySmallCard
-            v-for="(card, index_23) in cards.slice(11, 12)"
-            :key="index_23"
-            :card="card"
-          />
-        </v-dialog>
-      </v-col>
-      <v-col cols="6">
-        <v-dialog max-width="1000px" overflow-hidden v-model="wagestream">
-          <template v-slot:activator="{ on, attrs }">
-            <v-img
-              :src="require('../static/images/wagestream.png')"
-              max-width="160"
-              contain
-              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-              v-bind="attrs"
-              v-on="on"
-            />
-          </template>
-          <div
-            style="background-color:#7B7DF6; position: fixed; width: 100%; z-index: 2"
-          >
-            <v-col class="mx-auto">
-              <v-icon large color="white" @click="wagestream = false">
-                mdi-close-circle-outline
-              </v-icon>
-            </v-col>
-          </div>
-          <CaseStudySmallCard
-            v-for="(card, index_17) in cards.slice(10, 11)"
-            :key="index_17"
-            :card="card"
-          />
-        </v-dialog>
-        <v-dialog max-width="1000px" overflow-hidden v-model="homehero">
-          <template v-slot:activator="{ on, attrs }">
-            <v-img
-              :src="require('../static/images/homehero.svg')"
-              max-width="160"
-              contain
-              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-              v-bind="attrs"
-              v-on="on"
-            />
-          </template>
-          <div
-            style="background-color:#7B7DF6; position: fixed; width: 100%; z-index: 2"
-          >
-            <v-col class="mx-auto">
-              <v-icon large color="white" @click="homehero = false">
-                mdi-close-circle-outline
-              </v-icon>
-            </v-col>
-          </div>
-          <CaseStudySmallCard
-            v-for="(card, index_18) in cards.slice(2, 3)"
-            :key="index_18"
-            :card="card"
-          />
-        </v-dialog>
-        <v-dialog max-width="1000px" overflow-hidden v-model="curve">
-          <template v-slot:activator="{ on, attrs }">
-            <v-img
-              :src="require('../static/images/curve.png')"
-              max-width="160"
-              contain
-              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-              v-bind="attrs"
-              v-on="on"
-            />
-          </template>
-          <div
-            style="background-color:#7B7DF6; position: fixed; width: 100%; z-index: 2"
-          >
-            <v-col class="mx-auto">
-              <v-icon large color="white" @click="curve = false">
-                mdi-close-circle-outline
-              </v-icon>
-            </v-col>
-          </div>
-          <CaseStudySmallCard
-            v-for="(card, index_19) in cards.slice(4, 5)"
-            :key="index_19"
-            :card="card"
-          />
-        </v-dialog>
-        <v-dialog max-width="1000px" overflow-hidden v-model="visionBox">
-          <template v-slot:activator="{ on, attrs }">
-            <v-img
-              :src="require('../static/images/vision-box.svg')"
-              max-width="160"
-              contain
-              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-              v-bind="attrs"
-              v-on="on"
-            />
-          </template>
-          <div
-            style="background-color:#7B7DF6; position: fixed; width: 100%; z-index: 2"
-          >
-            <v-col class="mx-auto">
-              <v-icon large color="white" @click="visionBox = false">
-                mdi-close-circle-outline
-              </v-icon>
-            </v-col>
-          </div>
-          <CaseStudySmallCard
-            v-for="(card, index_20) in cards.slice(8, 9)"
-            :key="index_20"
-            :card="card"
-          />
-        </v-dialog>
-        <v-dialog max-width="1000px" overflow-hidden v-model="houseKeep">
-          <template v-slot:activator="{ on, attrs }">
-            <v-img
-              :src="require('../static/images/houseKeep.png')"
-              max-width="160"
-              contain
-              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-              v-bind="attrs"
-              v-on="on"
-            />
-          </template>
-          <div
-            style="background-color:#7B7DF6; position: fixed; width: 100%; z-index: 2"
-          >
-            <v-col class="mx-auto">
-              <v-icon large color="white" @click="houseKeep = false">
-                mdi-close-circle-outline
-              </v-icon>
-            </v-col>
-          </div>
-          <CaseStudySmallCard
-            v-for="(card, index_21) in cards.slice(1, 2)"
-            :key="index_21"
-            :card="card"
-          />
-        </v-dialog>
-        <v-dialog max-width="1000px" overflow-hidden v-model="octopusWealth">
-          <template v-slot:activator="{ on, attrs }">
-            <v-img
-              :src="require('../static/images/octopusWealth.png')"
-              max-width="160"
-              contain
-              class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-              v-bind="attrs"
-              v-on="on"
-            />
-          </template>
-          <div
-            style="background-color:#7B7DF6; position: fixed; width: 100%; z-index: 2"
-          >
-            <v-col class="mx-auto">
-              <v-icon large color="white" @click="octopusWealth = false">
-                mdi-close-circle-outline
-              </v-icon>
-            </v-col>
-          </div>
-          <CaseStudySmallCard
-            v-for="(card, index_22) in cards.slice(7, 8)"
-            :key="index_22"
-            :card="card"
-          />
-        </v-dialog>
-      </v-col>
-    </v-row> -->
   </v-card>
 </template>
 
@@ -676,6 +411,8 @@ export default {
       houseKeep: false,
       octopusWealth: false,
       allplants: false,
+      mindlabs: false,
+      cleanhub: false,
       cards: [
         {
           image: "../images/benefex-white.png",
@@ -932,6 +669,47 @@ export default {
           quote:
             "We had an urgent position to fill that we had been struggling with for 12 months. Confido came on and helped us to redefine the role and brief to better fit the market before carrying out a fantastic headhunting search that yielded a really diverse set of candidates. They also provided a huge amount of help with the process itself so that candidates always felt in to the loop, many of whom commenting on how well run everything was. From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.",
           person: "Adam Dunkley – Director of Technology, Allplants",
+        },
+        {
+          image: "../images/mindlabs-white.png",
+          title:
+            "MindLabs is a live platform with video classes for your mind, designed to reduce anxiety, stress and loneliness.",
+          icon1: "mdi-percent",
+          label1: "100% CV to interview ratio",
+          icon2: "mdi-account-group-outline",
+          label2: "Diverse candidate pipeline",
+          icon3: "mdi-account-check",
+          label3: "First product hire made",
+          icon4: "",
+          label4: "",
+          hiresMade: "1",
+          subtitle: "Key hire made by Confido",
+          overviewText:
+            "Following their pre-Seed raise, MindLabs needed to hire their first Product Manager to finish building their MVP and help them find product market fit. After limited success through traditional routes, they needed a search partner that understood product and startups.",
+          quote:
+            "Confido approached hiring for our first Product Manager with a level of rigour we hadn't experienced before from a recruiter. Straight away we noticed a difference, they felt more like an in-house recruitment expert than an external recruiter. From taking the time to fully understand our business, to vetting candidates with an extremely detailed screening call, to providing valuable market insights, to constant communication around the clock, it was a real pleasure to work with Confido. We could trust them in representing our brand and attracting high calibre candidates for what was a critical hire for us. I wouldn't hesitate in not only recommending them but working with them again as we scale our Product team.",
+          person: "Adnan Ebrahim – CEO/Co-founder, MindLabs",
+        },
+        {
+          image: "../images/cleanhub-white.png",
+          title:
+            "CLEANHUB partners with brands to prevent plastic from entering our oceans. They are protecting and preserving the oceans by building an economy where plastic is too valuable to waste.",
+          cols4: true,
+          icon1: "mdi-account-group-outline",
+          label1: "100% diverse candidates hired",
+          icon2: "mdi-account-check",
+          label2: "First Lead Product Designer hire",
+          icon3: "mdi-account-check",
+          label3: "First Backend hire",
+          icon4: "mdi-percent",
+          label4: "100% of hires made from initial shortlist",
+          hiresMade: "2",
+          subtitle: "Hires made by Confido",
+          overviewText:
+            "Following their Seed funding, CLEANHUB needed to make two critical hires within product and engineering; a Lead Product Designer and a Senior Backend Engineer. CLEANHUB needed a partner that understood early-stage startups and could attract value-aligned candidates quickly and effectively.",
+          quote:
+            "Working with Confido was amazing. The things I appreciated most were the diligence and flexibility. They held us accountable throughout the entire process to make it was a great experience for candidates as well. I'm looking forward to welcoming our new team members soon and working with Craig as we continue to grow.",
+          person: "Joel Tasche – CEO/Founder, CLEANHUB",
         },
       ],
     };
