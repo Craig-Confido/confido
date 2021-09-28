@@ -89,15 +89,23 @@
         <h3>Success rate</h3>
       </v-col>
     </v-row>
-    <v-row class="d-none d-md-flex mx-0 mx-md-6 mx-lg-16 my-16">
-      <!-- <v-row class="mx-lg-1">
+    <v-row class="d-none d-md-flex mx-0 mx-md-6 mx-lg-16 my-16" id="roles">
+      <v-row class="mx-lg-1" v-if="roles">
         <v-col cols="12">
           <h1>Open roles.</h1>
         </v-col>
         <v-col v-for="role in roles" :key="role._id" cols="12" md="4">
           <LiveRoles :role="role" />
         </v-col>
-      </v-row> -->
+      </v-row>
+      <v-row v-else class="mx-lg-1">
+        <v-col cols="12">
+          <h1>Open roles.</h1>
+        </v-col>
+        <v-col cols="12">
+          <p class="text-h6">No roles currently available</p>
+        </v-col>
+      </v-row>
     </v-row>
     <v-row class="text-left mt-8 mt-md-0 mx-0 mx-md-6 mx-lg-16 my-16">
       <v-col cols="12">
