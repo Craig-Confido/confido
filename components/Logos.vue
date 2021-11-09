@@ -380,8 +380,35 @@
           </v-col>
         </div>
         <CaseStudySmallCard
-          v-for="(card, index_23) in cards.slice(13, 14)"
-          :key="index_23"
+          v-for="(card, index_24) in cards.slice(13, 14)"
+          :key="index_24"
+          :card="card"
+        />
+      </v-dialog>
+      <v-dialog max-width="1000px" overflow-hidden v-model="onhand">
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            :src="require('../static/images/onhand-logo.png')"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <div
+          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
+        >
+          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
+            <v-icon large color="white" @click="onhand = false">
+              mdi-close-circle-outline
+            </v-icon>
+          </v-col>
+        </div>
+        <CaseStudySmallCard
+          v-for="(card, index_25) in cards.slice(14, 15)"
+          :key="index_25"
           :card="card"
         />
       </v-dialog>
@@ -413,6 +440,7 @@ export default {
       allplants: false,
       mindlabs: false,
       cleanhub: false,
+      onhand: false,
       cards: [
         {
           image: "../images/benefex-white.png",
@@ -674,18 +702,19 @@ export default {
           image: "../images/mindlabs-white.png",
           title:
             "MindLabs is a live platform with video classes for your mind, designed to reduce anxiety, stress and loneliness.",
+          cols4: true,
           icon1: "mdi-percent",
           label1: "100% CV to interview ratio",
           icon2: "mdi-account-group-outline",
-          label2: "Diverse candidate pipeline",
-          icon3: "mdi-account-check",
-          label3: "First product hire made",
-          icon4: "",
-          label4: "",
-          hiresMade: "1",
-          subtitle: "Key hire made by Confido",
+          label2: "Diverse candidates hired",
+          icon3: "account-multiple-check-outline",
+          label3: "Build Product function",
+          icon4: "mdi-account-check",
+          label4: "100% success rate on hires",
+          hiresMade: "2",
+          subtitle: "Hires made by Confido",
           overviewText:
-            "Following their pre-Seed raise, MindLabs needed to hire their first Product Manager to finish building their MVP and help them find product market fit. After limited success through traditional routes, they needed a search partner that understood product and startups.",
+            "Following their pre-Seed raise, we’ve helped Mindlabs hire their first Product Manager to finishing building their MVP and find product market fit. Then after their Seed raise, Mindlabs engaged us again to hire their Head of Product, someone to grow the product and function as they scale.",
           quote:
             "Confido approached hiring for our first Product Manager with a level of rigour we hadn't experienced before from a recruiter. Straight away we noticed a difference, they felt more like an in-house recruitment expert than an external recruiter. From taking the time to fully understand our business, to vetting candidates with an extremely detailed screening call, to providing valuable market insights, to constant communication around the clock, it was a real pleasure to work with Confido. We could trust them in representing our brand and attracting high calibre candidates for what was a critical hire for us. I wouldn't hesitate in not only recommending them but working with them again as we scale our Product team.",
           person: "Adnan Ebrahim – CEO/Co-founder, MindLabs",
@@ -710,6 +739,27 @@ export default {
           quote:
             "Working with Confido was amazing. The things I appreciated most were the diligence and flexibility. They held us accountable throughout the entire process to make it was a great experience for candidates as well. I'm looking forward to welcoming our new team members soon and working with Craig as we continue to grow.",
           person: "Joel Tasche – CEO/Founder, CLEANHUB",
+        },
+        {
+          image: "../images/onhand-white.png",
+          title:
+            "onHand is the volunteering and climate impact platform for businesses and individuals. Through onHand, you can help your local communities and have global impact.",
+          cols4: true,
+          icon1: "mdi-account-group-outline",
+          label1: "Shortlist of 3 candidates",
+          icon2: "mdi-account-check",
+          label2: "100% submittal to interview ratio",
+          icon3: "mdi-account-check",
+          label3: "Hire made from first shortlist",
+          icon4: "mdi-calendar",
+          label4: "Hire made within 4 weeks",
+          hiresMade: "1",
+          subtitle: "Hire made by Confido",
+          overviewText:
+            "Following their Seed funding, onHand needed to hire an experienced Senior Engineer to take ownership of their backend. For them, it was important to work with a partner that shared their mission-led approach.",
+          quote:
+            "Confido did an excellent job in making our crucial Senior Backend hire. From the very beginning their process was smooth, clear and quick. We had three candidates to interview in under two weeks and hired one soon after. Craig was a pleasure to work with, his knowledge, expertise and professionalism made this experience superb. He gave marvellous advice throughout the whole process and most importantly, delivered! We’re looking forward to working with Confido in the future to help grow our teams. onHand couldn’t have asked for a better talent partnership",
+          person: "Dan Moffatt – CEO, onHand",
         },
       ],
     };

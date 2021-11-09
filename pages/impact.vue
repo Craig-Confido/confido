@@ -288,8 +288,18 @@ export default {
           title: "About Cleanhub",
           image: "../images/cleanhub.png",
           content:
-            "Cleanhub enables the safe collection and recovery of ocean-bound plastic waste. The contribution supports clean environments and creates sustainable jobs in the global south.",
+            "Cleanhub enables the safe collection and recovery of ocean-bound plastic waste. Our contribution supports clean environments and creates sustainable jobs in the global south.",
           link: "https://confidotalent.cleanhub.io/",
+        },
+        {
+          logo: "../images/onhand-logo.jpg",
+          task:
+            "Bi-weekly volunteering missions completed by each member of the team",
+          title: "About onHand",
+          image: "../images/onhand.png",
+          content:
+            "onHand (otherwise known as ‘the Uber for volunteering’) is the volunteering and climate impact platform for businesses and individuals. Through the onHand app, you can help your local communities and have global impact. ",
+          link: "https://www.beonhand.co.uk/",
         },
       ],
       quotes: [
