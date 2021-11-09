@@ -292,7 +292,7 @@ export default {
           link: "https://confidotalent.cleanhub.io/",
         },
         {
-          logo: "../images/onhand-logo.jpg",
+          logo: "../images/onhand-logo.png",
           task:
             "Bi-weekly volunteering missions completed by each member of the team",
           title: "About onHand",
