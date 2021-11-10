@@ -747,7 +747,7 @@ export default {
           cols4: true,
           icon1: "mdi-account-group-outline",
           label1: "Shortlist of 3 candidates",
-          icon2: "mdi-account-check",
+          icon2: "mdi-percent",
           label2: "100% submittal to interview ratio",
           icon3: "mdi-account-check",
           label3: "Hire made from first shortlist",
