@@ -136,7 +136,7 @@
           <v-row>
             <v-col cols="12" md="7" class="my-auto">
               <v-img :src="`${impact.logo}`" width="160" contain />
-              <p class="text-h6 primary--text pt-md-8">
+              <p class="text-h6 primary--text pt-4 pt-md-8">
                 {{ impact.content }}
               </p>
               <a :href="`${impact.link}`" target="_blank" no-referrer
