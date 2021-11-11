@@ -136,7 +136,7 @@
           <v-row>
             <v-col cols="12" md="7" class="my-auto">
               <v-img :src="`${impact.logo}`" width="160" contain />
-              <p class="text-h6 primary--text pt-md-8">
+              <p class="text-h6 primary--text pt-4 pt-md-8">
                 {{ impact.content }}
               </p>
               <a :href="`${impact.link}`" target="_blank" no-referrer
@@ -288,8 +288,18 @@ export default {
           title: "About Cleanhub",
           image: "../images/cleanhub.png",
           content:
-            "Cleanhub enables the safe collection and recovery of ocean-bound plastic waste. The contribution supports clean environments and creates sustainable jobs in the global south.",
+            "Cleanhub enables the safe collection and recovery of ocean-bound plastic waste. Our contribution supports clean environments and creates sustainable jobs in the global south.",
           link: "https://confidotalent.cleanhub.io/",
+        },
+        {
+          logo: "../images/onhand-logo.png",
+          task:
+            "Bi-weekly volunteering missions completed by each member of the team",
+          title: "About onHand",
+          image: "../images/onhand.png",
+          content:
+            "onHand (otherwise known as ‘the Uber for volunteering’) is the volunteering and climate impact platform for businesses and individuals. Through the onHand app, you can help your local communities and have global impact. ",
+          link: "https://www.beonhand.co.uk/",
         },
       ],
       quotes: [
