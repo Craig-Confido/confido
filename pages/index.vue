@@ -154,15 +154,15 @@
                 </strong>
               </p>
             </v-row>
-            <v-row class="pt-12" align="center" justify="center">
-              <img :src="`${quote.logo}`" width="150" contain eager />
-            </v-row>
             <v-row align="center" justify="center" class="mx-8 mx-md-0">
               <span class="text-h5 mt-12 mb-0 secondary--text text-center">
                 <strong>
                   {{ quote.advocate }}
                 </strong>
               </span>
+            </v-row>
+            <v-row class="pt-12" align="center" justify="center">
+              <img :src="`${quote.logo}`" width="150" contain eager />
             </v-row>
           </v-sheet>
         </v-carousel-item>
