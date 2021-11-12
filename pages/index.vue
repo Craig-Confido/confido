@@ -342,6 +342,24 @@ export default {
       quotes: [
         {
           content:
+            "From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.",
+          logo: "../images/allplants-logo-y.png",
+          advocate: "Adam Dunkley – Director of Technology, allplants",
+        },
+        {
+          content:
+            "Confido did an excellent job in making our crucial Senior Backend hire. From the very beginning their process was smooth, clear and quick. We had three candidates to interview in under two weeks and hired one soon after. onHand couldn’t have asked for a better talent partnership",
+          logo: "../images/onhand-logo.png",
+          advocate: "Dan Moffatt – CTO, onHand",
+        },
+        {
+          content:
+            "Working with Confido was amazing. The things I appreciated most were the diligence and flexibility. They held us accountable throughout the entire process to make it was a great experience for candidates as well. I'm looking forward to welcoming our new team members soon and working with Craig as we continue to grow.",
+          logo: "../images/cleanhub-logo.png",
+          advocate: "Joel Tasche – CEO/Founder, CLEANHUB",
+        },
+        {
+          content:
             "We needed to scale a small startup team about 3x in a short space of time but didn't want to compromise on the quality of candidates. We'd tried alternative recruitment arrangements but hadn't seen results until we engaged Confido.",
           logo: "../images/feedr.webp",
           advocate: "Mark Somerfield - VP of Engineering, Feedr",
@@ -390,21 +408,9 @@ export default {
         },
         {
           content:
-            "From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.",
-          logo: "../images/allplants-logo-y.png",
-          advocate: "Adam Dunkley – Director of Technology, allplants",
-        },
-        {
-          content:
             "Straight away we noticed a difference, they felt more like an in-house recruitment expert than an external recruiter. It was a real pleasure to work with Confido. We could trust them in representing our brand and attracting high calibre candidates for what was a critical hire for us.",
           logo: "../images/mindlabs.png",
           advocate: "Adnan Ebrahim - CEO/Co-founder, MindLabs",
-        },
-        {
-          content:
-            "Working with Confido was amazing. The things I appreciated most were the diligence and flexibility. They held us accountable throughout the entire process to make it was a great experience for candidates as well. I'm looking forward to welcoming our new team members soon and working with Craig as we continue to grow.",
-          logo: "../images/cleanhub-logo.png",
-          advocate: "Joel Tasche – CEO/Founder, CLEANHUB",
         },
       ],
       contact: [],
