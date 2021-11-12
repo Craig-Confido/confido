@@ -13,23 +13,17 @@
     <h1 class="title mt-4 mb-2 mx-4 px-4" color="primary--text">
       {{ post.title }}
     </h1>
-    <div class="mx-4 ml-4 px-4">
-      <v-row class="text-left">
-        <v-col cols="6" md="4">
-          <v-chip class="rounded-pill px-4" color="secondary">
-            <strong>{{ post.metadata.tag }}</strong>
-          </v-chip>
-        </v-col>
-        <v-col cols="6" md="8">
-          <p class="mt-1 caption">
-            {{ post.metadata.readtime }}
-          </p>
-        </v-col>
-      </v-row>
-    </div>
+    <v-row class="text-left mx-8" align-content="center">
+      <v-chip class="pa-4" color="secondary">
+        <strong>{{ post.metadata.tag }}</strong>
+      </v-chip>
+      <p class="pl-2 pt-1 caption">
+        {{ post.metadata.readtime }}
+      </p>
+    </v-row>
     <v-card-text
       color="primary--text"
-      class="px-8"
+      class="px-8 mt-0 pt-0"
       v-html="post.metadata.content"
     />
     <v-card-actions class="mx-auto">

@@ -1,38 +1,26 @@
 <template>
-<v-container>
-  <v-row class="mx-4 mx-lg-16 ">
-    <v-col
-      cols="12"
-      md="12"
-    >
-      <v-row align="center" class="blog-900" style="margin:0px auto;">
-                <v-row>
-        <v-btn 
-          text
-          to="/hub" 
-        >
-          <v-icon class="mr-2">
-            mdi-arrow-left
-          </v-icon>
-          Back to all posts
-        </v-btn>
-      </v-row>
-      <Post
-        v-if="page"
-        :post="page"
-      />
-      </v-row>
-    </v-col>
-  </v-row>
-    <v-row
-      id="getInTouch"
-      class="mx-0 mx-md-6 mx-lg-16 mb-12"
-    >
-      <v-col cols="12">
-        <GetInTouch  />
+  <v-container>
+    <v-row class="mx-4 mx-lg-16 ">
+      <v-col cols="12" md="12">
+        <v-row align="center" class="blog-900" style="margin:0px auto;">
+          <v-row>
+            <v-btn text to="/hub" class="my-4">
+              <v-icon class="mr-2">
+                mdi-arrow-left
+              </v-icon>
+              Back to all posts
+            </v-btn>
+          </v-row>
+          <Post v-if="page" :post="page" />
+        </v-row>
       </v-col>
     </v-row>
-</v-container>
+    <v-row id="getInTouch" class="mx-0 mx-md-6 mx-lg-16 mb-12">
+      <v-col cols="12">
+        <GetInTouch />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -45,7 +33,7 @@ export default {
   name: "PostView",
   components: {
     Post,
-    GetInTouch
+    GetInTouch,
   },
   async asyncData({ app, route, redirect }) {
     let data = {};
@@ -54,9 +42,9 @@ export default {
         query: getPost,
         variables: { slug: route.params.id },
       });
-      const slug = { slug: route.params.id }
-      const data = {...d.data.getObject, ...slug};
-        
+      const slug = { slug: route.params.id };
+      const data = { ...d.data.getObject, ...slug };
+
       return {
         page: data,
       };
@@ -64,9 +52,6 @@ export default {
       console.log("error", error);
       redirect("/hub");
     }
-  },
-  mounted() {
-    // console.log(this.myRoute);
   },
   computed: {
     myRoute() {
