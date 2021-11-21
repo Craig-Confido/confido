@@ -9,7 +9,7 @@
           :href="
             `mailto:contact@confidotalent.com?subject=${role.title +
               ' @ ' +
-              role.metadata.company}`
+              role.metadata.subtitle}`
           "
           style="text-decoration: none;"
           class="white--text"
@@ -19,13 +19,15 @@
     </div>
     <v-card-text>
       <div class="d-flex">
-        <p class="pr-4">{{ role.metadata.location }}</p>
-        <p class="pr-4" v-show="role.metadata.company">/</p>
+        <p class="secondary--text">
+          <strong>{{ role.metadata.subtitle }}</strong>
+        </p>
+        <!-- <p class="pr-4">{{ role.metadata.location }}</p>
         <a :href="`${role.metadata.link}`">
           <p class="grey--text text--darken-1">
             <strong>{{ role.metadata.company }}</strong>
           </p>
-        </a>
+        </a> -->
       </div>
       <div class="d-block">
         <p v-html="role.content"></p>
