@@ -20,7 +20,8 @@
     "core-js": "^3.6.5",
     "cosmicjs": "^3.3.2",
     "graphql-tag": "^2.11.0",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "nvm": "^0.0.4"
   },
   "devDependencies": {
     "@nuxtjs/google-analytics": "^2.4.0",
