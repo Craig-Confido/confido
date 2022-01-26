@@ -2,9 +2,11 @@
   <v-card
     :to="`/hub/${post.slug}`"
     hover
-    class="text-left card-shadow d-flex flex-column justify-between pb-4"
+    class="text-left card-shadow d-flex flex-column justify-between pb-4 main-post"
     height="600"
   >
+    <v-chip v-if="post.filter.case_study === true" class="case_study" :ripple="false">Case study</v-chip>
+
     <v-img
       v-if="post.metadata"
       :src="post.metadata.hero.imgix_url"

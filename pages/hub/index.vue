@@ -16,26 +16,41 @@
         <FeaturedPost :featured="featured" />
       </v-col>
     </v-row>
+    <style>
+      .post_list > div.show {
+        visibility: visible;
+        display:flex;
+      }
+      .post_list > div {
+        visibility: hidden;
+        display:none;
+
+      }
+      .post_list .v-card {
+        position:relative;
+        overflow:hidden;
+      }
+      .post_list .v-card .v-chip.case_study {
+        position:absolute;
+        top:15px;
+        left:15px;
+        z-index:1000;
+      }
+      </style>
     <section class="ma-4 ma-lg-16">
-      <!-- <v-row class="my-4">
-        <v-col cols="6" md="2" v-for="post in posts" :key="post._id">
-          <v-chip class="tag px-4 mx-0" color="secondary">
-            <strong>{{ post.metadata.tag }}</strong>
-          </v-chip>
-        </v-col>
-      </v-row> -->
-      <v-row class="mt-3 mb-5" v-if="blogs.blogList">
+
+      <v-chip v-on:click="filter = 'all'" :class="{ primary: filter==='all' }">all</v-chip>
+      <v-chip v-on:click="filter = 'case_study'" :class="{ primary: filter==='case_study' }">Case studies</v-chip>
+      <v-chip v-on:click="filter = 'artciles'" :class="{ primary: filter==='artciles' }">Articles</v-chip>
+      
+      <v-row class="mt-3 mb-5 post_list" v-if="blogs.blogList">
         <v-col
-          v-for="post in blogs.blogList" :key="post.id"
+          v-for="post in blogs.blogList" 
+          :key="post.id"
           cols="12"
           md="4"
+          :class="{ show: post.filter[`${filter}`]===true }"
         >
-          
-        <!-- <v-col
-          v-for="post in getObjects.objects" :key="post.title"
-          cols="12"
-          md="4"
-        > -->
           <PostCards
             :post="post"
             class="justify-center"
@@ -76,17 +91,25 @@ export default {
         let blogs = this.$store.getters.getBlog;
         let FeaturedPosts = [];
         let blogList = [];
-
         // Filter Featured
         blogs.forEach(function (blog) {
-
+          blog.filter = {
+            all:true
+          }
           if(blog.metadata.featured && FeaturedPosts.length <= 0){
               FeaturedPosts.push(blog);   
           } else {
+            // Featured Articles
+            if(blog.metadata.featured) blog.filter.featured = true;
+            // IF case study || articles
+            if(blog.metadata.case_study) {
+              blog.filter.case_study = true
+            } else {
+              blog.filter.artciles = true
+            }
             blogList.push(blog);  
           }
         });
-
         return {blogList: blogList, FeaturedPosts: FeaturedPosts};
       }
   },
@@ -117,6 +140,7 @@ export default {
   },
   data() {
     return {
+      filter: "all",
       loading: false,
       contact: []
     };
