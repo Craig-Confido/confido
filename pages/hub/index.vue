@@ -96,13 +96,14 @@ export default {
           blog.filter = {
             all:true
           }
-          if(blog.metadata.featured && FeaturedPosts.length <= 0){
+          if(blog.metadata.featured && blog.metadata.featured.length && FeaturedPosts.length <= 0){
               FeaturedPosts.push(blog);   
           } else {
             // Featured Articles
-            if(blog.metadata.featured) blog.filter.featured = true;
+            if(blog.metadata.featured && blog.metadata.featured.length) blog.filter.featured = true;
             // IF case study || articles
-            if(blog.metadata.case_study) {
+            if(blog.metadata.case_study && blog.metadata.case_study.length) {
+              console.log("blog", blog)
               blog.filter.case_study = true
             } else {
               blog.filter.artciles = true
