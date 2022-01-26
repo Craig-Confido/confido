@@ -39,7 +39,7 @@
       </style>
     <section class="ma-4 ma-lg-16">
 
-      <v-chip v-on:click="filter = 'all'" :class="{ primary: filter==='all' }">all</v-chip>
+      <v-chip v-on:click="filter = 'all'" :class="{ primary: filter==='all' }">All</v-chip>
       <v-chip v-on:click="filter = 'case_study'" :class="{ primary: filter==='case_study' }">Case studies</v-chip>
       <v-chip v-on:click="filter = 'artciles'" :class="{ primary: filter==='artciles' }">Articles</v-chip>
       
