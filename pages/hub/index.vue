@@ -12,6 +12,8 @@
     >
 
       <v-carousel
+        cycle
+        continuous
         hide-delimiter-background
         hide-delimiters
         light
