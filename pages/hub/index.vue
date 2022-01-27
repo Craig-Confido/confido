@@ -147,17 +147,17 @@ export default {
           }
           if(blog.metadata.featured && blog.metadata.featured.length){
               FeaturedPosts.push(blog);   
-          } else {
-            // Featured Articles
-            if(blog.metadata.featured && blog.metadata.featured.length) blog.filter.featured = true;
-            // IF case study || articles
-            if(blog.metadata.case_study && blog.metadata.case_study.length) {
-              blog.filter.case_study = true
-            } else {
-              blog.filter.artciles = true
-            }
-            blogList.push(blog);  
           }
+          // Featured Articles
+          if(blog.metadata.featured && blog.metadata.featured.length) blog.filter.featured = true;
+          // IF case study || articles
+          if(blog.metadata.case_study && blog.metadata.case_study.length) {
+            blog.filter.case_study = true
+          } else {
+            blog.filter.artciles = true
+          }
+          blogList.push(blog);  
+
         });
         return {blogList: blogList, FeaturedPosts: FeaturedPosts};
       }
