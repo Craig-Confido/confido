@@ -6,14 +6,12 @@
 
 
     <v-row
-      class="text-left"
+      class="text-left FeaturedPosts_list"
       no-gutters
       v-if="blogs.FeaturedPosts"
     >
 
       <v-carousel
-        cycle
-        continuous
         hide-delimiter-background
         hide-delimiters
         light
@@ -60,6 +58,9 @@
     </v-row>
 
     <style>
+      .FeaturedPosts_list .v-responsive__content > .v-image.v-responsive {
+        height:100%;
+      }
       .post_list > div.show {
         visibility: visible;
         display:flex;

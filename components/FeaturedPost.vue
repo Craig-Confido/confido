@@ -1,10 +1,6 @@
-<template>
-    <div
-        v-if="featured"
-    >
+<template v-if="featured">
   <v-img
     :src="featured.metadata.hero.imgix_url"
-    max-height="440"
     :aspect-ratio="1.7"
     gradient="to top right, rgba(100,115,201,1), rgba(25,32,72, .7)"
   >
@@ -41,7 +37,6 @@
       
     </v-row>
   </v-img>
-  </div>
 </template>
 
 <script>
