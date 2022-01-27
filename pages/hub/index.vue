@@ -3,19 +3,62 @@
     fluid
     class="pa-0 ma-0"
   >
+
+
     <v-row
       class="text-left"
       no-gutters
       v-if="blogs.FeaturedPosts"
     >
-      <v-col
-        v-for="(featured, index) in blogs.FeaturedPosts.slice(0,1)"
-        :key="featured._id + index"
-        cols="12"
+
+      <v-carousel
+        cycle
+        continuous
+        hide-delimiter-background
+        hide-delimiters
+        light
+        :show-arrows-on-hover="true"
       >
-        <FeaturedPost :featured="featured" />
+        <v-carousel-item
+          v-for="(featured, index) in blogs.FeaturedPosts"
+          :key="featured._id + index"
+        >
+        <FeaturedPost :featured="featured"/>
+        </v-carousel-item>
+      </v-carousel>
+
+<v-col
+        cols="12"
+        md="6"
+        class="d-none d-md-flex justify-center"
+        style="position:absolute; right:7.5%; width:auto;"
+
+      >
+        <v-card
+          class="px-4 my-12 mx-auto"
+          width="400"
+        >
+          <h3 class="text-center px-0 py-8 mt-8 mx-4">
+            Career hacks, news and views, straight from startups and us, to
+            you.
+          </h3>
+          <v-card-actions class="mx-auto justify-center">
+            <v-btn
+              class="mb-4 btn--outlined font-weight-bold mx-auto px-8 py-6"
+              outlined
+              color="accent"
+              rounded
+              href="https://www.linkedin.com/company/confido-talent/"
+              target="_blank"
+            >
+              View on LinkedIn
+            </v-btn>
+          </v-card-actions>
+        </v-card>
       </v-col>
+
     </v-row>
+
     <style>
       .post_list > div.show {
         visibility: visible;
@@ -36,6 +79,9 @@
         left:15px;
         z-index:1000;
       }
+      .post_list.case_study_list .v-card .v-chip.case_study {
+        display:none;
+      }
       </style>
     <section class="ma-4 ma-lg-16">
 
@@ -43,7 +89,9 @@
       <v-chip v-on:click="filter = 'case_study'" :class="{ primary: filter==='case_study' }">Case studies</v-chip>
       <v-chip v-on:click="filter = 'artciles'" :class="{ primary: filter==='artciles' }">Articles</v-chip>
       
-      <v-row class="mt-3 mb-5 post_list" v-if="blogs.blogList">
+      <v-row class="mt-3 mb-5 post_list"
+      :class="{ case_study_list: filter === 'case_study' }"
+      v-if="blogs.blogList">
         <v-col
           v-for="post in blogs.blogList" 
           :key="post.id"
@@ -96,14 +144,13 @@ export default {
           blog.filter = {
             all:true
           }
-          if(blog.metadata.featured && blog.metadata.featured.length && FeaturedPosts.length <= 0){
+          if(blog.metadata.featured && blog.metadata.featured.length){
               FeaturedPosts.push(blog);   
           } else {
             // Featured Articles
             if(blog.metadata.featured && blog.metadata.featured.length) blog.filter.featured = true;
             // IF case study || articles
             if(blog.metadata.case_study && blog.metadata.case_study.length) {
-              console.log("blog", blog)
               blog.filter.case_study = true
             } else {
               blog.filter.artciles = true

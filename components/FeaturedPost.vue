@@ -38,33 +38,7 @@
           </v-btn>
         </v-row>
       </v-col>
-      <v-col
-        cols="12"
-        md="6"
-        class="d-none d-md-flex justify-center"
-      >
-        <v-card
-          class="px-4 my-12 mx-auto"
-          width="400"
-        >
-          <h3 class="text-center px-0 py-8 mt-8 mx-4">
-            Career hacks, news and views, straight from startups and us, to
-            you.
-          </h3>
-          <v-card-actions class="mx-auto justify-center">
-            <v-btn
-              class="mb-4 btn--outlined font-weight-bold mx-auto px-8 py-6"
-              outlined
-              color="accent"
-              rounded
-              href="https://www.linkedin.com/company/confido-talent/"
-              target="_blank"
-            >
-              View on LinkedIn
-            </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-col>
+      
     </v-row>
   </v-img>
   </div>
@@ -77,7 +51,7 @@ export default {
     featured: {
       type: Object,
       default: () => {},
-    },
+    }
   },
 };
 </script>
