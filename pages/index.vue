@@ -342,6 +342,12 @@ export default {
       quotes: [
         {
           content:
+            "We felt Confido really understood what it meant to represent an impact/not-for-profit business and how to attract great people. The amount of work that went into each recruit was immense, the advice we received from Confido was golden, and even our candidates commented on how positively different it was working with Confido",
+          logo: "../images/cpr-logo.svg",
+          advocate: "Michal Nachmany – CEO & Founder, Climate Policy Radar",
+        },
+        {
+          content:
             "From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.",
           logo: "../images/allplants-logo-y.png",
           advocate: "Adam Dunkley – Director of Technology, allplants",

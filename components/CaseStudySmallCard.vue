@@ -1,7 +1,13 @@
 <template>
-  <v-card v-if="card" color="#f1f1ff" class="text-left card-shadow mt-4">
-    <div
+  <v-card
+    v-if="card"
+    color="#f1f1ff"
+    class="text-left card-shadow mt-4"
+    width="100%"
+  >
+    <v-col
       height="250px"
+      width="100%"
       style="background-color:#7B7DF6;"
       class="mx-0 my-0 pt-4"
       no-gutters
@@ -16,7 +22,7 @@
           </h2>
         </v-col>
       </v-row>
-    </div>
+    </v-col>
     <v-row class="px-8">
       <v-row
         v-if="card.cols4 == true"

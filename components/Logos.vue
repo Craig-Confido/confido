@@ -7,6 +7,141 @@
       Click a logo to learn more.
     </h4>
     <v-row class="mx-4 my-4 d-sm-flex">
+      <v-dialog max-width="1000px" overflow-hidden v-model="allplants">
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            :src="require('../static/images/allplants.png')"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <div
+          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
+        >
+          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
+            <v-icon large color="white" @click="allplants = false">
+              mdi-close-circle-outline
+            </v-icon>
+          </v-col>
+        </div>
+        <CaseStudySmallCard
+          v-for="(card, index_23) in cards.slice(11, 12)"
+          :key="index_23"
+          :card="card"
+        />
+      </v-dialog>
+      <v-dialog max-width="1000px" overflow-hidden v-model="cpr">
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            :src="require('../static/images/cpr-logo.svg')"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <div
+          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
+        >
+          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
+            <v-icon large color="white" @click="cpr = false">
+              mdi-close-circle-outline
+            </v-icon>
+          </v-col>
+        </div>
+        <CaseStudySmallCard
+          v-for="(card, index) in cards.slice(15, 16)"
+          :key="index"
+          :card="card"
+        />
+      </v-dialog>
+      <v-dialog max-width="1000px" overflow-hidden v-model="onhand">
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            :src="require('../static/images/onhand-logo.png')"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <div
+          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
+        >
+          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
+            <v-icon large color="white" @click="onhand = false">
+              mdi-close-circle-outline
+            </v-icon>
+          </v-col>
+        </div>
+        <CaseStudySmallCard
+          v-for="(card, index_25) in cards.slice(14, 15)"
+          :key="index_25"
+          :card="card"
+        />
+      </v-dialog>
+      <v-dialog max-width="1000px" overflow-hidden v-model="cleanhub">
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            :src="require('../static/images/cleanhub-logo.png')"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <div
+          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
+        >
+          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
+            <v-icon large color="white" @click="cleanhub = false">
+              mdi-close-circle-outline
+            </v-icon>
+          </v-col>
+        </div>
+        <CaseStudySmallCard
+          v-for="(card, index_24) in cards.slice(13, 14)"
+          :key="index_24"
+          :card="card"
+        />
+      </v-dialog>
+      <v-dialog max-width="1000px" overflow-hidden v-model="unmind">
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            :src="require('../static/images/unmind.png')"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <div
+          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
+        >
+          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
+            <v-icon large color="white" @click="unmind = false">
+              mdi-close-circle-outline
+            </v-icon>
+          </v-col>
+        </div>
+        <CaseStudySmallCard
+          v-for="(card, index_5) in cards.slice(3, 4)"
+          :key="index_5"
+          :card="card"
+        />
+      </v-dialog>
       <v-dialog max-width="1000px" overflow-hidden v-model="benefex">
         <template v-slot:activator="{ on, attrs }">
           <v-img
@@ -112,33 +247,6 @@
         <CaseStudySmallCard
           v-for="(card, index_4) in cards.slice(5, 6)"
           :key="index_4"
-          :card="card"
-        />
-      </v-dialog>
-      <v-dialog max-width="1000px" overflow-hidden v-model="unmind">
-        <template v-slot:activator="{ on, attrs }">
-          <v-img
-            :src="require('../static/images/unmind.png')"
-            max-width="160"
-            contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-            v-bind="attrs"
-            v-on="on"
-          />
-        </template>
-        <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
-          class="rounded-t"
-        >
-          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
-            <v-icon large color="white" @click="unmind = false">
-              mdi-close-circle-outline
-            </v-icon>
-          </v-col>
-        </div>
-        <CaseStudySmallCard
-          v-for="(card, index_5) in cards.slice(3, 4)"
-          :key="index_5"
           :card="card"
         />
       </v-dialog>
@@ -250,7 +358,7 @@
           :card="card"
         />
       </v-dialog>
-      <v-dialog max-width="1000px" overflow-hidden v-model="houseKeep">
+      <!-- <v-dialog max-width="1000px" overflow-hidden v-model="houseKeep">
         <template v-slot:activator="{ on, attrs }">
           <v-img
             :src="require('../static/images/houseKeep.png')"
@@ -276,7 +384,7 @@
           :key="index_10"
           :card="card"
         />
-      </v-dialog>
+      </v-dialog> -->
       <v-dialog max-width="1000px" overflow-hidden v-model="octopusWealth">
         <template v-slot:activator="{ on, attrs }">
           <v-img
@@ -304,33 +412,6 @@
           :card="card"
         />
       </v-dialog>
-      <v-dialog max-width="1000px" overflow-hidden v-model="allplants">
-        <template v-slot:activator="{ on, attrs }">
-          <v-img
-            :src="require('../static/images/allplants.png')"
-            max-width="160"
-            contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-            v-bind="attrs"
-            v-on="on"
-          />
-        </template>
-        <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
-          class="rounded-t"
-        >
-          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
-            <v-icon large color="white" @click="allplants = false">
-              mdi-close-circle-outline
-            </v-icon>
-          </v-col>
-        </div>
-        <CaseStudySmallCard
-          v-for="(card, index_23) in cards.slice(11, 12)"
-          :key="index_23"
-          :card="card"
-        />
-      </v-dialog>
       <v-dialog max-width="1000px" overflow-hidden v-model="mindlabs">
         <template v-slot:activator="{ on, attrs }">
           <v-img
@@ -355,60 +436,6 @@
         <CaseStudySmallCard
           v-for="(card, index_23) in cards.slice(12, 13)"
           :key="index_23"
-          :card="card"
-        />
-      </v-dialog>
-      <v-dialog max-width="1000px" overflow-hidden v-model="cleanhub">
-        <template v-slot:activator="{ on, attrs }">
-          <v-img
-            :src="require('../static/images/cleanhub-logo.png')"
-            max-width="160"
-            contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-            v-bind="attrs"
-            v-on="on"
-          />
-        </template>
-        <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
-          class="rounded-t"
-        >
-          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
-            <v-icon large color="white" @click="cleanhub = false">
-              mdi-close-circle-outline
-            </v-icon>
-          </v-col>
-        </div>
-        <CaseStudySmallCard
-          v-for="(card, index_24) in cards.slice(13, 14)"
-          :key="index_24"
-          :card="card"
-        />
-      </v-dialog>
-      <v-dialog max-width="1000px" overflow-hidden v-model="onhand">
-        <template v-slot:activator="{ on, attrs }">
-          <v-img
-            :src="require('../static/images/onhand-logo.png')"
-            max-width="160"
-            contain
-            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
-            v-bind="attrs"
-            v-on="on"
-          />
-        </template>
-        <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
-          class="rounded-t"
-        >
-          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
-            <v-icon large color="white" @click="onhand = false">
-              mdi-close-circle-outline
-            </v-icon>
-          </v-col>
-        </div>
-        <CaseStudySmallCard
-          v-for="(card, index_25) in cards.slice(14, 15)"
-          :key="index_25"
           :card="card"
         />
       </v-dialog>
@@ -441,6 +468,7 @@ export default {
       mindlabs: false,
       cleanhub: false,
       onhand: false,
+      cpr: false,
       cards: [
         {
           image: "../images/benefex-white.png",
@@ -448,17 +476,17 @@ export default {
             "Benefex build workplace tech that transforms the employee experience, and focuses on improving employee wellbeing.",
           cols4: true,
           icon1: "mdi-account-group",
-          label1: "24 key new hires",
+          label1: "25 key new hires",
           icon2: "mdi-clock-check",
           label2: "Hire time reduced from 12+ weeks to 4-6",
           icon3: "mdi-charity",
           label3: "Built out leadership team",
           icon4: "mdi-check-circle",
           label4: "100% success rate across all hires",
-          hiresMade: "24",
+          hiresMade: "25",
           subtitle: "Hires made by Confido",
           overviewText:
-            "Benefex needed a partner that knew how to attract product-minded engineers in a small local market. Since summer 2018, we’ve sourced over 24 Benefex-ers across Dev, QA, Platform, Product and UX. We’ve built out their next leadership layer with a VP of Engineering and Chapter Leads, and hired their third squad to build a brand new product.",
+            "Benefex needed a partner that knew how to attract product-minded engineers in a small local market. Since summer 2018, we’ve sourced 25 Benefex-ers across Dev, QA, Platform, Product and UX. We’ve built out their next leadership layer with a VP of Engineering and Chapter Leads, and hired their third squad to build a brand-new product. ",
           quote:
             "Confido have partnered with us in the truest sense. The team have taken the time to get a deep understanding of our culture and vision for the future of Benefex, helping us grow our Product Engineering tribe more in the last six months than we achieved with others over the previous twelve. Whether the role has been in Engineering, Product or Leadership, Confido have demonstrated an emotional intelligence with candidates that I have not seen previously. In a location with a limited pool of majority passive candidates, Confido have shown a unique ability to marry the needs of Benefex and a candidate’s true career drivers. This has resulted in not just an increase to our tribe’s numbers, but enabled us to find true Benefex’ers who have both the skillset, drive to improve themselves and personality that makes our culture what it is today. In my role as CTO, Confido have been a reliable source of market trends and a constructive sounding board for what the market can provide at a particular time. This has enabled us to find the right balance in the roles and skillsets we use to grow Benefex in a sustainable way. Without them, I am sure we wouldn’t be as far along our journey as we currently are; long may it continue.",
           person: "Paul Smith – CTO, Benefex",
@@ -683,17 +711,17 @@ export default {
           title:
             "allplants deliver 5* plant-based meals nationwide; making eating more plants easy, exciting and delicious, to help both people and the planet thrive. ",
           icon1: "mdi-clock-outline",
-          label1: "Critical hire made within 4 weeks",
+          label1: "Average time to hire 4 weeks",
           icon2: "mdi-account-group-outline",
-          label2: "Diverse candidate pipeline",
+          label2: "Average 3.5 candidates submitted per hire",
           icon3: "mdi-calendar-outline",
           label3: "100% CV to interview ratio",
           icon4: "",
           label4: "",
-          hiresMade: "1",
+          hiresMade: "10",
           subtitle: "Key hire made by Confido",
           overviewText:
-            "In preparation for Series B funding allplants needed to make a critical backend engineer hire. After the position had been open for months allplants needed a partner that could help them make the hire quickly and efficiently whilst offering candidates a great experience and focusing on pipeline diversity.",
+            "In preparation for Series B funding allplants needed to make a critical backend engineer hire. After the position had been open for months, allplants needed a partner that could help them make the hire quickly and efficiently whilst offering candidates a great experience and focusing on pipeline diversity. Pre and post Series B, allplants needed a talent partner that could help them grow across product, data and engineering. They needed to double the size of their product and engineering teams and build a new data engineering function from scratch. Partnering with the CTO, Head of Product and Director of Finance/BI, the key thing was attracting talented, mission-aligned people whilst providing a great candidate experience.  ",
           quote:
             "We had an urgent position to fill that we had been struggling with for 12 months. Confido came on and helped us to redefine the role and brief to better fit the market before carrying out a fantastic headhunting search that yielded a really diverse set of candidates. They also provided a huge amount of help with the process itself so that candidates always felt in to the loop, many of whom commenting on how well run everything was. From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.",
           person: "Adam Dunkley – Director of Technology, Allplants",
@@ -702,19 +730,19 @@ export default {
           image: "../images/mindlabs-white.png",
           title:
             "MindLabs is a live platform with video classes for your mind, designed to reduce anxiety, stress and loneliness.",
-          cols4: true,
+          cols4: false,
           icon1: "mdi-percent",
           label1: "100% CV to interview ratio",
           icon2: "mdi-account-group-outline",
           label2: "Diverse candidates hired",
-          icon3: "mdi-account-multiple-check-outline",
-          label3: "Built Product function",
-          icon4: "mdi-account-check",
-          label4: "100% success rate on hires",
-          hiresMade: "2",
+          icon3: "mdi-clock-outline",
+          label3: "Average 4-week time to hire",
+          icon4: "",
+          label4: "",
+          hiresMade: "3",
           subtitle: "Hires made by Confido",
           overviewText:
-            "Following their pre-Seed raise, we’ve helped MindLabs hire their first Product Manager to finishing building their MVP and find product market fit. Then after their Seed raise, MindLabs engaged us again to hire their Head of Product, someone to grow the product and function as they scale.",
+            "Pre-Seed, we’ve helped Mindlabs hire their first Product Manager to finishing building their MVP and find product market fit. Post-Seed, we’ve helped them build out their product and design function with a Head of Product to focus on their long-term product vision and roadmap, and Digital Designer to support sales and marketing.",
           quote:
             "Confido approached hiring for our first Product Manager with a level of rigour we hadn't experienced before from a recruiter. Straight away we noticed a difference, they felt more like an in-house recruitment expert than an external recruiter. From taking the time to fully understand our business, to vetting candidates with an extremely detailed screening call, to providing valuable market insights, to constant communication around the clock, it was a real pleasure to work with Confido. We could trust them in representing our brand and attracting high calibre candidates for what was a critical hire for us. I wouldn't hesitate in not only recommending them but working with them again as we scale our Product team.",
           person: "Adnan Ebrahim – CEO/Co-founder, MindLabs",
@@ -760,6 +788,27 @@ export default {
           quote:
             "Confido did an excellent job in making our crucial Senior Backend hire. From the very beginning their process was smooth, clear and quick. We had three candidates to interview in under two weeks and hired one soon after. Craig was a pleasure to work with, his knowledge, expertise and professionalism made this experience superb. He gave marvellous advice throughout the whole process and most importantly, delivered! We’re looking forward to working with Confido in the future to help grow our teams. onHand couldn’t have asked for a better talent partnership",
           person: "Dan Moffatt – CTO, onHand",
+        },
+        {
+          image: "../images/cpr-logo-white.svg",
+          title:
+            "Climate Policy Radar is a not-for-profit climatetech startup. They are giving policymakers, researchers and civil society tools for better policy design and accountability.",
+          cols4: false,
+          icon1: "mdi-account-group-outline",
+          label1: "Average 3 candidate shortlist per role",
+          icon2: "mdi-calendar",
+          label2: "Average 2.5 week time to hire ",
+          icon3: "mdi-percent",
+          label3: "92% CV to interview ratio t",
+          icon4: "",
+          label4: "",
+          hiresMade: "4",
+          subtitle: "Hires made by Confido",
+          overviewText:
+            "Following their Seed round, Climate Policy Radar needed to make multiple hires across their data science and software engineering team.",
+          quote:
+            "What a joy and a relief working with a professional recruiter that just gets it. Following our initial funding round, we set out to expand our core team of engineers and data scientists. This was our first time working with a recruiter and we needed someone who could balance hiring quality people in a timely manner. We spoke to a number of recruiters but felt Confido really understood what it meant to represent an impact/not-for-profit business and how to attract great people. They instantly aligned with our needs and values which quickly translated into a shortlist of quality candidates. The amount of work that went into each recruit was immense, the advice we received from Confido was golden, and even our candidates commented on how positively different it was working with Confido. Confido helped us recruit four excellent people for the team in a short period of time, all along deeply attuned to our needs.",
+          person: "Michal Nachmany – CEO & Founder, Climate Policy Radar",
         },
       ],
     };
