@@ -799,7 +799,7 @@ export default {
           icon2: "mdi-calendar",
           label2: "Average 2.5 week time to hire ",
           icon3: "mdi-percent",
-          label3: "92% CV to interview ratio t",
+          label3: "92% CV to interview ratio",
           icon4: "",
           label4: "",
           hiresMade: "4",
