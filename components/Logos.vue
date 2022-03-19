@@ -91,7 +91,7 @@
       <v-dialog max-width="1000px" overflow-hidden v-model="cleanhub">
         <template v-slot:activator="{ on, attrs }">
           <v-img
-            :src="require('../static/images/cleanhub-logo.png')"
+            :src="require('../static/images/cleanhub-black.png')"
             max-width="160"
             contain
             class="mx-4 mx-sm-8 my-8 my-md-4 pointer"

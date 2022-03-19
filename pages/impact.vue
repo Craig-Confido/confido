@@ -283,7 +283,7 @@ export default {
           link: "https://ecologi.com/confidotalent",
         },
         {
-          logo: "../images/cleanhub-logo.png",
+          logo: "../images/cleanhub-black.png",
           task: "3,000 kg of ocean-bound plastic recovered each year",
           title: "About Cleanhub",
           image: "../images/cleanhub.png",

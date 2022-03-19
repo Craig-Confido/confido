@@ -361,7 +361,7 @@ export default {
         {
           content:
             "Working with Confido was amazing. The things I appreciated most were the diligence and flexibility. They held us accountable throughout the entire process to make it was a great experience for candidates as well. I'm looking forward to welcoming our new team members soon and working with Craig as we continue to grow.",
-          logo: "../images/cleanhub-logo.png",
+          logo: "../images/cleanhub-black.png",
           advocate: "Joel Tasche – CEO/Founder, CLEANHUB",
         },
         {
