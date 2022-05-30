@@ -41,15 +41,15 @@
       <v-col cols="12">
         <v-card class="pa-8 my-2 text-left card-shadow">
           <v-card-title class="headline font-weight-bold primary--text">
-            Confido's commitments
+            Confido's 2022 commitments
           </v-card-title>
           <v-card-text class="text-h6 primary--text">
             Each year we choose four of the UN's SDG's (Sustainable Development
             Goals) to support. This year, we're focussing on:
             <strong class="secondary--text"
-              >No Poverty, Clean Water, Climate Action,</strong
+              >Gender Equality, No Poverty, Climate Action</strong
             >
-            and <strong class="secondary--text">Life Below Water</strong>.
+            and <strong class="secondary--text">and Life Below Water.</strong>.
           </v-card-text>
           <!-- <v-row class="primary--text mx-auto text-center mt-4">
             <v-col cols="6" sm="3" class="d-flex mx-auto">
@@ -102,14 +102,14 @@
               <v-icon class="secondary--text text-h2">
                 mdi-account-group
               </v-icon>
-              <h6 class="text-h6">Organising four Impact Days a year</h6>
+              <h6 class="text-h6">Organising 4 volunteering days a year</h6>
             </v-col>
             <v-col cols="12" md="4">
               <v-icon class="secondary--text text-h2">
                 mdi-charity
               </v-icon>
               <h6 class="text-h6">
-                Donating at least 2% of our profits to charity
+                Donating 1 - 2% of our profits to charity
               </h6>
             </v-col>
           </v-row>
@@ -148,8 +148,9 @@
               <v-img
                 :src="`${impact.image}`"
                 width="160"
-                contain
-                class="mx-auto"
+                height="160"
+                fill
+                class="mx-auto rounded-lg"
               />
               <v-card-text class="text-h6 secondary--text text-center">
                 <strong>{{ impact.task }}</strong>
@@ -176,6 +177,65 @@
             initiatives and company donations. We’ll be sharing a transparent
             overview of everything we’ve achieved in regular impact reports to
             show how we want to help build a better future in every way.
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row class="mx-0 mx-md-6 mx-lg-16 mt-md-8">
+      <v-col cols="12">
+        <v-card
+          color="white"
+          class="pa-8 my-2 primary--text text-left card-shadow"
+        >
+          <v-card-title class="headline font-weight-bold">
+            Team volunteering days.
+          </v-card-title>
+          <v-card-text class="text-md-h6 primary--text">
+            Once a quarter we organise team impact days to further support our
+            chosen Sustainable Development Goals. We’re also planning two
+            fundraising events for 2022.
+          </v-card-text>
+          <v-card-text>
+            <v-img
+              src="https://imgix.cosmicjs.com/0c9f80b0-e009-11ec-bb19-d9085ce408df-1.jpg"
+              class="mb-4 rounded-sm"
+            />
+            <v-img
+              src="https://imgix.cosmicjs.com/0be00140-e009-11ec-bb19-d9085ce408df-2.png 
+              "
+              class="mb-4 rounded-sm"
+            />
+            <v-img
+              src="https://imgix.cosmicjs.com/0b5fadb0-e009-11ec-bb19-d9085ce408df-3.jpg
+              "
+              class="rounded-sm"
+            />
+          </v-card-text>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row class="mx-0 mx-md-6 mx-lg-16 mt-md-8">
+      <v-col cols="12">
+        <v-card
+          color="secondary"
+          class="pa-8 my-2 white--text text-left card-shadow"
+        >
+          <v-card-title class="headline font-weight-bold">
+            Our 2021 impact report.
+          </v-card-title>
+          <v-card-text class="text-md-h6 white--text">
+            <v-btn>
+              <a
+                href="https://cdn.cosmicjs.com/ea5976c0-e006-11ec-bb19-d9085ce408df-Confido-impact-report.pdf"
+                type="button"
+                target="_blank"
+                style="text-decoration: none;"
+              >
+                Download our impact report
+              </a>
+            </v-btn>
           </v-card-text>
         </v-card>
       </v-col>
@@ -254,9 +314,38 @@ export default {
     return {
       impacts: [
         {
+          logo: "../images/dressCode-logo.svg",
+          task: "£50 monthly donation to help close the gender gap in STEM",
+          title: "About dressCode",
+          image: "../images/dressCode.png",
+          content:
+            "dressCode aspires to make a dent in the Computing Science gender gap; with the aim of engaging, inspiring and raising awareness of opportunities in the world of tech. They do this through free online resources for secondary school aged girls.",
+          link: "https://dresscode.org.uk/",
+        },
+        {
+          logo: "../images/bgp-logo.webp",
+          task:
+            "£50 monthly donation to help provide period products and education to those who need it most",
+          title: "About Bloody Good Period",
+          image: "../images/Bloody Good Period.webp",
+          content:
+            "Bloody Good Period fight for menstrual equity and the rights of all people who bleed. They give period products to those who can’t afford them and provide menstrual education to those less likely to access it.",
+          link: "https://www.bloodygoodperiod.com/",
+        },
+        {
+          logo: "../images/women-for-women-logo.gif",
+          task:
+            "£50 monthly donation to help women survivors of war rebuild their lives",
+          title: "About Women for Women",
+          image: "../images/Women For Women.jpeg",
+          content:
+            "Women For Women helps female survivors of war rebuild their lives. They do this through programmes and support groups across eight conflict affected countries.",
+          link: "https://womenforwomen.org.uk/",
+        },
+        {
           logo: "../images/beam-logo.png",
           task:
-            "Supporting at least one homeless person a month back into work",
+            "£200 monthly donation to help homeless people get back into work",
           title: "About Beam",
           image: "../images/beam.png",
           content:
@@ -264,14 +353,34 @@ export default {
           link: "https://beam.org/ConfidoTalent",
         },
         {
-          logo: "../images/charity-water-logo.png",
-          task: "Providing 50 people with clean drinking water for 10 years",
-          title: "About charity: water",
-          image: "../images/charity-water.png",
+          logo: "../images/bap-logo.jpeg",
+          task:
+            "£1,200 donation, or Gold Membership, to support projects across the world",
+          title: "About Business Against Poverty",
+          image: "../images/Business Against Poverty.png",
           content:
-            "By donating to charity: water's The Spring community, each year we’re able to help 50 people gain access to clean drinking water. Over 47000 people will get clean water each month thanks to Spring members.",
-          link: "https://www.charitywater.org/confido-talent",
+            "Business against Poverty is a community of business leaders committed to ethical and sustainable standards, all looking to use their companies to address issues of poverty and take action.",
+          link: "https://businessagainstpoverty.com/",
         },
+        {
+          logo: "../images/cool-earth-logo.svg",
+          task:
+            "£50 monthly donation to help to protect rainforest and fight the climate crisis",
+          title: "About Business Against Poverty",
+          image: "../images/Cool Earth.webp",
+          content:
+            "Cool Earth backs people to protect rainforest and fight the climate crisis. They raise and give cash directly, and partner with indigenous people and local communities on projects that tackle the root causes of deforestation.",
+          link: "https://www.coolearth.org/",
+        },
+        // {
+        //   logo: "../images/charity-water-logo.png",
+        //   task: "Providing 50 people with clean drinking water for 10 years",
+        //   title: "About charity: water",
+        //   image: "../images/charity-water.png",
+        //   content:
+        //     "By donating to charity: water's The Spring community, each year we’re able to help 50 people gain access to clean drinking water. Over 47000 people will get clean water each month thanks to Spring members.",
+        //   link: "https://www.charitywater.org/confido-talent",
+        // },
         {
           logo: "../images/ecologi-logo.png",
           task:
@@ -284,7 +393,7 @@ export default {
         },
         {
           logo: "../images/cleanhub-black.png",
-          task: "3,000 kg of ocean-bound plastic recovered each year",
+          task: "Recovering 1,000 kg of ocean-bound plastic this year",
           title: "About Cleanhub",
           image: "../images/cleanhub.png",
           content:
@@ -300,6 +409,16 @@ export default {
           content:
             "onHand (otherwise known as ‘the Uber for volunteering’) is the volunteering and climate impact platform for businesses and individuals. Through the onHand app, you can help your local communities and have global impact. ",
           link: "https://www.beonhand.co.uk/",
+        },
+        {
+          logo: "../images/nspcc-logo.png",
+          task:
+            "£50 monthly donation to help the NSPCC team protect children and prevent abuse",
+          title: "About NSPCC",
+          image: "../images/NSPCC.jpeg",
+          content:
+            "NSPCC is the UK's leading children’s charity. They’ve been looking out for children for over 130 years through their helplines, campaigns, plus educational resources and school visits.",
+          link: "https://www.nspcc.org.uk/",
         },
       ],
       quotes: [
