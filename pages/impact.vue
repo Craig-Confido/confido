@@ -49,7 +49,7 @@
             <strong class="secondary--text"
               >Gender Equality, No Poverty, Climate Action</strong
             >
-            and <strong class="secondary--text">and Life Below Water.</strong>.
+            and <strong class="secondary--text">and Life Below Water</strong>.
           </v-card-text>
           <!-- <v-row class="primary--text mx-auto text-center mt-4">
             <v-col cols="6" sm="3" class="d-flex mx-auto">
@@ -102,14 +102,16 @@
               <v-icon class="secondary--text text-h2">
                 mdi-account-group
               </v-icon>
-              <h6 class="text-h6">Organising 4 volunteering days a year</h6>
+              <h6 class="text-h6">
+                4 volunteering and 2 fundraising days a year
+              </h6>
             </v-col>
             <v-col cols="12" md="4">
               <v-icon class="secondary--text text-h2">
                 mdi-charity
               </v-icon>
               <h6 class="text-h6">
-                Donating 1 - 2% of our profits to charity
+                Donating at least 2% of our profits to charity
               </h6>
             </v-col>
           </v-row>
@@ -197,20 +199,37 @@
             fundraising events for 2022.
           </v-card-text>
           <v-card-text>
-            <v-img
-              src="https://imgix.cosmicjs.com/0c9f80b0-e009-11ec-bb19-d9085ce408df-1.jpg"
-              class="mb-4 rounded-sm"
-            />
-            <v-img
-              src="https://imgix.cosmicjs.com/0be00140-e009-11ec-bb19-d9085ce408df-2.png 
+            <v-row class="mx-0 mx-md-6 mx-lg-16 mt-md-8">
+              <v-col cols="12" md="6">
+                <v-img
+                  src="https://imgix.cosmicjs.com/0c9f80b0-e009-11ec-bb19-d9085ce408df-1.jpg"
+                  class="mb-4 rounded-sm"
+                  width="100%"
+                  height="320"
+                  fill
+                />
+              </v-col>
+              <v-col cols="12" md="6">
+                <v-img
+                  src="https://imgix.cosmicjs.com/0be00140-e009-11ec-bb19-d9085ce408df-2.png 
               "
-              class="mb-4 rounded-sm"
-            />
-            <v-img
-              src="https://imgix.cosmicjs.com/0b5fadb0-e009-11ec-bb19-d9085ce408df-3.jpg
+                  class="mb-4 rounded-sm"
+                  width="100%"
+                  height="320"
+                  fill
+                />
+              </v-col>
+              <v-col cols="12" md="6" class="flex mx-auto">
+                <v-img
+                  src="https://imgix.cosmicjs.com/b9db8500-e011-11ec-bb19-d9085ce408df-4.png
               "
-              class="rounded-sm"
-            />
+                  class="rounded-sm"
+                  width="100%"
+                  height="320"
+                  fill
+                />
+              </v-col>
+            </v-row>
           </v-card-text>
         </v-card>
       </v-col>
