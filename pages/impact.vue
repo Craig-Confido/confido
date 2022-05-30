@@ -205,7 +205,6 @@
                   src="https://imgix.cosmicjs.com/0c9f80b0-e009-11ec-bb19-d9085ce408df-1.jpg"
                   class="mb-4 rounded-sm"
                   height="400"
-                  fill
                 />
               </v-col>
               <v-col cols="12" md="6" lg="6">
@@ -214,22 +213,20 @@
               "
                   class="mb-4 rounded-sm"
                   height="400"
-                  fill
                 />
               </v-col>
             </v-row>
             <v-row justify="center">
-              <v-col cols="0" sm="0" md="3"></v-col>
+              <!-- <v-col cols="0" sm="0" md="3"></v-col> -->
               <v-col cols="12" md="6" lg="6">
                 <v-img
                   src="https://imgix.cosmicjs.com/b9db8500-e011-11ec-bb19-d9085ce408df-4.png
               "
                   class="rounded-sm"
                   height="400"
-                  fill
                 />
               </v-col>
-              <v-col cols="0" sm="0" md="3"></v-col>
+              <!-- <v-col cols="0" sm="0" md="3"></v-col> -->
             </v-row>
           </v-card-text>
         </v-card>
