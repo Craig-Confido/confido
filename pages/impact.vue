@@ -219,6 +219,8 @@
                   fill
                 />
               </v-col>
+            </v-row>
+            <v-row class="mx-0 mx-md-6 mx-lg-16 mt-md-8">
               <v-col cols="12" md="6" lg="6" class="flex mx-auto">
                 <v-img
                   src="https://imgix.cosmicjs.com/b9db8500-e011-11ec-bb19-d9085ce408df-4.png
