@@ -218,9 +218,9 @@
                 />
               </v-col>
             </v-row>
-            <v-row>
-              <v-col cols="0" md="3"></v-col>
-              <v-col cols="12" md="6" lg="6" class="flex mx-auto">
+            <v-row justify="center">
+              <v-col cols="0" sm="0" md="3"></v-col>
+              <v-col cols="12" md="6" lg="6">
                 <v-img
                   src="https://imgix.cosmicjs.com/b9db8500-e011-11ec-bb19-d9085ce408df-4.png
               "
@@ -229,7 +229,7 @@
                   fill
                 />
               </v-col>
-              <v-col cols="0" md="3"></v-col>
+              <v-col cols="0" sm="0" md="3"></v-col>
             </v-row>
           </v-card-text>
         </v-card>
