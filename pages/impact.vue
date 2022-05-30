@@ -204,7 +204,7 @@
                 <v-img
                   src="https://imgix.cosmicjs.com/0c9f80b0-e009-11ec-bb19-d9085ce408df-1.jpg"
                   class="mb-4 rounded-sm"
-                  height="320"
+                  height="400"
                   fill
                 />
               </v-col>
@@ -213,7 +213,7 @@
                   src="https://imgix.cosmicjs.com/0be00140-e009-11ec-bb19-d9085ce408df-2.png 
               "
                   class="mb-4 rounded-sm"
-                  height="320"
+                  height="400"
                   fill
                 />
               </v-col>
@@ -225,7 +225,7 @@
                   src="https://imgix.cosmicjs.com/b9db8500-e011-11ec-bb19-d9085ce408df-4.png
               "
                   class="rounded-sm"
-                  height="320"
+                  height="400"
                   fill
                 />
               </v-col>
