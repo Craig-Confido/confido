@@ -199,12 +199,11 @@
             fundraising events for 2022.
           </v-card-text>
           <v-card-text>
-            <v-row class="mx-0 mx-md-6 mx-lg-16 mt-md-8">
+            <v-row>
               <v-col cols="12" md="6" lg="6">
                 <v-img
                   src="https://imgix.cosmicjs.com/0c9f80b0-e009-11ec-bb19-d9085ce408df-1.jpg"
                   class="mb-4 rounded-sm"
-                  width="100%"
                   height="320"
                   fill
                 />
@@ -214,23 +213,23 @@
                   src="https://imgix.cosmicjs.com/0be00140-e009-11ec-bb19-d9085ce408df-2.png 
               "
                   class="mb-4 rounded-sm"
-                  width="100%"
                   height="320"
                   fill
                 />
               </v-col>
             </v-row>
-            <v-row class="mx-0 mx-md-6 mx-lg-16 mt-md-8">
+            <v-row>
+              <v-col cols="0" md="3"></v-col>
               <v-col cols="12" md="6" lg="6" class="flex mx-auto">
                 <v-img
                   src="https://imgix.cosmicjs.com/b9db8500-e011-11ec-bb19-d9085ce408df-4.png
               "
                   class="rounded-sm"
-                  width="100%"
                   height="320"
                   fill
                 />
               </v-col>
+              <v-col cols="0" md="3"></v-col>
             </v-row>
           </v-card-text>
         </v-card>
