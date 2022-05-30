@@ -200,7 +200,7 @@
           </v-card-text>
           <v-card-text>
             <v-row class="mx-0 mx-md-6 mx-lg-16 mt-md-8">
-              <v-col cols="12" md="6">
+              <v-col cols="12" md="6" lg="6">
                 <v-img
                   src="https://imgix.cosmicjs.com/0c9f80b0-e009-11ec-bb19-d9085ce408df-1.jpg"
                   class="mb-4 rounded-sm"
@@ -209,7 +209,7 @@
                   fill
                 />
               </v-col>
-              <v-col cols="12" md="6">
+              <v-col cols="12" md="6" lg="6">
                 <v-img
                   src="https://imgix.cosmicjs.com/0be00140-e009-11ec-bb19-d9085ce408df-2.png 
               "
@@ -219,7 +219,7 @@
                   fill
                 />
               </v-col>
-              <v-col cols="12" md="6" class="flex mx-auto">
+              <v-col cols="12" md="6" lg="6" class="flex mx-auto">
                 <v-img
                   src="https://imgix.cosmicjs.com/b9db8500-e011-11ec-bb19-d9085ce408df-4.png
               "
@@ -248,7 +248,7 @@
             <v-btn>
               <a
                 href="https://cdn.cosmicjs.com/ea5976c0-e006-11ec-bb19-d9085ce408df-Confido-impact-report.pdf"
-                type="button"
+                role="button"
                 target="_blank"
                 style="text-decoration: none;"
               >
