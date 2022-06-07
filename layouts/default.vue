@@ -113,6 +113,8 @@
     </v-app-bar>
 
     <v-main id="intro">
+          <div class="jobsforgoodbanner" style="background-color:#5e3aed; padding:.75rem; text-align:center;"><p style="margin:0px; padding:0px; color:#FFF; font-weight:bold;">🌎💛 Find the best jobs in sustainability, social impact and  more at <a style="color:#f8f42b;" href="https://www.jobsforgood.io" target="_blank">Jobs for Good  ></a></p></div>
+
       <nuxt />
 
       <v-snackbar

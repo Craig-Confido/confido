@@ -1,6 +1,5 @@
 <template>
   <v-container fluid class="pa-0 ma-0">
-    <div class="jobsforgoodbanner" style="background-color:#5e3aed; padding:.75rem; text-align:center;"><p style="margin:0px; padding:0px; color:#FFF; font-weight:bold;">Find the best jobs in sustainability, social impact and more at Jobs for <a style="color:#f8f42b;" href="https://www.jobsforgood.io" target="_blank">Good ></a></p></div>
     <section class="mx-4 mx-lg-16">
       <v-row class="text-left mt-4">
         <v-img
