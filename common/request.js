@@ -24,10 +24,11 @@ const bucket = api.bucket({
 
 function getBlogs () {
   const params = {
-    type_slug: 'posts',
-    limit: '100'
+    query: {
+      type: 'posts'
+    },
   };
-  return bucket.getObjectsByType(params);
+  return bucket.getObjects(params);
 }
 
 // function getBlogsFeatured () {
