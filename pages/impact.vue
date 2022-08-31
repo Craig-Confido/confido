@@ -4,7 +4,7 @@
       <v-row class="text-left mt-4">
         <v-img
           :src="require('../static/images/impactImage.png')"
-          class="d-flex d-md-none mx-md-16 "
+          class="d-flex d-md-none mx-md-16"
           alt="image of people"
           height="100"
           width="100"
@@ -12,7 +12,7 @@
         />
         <v-col cols="12" sm="7" class="mt-md-16">
           <h1
-            class="text-h3  text-md-h2 font-weight-bold"
+            class="text-h3 text-md-h2 font-weight-bold"
             aria-label="Intro text"
           >
             Our commitment to balancing planet and profit.
@@ -91,12 +91,8 @@
           </v-card-text>
           <v-row class="primary--text mx-auto text-center mt-4">
             <v-col cols="12" md="4">
-              <v-icon class="secondary--text text-h2">
-                mdi-leaf
-              </v-icon>
-              <h6 class="text-h6">
-                Becoming carbon neutral and plastic-free
-              </h6>
+              <v-icon class="secondary--text text-h2"> mdi-leaf </v-icon>
+              <h6 class="text-h6">Becoming carbon neutral and plastic-free</h6>
             </v-col>
             <v-col cols="12" md="4">
               <v-icon class="secondary--text text-h2">
@@ -107,9 +103,7 @@
               </h6>
             </v-col>
             <v-col cols="12" md="4">
-              <v-icon class="secondary--text text-h2">
-                mdi-charity
-              </v-icon>
+              <v-icon class="secondary--text text-h2"> mdi-charity </v-icon>
               <h6 class="text-h6">
                 Donating at least 2% of our profits to charity
               </h6>
@@ -130,7 +124,7 @@
     </v-row>
 
     <v-row class="mx-0 mx-md-6 mx-lg-16">
-      <v-col cols="12" v-for="impact in impacts" :key="impact.title">
+      <v-col cols="12" v-for="(impact, index) in impacts" :key="index">
         <v-card
           class="d-flex flex-column pa-8 my-auto text-left card-shadow"
           min-height="360"
@@ -217,7 +211,6 @@
               </v-col>
             </v-row>
             <v-row justify="center">
-              <!-- <v-col cols="0" sm="0" md="3"></v-col> -->
               <v-col cols="12" md="6" lg="6">
                 <v-img
                   src="https://imgix.cosmicjs.com/b9db8500-e011-11ec-bb19-d9085ce408df-4.png
@@ -226,7 +219,6 @@
                   height="400"
                 />
               </v-col>
-              <!-- <v-col cols="0" sm="0" md="3"></v-col> -->
             </v-row>
           </v-card-text>
         </v-card>
@@ -248,7 +240,7 @@
                 href="https://cdn.cosmicjs.com/ea5976c0-e006-11ec-bb19-d9085ce408df-Confido-impact-report.pdf"
                 role="button"
                 target="_blank"
-                style="text-decoration: none;"
+                style="text-decoration: none"
               >
                 Download our impact report
               </a>
@@ -257,34 +249,6 @@
         </v-card>
       </v-col>
     </v-row>
-
-    <!-- <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
-      <v-col cols="12">
-        <h1>Team impact days.</h1>
-      </v-col>
-    </v-row>
-    <v-row class="text-left mx-0 mx-md-6 mx-lg-16">
-      <v-col cols="12">
-        <v-row>
-          <v-col cols="12" md="3">
-            <v-card height="340" width="340">
-              <v-card-text class="d-flex mx-auto my-auto">
-                Placeholder
-              </v-card-text>
-            </v-card>
-          </v-col>
-          <v-col cols="12" md="6">
-            <p class="text-md-h6 primary--text">
-              Once a quarter we organise team impact days to further support our
-              chosen Sustainable Development Goals. For our first event, we
-              (more info, then link to relevant blog post)
-            </p>
-            <v-btn color="secondary text--white">Read our impact report</v-btn>
-          </v-col>
-        </v-row>
-      </v-col>
-    </v-row> -->
-
     <v-row id="getInTouch" class="mx-0 mx-md-6 mx-lg-16 mb-12">
       <v-col cols="12">
         <GetInTouch :contact="contact" />
@@ -341,8 +305,7 @@ export default {
         },
         {
           logo: "../images/bgp-logo.webp",
-          task:
-            "£50 monthly donation to help provide period products and education to those who need it most",
+          task: "£50 monthly donation to help provide period products and education to those who need it most",
           title: "About Bloody Good Period",
           image: "../images/Bloody Good Period.webp",
           content:
@@ -351,8 +314,7 @@ export default {
         },
         {
           logo: "../images/women-for-women-logo.gif",
-          task:
-            "£50 monthly donation to help women survivors of war rebuild their lives",
+          task: "£50 monthly donation to help women survivors of war rebuild their lives",
           title: "About Women for Women",
           image: "../images/Women For Women.jpeg",
           content:
@@ -361,8 +323,7 @@ export default {
         },
         {
           logo: "../images/beam-logo.png",
-          task:
-            "£200 monthly donation to help homeless people get back into work",
+          task: "£200 monthly donation to help homeless people get back into work",
           title: "About Beam",
           image: "../images/beam.png",
           content:
@@ -371,8 +332,7 @@ export default {
         },
         {
           logo: "../images/bap-logo.jpeg",
-          task:
-            "£1,200 donation, or Gold Membership, to support projects across the world",
+          task: "£1,200 donation, or Gold Membership, to support projects across the world",
           title: "About Business Against Poverty",
           image: "../images/Business Against Poverty.png",
           content:
@@ -381,8 +341,7 @@ export default {
         },
         {
           logo: "../images/cool-earth-logo.svg",
-          task:
-            "£50 monthly donation to help to protect rainforest and fight the climate crisis",
+          task: "£50 monthly donation to help to protect rainforest and fight the climate crisis",
           title: "About Business Against Poverty",
           image: "../images/Cool Earth.webp",
           content:
@@ -400,8 +359,7 @@ export default {
         // },
         {
           logo: "../images/ecologi-logo.png",
-          task:
-            "Offsetting our carbon footprint by planting 12 trees per employee per month",
+          task: "Offsetting our carbon footprint by planting 12 trees per employee per month",
           title: "About Ecologi",
           image: "../images/ecologi.png",
           content:
@@ -419,8 +377,7 @@ export default {
         },
         {
           logo: "../images/onhand-logo.png",
-          task:
-            "Bi-weekly volunteering missions completed by each member of the team",
+          task: "Bi-weekly volunteering missions completed by each member of the team",
           title: "About onHand",
           image: "../images/onhand.png",
           content:
@@ -429,8 +386,7 @@ export default {
         },
         {
           logo: "../images/nspcc-logo.png",
-          task:
-            "£50 monthly donation to help the NSPCC team protect children and prevent abuse",
+          task: "£50 monthly donation to help the NSPCC team protect children and prevent abuse",
           title: "About NSPCC",
           image: "../images/NSPCC.jpeg",
           content:
