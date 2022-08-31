@@ -1,8 +1,3 @@
-import colors from "vuetify/es5/util/colors";
-import axios from "axios";
-// import getObjects from './queries/getObjects'
-// import ApolloClient from "apollo-boost";
-
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: "static",
@@ -80,8 +75,7 @@ export default {
       { rel: "preconnect", href: "https://fonts.gstatic.com" },
       {
         rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap",
       },
       // { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css' },
       {

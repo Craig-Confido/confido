@@ -9,7 +9,7 @@
         />
         <v-col cols="12" sm="7" class="mt-md-16">
           <h1
-            class="text-h3  text-md-h2 font-weight-bold"
+            class="text-h3 text-md-h2 font-weight-bold"
             aria-label="Intro text"
           >
             Careers with Confido.
@@ -81,9 +81,7 @@
                       <v-icon class="secondary--text text-h3">
                         mdi-license
                       </v-icon>
-                      <p class="primary--text">
-                        Confido founded
-                      </p>
+                      <p class="primary--text">Confido founded</p>
                     </v-col>
                     <v-col cols="12" md="6">
                       <v-icon class="secondary--text text-h3">
@@ -132,9 +130,7 @@
                       <v-icon class="secondary--text text-h3">
                         mdi-trophy
                       </v-icon>
-                      <p class="primary--text">
-                        Record year for the team
-                      </p>
+                      <p class="primary--text">Record year for the team</p>
                     </v-col>
                   </v-row>
                 </v-col>
@@ -179,7 +175,7 @@
                 impact initiatives – read more about that,
                 <nuxt-link
                   to="/impact"
-                  style="text-decoration: none;"
+                  style="text-decoration: none"
                   class="secondary--text"
                   >here</nuxt-link
                 >.
@@ -195,17 +191,13 @@
                 class="primary--text mx-auto text-center mt-4 d-flex justify-center"
               >
                 <v-col cols="12" md="3">
-                  <v-icon class="secondary--text text-h2">
-                    mdi-rocket
-                  </v-icon>
+                  <v-icon class="secondary--text text-h2"> mdi-rocket </v-icon>
                   <h3 class="text-md-h6">
                     Join a company using their business as a force for good
                   </h3>
                 </v-col>
                 <v-col cols="12" md="3">
-                  <v-icon class="secondary--text text-h2">
-                    mdi-charity
-                  </v-icon>
+                  <v-icon class="secondary--text text-h2"> mdi-charity </v-icon>
                   <h3 class="text-md-h6">
                     Have a positive impact on the world through the work you do
                   </h3>
@@ -228,15 +220,13 @@
         <v-card class="pa-8 my-2 text-left card-shadow">
           <v-row class="primary--text">
             <v-col
-              v-for="benefit in benefits"
-              :key="benefit"
+              v-for="(benefit, index) in benefits"
+              :key="index"
               cols="12"
               sm="6"
               class="d-flex align-center"
             >
-              <v-icon class="secondary--text text-h4 pr-2">
-                mdi-check
-              </v-icon>
+              <v-icon class="secondary--text text-h4 pr-2"> mdi-check </v-icon>
               <span class="text-h6">
                 {{ benefit.label }}
               </span>
@@ -283,14 +273,14 @@
             <h3>
               Can’t see something that suits you? Drop us a note on
               <a
-                style="text-decoration: none;"
+                style="text-decoration: none"
                 href="mailto:contact@confidotalent.com?subject=Open%20roles"
                 class="secondary--text"
                 >contact@confidotalent.com</a
               >, we’d love to hear from you.
             </h3>
           </v-col>
-          <v-col v-for="role in roles" :key="role._id" cols="12" md="4">
+          <v-col v-for="role in roles" :key="role.id" cols="12" md="4">
             <LiveRoles :role="role" />
           </v-col>
         </v-row>
@@ -300,7 +290,7 @@
             <h3>
               Can’t see something that suits you? Drop us a note on
               <a
-                style="text-decoration: none;"
+                style="text-decoration: none"
                 href="mailto:contact@confidotalent.com?subject=Open%20roles"
                 class="secondary--text"
                 >contact@confidotalent.com</a
@@ -399,7 +389,7 @@ export default {
           query: {
             type: "careers",
           },
-          props: "_id,slug,title,content,metadata,created_at,modified_at",
+          props: "id,slug,title,content,metadata,created_at,modified_at",
           sort: "-created_at",
         })
         .then((data) => {

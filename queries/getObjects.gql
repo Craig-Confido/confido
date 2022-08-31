@@ -1,11 +1,13 @@
 {
   getObjects(
     bucket_slug: "confido"
-    input: 
-      { limit: 50, read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn", type: "posts" }
+    input: {
+      read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn"
+      type: "posts"
+    }
   ) {
     objects {
-      _id
+      id
       slug
       title
       content
