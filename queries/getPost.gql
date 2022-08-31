@@ -1,17 +1,13 @@
 query getPost($slug: String!) {
-  getObjects(
+  getObject(
     bucket_slug: "confido"
-    read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn"
     input: {
-      query: { type: "posts", slug: $slug }
-      props: "title,content,metadata"
+      slug: $slug
+      read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn"
     }
   ) {
-    objects {
-      id
-      title
-      content
-      metadata
-    }
+    title
+    content
+    metadata
   }
 }

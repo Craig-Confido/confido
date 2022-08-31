@@ -47,17 +47,17 @@
       </v-col>
     </v-row>
     <section class="ma-4 ma-lg-16">
-      <v-chip v-on:click="filter = 'all'" :class="{ primary: filter === 'all' }"
+      <v-chip @click="filter = 'all'" :class="{ primary: filter === 'all' }"
         >All</v-chip
       >
       <v-chip
-        v-on:click="filter = 'case_study'"
+        @click="filter = 'case_study'"
         :class="{ primary: filter === 'case_study' }"
         >Case studies</v-chip
       >
       <v-chip
-        v-on:click="filter = 'artciles'"
-        :class="{ primary: filter === 'artciles' }"
+        @click="filter = 'articles'"
+        :class="{ primary: filter === 'articles' }"
         >Articles</v-chip
       >
 

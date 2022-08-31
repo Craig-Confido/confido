@@ -1,11 +1,14 @@
 {
   getObjects(
     bucket_slug: "confido"
-    read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn"
-    input: { query: { type: "posts" } }
+    input: {
+      read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn"
+      type: "posts"
+    }
   ) {
     objects {
       id
+      slug
       title
       content
       metadata
