@@ -553,7 +553,7 @@ export default {
       startups: {},
       benefex: false,
       thirdSpace: false,
-      visionBox: false,
+      allplants: false,
       curve: false,
       unmind: false,
       feedr: false,
