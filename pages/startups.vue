@@ -1,5 +1,9 @@
 <template>
-  <v-container fluid class="pa-0 ma-0">
+  <v-container
+    fluid
+    class="pa-0 ma-0"
+    v-if="home.metadata && startups.metadata"
+  >
     <section class="mx-4 mx-lg-16">
       <v-row class="text-left mt-4">
         <v-img
@@ -12,7 +16,7 @@
             class="text-h3 text-md-h2 font-weight-bold"
             aria-label="Intro text"
           >
-            Finally, a talent partner who truly understands startups.
+            {{ startups.title }}
           </h1>
           <h2 class="text-h5 my-8">
             Whether you're making a critical hire, building a core team or
@@ -65,28 +69,28 @@
         <v-icon class="text-h2 white--text mb-2">
           mdi-rocket-launch-outline
         </v-icon>
-        <h1>25+</h1>
+        <h1>{{ home.metadata.stats.startups_scale }}</h1>
         <h3>Startups scaled</h3>
       </v-col>
       <v-col cols="6" sm="3" class="px-auto mx-auto">
         <v-icon class="text-h2 white--text mb-2">
           mdi-account-group-outline
         </v-icon>
-        <h1>130+</h1>
+        <h1>{{ home.metadata.stats.hires_made }}</h1>
         <h3>Hires made</h3>
       </v-col>
       <v-col cols="6" sm="3" class="px-auto mx-auto mt-2 mt-md-none">
         <v-icon class="text-h2 white--text mb-2">
           mdi-clock-check-outline
         </v-icon>
-        <h1>4 weeks</h1>
+        <h1>{{ home.metadata.stats.time_to_hire }} weeks</h1>
         <h3>Average time to hire</h3>
       </v-col>
       <v-col cols="6" sm="3" class="px-auto mx-auto mt-2 mt-md-none">
         <v-icon class="text-h2 white--text mb-2">
           mdi-check-circle-outline
         </v-icon>
-        <h1>98%</h1>
+        <h1>{{ home.metadata.stats.success_rate }}</h1>
         <h3>Success rate</h3>
       </v-col>
     </v-row>
@@ -139,28 +143,36 @@
               <v-icon class="secondary--text text-h2">
                 mdi-account-group-outline
               </v-icon>
-              <h1 class="text-h5 text-md-h4">3 candidate</h1>
+              <h1 class="text-h5 text-md-h4">
+                {{ startups.metadata.why_search.candidate }} candidate
+              </h1>
               <h3 class="text-md-h6">Limit per role</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text text-h2">
                 mdi-clock-check-outline
               </v-icon>
-              <h1 class="text-h5 text-md-h4">4 weeks</h1>
+              <h1 class="text-h5 text-md-h4">
+                {{ startups.metadata.why_search.time_to_hire }} weeks
+              </h1>
               <h3 class="text-md-h6">Average time to hire</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text text-h2">
                 mdi-check-circle-outline
               </v-icon>
-              <h1 class="text-h5 text-md-h4">83% of hires</h1>
+              <h1 class="text-h5 text-md-h4">
+                {{ startups.metadata.why_search.hires_made }} of hires
+              </h1>
               <h3 class="text-md-h6">Made from initial shortlist</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text text-h2">
                 mdi-trophy-outline
               </v-icon>
-              <h1 class="text-h5 text-md-h4">98%</h1>
+              <h1 class="text-h5 text-md-h4">
+                {{ startups.metadata.why_search.success_rate }}
+              </h1>
               <h3 class="text-md-h6">Success rate</h3>
             </v-col>
           </v-row>
@@ -252,12 +264,12 @@
             <v-dialog
               width="1000px"
               class="overflow-hidden"
-              v-model="visionBox"
+              v-model="allplants"
             >
               <template v-slot:activator="{ on, attrs }">
                 <div class="circle pointer my-8">
                   <v-img
-                    :src="require('../static/images/vision-box.svg')"
+                    :src="require('../static/images/allplants.png')"
                     width="150"
                     contain
                     eager
@@ -269,7 +281,7 @@
               </template>
               <div style="position: fixed; width: 1000px; z-index: 2">
                 <v-col cols="1" class="mr-auto">
-                  <v-icon large color="white" @click="visionBox = false">
+                  <v-icon large color="white" @click="allplants = false">
                     mdi-close-circle-outline
                   </v-icon>
                 </v-col>
@@ -329,28 +341,36 @@
               <v-icon class="secondary--text ml-4 text-h2">
                 mdi-cash-multiple
               </v-icon>
-              <h1 class="text-h5 text-md-h4">40% saving</h1>
+              <h1 class="text-h5 text-md-h4">
+                {{ startups.metadata.why_onsite.cost_saving }} saving
+              </h1>
               <h3 class="text-md-h6">compared to agency spend</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text ml-4 text-h2">
                 mdi-finance
               </v-icon>
-              <h1 class="text-h5 text-md-h4">3x increase</h1>
+              <h1 class="text-h5 text-md-h4">
+                {{ startups.metadata.why_onsite.hiring_velocity }} increase
+              </h1>
               <h3 class="text-md-h6">in hiring velocity</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text ml-4 text-h2">
                 mdi-clock-check-outline
               </v-icon>
-              <h1 class="text-h5 text-md-h4">+20%</h1>
+              <h1 class="text-h5 text-md-h4">
+                {{ startups.metadata.why_onsite.time_to_hire }}
+              </h1>
               <h3 class="text-md-h6">improvement on time to hire</h3>
             </v-col>
             <v-col cols="6" sm="3">
               <v-icon class="secondary--text ml-4 text-h2">
                 mdi-account-group
               </v-icon>
-              <h1 class="text-h5 text-md-h4">Improved</h1>
+              <h1 class="text-h5 text-md-h4">
+                {{ startups.metadata.why_onsite.team_diversity }}
+              </h1>
               <h3 class="text-md-h6">team diversity</h3>
             </v-col>
           </v-row>
@@ -479,19 +499,25 @@
 <script>
 import Logos from "../components/Logos";
 import GetInTouch from "../components/GetInTouch";
-// import ColorCard from "../components/ColorCard";
 import ColorWideCard from "../components/ColorWideCard";
 import CaseStudyLargeCard from "../components/CaseStudyLargeCard";
 
-let title = "Make critical Tech or Product hires and scale your startup",
+const Cosmic = require("cosmicjs");
+const api = Cosmic();
+const bucket = api.bucket({
+  slug: "confido",
+  read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn",
+});
+
+const title = "Make critical Tech or Product hires and scale your startup",
   desc =
     "We scale Tech for Good startups. If you need to make critical Tech or Product hires, build core teams or scale up squads, we're here for you.",
   url = "https://confidotalent.com/startups",
   image = "https://confidotalent.com/images/meta/startups.png";
 
 export default {
-  scrollToTop: true,
   name: "Startups",
+  scrollToTop: true,
   head: {
     title: title,
     meta: [
@@ -523,6 +549,8 @@ export default {
   },
   data() {
     return {
+      home: {},
+      startups: {},
       benefex: false,
       thirdSpace: false,
       visionBox: false,
@@ -561,7 +589,7 @@ export default {
           resultText:
             "We adjusted the search based on the market intel and made all 3 hires within 6 weeks. Since then, we’ve completed over 13 successful searches and continue to work exclusively on all product and engineering hires.",
           result1Icon: "mdi-trophy",
-          result1Text: "24 hires made since 2018",
+          result1Text: "30 hires made since 2018",
           result2Icon: "mdi-account-group",
           result2Text: "Built out leadership team",
           result3Icon: "mdi-check-circle",
@@ -601,7 +629,7 @@ export default {
           resultText:
             "We've helped TSL build out their core engineering team, whilst providing specialist interim consultants when needed. This has enabled them to increase user acquisition and secure further funding.",
           result1Icon: "mdi-account-group",
-          result1Text: "12 hires made over 2 years",
+          result1Text: "17 hires made over 2 years",
           result2Icon: "mdi-clock",
           result2Text: "5 weeks average time to hire",
           result3Icon: "mdi-trophy",
@@ -611,41 +639,34 @@ export default {
           cols3: true,
           image:
             "https://vbbackoffice.azurewebsites.net/wp-content/uploads/2018/09/wallpaper_05-2x.jpg",
-          logo: "../images/visionbox-white.png",
+          logo: "../images/allplants-white.png",
           title:
-            "Vision-box are creating a world where everyone can travel seamlessly without the need for physical documentation using cutting edge biometrics and cyber security.",
-          url: "https://www.vision-box.com/",
+            "allplants was created to make eating more plants exciting and easy, delivering delightful, healthier food to busy homes everywhere.",
+          url: "https://www.allplants.com/",
           brief:
-            "Vision-Box had just hired a new CTO to scale their product and engineering function by 3x. They needed a recruitment partner that could attract local and international talent to build a world class engineering function within a 3 month window.",
-          challenge1Title: "Branding",
+            "allplants needed to split their product and engineering team into a more scalable structure. They needed to move to a squad model with self-contained product and engineering teams, aligned to areas of the business with their own product roadmap.",
+          challenge1Title: "Product hiring",
           challenge1:
-            "Although well known locally, Vision-box didn’t have a strong reputation and were unknown internationally.",
-          challenge2Title: "Process",
+            "allplants had been trying to hire both Product Manager roles directly for over two months with little success.",
+          challenge2Title: "Head of Data hiring",
           challenge2:
-            "Their process was slow, often taking 6-8 weeks for a candidate to complete the process.",
-          challenge3Title: "Scale",
-          challenge3:
-            "The team needed to recruit a large number of people, across different skill sets in a 4 month window.",
-          solution1Icon: "mdi-file-document",
-          solution1Title: "Talent branding",
+            "This was a brand-new role for BOTH the business and the main stakeholder (Finance Director).",
+          solution1Icon: "mdi-apache-kafka",
+          solution1Title: "Product hiring",
           solution1Text:
-            "We worked together to create a compelling story to attract local and overseas talent.",
-          solution2Icon: "mdi-magnify",
-          solution2Title: "Process planning",
+            "We agreed these roles were at the wrong salary and seniority bandings; the Head of Product then got them approved at Lead level and we were able to make the hires in four weeks (on average).",
+          solution2Icon: "mdi-finance",
+          solution2Title: "Head of Data hiring",
           solution2Text:
-            "We agreed a streamlined three stage process that would be completed within two weeks. We also confirmed packages to attract international talent.",
-          solution3Icon: "mdi-cog",
-          solution3Title: "Search process",
-          solution3Text:
-            "We dedicated multiple Confido resources to the project to run local and international searches in parallel.",
+            "We advised the stakeholder and Head of Talent that there were two types of Head of Data we could hire: someone stepping up into the role or a more experienced candidate. The stakeholder agreed that the first type was best suited and by week 8 the hire was made.",
           resultText:
-            "We successfully made multiple hires across Development, QA, DevOps, and Management.  We took a top down approach to help the CTO build the senior management team before scaling the teams beneath. We also built the DevOps and Automated Testing functions from scratch.",
-          result1Icon: "mdi-account-group",
-          result1Text: "11 hires made within 13 weeks",
-          result2Icon: "mdi-clock",
-          result2Text: "3x reduction in time to hire",
-          result3Icon: "mdi-trophy",
-          result3Text: "Hiring accelerated by 10x",
+            "We worked with allplants’ four stakeholders to successfully made all 10 hires with a 4.8 week average time to hire. Our focus throughout this process was balancing consistency, quality and responsiveness to ensure an excellent candidate and stakeholder experience.",
+          result1Icon: "mdi-check-circle",
+          result1Text: "100% success rate",
+          result2Icon: "mdi-account-group",
+          result2Text: "3.5 candidates submitted per hire (average)",
+          result3Icon: "mdi-percent",
+          result3Text: "100% candidates submitted > 1st interview",
         },
         {
           cols3: false,
@@ -846,6 +867,36 @@ export default {
         },
       ],
     };
+  },
+  created() {
+    this.getHomeData();
+    this.getStartupsData();
+  },
+  methods: {
+    async getHomeData() {
+      this.loading = true;
+      await bucket
+        .getObject({
+          id: "631c652ae8aba00009a5f24a",
+          props: "title,metadata",
+        })
+        .then((data) => {
+          this.home = data.object;
+          this.loading = false;
+        });
+    },
+    async getStartupsData() {
+      this.loading = true;
+      await bucket
+        .getObject({
+          id: "631c7167d38f8d000922252d",
+          props: "title,metadata",
+        })
+        .then((data) => {
+          this.startups = data.object;
+          this.loading = false;
+        });
+    },
   },
 };
 </script>

@@ -1,11 +1,7 @@
 <template>
   <v-card color="white" class="pt-8 px-4 py-4 pa-md-8 py-md-8 my-0 card-shadow">
-    <h1 class="mb-0 ml-3 text-left">
-      Startups we've scaled.
-    </h1>
-    <h4 class="mt-0 ml-3 text-left">
-      Click a logo to learn more.
-    </h4>
+    <h1 class="mb-0 ml-3 text-left">Startups we've scaled.</h1>
+    <h4 class="mt-0 ml-3 text-left">Click a logo to learn more.</h4>
     <v-row class="mx-4 my-4 d-sm-flex">
       <v-dialog max-width="1000px" overflow-hidden v-model="allplants">
         <template v-slot:activator="{ on, attrs }">
@@ -19,7 +15,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -46,7 +47,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -73,7 +79,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -100,7 +111,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -127,7 +143,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -154,7 +175,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -181,7 +207,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -208,7 +239,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -223,7 +259,7 @@
           :card="card"
         />
       </v-dialog>
-      <v-dialog max-width="1000px" overflow-hidden v-model="matr">
+      <!-- <v-dialog max-width="1000px" overflow-hidden v-model="matr">
         <template v-slot:activator="{ on, attrs }">
           <v-img
             :src="require('../static/images/matr.png')"
@@ -235,11 +271,48 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
             <v-icon large color="white" @click="matr = false">
+              mdi-close-circle-outline
+            </v-icon>
+          </v-col>
+        </div>
+        <CaseStudySmallCard
+          v-for="(card, index_4) in cards.slice(5, 6)"
+          :key="index_4"
+          :card="card"
+        />
+      </v-dialog> -->
+      <v-dialog max-width="1000px" overflow-hidden v-model="eevie">
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            :src="require('../static/images/eevieLogo.png')"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <div
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
+          class="rounded-t"
+        >
+          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
+            <v-icon large color="white" @click="eevie = false">
               mdi-close-circle-outline
             </v-icon>
           </v-col>
@@ -262,7 +335,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -289,7 +367,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -316,7 +399,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -343,7 +431,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -397,7 +490,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -424,7 +522,12 @@
           />
         </template>
         <div
-          style="background-color:#7B7DF6; position: fixed; width: 1000px; z-index: 2"
+          style="
+            background-color: #7b7df6;
+            position: fixed;
+            width: 1000px;
+            z-index: 2;
+          "
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -456,7 +559,8 @@ export default {
       benefex: false,
       thirdSpace: false,
       feedr: false,
-      matr: false,
+      // matr: false,
+      eevie: false,
       unmind: false,
       wagestream: false,
       curve: false,
@@ -483,7 +587,7 @@ export default {
           label3: "Built out leadership team",
           icon4: "mdi-check-circle",
           label4: "100% success rate across all hires",
-          hiresMade: "25",
+          hiresMade: "30",
           subtitle: "Hires made by Confido",
           overviewText:
             "Benefex needed a partner that knew how to attract product-minded engineers in a small local market. Since summer 2018, we’ve sourced 25 Benefex-ers across Dev, QA, Platform, Product and UX. We’ve built out their next leadership layer with a VP of Engineering and Chapter Leads, and hired their third squad to build a brand-new product. ",
@@ -581,25 +685,45 @@ export default {
           person2: "Kate James – Head of People, Curve",
         },
         {
-          image: "../images/matr-white.png",
+          image: "../images/eevie-white.png",
           title:
-            "Matr provide affordable, online one-to-one tutoring to families. This includes online maths tuition used by over 50000 UK children for SATs, 11+ and secondary school.",
+            "eevie is the Employee Climate Engagement platform that transforms your corporate culture to be more climate friendly.",
           icon1: "mdi-lightbulb",
-          label1: "Built out the core team",
+          label1: "Average 4 week time to hire",
           icon2: "mdi-account-group-outline",
-          label2: "Scaled a team of contract and permament hires",
+          label2: "100% CV to interview ratio",
           icon3: "mdi-bullseye-arrow",
-          label3: "New hires delivered MVP within 5 months",
+          label3: "Average 2 candidate shortlist per hire ",
           icon4: "",
           label4: "",
-          hiresMade: "6",
+          hiresMade: "2",
           subtitle: "Hires made by Confido",
           overviewText:
-            "Matr needed to launch the first version of their new product to a tight deadline. We built a small team of interim engineers to build the MVP whilst hiring permanent replacements in the background. The product was launched one month early, which allowed them to secure their next funding round.",
+            "Following their Pre-Seed round, eevie were struggling to hire a Senior Mobile Engineer. They had tried direct hiring efforts but in two months hadn’t found someone worth interviewing. Working with us at Confido was the first time they’d partnered with an external recruiter.",
           quote:
-            "Confido have been a true partner to us over the last 18 months, both in advice and execution for a number of key hires across the engineering and product teams. I’d recommend them highly to anyone needing to scale up their product and engineering functions.",
-          person: "Tom Hooper – CEO, Matr",
+            "Working with Confido has been one of the best choices we have made all year. It took less than two weeks to start talking to interesting candidates and we felt guided, supported and well briefed at every step of the way. In addition, the entire process felt personal and caring which lead to hiring not only the skill but also the personality that we love working with.",
+          person: "Lenni Paar – CTO, eevie",
         },
+        // {
+        //   image: "../images/matr-white.png",
+        //   title:
+        //     "Matr provide affordable, online one-to-one tutoring to families. This includes online maths tuition used by over 50000 UK children for SATs, 11+ and secondary school.",
+        //   icon1: "mdi-lightbulb",
+        //   label1: "Built out the core team",
+        //   icon2: "mdi-account-group-outline",
+        //   label2: "Scaled a team of contract and permament hires",
+        //   icon3: "mdi-bullseye-arrow",
+        //   label3: "New hires delivered MVP within 5 months",
+        //   icon4: "",
+        //   label4: "",
+        //   hiresMade: "6",
+        //   subtitle: "Hires made by Confido",
+        //   overviewText:
+        //     "Matr needed to launch the first version of their new product to a tight deadline. We built a small team of interim engineers to build the MVP whilst hiring permanent replacements in the background. The product was launched one month early, which allowed them to secure their next funding round.",
+        //   quote:
+        //     "Confido have been a true partner to us over the last 18 months, both in advice and execution for a number of key hires across the engineering and product teams. I’d recommend them highly to anyone needing to scale up their product and engineering functions.",
+        //   person: "Tom Hooper – CEO, Matr",
+        // },
         {
           image: "../images/thirdspace-white.png",
           title:
@@ -612,7 +736,7 @@ export default {
           label3: "100% success rate",
           icon4: "",
           label4: "",
-          hiresMade: "12",
+          hiresMade: "17",
           subtitle: "Hires made by Confido",
           overviewText:
             "Third Space Learning needed to build out their core product and engineering team to enable growth into new markets. We’ve helped them hire eight people across Dev, DevOps, Product and UX.",
@@ -718,7 +842,7 @@ export default {
           label3: "100% CV to interview ratio",
           icon4: "",
           label4: "",
-          hiresMade: "10",
+          hiresMade: "17",
           subtitle: "Key hire made by Confido",
           overviewText:
             "In preparation for Series B funding allplants needed to make a critical backend engineer hire. After the position had been open for months, allplants needed a partner that could help them make the hire quickly and efficiently whilst offering candidates a great experience and focusing on pipeline diversity. Pre and post Series B, allplants needed a talent partner that could help them grow across product, data and engineering. They needed to double the size of their product and engineering teams and build a new data engineering function from scratch. Partnering with the CTO, Head of Product and Director of Finance/BI, the key thing was attracting talented, mission-aligned people whilst providing a great candidate experience.  ",
@@ -760,7 +884,7 @@ export default {
           label3: "First Backend hire",
           icon4: "mdi-percent",
           label4: "100% of hires made from initial shortlist",
-          hiresMade: "2",
+          hiresMade: "3",
           subtitle: "Hires made by Confido",
           overviewText:
             "Following their Seed funding, CLEANHUB needed to make two critical hires within product and engineering; a Lead Product Designer and a Senior Backend Engineer. CLEANHUB needed a partner that understood early-stage startups and could attract value-aligned candidates quickly and effectively.",

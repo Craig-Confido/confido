@@ -236,7 +236,7 @@
         <v-row class="mt-3 mb-5 px-4">
           <v-col cols="12">
             <h1>Meet the team.</h1>
-            <h3>
+            <h3 class="mb-8">
               We're a band of startup enthusiasts relentlessly focused on
               building a better future. We may be a small team, but we have big
               ambitions. Most importantly, we have fun whilst doing this.
@@ -245,22 +245,23 @@
             <v-img
               :src="require('../static/images/team.png')"
               class="mx-md-16 d-none d-md-flex"
+              width="80vw"
               alt="image of Confido team"
             />
             <v-img
-              :src="require('../static/images/beach@2x.png')"
+              :src="require('../static/images/escape_room.png')"
+              class="d-md-none d-flex mb-8"
+              contain
+              width="80vw"
+            />
+            <v-img
+              :src="require('../static/images/tough_mudder.png')"
               class="d-md-none d-flex"
               contain
               width="80vw"
             />
             <v-img
-              :src="require('../static/images/london@2x.png')"
-              class="d-md-none d-flex"
-              contain
-              width="80vw"
-            />
-            <v-img
-              :src="require('../static/images/golf@2x.png')"
+              :src="require('../static/images/team_lunch.png')"
               class="d-md-none d-flex"
               contain
               width="80vw"
