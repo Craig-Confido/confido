@@ -30,7 +30,7 @@ const mutations = {
 };
 
 const actions = {
-  async nuxtServerInit(context, payload) {
+  async nuxtServerInit(context) {
     const BlogsResponse = await Request.getBlogs();
     const Blogs = BlogsResponse.objects;
     if (Blogs) {

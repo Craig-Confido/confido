@@ -77,7 +77,6 @@ export default {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&display=swap",
       },
-      // { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css' },
       {
         rel: "icon",
         type: "image/png",
@@ -106,7 +105,10 @@ export default {
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [{ src: "~/plugins/hotjar.js", mode: "client" }],
+  plugins: [
+    { src: "~/plugins/hotjar.js", mode: "client" },
+    { src: "~/plugins/gtag.js", mode: "client" },
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
@@ -121,7 +123,6 @@ export default {
   modules: [
     "@nuxtjs/gtm",
     "@nuxtjs/sitemap",
-
     "@nuxtjs/axios",
     "@nuxtjs/apollo",
     "@nuxtjs/google-analytics",

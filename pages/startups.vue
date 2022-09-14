@@ -587,7 +587,7 @@ export default {
           solution3Text:
             "Based on the search report, we noticed that all the companies in the area were hiring at the same level, which was where the local market was smallest.",
           resultText:
-            "We adjusted the search based on the market intel and made all 3 hires within 6 weeks. Since then, we’ve completed over 13 successful searches and continue to work exclusively on all product and engineering hires.",
+            "We adjusted the search based on the market intel and made all 3 hires within 6 weeks. Since then, we’ve continued to work exclusively on all product and engineering hires.",
           result1Icon: "mdi-trophy",
           result1Text: "30 hires made since 2018",
           result2Icon: "mdi-account-group",

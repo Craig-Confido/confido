@@ -21,7 +21,8 @@
     "cosmicjs": "^4.2.7",
     "graphql-tag": "^2.12.6",
     "nuxt": "^2.14.6",
-    "nvm": "^0.0.4"
+    "nvm": "^0.0.4",
+    "vue-gtag": "^2.0.1"
   },
   "devDependencies": {
     "@nuxtjs/google-analytics": "^2.4.0",

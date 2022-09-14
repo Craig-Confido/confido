@@ -36,7 +36,7 @@
     <v-card flat class="px-4 pt-4 mx-4 br-15">
       <v-card-text class="text-left">
         <h2 class="primary--text">Challenges</h2>
-        <v-row>
+        <v-row class="pt-4">
           <v-col cols="12" md="4">
             <h3 class="primary--text">
               {{ card.challenge1Title }}

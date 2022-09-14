@@ -580,9 +580,9 @@ export default {
             "Benefex build workplace tech that transforms the employee experience, and focuses on improving employee wellbeing.",
           cols4: true,
           icon1: "mdi-account-group",
-          label1: "25 key new hires",
+          label1: "30 key new hires",
           icon2: "mdi-clock-check",
-          label2: "Hire time reduced from 12+ weeks to 4-6",
+          label2: "Hire time reduced from 12+ weeks to 4.5",
           icon3: "mdi-charity",
           label3: "Built out leadership team",
           icon4: "mdi-check-circle",
@@ -590,7 +590,7 @@ export default {
           hiresMade: "30",
           subtitle: "Hires made by Confido",
           overviewText:
-            "Benefex needed a partner that knew how to attract product-minded engineers in a small local market. Since summer 2018, we’ve sourced 25 Benefex-ers across Dev, QA, Platform, Product and UX. We’ve built out their next leadership layer with a VP of Engineering and Chapter Leads, and hired their third squad to build a brand-new product. ",
+            "Benefex needed a partner that knew how to attract product-minded engineers in a small local market. Since summer 2018, we’ve sourced 30 Benefex-ers across Dev, QA, Platform, Product and UX. We’ve built out their next leadership layer with a VP of Engineering and Chapter Leads, and hired their third squad to build a brand-new product.",
           quote:
             "Confido have partnered with us in the truest sense. The team have taken the time to get a deep understanding of our culture and vision for the future of Benefex, helping us grow our Product Engineering tribe more in the last six months than we achieved with others over the previous twelve. Whether the role has been in Engineering, Product or Leadership, Confido have demonstrated an emotional intelligence with candidates that I have not seen previously. In a location with a limited pool of majority passive candidates, Confido have shown a unique ability to marry the needs of Benefex and a candidate’s true career drivers. This has resulted in not just an increase to our tribe’s numbers, but enabled us to find true Benefex’ers who have both the skillset, drive to improve themselves and personality that makes our culture what it is today. In my role as CTO, Confido have been a reliable source of market trends and a constructive sounding board for what the market can provide at a particular time. This has enabled us to find the right balance in the roles and skillsets we use to grow Benefex in a sustainable way. Without them, I am sure we wouldn’t be as far along our journey as we currently are; long may it continue.",
           person: "Paul Smith – CTO, Benefex",
@@ -739,7 +739,7 @@ export default {
           hiresMade: "17",
           subtitle: "Hires made by Confido",
           overviewText:
-            "Third Space Learning needed to build out their core product and engineering team to enable growth into new markets. We’ve helped them hire eight people across Dev, DevOps, Product and UX.",
+            "Third Space Learning needed to build out their core product and engineering team to enable growth into new markets. We’ve helped them hire 17 people across Dev, DevOps, Product and UX.",
           quote:
             "It's a pleasure working with Confido. Simply put, they deliver. At Third Space Learning we've filled multiple engineering positions through Confido over the past six months, covering full-stack, frontend and DevOps, and both contract and permanent roles. Confido have sourced universally high-quality candidates, then worked seamlessly with us to manage a candidate-centred interview process and close offers. Confido have approached the whole process as a true partnership, and that has definitely helped us overcome the inevitable bumps in the road that happen when growing a team. I look forward to working with Confido in future - highly recommended.",
           person: "Sam Stagg – CTO, Third Space Learning",
