@@ -36,7 +36,7 @@
     <v-card flat class="px-4 pt-4 mx-4 br-15">
       <v-card-text class="text-left">
         <h2 class="primary--text">Challenges</h2>
-        <v-row>
+        <v-row class="pt-4">
           <v-col cols="12" md="4">
             <h3 class="primary--text">
               {{ card.challenge1Title }}
@@ -65,7 +65,7 @@
       </v-card-text>
     </v-card>
     <v-card-text v-if="card.cols3 == true" class="text-left mt-4 px-8 pt-4">
-      <h2 class="primary--text">The Solution</h2>
+      <h2 class="primary--text pb-4">The Solution</h2>
       <v-row>
         <v-col cols="12" md="2" class="text-center">
           <v-icon class="success--text text-h3">
@@ -119,7 +119,7 @@
       </v-row>
     </v-card-text>
     <v-card-text v-else class="text-left mt-4 px-8 pt-4">
-      <h2 class="primary--text">The Solution</h2>
+      <h2 class="primary--text pb-4">The Solution</h2>
       <v-row>
         <v-col cols="12" md="2" class="text-center">
           <v-icon class="success--text text-h3">

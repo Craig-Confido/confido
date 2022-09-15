@@ -236,7 +236,7 @@
         <v-row class="mt-3 mb-5 px-4">
           <v-col cols="12">
             <h1>Meet the team.</h1>
-            <h3>
+            <h3 class="mb-8">
               We're a band of startup enthusiasts relentlessly focused on
               building a better future. We may be a small team, but we have big
               ambitions. Most importantly, we have fun whilst doing this.
@@ -245,26 +245,47 @@
             <v-img
               :src="require('../static/images/team.png')"
               class="mx-md-16 d-none d-md-flex"
+              width="80vw"
               alt="image of Confido team"
             />
             <v-img
-              :src="require('../static/images/beach@2x.png')"
+              :src="require('../static/images/escape_room.png')"
+              class="d-md-none d-flex mb-8"
+              contain
+              width="80vw"
+            />
+            <v-img
+              :src="require('../static/images/tough_mudder.png')"
               class="d-md-none d-flex"
               contain
               width="80vw"
             />
             <v-img
-              :src="require('../static/images/london@2x.png')"
+              :src="require('../static/images/team_lunch.png')"
               class="d-md-none d-flex"
               contain
               width="80vw"
             />
-            <v-img
-              :src="require('../static/images/golf@2x.png')"
-              class="d-md-none d-flex"
-              contain
-              width="80vw"
-            />
+          </v-col>
+        </v-row>
+        <v-row class="mt-3 mb-5 px-0" no-gutters>
+          <v-col cols="auto" class="mx-auto d-none d-md-flex">
+            <video width="720" height="540" controls>
+              <source
+                src="https://cdn.cosmicjs.com/939bb8e0-3469-11ed-984d-15ac5c458dc7-Tough-Mudder---FINAL.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
+          </v-col>
+          <v-col cols="auto" class="px-0 mx-auto d-flex d-md-none">
+            <video width="340" height="250" controls>
+              <source
+                src="https://cdn.cosmicjs.com/939bb8e0-3469-11ed-984d-15ac5c458dc7-Tough-Mudder---FINAL.mp4"
+                type="video/mp4"
+              />
+              Your browser does not support the video tag.
+            </video>
           </v-col>
         </v-row>
         <v-row v-if="roles" class="mt-3 mb-5 px-4" id="roles">

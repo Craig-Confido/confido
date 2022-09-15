@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0 ma-0">
+  <v-container fluid class="pa-0 ma-0" v-if="home.metadata">
     <section class="mx-4 mx-lg-16">
       <v-row class="text-left mt-4">
         <v-img
@@ -9,10 +9,10 @@
         />
         <v-col cols="12" sm="7" class="mt-md-16">
           <h1
-            class="text-h3  text-md-h2 font-weight-bold"
+            class="text-h3 text-md-h2 font-weight-bold"
             aria-label="Intro text"
           >
-            The tech for good talent partner.
+            {{ home.title }}
           </h1>
           <h2 class="text-h5 my-8">
             Confido's mission is to connect people with the same
@@ -74,9 +74,7 @@
       style="box-shadow: 0px 0px 70px rgba(100, 181, 246, 0.55)"
     >
       <v-col cols="12" md="4">
-        <h1 class="mb-4 text-left">
-          What we do.
-        </h1>
+        <h1 class="mb-4 text-left">What we do.</h1>
         <h2 class="text-left">
           Product and Tech hiring.<br />
           Seed to Series B startups.<br />
@@ -88,36 +86,28 @@
           <v-icon class="white--text text-h2 mb-2">
             mdi-rocket-launch-outline
           </v-icon>
-          <h1>
-            25+
-          </h1>
+          <h1>{{ home.metadata.stats.startups_scale }}</h1>
           <h3>Startups scaled</h3>
         </v-col>
         <v-col cols="12" md="3" class="mt-8 mt-md-0">
           <v-icon class="white--text text-h2 mb-2">
             mdi-clock-check-outline
           </v-icon>
-          <h1>
-            4 weeks
-          </h1>
-          <h3>Average to hire</h3>
+          <h1>{{ home.metadata.stats.time_to_hire }} weeks</h1>
+          <h3>Time to hire</h3>
         </v-col>
         <v-col cols="12" md="3" class="mt-8 mt-md-0">
           <v-icon class="white--text text-h2 mb-2">
             mdi-account-group-outline
           </v-icon>
-          <h1>
-            130+
-          </h1>
+          <h1>{{ home.metadata.stats.hires_made }}</h1>
           <h3>Hires made</h3>
         </v-col>
         <v-col cols="12" md="3" class="mt-8 mt-md-0">
           <v-icon class="white--text text-h2 mb-2">
             mdi-check-circle-outline
           </v-icon>
-          <h1>
-            98%
-          </h1>
+          <h1>{{ home.metadata.stats.success_rate }}</h1>
           <h3>Success rate</h3>
         </v-col>
       </v-row>
@@ -213,34 +203,24 @@
           </v-card-title>
           <v-card-text class="text-md-h6 white--text">
             <p>
-              <v-icon class="mr-4 white--text">
-                mdi-head-check-outline
-              </v-icon>
+              <v-icon class="mr-4 white--text"> mdi-head-check-outline </v-icon>
               Your advisor, mentor and friend.
             </p>
 
             <p>
-              <v-icon class="mr-4 white--text">
-                mdi-account-voice
-              </v-icon>
+              <v-icon class="mr-4 white--text"> mdi-account-voice </v-icon>
               Direct, open and straight talking,
             </p>
 
-            <p class="ml-11">
-              but never judgemental.
-            </p>
+            <p class="ml-11">but never judgemental.</p>
 
             <p>
-              <v-icon class="mr-4 white--text">
-                mdi-account-child
-              </v-icon>
+              <v-icon class="mr-4 white--text"> mdi-account-child </v-icon>
               We’ve always got your back.
             </p>
 
             <p>
-              <v-icon class="mr-4 white--text">
-                mdi-party-popper
-              </v-icon>
+              <v-icon class="mr-4 white--text"> mdi-party-popper </v-icon>
               Helping to build a better future, together.
             </p>
           </v-card-text>
@@ -277,9 +257,7 @@
             </p>
 
             <p>
-              <v-icon class="mr-4 white--text">
-                mdi-hand-okay
-              </v-icon>
+              <v-icon class="mr-4 white--text"> mdi-hand-okay </v-icon>
               Don't overcomplicate, simplicity is key.
             </p>
 
@@ -305,12 +283,20 @@
 import Logos from "../components/Logos";
 import GetInTouch from "../components/GetInTouch";
 
-let title = "The Tech for Good talent partner",
+const Cosmic = require("cosmicjs");
+const api = Cosmic();
+const bucket = api.bucket({
+  slug: "confido",
+  read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn",
+});
+
+const title = "The Tech for Good talent partner",
   desc =
     "Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good startups. We connect people with the same values and a shared purpose to build a better future, together.",
   url = "https://confidotalent.com";
 
 export default {
+  name: "Home",
   scrollToTop: true,
   head: {
     title: title,
@@ -339,6 +325,8 @@ export default {
   },
   data() {
     return {
+      loading: false,
+      home: {},
       quotes: [
         {
           content:
@@ -390,21 +378,9 @@ export default {
         },
         {
           content:
-            "Whether it’s a hiring goal, upskilling internal talent teams, or working with budget holders to effectively workforce and scenario plan, Confido have partnered with us in every sense of the word. Sharp, resourceful and totally committed. Great job.",
-          logo: "../images/curve.png",
-          advocate: "Matt Collinge - CTO, Curve",
-        },
-        {
-          content:
-            "We had a shortlist of candidates within 48 hours and we were able to put a job offer out within a week. I can wholeheartedly recommend Confido to help grow your team.",
-          logo: "../images/homehero.svg",
-          advocate: "David Riley - Head of Design, HomeHero",
-        },
-        {
-          content:
             "Confido have been a true partner to us over the last 18 months, both in advice and execution for a number of key hires across the engineering and product teams. I’d recommend them highly to anyone needing to scale up their product and engineering functions.",
-          logo: "../images/matr.png",
-          advocate: "Tom Hooper - CEO, Matr",
+          logo: "../images/thirdSpace.png",
+          advocate: "Tom Hooper - CEO, Third Space Learning",
         },
         {
           content:
@@ -418,9 +394,32 @@ export default {
           logo: "../images/mindlabs.png",
           advocate: "Adnan Ebrahim - CEO/Co-founder, MindLabs",
         },
+        {
+          content:
+            "Working with Confido has been one of the best choices we have made all year. It took less than two weeks to start talking to interesting candidates and we felt guided, supported and well briefed at every step of the way. In addition, the entire process felt personal and caring which lead to hiring not only the skill but also the personality that we love working with.",
+          logo: "../images/eevieLogo.png",
+          advocate: "Lenni Paar - CTO, eevie",
+        },
       ],
       contact: [],
     };
+  },
+  created() {
+    this.getHomeData();
+  },
+  methods: {
+    async getHomeData() {
+      this.loading = true;
+      await bucket
+        .getObject({
+          id: "631c652ae8aba00009a5f24a",
+          props: "title,metadata",
+        })
+        .then((data) => {
+          this.home = data.object;
+          this.loading = false;
+        });
+    },
   },
 };
 </script>
