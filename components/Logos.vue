@@ -699,7 +699,7 @@ export default {
           hiresMade: "2",
           subtitle: "Hires made by Confido",
           overviewText:
-            "Following their Pre-Seed round, eevie were struggling to hire a Senior Mobile Engineer. They had tried direct hiring efforts but in two months hadn’t found someone worth interviewing. Working with us at Confido was the first time they’d partnered with an external recruiter.",
+            "Following their Pre-Seed round, eevie was looking to make a key engineering hire. So, they turned to us for support.",
           quote:
             "Working with Confido has been one of the best choices we have made all year. It took less than two weeks to start talking to interesting candidates and we felt guided, supported and well briefed at every step of the way. In addition, the entire process felt personal and caring which lead to hiring not only the skill but also the personality that we love working with.",
           person: "Lenni Paar – CTO, eevie",
