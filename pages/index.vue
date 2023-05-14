@@ -8,16 +8,13 @@
           alt="image of people"
         />
         <v-col cols="12" sm="7" class="mt-md-16">
-          <h1
-            class="text-h3 text-md-h2 font-weight-bold"
-            aria-label="Intro text"
-          >
+          <h1 class="text-h3 text-md-h2 font-weight-bold" aria-label="Intro text">
             {{ home.title }}
           </h1>
           <h2 class="text-h5 my-8">
             Confido's mission is to connect people with the same
-            <span class="accent--text"> <strong>values</strong></span> and a
-            shared <span class="success--text"><strong>purpose</strong></span>
+            <span class="accent--text"> <strong>values</strong></span> and a shared
+            <span class="success--text"><strong>purpose</strong></span>
             to build a better future,
             <span class="secondary--text"> <strong>together</strong></span
             >.
@@ -83,30 +80,22 @@
       </v-col>
       <v-row class="my-auto text-center">
         <v-col cols="12" md="3" class="mt-8 mt-md-0">
-          <v-icon class="white--text text-h2 mb-2">
-            mdi-rocket-launch-outline
-          </v-icon>
+          <v-icon class="white--text text-h2 mb-2"> mdi-rocket-launch-outline </v-icon>
           <h1>{{ home.metadata.stats.startups_scale }}</h1>
           <h3>Startups scaled</h3>
         </v-col>
         <v-col cols="12" md="3" class="mt-8 mt-md-0">
-          <v-icon class="white--text text-h2 mb-2">
-            mdi-clock-check-outline
-          </v-icon>
+          <v-icon class="white--text text-h2 mb-2"> mdi-clock-check-outline </v-icon>
           <h1>{{ home.metadata.stats.time_to_hire }} weeks</h1>
           <h3>Time to hire</h3>
         </v-col>
         <v-col cols="12" md="3" class="mt-8 mt-md-0">
-          <v-icon class="white--text text-h2 mb-2">
-            mdi-account-group-outline
-          </v-icon>
+          <v-icon class="white--text text-h2 mb-2"> mdi-account-group-outline </v-icon>
           <h1>{{ home.metadata.stats.hires_made }}</h1>
           <h3>Hires made</h3>
         </v-col>
         <v-col cols="12" md="3" class="mt-8 mt-md-0">
-          <v-icon class="white--text text-h2 mb-2">
-            mdi-check-circle-outline
-          </v-icon>
+          <v-icon class="white--text text-h2 mb-2"> mdi-check-circle-outline </v-icon>
           <h1>{{ home.metadata.stats.success_rate }}</h1>
           <h3>Success rate</h3>
         </v-col>
@@ -128,16 +117,8 @@
           :key="index"
           class="px-0 mx-0 px-md-16 mx-md-16 my-0 py-0"
         >
-          <v-sheet
-            color="transparent"
-            height="100%"
-            class="px-0 px-md-16 py-8 py-md-0 my-md-16"
-          >
-            <v-row
-              class="px-4 px-0 mx-6 mx-lg-16"
-              align="center"
-              justify="center"
-            >
+          <v-sheet color="transparent" height="100%" class="px-0 px-md-16 py-8 py-md-0 my-md-16">
+            <v-row class="px-4 px-0 mx-6 mx-lg-16" align="center" justify="center">
               <p class="text-h6 text-md-h5 mt-md-0 mb-0 pb-0 text--primary">
                 <strong class="quote">
                   {{ quote.content }}
@@ -194,13 +175,8 @@
     </v-row>
     <v-row class="mx-0 mx-md-6 mx-lg-16">
       <v-col cols="12" md="6">
-        <v-card
-          color="accent"
-          class="pa-8 my-2 white--text text-left card-shadow"
-        >
-          <v-card-title class="headline font-weight-bold">
-            We are Confido.
-          </v-card-title>
+        <v-card color="accent" class="pa-8 my-2 white--text text-left card-shadow">
+          <v-card-title class="headline font-weight-bold"> We are Confido. </v-card-title>
           <v-card-text class="text-md-h6 white--text">
             <p>
               <v-icon class="mr-4 white--text"> mdi-head-check-outline </v-icon>
@@ -227,32 +203,21 @@
         </v-card>
       </v-col>
       <v-col cols="12" md="6">
-        <v-card
-          color="success"
-          class="pa-8 my-2 white--text text-left card-shadow"
-        >
-          <v-card-title class="headline font-weight-bold">
-            Our values.
-          </v-card-title>
+        <v-card color="success" class="pa-8 my-2 white--text text-left card-shadow">
+          <v-card-title class="headline font-weight-bold"> Our values. </v-card-title>
           <v-card-text class="text-md-h6 white--text">
             <p>
-              <v-icon class="mr-4 white--text">
-                mdi-chart-bell-curve-cumulative
-              </v-icon>
+              <v-icon class="mr-4 white--text"> mdi-chart-bell-curve-cumulative </v-icon>
               Use data to tell the story.
             </p>
 
             <p>
-              <v-icon class="mr-4 white--text">
-                mdi-help-circle-outline
-              </v-icon>
+              <v-icon class="mr-4 white--text"> mdi-help-circle-outline </v-icon>
               Always understand the ‘why’.
             </p>
 
             <p>
-              <v-icon class="mr-4 white--text">
-                mdi-account-clock-outline
-              </v-icon>
+              <v-icon class="mr-4 white--text"> mdi-account-clock-outline </v-icon>
               Respect others and their time.
             </p>
 
@@ -262,9 +227,7 @@
             </p>
 
             <p>
-              <v-icon class="mr-4 white--text">
-                mdi-head-snowflake-outline
-              </v-icon>
+              <v-icon class="mr-4 white--text"> mdi-head-snowflake-outline </v-icon>
               Champion values and mindset over skill.
             </p>
           </v-card-text>
@@ -280,44 +243,44 @@
 </template>
 
 <script>
-import Logos from "../components/Logos";
-import GetInTouch from "../components/GetInTouch";
+import Logos from '../components/Logos'
+import GetInTouch from '../components/GetInTouch'
 
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const Cosmic = require('cosmicjs')
+const api = Cosmic()
 const bucket = api.bucket({
-  slug: "confido",
-  read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn",
-});
+  slug: 'confido',
+  read_key: '0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn',
+})
 
-const title = "The Tech for Good talent partner",
+const title = 'The Tech for Good talent partner',
   desc =
-    "Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good startups. We connect people with the same values and a shared purpose to build a better future, together.",
-  url = "https://confidotalent.com";
+    'Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good startups. We connect people with the same values and a shared purpose to build a better future, together.',
+  url = 'https://confidotalent.com'
 
 export default {
-  name: "Home",
+  name: 'Home',
   scrollToTop: true,
   head: {
     title: title,
     meta: [
-      { hid: "description", name: "description", content: desc },
+      { hid: 'description', name: 'description', content: desc },
 
-      { hid: "og:title", property: "og:title", content: title },
-      { hid: "og:url", property: "og:url", content: url },
-      { hid: "og:description", property: "og:description", content: desc },
+      { hid: 'og:title', property: 'og:title', content: title },
+      { hid: 'og:url', property: 'og:url', content: url },
+      { hid: 'og:description', property: 'og:description', content: desc },
 
-      { property: "twitter:domain", content: url },
-      { hid: "twitter:title", property: "twitter:title", content: title },
+      { property: 'twitter:domain', content: url },
+      { hid: 'twitter:title', property: 'twitter:title', content: title },
       {
-        hid: "twitter:description",
-        property: "twitter:description",
+        hid: 'twitter:description',
+        property: 'twitter:description',
         content: desc,
       },
-      { hid: "twitter:url", property: "twitter:url", content: url },
-      { hid: "twitter:label1", property: "twitter:label1", content: title },
+      { hid: 'twitter:url', property: 'twitter:url', content: url },
+      { hid: 'twitter:label1', property: 'twitter:label1', content: title },
     ],
-    link: [{ rel: "canonical", href: url }],
+    link: [{ rel: 'canonical', href: url }],
   },
   components: {
     Logos,
@@ -330,96 +293,102 @@ export default {
       quotes: [
         {
           content:
-            "We felt Confido really understood what it meant to represent an impact/not-for-profit business and how to attract great people. The amount of work that went into each recruit was immense, the advice we received from Confido was golden, and even our candidates commented on how positively different it was working with Confido",
-          logo: "../images/cpr-logo.svg",
-          advocate: "Michal Nachmany – CEO & Founder, Climate Policy Radar",
+            'We felt Confido really understood what it meant to represent an impact/not-for-profit business and how to attract great people. The amount of work that went into each recruit was immense, the advice we received from Confido was golden, and even our candidates commented on how positively different it was working with Confido',
+          logo: '../images/cpr-logo.svg',
+          advocate: 'Michal Nachmany – CEO & Founder, Climate Policy Radar',
         },
         {
           content:
-            "From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.",
-          logo: "../images/allplants-logo-y.png",
-          advocate: "Adam Dunkley – Director of Technology, allplants",
+            'From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.',
+          logo: '../images/allplants-logo-y.png',
+          advocate: 'Adam Dunkley – Director of Technology, allplants',
         },
         {
           content:
-            "Confido did an excellent job in making our crucial Senior Backend hire. From the very beginning their process was smooth, clear and quick. We had three candidates to interview in under two weeks and hired one soon after. onHand couldn’t have asked for a better talent partnership",
-          logo: "../images/onhand-logo.png",
-          advocate: "Dan Moffatt – CTO, onHand",
+            'Confido did an excellent job in making our crucial Senior Backend hire. From the very beginning their process was smooth, clear and quick. We had three candidates to interview in under two weeks and hired one soon after. onHand couldn’t have asked for a better talent partnership',
+          logo: '../images/onhand-logo.png',
+          advocate: 'Dan Moffatt – CTO, onHand',
         },
         {
           content:
             "Working with Confido was amazing. The things I appreciated most were the diligence and flexibility. They held us accountable throughout the entire process to make it was a great experience for candidates as well. I'm looking forward to welcoming our new team members soon and working with Craig as we continue to grow.",
-          logo: "../images/cleanhub-black.png",
-          advocate: "Joel Tasche – CEO/Founder, CLEANHUB",
+          logo: '../images/cleanhub-black.png',
+          advocate: 'Joel Tasche – CEO/Founder, CLEANHUB',
         },
         {
           content:
             "We needed to scale a small startup team about 3x in a short space of time but didn't want to compromise on the quality of candidates. We'd tried alternative recruitment arrangements but hadn't seen results until we engaged Confido.",
-          logo: "../images/feedr.webp",
-          advocate: "Mark Somerfield - VP of Engineering, Feedr",
+          logo: '../images/feedr.webp',
+          advocate: 'Mark Somerfield - VP of Engineering, Feedr',
         },
         {
           content:
             "Unmind needed to double the engineering team in a short time frame. Confido quickly calibrated on what we needed and we saw hires made within the first few weeks. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
-          logo: "../images/unmind.png",
-          advocate: "Phil Mullan – CTO, Unmind",
+          logo: '../images/unmind.png',
+          advocate: 'Phil Mullan – CTO, Unmind',
         },
         {
           content:
-            "Confido have partnered with us in the truest sense. Helping us grow more in the last six months than we achieved with others over the previous twelve.",
-          logo: "../images/benefex.png",
-          advocate: "Paul Smith – CTO, Benefex",
+            'Confido have partnered with us in the truest sense. Helping us grow more in the last six months than we achieved with others over the previous twelve.',
+          logo: '../images/benefex.png',
+          advocate: 'Paul Smith – CTO, Benefex',
+        },
+        // {
+        //   content:
+        //     "It's a pleasure working with Confido. Simply put, they deliver. Confido have sourced universally high-quality candidates, then worked seamlessly with us to manage a candidate-centred interview process and close offers. Highly recommended.",
+        //   logo: "../images/thirdSpace.png",
+        //   advocate: "Sam Stagg - CTO, Third Space Learning",
+        // },
+        {
+          content:
+            'Confido have been a true partner to us over the last 18 months, both in advice and execution for a number of key hires across the engineering and product teams. I’d recommend them highly to anyone needing to scale up their product and engineering functions.',
+          logo: '../images/thirdSpace.png',
+          advocate: 'Tom Hooper - CEO, Third Space Learning',
+        },
+        // {
+        //   content:
+        //     "Confido worked really closely with me to help me find our new Head of Engineering. The candidates we met were all high calibre and very credible. The whole process was much quicker than I’ve experienced on similar searches in the past.",
+        //   logo: "../images/octopusWealth.png",
+        //   advocate: "Richard Wazacz - CEO, Octopus Wealth",
+        // },
+        {
+          content:
+            'Straight away we noticed a difference, they felt more like an in-house recruitment expert than an external recruiter. It was a real pleasure to work with Confido. We could trust them in representing our brand and attracting high calibre candidates for what was a critical hire for us.',
+          logo: '../images/mindlabs.png',
+          advocate: 'Adnan Ebrahim - CEO/Co-founder, MindLabs',
         },
         {
           content:
-            "It's a pleasure working with Confido. Simply put, they deliver. Confido have sourced universally high-quality candidates, then worked seamlessly with us to manage a candidate-centred interview process and close offers. Highly recommended.",
-          logo: "../images/thirdSpace.png",
-          advocate: "Sam Stagg - CTO, Third Space Learning",
+            'Working with Confido has been one of the best choices we have made all year. It took less than two weeks to start talking to interesting candidates and we felt guided, supported and well briefed at every step of the way. In addition, the entire process felt personal and caring which lead to hiring not only the skill but also the personality that we love working with.',
+          logo: '../images/eevieLogo.png',
+          advocate: 'Lenni Paar - CTO, eevie',
         },
         {
           content:
-            "Confido have been a true partner to us over the last 18 months, both in advice and execution for a number of key hires across the engineering and product teams. I’d recommend them highly to anyone needing to scale up their product and engineering functions.",
-          logo: "../images/thirdSpace.png",
-          advocate: "Tom Hooper - CEO, Third Space Learning",
-        },
-        {
-          content:
-            "Confido worked really closely with me to help me find our new Head of Engineering. The candidates we met were all high calibre and very credible. The whole process was much quicker than I’ve experienced on similar searches in the past.",
-          logo: "../images/octopusWealth.png",
-          advocate: "Richard Wazacz - CEO, Octopus Wealth",
-        },
-        {
-          content:
-            "Straight away we noticed a difference, they felt more like an in-house recruitment expert than an external recruiter. It was a real pleasure to work with Confido. We could trust them in representing our brand and attracting high calibre candidates for what was a critical hire for us.",
-          logo: "../images/mindlabs.png",
-          advocate: "Adnan Ebrahim - CEO/Co-founder, MindLabs",
-        },
-        {
-          content:
-            "Working with Confido has been one of the best choices we have made all year. It took less than two weeks to start talking to interesting candidates and we felt guided, supported and well briefed at every step of the way. In addition, the entire process felt personal and caring which lead to hiring not only the skill but also the personality that we love working with.",
-          logo: "../images/eevieLogo.png",
-          advocate: "Lenni Paar - CTO, eevie",
+            '“I have and will continue to happily recommend Confido for both finding a job and finding candidates. Their process in my opinion is the model for good recruiting.',
+          logo: '../images/curaleafLogo.svg',
+          advocate: 'Philip Jones - VP Tech, Curaleaf International',
         },
       ],
       contact: [],
-    };
+    }
   },
   created() {
-    this.getHomeData();
+    this.getHomeData()
   },
   methods: {
     async getHomeData() {
-      this.loading = true;
+      this.loading = true
       await bucket
         .getObject({
-          id: "631c652ae8aba00009a5f24a",
-          props: "title,metadata",
+          id: '631c652ae8aba00009a5f24a',
+          props: 'title,metadata',
         })
         .then((data) => {
-          this.home = data.object;
-          this.loading = false;
-        });
+          this.home = data.object
+          this.loading = false
+        })
     },
   },
-};
+}
 </script>

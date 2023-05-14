@@ -7,22 +7,14 @@
     >
       <v-row class="pt-4">
         <v-col cols="12" md="3" class="text-center">
-          <v-img
-            :src="`${card.logo}`"
-            width="150"
-            contain
-            eager
-            class="startups mt-16"
-          />
+          <v-img :src="`${card.logo}`" width="150" contain eager class="startups mt-16" />
         </v-col>
         <v-col cols="12" md="8">
           <h4 class="white--text mt-16 mr-8 text-left">
             {{ card.title }}
           </h4>
           <p class="mr-8 text-left">
-            <a :href="`${card.url}`" target="_blank" class="white--text">{{
-              card.url
-            }}</a>
+            <a :href="`${card.url}`" target="_blank" class="white--text">{{ card.url }}</a>
           </p>
         </v-col>
       </v-row>
@@ -253,12 +245,12 @@
 <script>
 export default {
   scrollToTop: true,
-  name: "CaseStudyLargeCard",
+  name: 'CaseStudyLargeCard',
   props: {
     card: {
       type: Object,
       default: () => {},
     },
   },
-};
+}
 </script>

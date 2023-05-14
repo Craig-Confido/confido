@@ -8,15 +8,12 @@
           alt="image of people"
         />
         <v-col cols="12" sm="7" class="mt-md-16">
-          <h1
-            class="text-h3 text-md-h2 font-weight-bold"
-            aria-label="Intro text"
-          >
+          <h1 class="text-h3 text-md-h2 font-weight-bold" aria-label="Intro text">
             Careers with Confido.
           </h1>
           <h2 class="text-h5 my-8">
-            Interested in working with us? Here's everything you need to know
-            about joining the Confido team...
+            Interested in working with us? Here's everything you need to know about joining the
+            Confido team...
           </h2>
           <v-row class="mt-12 mx-0">
             <v-btn
@@ -56,40 +53,29 @@
     <section class="ma-4 ma-lg-16">
       <v-row class="text-left mt-4 px-4">
         <v-card class="pa-8 my-2 text-left card-shadow">
-          <v-card-title class="headline font-weight-bold primary--text">
-            Our story
-          </v-card-title>
+          <v-card-title class="headline font-weight-bold primary--text"> Our story </v-card-title>
           <v-card-text class="text-h6 primary--text">
-            When we first started out, our focus was to simplify the way
-            startups scale. By 2020 we’d worked with a range of startups but we
-            knew there was one specific type of company that resonated with us
-            to our core - the startups using tech for good. So, we refined our
-            focus knowing our work contributes to leaving the world in a better
-            place.
+            When we first started out, our focus was to simplify the way startups scale. By 2020
+            we’d worked with a range of startups but we knew there was one specific type of company
+            that resonated with us to our core - the startups using tech for good. So, we refined
+            our focus knowing our work contributes to leaving the world in a better place.
           </v-card-text>
         </v-card>
         <v-row>
           <v-col cols="12">
             <div class="pa-8 my-0 text-center">
-              <v-row
-                class="primary--text mx-auto text-center mt-4 d-flex justify-center"
-              >
+              <v-row class="primary--text mx-auto text-center mt-4 d-flex justify-center">
                 <v-col cols="12" md="3">
                   <h1 class="pb-4">2018</h1>
                   <v-row>
                     <v-col cols="12" md="6">
-                      <v-icon class="secondary--text text-h3">
-                        mdi-license
-                      </v-icon>
+                      <v-icon class="secondary--text text-h3"> mdi-license </v-icon>
                       <p class="primary--text">Confido founded</p>
                     </v-col>
                     <v-col cols="12" md="6">
-                      <v-icon class="secondary--text text-h3">
-                        mdi-account-group
-                      </v-icon>
+                      <v-icon class="secondary--text text-h3"> mdi-account-group </v-icon>
                       <p class="primary--text">
-                        Began working with Benefex, Housekeep and Third Space
-                        Learning
+                        Began working with Benefex, Housekeep and Third Space Learning
                       </p>
                     </v-col>
                   </v-row>
@@ -98,12 +84,8 @@
                   <h1 class="pb-4">2019</h1>
                   <v-row>
                     <v-col cols="12" md="6">
-                      <v-icon class="secondary--text text-h3">
-                        mdi-domain
-                      </v-icon>
-                      <p class="primary--text">
-                        Launched our “Onsite” solution
-                      </p>
+                      <v-icon class="secondary--text text-h3"> mdi-domain </v-icon>
+                      <p class="primary--text">Launched our “Onsite” solution</p>
                     </v-col>
                     <v-col cols="12" md="6">
                       <v-icon class="secondary--text text-h3">
@@ -119,17 +101,11 @@
                   <h1 class="pb-4">2020</h1>
                   <v-row>
                     <v-col cols="12" md="6">
-                      <v-icon class="secondary--text text-h3">
-                        mdi-charity
-                      </v-icon>
-                      <p class="primary--text">
-                        Refined our focus to Tech for Good startups
-                      </p>
+                      <v-icon class="secondary--text text-h3"> mdi-charity </v-icon>
+                      <p class="primary--text">Refined our focus to Tech for Good startups</p>
                     </v-col>
                     <v-col cols="12" md="6">
-                      <v-icon class="secondary--text text-h3">
-                        mdi-trophy
-                      </v-icon>
+                      <v-icon class="secondary--text text-h3"> mdi-trophy </v-icon>
                       <p class="primary--text">Record year for the team</p>
                     </v-col>
                   </v-row>
@@ -138,20 +114,12 @@
                   <h1 class="pb-4">2021</h1>
                   <v-row>
                     <v-col cols="12" md="6">
-                      <v-icon class="secondary--text text-h3">
-                        mdi-alpha-b-circle-outline
-                      </v-icon>
-                      <p class="primary--text">
-                        Worked with our first B Corp, allplants
-                      </p>
+                      <v-icon class="secondary--text text-h3"> mdi-alpha-b-circle-outline </v-icon>
+                      <p class="primary--text">Worked with our first B Corp, allplants</p>
                     </v-col>
                     <v-col cols="12" md="6">
-                      <v-icon class="secondary--text text-h3">
-                        mdi-alpha-i-circle
-                      </v-icon>
-                      <p class="primary--text">
-                        Implemented our Impact Strategy
-                      </p>
+                      <v-icon class="secondary--text text-h3"> mdi-alpha-i-circle </v-icon>
+                      <p class="primary--text">Implemented our Impact Strategy</p>
                     </v-col>
                   </v-row>
                 </v-col>
@@ -167,16 +135,12 @@
                 Our vision
               </v-card-title>
               <v-card-text class="text-h6 primary--text">
-                We want to leave the world in a better place. We're working to
-                achieve this through partnering with the best tech for good
-                startups across the UK and Europe. By connecting people with the
-                same values and a shared purpose, we can all build a better
-                future, together. We mirror this ethos through our company
-                impact initiatives – read more about that,
-                <nuxt-link
-                  to="/impact"
-                  style="text-decoration: none"
-                  class="secondary--text"
+                We want to leave the world in a better place. We're working to achieve this through
+                partnering with the best tech for good startups across the UK and Europe. By
+                connecting people with the same values and a shared purpose, we can all build a
+                better future, together. We mirror this ethos through our company impact initiatives
+                – read more about that,
+                <nuxt-link to="/impact" style="text-decoration: none" class="secondary--text"
                   >here</nuxt-link
                 >.
               </v-card-text>
@@ -187,9 +151,7 @@
           <v-col cols="12">
             <div class="pa-8 my-0 text-center">
               <h1>Why join us?</h1>
-              <v-row
-                class="primary--text mx-auto text-center mt-4 d-flex justify-center"
-              >
+              <v-row class="primary--text mx-auto text-center mt-4 d-flex justify-center">
                 <v-col cols="12" md="3">
                   <v-icon class="secondary--text text-h2"> mdi-rocket </v-icon>
                   <h3 class="text-md-h6">
@@ -203,12 +165,8 @@
                   </h3>
                 </v-col>
                 <v-col cols="12" md="3">
-                  <v-icon class="secondary--text text-h2">
-                    mdi-account-group
-                  </v-icon>
-                  <h3 class="text-md-h6">
-                    Work in a flexible, supportive and trusted environment
-                  </h3>
+                  <v-icon class="secondary--text text-h2"> mdi-account-group </v-icon>
+                  <h3 class="text-md-h6">Work in a flexible, supportive and trusted environment</h3>
                 </v-col>
               </v-row>
             </div>
@@ -237,10 +195,9 @@
           <v-col cols="12">
             <h1>Meet the team.</h1>
             <h3 class="mb-8">
-              We're a band of startup enthusiasts relentlessly focused on
-              building a better future. We may be a small team, but we have big
-              ambitions. Most importantly, we have fun whilst doing this.
-              Whether that be on our volunteering days or our team socials.
+              We're a band of startup enthusiasts relentlessly focused on building a better future.
+              We may be a small team, but we have big ambitions. Most importantly, we have fun
+              whilst doing this. Whether that be on our volunteering days or our team socials.
             </h3>
             <v-img
               :src="require('../static/images/team.png')"
@@ -333,44 +290,44 @@
 </template>
 
 <script>
-const Cosmic = require("cosmicjs");
-const api = Cosmic();
+const Cosmic = require('cosmicjs')
+const api = Cosmic()
 const bucket = api.bucket({
-  slug: "confido",
-  read_key: "0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn",
-});
+  slug: 'confido',
+  read_key: '0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn',
+})
 
-let title = "Why work with Confido?",
+let title = 'Why work with Confido?',
   desc =
-    "We’ll connect you with a startup that alligns with your values so you can build products that make the world a better place. Get in touch to talk about Tech and Product roles.",
-  url = "https://confidotalent.com/about",
-  image = "https://confidotalent.com/images/meta/talent.png";
+    'We’ll connect you with a startup that alligns with your values so you can build products that make the world a better place. Get in touch to talk about Tech and Product roles.',
+  url = 'https://confidotalent.com/about',
+  image = 'https://confidotalent.com/images/meta/talent.png'
 
 export default {
-  name: "About",
+  name: 'About',
   scrollToTop: true,
   head: {
     title: title,
     meta: [
-      { hid: "description", name: "description", content: desc },
+      { hid: 'description', name: 'description', content: desc },
 
-      { hid: "og:title", property: "og:title", content: title },
-      { hid: "og:url", property: "og:url", content: url },
-      { hid: "og:image", property: "og:image", content: image },
-      { hid: "og:description", property: "og:description", content: desc },
+      { hid: 'og:title', property: 'og:title', content: title },
+      { hid: 'og:url', property: 'og:url', content: url },
+      { hid: 'og:image', property: 'og:image', content: image },
+      { hid: 'og:description', property: 'og:description', content: desc },
 
-      { property: "twitter:domain", content: url },
-      { hid: "twitter:title", property: "twitter:title", content: title },
+      { property: 'twitter:domain', content: url },
+      { hid: 'twitter:title', property: 'twitter:title', content: title },
       {
-        hid: "twitter:description",
-        property: "twitter:description",
+        hid: 'twitter:description',
+        property: 'twitter:description',
         content: desc,
       },
-      { hid: "twitter:image", property: "twitter:image", content: image },
-      { hid: "twitter:url", property: "twitter:url", content: url },
-      { hid: "twitter:label1", property: "twitter:label1", content: title },
+      { hid: 'twitter:image', property: 'twitter:image', content: image },
+      { hid: 'twitter:url', property: 'twitter:url', content: url },
+      { hid: 'twitter:label1', property: 'twitter:label1', content: title },
     ],
-    link: [{ rel: "canonical", href: url }],
+    link: [{ rel: 'canonical', href: url }],
   },
   data() {
     return {
@@ -378,47 +335,50 @@ export default {
       roles: {},
       benefits: [
         {
-          label: "33 days holiday (including bank hols)",
+          label: '33 days holiday (including bank hols)',
         },
         {
-          label: "Your birthday off",
+          label: 'Oliva - mental wellbeing support',
         },
         {
-          label: "Remote first and flexible working",
+          label: 'Your birthday off',
         },
         {
-          label: "Paid monthly team socials",
+          label: 'Remote first and flexible working',
         },
         {
-          label: "£500 training and wellbeing budget",
+          label: 'Paid monthly team socials',
         },
         {
-          label: "Four paid team volunteering days per year",
+          label: 'Four paid team volunteering days per year',
+        },
+        {
+          label: '£500 training and wellbeing budget',
         },
       ],
-    };
+    }
   },
   created() {
-    this.getRoles();
+    this.getRoles()
   },
   methods: {
     async getRoles() {
-      this.error = this.role = null;
-      this.loading = true;
+      this.error = this.role = null
+      this.loading = true
       await bucket
         .getObjects({
           query: {
-            type: "careers",
+            type: 'careers',
           },
-          props: "id,slug,title,content,metadata,created_at,modified_at",
-          sort: "-created_at",
+          props: 'id,slug,title,content,metadata,created_at,modified_at',
+          sort: '-created_at',
         })
         .then((data) => {
-          const roles = data.objects;
-          this.loading = false;
-          this.roles = roles;
-        });
+          const roles = data.objects
+          this.loading = false
+          this.roles = roles
+        })
     },
   },
-};
+}
 </script>
