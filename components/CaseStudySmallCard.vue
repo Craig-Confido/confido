@@ -1,14 +1,9 @@
 <template>
-  <v-card
-    v-if="card"
-    color="#f1f1ff"
-    class="text-left card-shadow mt-4"
-    width="100%"
-  >
+  <v-card v-if="card" color="#f1f1ff" class="text-left card-shadow mt-4" width="100%">
     <v-col
       height="250px"
       width="100%"
-      style="background-color:#7B7DF6;"
+      style="background-color: #7b7df6"
       class="mx-0 my-0 pt-4"
       no-gutters
     >
@@ -24,10 +19,7 @@
       </v-row>
     </v-col>
     <v-row class="px-8">
-      <v-row
-        v-if="card.cols4 == true"
-        class="primary--text mx-auto text-center mt-10 mb-4"
-      >
+      <v-row v-if="card.cols4 == true" class="primary--text mx-auto text-center mt-10 mb-4">
         <v-col cols="6" sm="3">
           <v-icon class="secondary--text ml-4 text-h2">
             {{ card.icon1 }}
@@ -76,7 +68,7 @@
       <v-row>
         <v-col cols="12" md="2" class="text-center">
           <div
-            style="height: 75px; width: 75px; border-radius: 1000px;  background-color: #ffffff;"
+            style="height: 75px; width: 75px; border-radius: 1000px; background-color: #ffffff"
             class="mx-auto"
           >
             <p class="primary--text text-h3 pt-3">
@@ -84,9 +76,7 @@
             </p>
           </div>
           <h3 class="primary--text mt-2">
-            <strong v-if="card.hiresMade > 1"
-              >Hires made <br />by Confido</strong
-            >
+            <strong v-if="card.hiresMade > 1">Hires made <br />by Confido</strong>
             <strong v-else>Hire made <br />by Confido</strong>
           </h3>
         </v-col>
@@ -94,9 +84,7 @@
           <v-card flat color="white" class="mt-2 br-15">
             <div>
               <v-row class="ml-4 mr-3">
-                <h2 class="primary--text my-4 mx-2">
-                  Overview
-                </h2>
+                <h2 class="primary--text my-4">Overview</h2>
               </v-row>
               <v-row class="ml-4 mr-3">
                 <p class="primary--text">
@@ -108,11 +96,7 @@
         </v-col>
       </v-row>
     </v-row>
-    <v-row
-      class="mt-8 mx-0 text-center px-8 pb-8"
-      align="center"
-      justify="center"
-    >
+    <v-row class="mt-8 mx-0 text-center px-8 pb-8" align="center" justify="center">
       <v-card-text class="text--primary">
         <em class="quote">{{ card.quote }} </em>
         <p class="secondary--text mt-2">
@@ -130,12 +114,12 @@
 <script>
 export default {
   scrollToTop: true,
-  name: "CaseStudySmallCard",
+  name: 'CaseStudySmallCard',
   props: {
     card: {
       type: Object,
       default: () => {},
     },
   },
-};
+}
 </script>

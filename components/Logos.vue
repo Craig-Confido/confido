@@ -15,12 +15,7 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -47,18 +42,11 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
-            <v-icon large color="white" @click="cpr = false">
-              mdi-close-circle-outline
-            </v-icon>
+            <v-icon large color="white" @click="cpr = false"> mdi-close-circle-outline </v-icon>
           </v-col>
         </div>
         <CaseStudySmallCard
@@ -79,18 +67,11 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
-            <v-icon large color="white" @click="onhand = false">
-              mdi-close-circle-outline
-            </v-icon>
+            <v-icon large color="white" @click="onhand = false"> mdi-close-circle-outline </v-icon>
           </v-col>
         </div>
         <CaseStudySmallCard
@@ -111,12 +92,7 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -143,18 +119,11 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
-            <v-icon large color="white" @click="unmind = false">
-              mdi-close-circle-outline
-            </v-icon>
+            <v-icon large color="white" @click="unmind = false"> mdi-close-circle-outline </v-icon>
           </v-col>
         </div>
         <CaseStudySmallCard
@@ -175,18 +144,11 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
-            <v-icon large color="white" @click="benefex = false">
-              mdi-close-circle-outline
-            </v-icon>
+            <v-icon large color="white" @click="benefex = false"> mdi-close-circle-outline </v-icon>
           </v-col>
         </div>
         <CaseStudySmallCard
@@ -207,12 +169,7 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -239,18 +196,11 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
-            <v-icon large color="white" @click="feedr = false">
-              mdi-close-circle-outline
-            </v-icon>
+            <v-icon large color="white" @click="feedr = false"> mdi-close-circle-outline </v-icon>
           </v-col>
         </div>
         <CaseStudySmallCard
@@ -303,18 +253,11 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
-            <v-icon large color="white" @click="eevie = false">
-              mdi-close-circle-outline
-            </v-icon>
+            <v-icon large color="white" @click="eevie = false"> mdi-close-circle-outline </v-icon>
           </v-col>
         </div>
         <CaseStudySmallCard
@@ -335,12 +278,7 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -367,12 +305,7 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -399,18 +332,11 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
-            <v-icon large color="white" @click="curve = false">
-              mdi-close-circle-outline
-            </v-icon>
+            <v-icon large color="white" @click="curve = false"> mdi-close-circle-outline </v-icon>
           </v-col>
         </div>
         <CaseStudySmallCard
@@ -431,12 +357,7 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -490,12 +411,7 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -522,12 +438,7 @@
           />
         </template>
         <div
-          style="
-            background-color: #7b7df6;
-            position: fixed;
-            width: 1000px;
-            z-index: 2;
-          "
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
           class="rounded-t"
         >
           <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
@@ -542,15 +453,117 @@
           :card="card"
         />
       </v-dialog>
+      <v-dialog max-width="1000px" overflow-hidden v-model="bubble">
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            :src="require('../static/images/bubble.svg')"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <div
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
+        >
+          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
+            <v-icon large color="white" @click="bubble = false"> mdi-close-circle-outline </v-icon>
+          </v-col>
+        </div>
+        <CaseStudySmallCard
+          v-for="(card, index_26) in cards.slice(16, 17)"
+          :key="index_26"
+          :card="card"
+        />
+      </v-dialog>
+      <v-dialog max-width="1000px" overflow-hidden v-model="percent">
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            :src="require('../static/images/percent.svg')"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <div
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
+        >
+          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
+            <v-icon large color="white" @click="percent = false"> mdi-close-circle-outline </v-icon>
+          </v-col>
+        </div>
+        <CaseStudySmallCard
+          v-for="(card, index_27) in cards.slice(17, 18)"
+          :key="index_27"
+          :card="card"
+        />
+      </v-dialog>
+      <v-dialog max-width="1000px" overflow-hidden v-model="reco">
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            :src="require('../static/images/reco.svg')"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <div
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
+        >
+          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
+            <v-icon large color="white" @click="reco = false"> mdi-close-circle-outline </v-icon>
+          </v-col>
+        </div>
+        <CaseStudySmallCard
+          v-for="(card, index_27) in cards.slice(18, 19)"
+          :key="index_27"
+          :card="card"
+        />
+      </v-dialog>
+      <v-dialog max-width="1000px" overflow-hidden v-model="curaleaf">
+        <template v-slot:activator="{ on, attrs }">
+          <v-img
+            :src="require('../static/images/curaleafLogo.svg')"
+            max-width="160"
+            contain
+            class="mx-4 mx-sm-8 my-8 my-md-4 pointer"
+            v-bind="attrs"
+            v-on="on"
+          />
+        </template>
+        <div
+          style="background-color: #7b7df6; position: fixed; width: 1000px; z-index: 2"
+          class="rounded-t"
+        >
+          <v-col cols="12" sm="1" class="mx-auto mr-sm-auto ml-sm-1">
+            <v-icon large color="white" @click="curaleaf = false">
+              mdi-close-circle-outline
+            </v-icon>
+          </v-col>
+        </div>
+        <CaseStudySmallCard
+          v-for="(card, index_27) in cards.slice(19, 20)"
+          :key="index_27"
+          :card="card"
+        />
+      </v-dialog>
     </v-row>
   </v-card>
 </template>
 
 <script>
-import CaseStudySmallCard from "../components/CaseStudySmallCard";
+import CaseStudySmallCard from '../components/CaseStudySmallCard'
 
 export default {
-  name: "Logos",
+  name: 'Logos',
   components: {
     CaseStudySmallCard,
   },
@@ -573,136 +586,140 @@ export default {
       cleanhub: false,
       onhand: false,
       cpr: false,
+      bubble: false,
+      percent: false,
+      reco: false,
+      curaleaf: false,
       cards: [
         {
-          image: "../images/benefex-white.png",
+          image: '../images/benefex-white.png',
           title:
-            "Benefex build workplace tech that transforms the employee experience, and focuses on improving employee wellbeing.",
+            'Benefex build workplace tech that transforms the employee experience, and focuses on improving employee wellbeing.',
           cols4: true,
-          icon1: "mdi-account-group",
-          label1: "30 key new hires",
-          icon2: "mdi-clock-check",
-          label2: "Hire time reduced from 12+ weeks to 4.5",
-          icon3: "mdi-charity",
-          label3: "Built out leadership team",
-          icon4: "mdi-check-circle",
-          label4: "100% success rate across all hires",
-          hiresMade: "30",
-          subtitle: "Hires made by Confido",
+          icon1: 'mdi-account-group',
+          label1: '50 key new hires',
+          icon2: 'mdi-clock-check',
+          label2: 'Hire time reduced from 12+ weeks to 3.5',
+          icon3: 'mdi-charity',
+          label3: 'Built out leadership team',
+          icon4: 'mdi-check-circle',
+          label4: '100% success rate across all hires',
+          hiresMade: '50',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "Benefex needed a partner that knew how to attract product-minded engineers in a small local market. Since summer 2018, we’ve sourced 30 Benefex-ers across Dev, QA, Platform, Product and UX. We’ve built out their next leadership layer with a VP of Engineering and Chapter Leads, and hired their third squad to build a brand-new product.",
+            'Benefex needed a partner that knew how to attract product-minded engineers in a small local market. Since summer 2018, we’ve sourced 50 Benefex-ers across Dev, QA, Platform, Product and UX. We’ve built out their next leadership layer with a VP of Engineering and Chapter Leads, and hired their third squad to build a brand-new product.',
           quote:
-            "Confido have partnered with us in the truest sense. The team have taken the time to get a deep understanding of our culture and vision for the future of Benefex, helping us grow our Product Engineering tribe more in the last six months than we achieved with others over the previous twelve. Whether the role has been in Engineering, Product or Leadership, Confido have demonstrated an emotional intelligence with candidates that I have not seen previously. In a location with a limited pool of majority passive candidates, Confido have shown a unique ability to marry the needs of Benefex and a candidate’s true career drivers. This has resulted in not just an increase to our tribe’s numbers, but enabled us to find true Benefex’ers who have both the skillset, drive to improve themselves and personality that makes our culture what it is today. In my role as CTO, Confido have been a reliable source of market trends and a constructive sounding board for what the market can provide at a particular time. This has enabled us to find the right balance in the roles and skillsets we use to grow Benefex in a sustainable way. Without them, I am sure we wouldn’t be as far along our journey as we currently are; long may it continue.",
-          person: "Paul Smith – CTO, Benefex",
+            'Confido have partnered with us in the truest sense. The team have taken the time to get a deep understanding of our culture and vision for the future of Benefex, helping us grow our Product Engineering tribe more in the last six months than we achieved with others over the previous twelve. Whether the role has been in Engineering, Product or Leadership, Confido have demonstrated an emotional intelligence with candidates that I have not seen previously. In a location with a limited pool of majority passive candidates, Confido have shown a unique ability to marry the needs of Benefex and a candidate’s true career drivers. This has resulted in not just an increase to our tribe’s numbers, but enabled us to find true Benefex’ers who have both the skillset, drive to improve themselves and personality that makes our culture what it is today. In my role as CTO, Confido have been a reliable source of market trends and a constructive sounding board for what the market can provide at a particular time. This has enabled us to find the right balance in the roles and skillsets we use to grow Benefex in a sustainable way. Without them, I am sure we wouldn’t be as far along our journey as we currently are; long may it continue.',
+          person: 'Paul Smith – CTO, Benefex',
         },
         {
-          image: "../images/houseKeep-white.png",
+          image: '../images/houseKeep-white.png',
           title:
-            "Housekeep is a B2C marketplace connecting business and  home owners with trusted cleaners.",
+            'Housekeep is a B2C marketplace connecting business and  home owners with trusted cleaners.',
           cols4: true,
-          icon1: "mdi-account-group-outline",
-          label1: "Each hire made from shortlist of 3 candidates",
-          icon2: "mdi-rocket-launch-outline",
-          label2: "First dedicated frontend hire",
-          icon3: "mdi-percent",
-          label3: "100% submittal to interview ratio",
-          icon4: "mdi-check-circle-outline",
-          label4: "100% success rate across all hires",
-          hiresMade: "2",
-          subtitle: "Hires made by Confido",
+          icon1: 'mdi-account-group-outline',
+          label1: 'Each hire made from shortlist of 3 candidates',
+          icon2: 'mdi-rocket-launch-outline',
+          label2: 'First dedicated frontend hire',
+          icon3: 'mdi-percent',
+          label3: '100% submittal to interview ratio',
+          icon4: 'mdi-check-circle-outline',
+          label4: '100% success rate across all hires',
+          hiresMade: '2',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "Housekeep needed to make two critical hires to fit within their small, tightknit team. Quality and time were of the essence for this project, so moving fast without compromising on talent calibre was key. Within five weeks, we connected Housekeep with two great engineers to add further backend and frontend capacity.",
+            'Housekeep needed to make two critical hires to fit within their small, tightknit team. Quality and time were of the essence for this project, so moving fast without compromising on talent calibre was key. Within five weeks, we connected Housekeep with two great engineers to add further backend and frontend capacity.',
           quote:
             "Craig and his team quickly understood the profile we were looking for in terms of technology, seniority and, crucially, culture. They were able to go beyond this by advising on how to communicate our brand and the opportunity to the market, and build out an efficient process to attract the top tier candidates we wanted. We're delighted to have made two hires very quickly and are continuing to work together. I'd highly recommend Confido.",
-          person: "Avin Rabheru – CEO, Housekeep",
+          person: 'Avin Rabheru – CEO, Housekeep',
         },
         {
-          image: "../images/homehero-white.png",
+          image: '../images/homehero-white.png',
           title:
             "HomeHero takes care of all the household tasks and admin that you don't want to, leaving you time for things that really matter in life.",
           cols4: true,
-          icon1: "mdi-charity",
-          label1: "Key leadership hire made",
-          icon2: "mdi-rocket-launch-outline",
-          label2: "New hire helped launch new product offering",
-          icon3: "mdi-account-group-outline",
-          label3: "Shortlist of 3 interviewed within 48 hours",
-          icon4: "mdi-clock-outline",
-          label4: "Critical hire made within 1 week",
-          hiresMade: "2",
-          subtitle: "Hires made by Confido",
+          icon1: 'mdi-charity',
+          label1: 'Key leadership hire made',
+          icon2: 'mdi-rocket-launch-outline',
+          label2: 'New hire helped launch new product offering',
+          icon3: 'mdi-account-group-outline',
+          label3: 'Shortlist of 3 interviewed within 48 hours',
+          icon4: 'mdi-clock-outline',
+          label4: 'Critical hire made within 1 week',
+          hiresMade: '2',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "Preparing for growth and a new product launch, HomeHero needed to invest in their product team. We were able to help them attract a top Head of Product and Product Designer to enable them to launch their newest service offering to the market.",
+            'Preparing for growth and a new product launch, HomeHero needed to invest in their product team. We were able to help them attract a top Head of Product and Product Designer to enable them to launch their newest service offering to the market.',
           quote:
-            "You rarely come across a recruiter as efficient as Confido. I had the pleasure of working with them to help us find a new Product Designer to join our team. The Confido team have the fantastic ability to ask pertinent questions to properly understand a job brief and then only send through candidates that meet our high standard. We had a shortlist of candidates within 48 hours and we were able to put a job offer out within a week. I can wholeheartedly recommend Confido to help grow your team.",
-          person: "David Riley – Head of Design, HomeHero",
+            'You rarely come across a recruiter as efficient as Confido. I had the pleasure of working with them to help us find a new Product Designer to join our team. The Confido team have the fantastic ability to ask pertinent questions to properly understand a job brief and then only send through candidates that meet our high standard. We had a shortlist of candidates within 48 hours and we were able to put a job offer out within a week. I can wholeheartedly recommend Confido to help grow your team.',
+          person: 'David Riley – Head of Design, HomeHero',
         },
         {
           secondQuote: false,
-          image: "../images/unmind-white.png",
+          image: '../images/unmind-white.png',
           title:
-            "Unmind is a workplace mental health platform. They empower employees to measure, understand, and improve their mental wellbeing.",
+            'Unmind is a workplace mental health platform. They empower employees to measure, understand, and improve their mental wellbeing.',
           cols4: true,
-          icon1: "mdi-lightbulb",
-          label1: "Core squads doubled",
-          icon2: "mdi-rocket-launch-outline",
-          label2: "25% improvement in process speed",
-          icon3: "mdi-cash-multiple",
-          label3: "Cost saving of over £75k",
-          icon4: "mdi-account-group-outline",
-          label4: "Improved team diversity",
-          hiresMade: "27",
-          subtitle: "Hires made by Confido",
+          icon1: 'mdi-lightbulb',
+          label1: 'Core squads doubled',
+          icon2: 'mdi-rocket-launch-outline',
+          label2: '25% improvement in process speed',
+          icon3: 'mdi-cash-multiple',
+          label3: 'Cost saving of over £75k',
+          icon4: 'mdi-account-group-outline',
+          label4: 'Improved team diversity',
+          hiresMade: '27',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "We’ve supported Unmind through Seed and Series A funding rounds. Initially, we hired three Full Stack Engineers to join the core team, then later doubled their squads from two to four. Overall, we’ve helped them make over 24 hires, mainly Full Stack Engineers, Lead Engineers and Engineering Managers.",
+            'We’ve supported Unmind through Seed and Series A funding rounds. Initially, we hired three Full Stack Engineers to join the core team, then later doubled their squads from two to four. Overall, we’ve helped them make over 24 hires, mainly Full Stack Engineers, Lead Engineers and Engineering Managers.',
           quote:
             "Unmind had huge growth plans following Series A investment and needed to double the engineering team in a short time frame whilst retaining our core values and safeguarding our culture. We needed an embedded talent partner that would lead our end-to-end candidate experience for engineering at the same time as delivering on the ambitious growth plans. Confido partnered with us in the truest sense and delivered on both levels. As acting members of the team, the Confido team were natural Unminders. They quickly calibrated on what we needed and we saw hires made within the first few weeks. They also worked closely with key stakeholders across the business on wider initiatives like our referral policy. What clearly stood out was that Confido ensured we had a diverse candidate pipeline that were aligned with our company values. They put together a structure and set of processes that will continue to help us grow in the long term. It made complete sense to extend Confido as our growth continued to accelerate, and they also made sure there was a seamless transition as our new Head of People joined. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
-          person: "Phil Mullan – CTO, Unmind",
+          person: 'Phil Mullan – CTO, Unmind',
         },
         {
           secondQuote: true,
-          image: "../images/curve-white.png",
+          image: '../images/curve-white.png',
           title:
-            "Curve is on a mission to simplify the way people spend, send, see and save money. Curve allows the user to combine their accounts and cards through the Curve app.",
+            'Curve is on a mission to simplify the way people spend, send, see and save money. Curve allows the user to combine their accounts and cards through the Curve app.',
           cols4: true,
-          icon1: "mdi-rocket-launch",
-          label1: "Reduced time to hire by 26%",
-          icon2: "mdi-lightbulb",
-          label2: "Increased fill rate by 20%",
-          icon3: "mdi-cash-multiple",
-          label3: "Reduced agency spend by £175k",
-          icon4: "mdi-account-group",
-          label4: "46% of new starters were diverse hires",
-          hiresMade: "4",
-          subtitle: "Hires made by Confido",
+          icon1: 'mdi-rocket-launch',
+          label1: 'Reduced time to hire by 26%',
+          icon2: 'mdi-lightbulb',
+          label2: 'Increased fill rate by 20%',
+          icon3: 'mdi-cash-multiple',
+          label3: 'Reduced agency spend by £175k',
+          icon4: 'mdi-account-group',
+          label4: '46% of new starters were diverse hires',
+          hiresMade: '4',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "Following their Series B funding round, Curve needed to attract top engineers whilst re-structuring their talent function for long term success. We helped make a number of hires, before moving into an interim Head of Talent role. This involved working with key stakeholders to ensure their talent team was structured for sustainable growth.",
+            'Following their Series B funding round, Curve needed to attract top engineers whilst re-structuring their talent function for long term success. We helped make a number of hires, before moving into an interim Head of Talent role. This involved working with key stakeholders to ensure their talent team was structured for sustainable growth.',
           quote:
             "The team at Confido are unlike any other recruitment business I have worked with. This was important in more ways than I can express, from both a personal and Curve standpoint. Confido's ability to quickly connect with people and business functions ensured consistent delivery of solutions that could and have been relied upon. Whether it’s a hiring goal, upskilling internal talent teams, or working with budget holders to effectively workforce and scenario plan, Confido have partnered with us in every sense of the word. Sharp, resourceful and totally committed. Great job. ",
           quote2:
-            "Appointing a recruitment partner is a challenge; finding one you can trust with your business as if it were their own is near impossible. Confido live up to the high expectations they set for themselves and they have been instrumental in helping Curve hire people that not only have the skills, but also fit our culture and company values. Beyond hiring, Confido have worked closely with myself and the People Ops team to improve our recruitment processes, use of data and documentation, driving consistency and improving the relationships talent has across the business. Highly recommended.",
-          person: "Matt Collinge – CTO, Curve",
-          person2: "Kate James – Head of People, Curve",
+            'Appointing a recruitment partner is a challenge; finding one you can trust with your business as if it were their own is near impossible. Confido live up to the high expectations they set for themselves and they have been instrumental in helping Curve hire people that not only have the skills, but also fit our culture and company values. Beyond hiring, Confido have worked closely with myself and the People Ops team to improve our recruitment processes, use of data and documentation, driving consistency and improving the relationships talent has across the business. Highly recommended.',
+          person: 'Matt Collinge – CTO, Curve',
+          person2: 'Kate James – Head of People, Curve',
         },
         {
-          image: "../images/eevie-white.png",
+          image: '../images/eevie-white.png',
           title:
-            "eevie is the Employee Climate Engagement platform that transforms your corporate culture to be more climate friendly.",
-          icon1: "mdi-lightbulb",
-          label1: "Average 4 week time to hire",
-          icon2: "mdi-account-group-outline",
-          label2: "100% CV to interview ratio",
-          icon3: "mdi-bullseye-arrow",
-          label3: "Average 2 candidate shortlist per hire ",
-          icon4: "",
-          label4: "",
-          hiresMade: "2",
-          subtitle: "Hires made by Confido",
+            'eevie is the Employee Climate Engagement platform that transforms your corporate culture to be more climate friendly.',
+          icon1: 'mdi-lightbulb',
+          label1: 'Average 4 week time to hire',
+          icon2: 'mdi-account-group-outline',
+          label2: '100% CV to interview ratio',
+          icon3: 'mdi-bullseye-arrow',
+          label3: 'Average 2 candidate shortlist per hire ',
+          icon4: '',
+          label4: '',
+          hiresMade: '2',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "Following their Pre-Seed round, eevie was looking to make a key engineering hire. So, they turned to us for support.",
+            'Following their Pre-Seed round, eevie was looking to make a key engineering hire. So, they turned to us for support.',
           quote:
-            "Working with Confido has been one of the best choices we have made all year. It took less than two weeks to start talking to interesting candidates and we felt guided, supported and well briefed at every step of the way. In addition, the entire process felt personal and caring which lead to hiring not only the skill but also the personality that we love working with.",
-          person: "Lenni Paar – CTO, eevie",
+            'Working with Confido has been one of the best choices we have made all year. It took less than two weeks to start talking to interesting candidates and we felt guided, supported and well briefed at every step of the way. In addition, the entire process felt personal and caring which lead to hiring not only the skill but also the personality that we love working with.',
+          person: 'Lenni Paar – CTO, eevie',
         },
         // {
         //   image: "../images/matr-white.png",
@@ -725,217 +742,300 @@ export default {
         //   person: "Tom Hooper – CEO, Matr",
         // },
         {
-          image: "../images/thirdspace-white.png",
+          image: '../images/thirdspace-white.png',
           title:
-            "Third Space Learning are the largest provider of 1-to-1 maths tutor support in the UK.",
-          icon1: "mdi-account-group-outline",
-          label1: "Rebuilt core engineering team",
-          icon2: "mdi-clock-outline",
-          label2: "5 week average time to hire",
-          icon3: "mdi-trophy-outline",
-          label3: "100% success rate",
-          icon4: "",
-          label4: "",
-          hiresMade: "17",
-          subtitle: "Hires made by Confido",
+            'Third Space Learning are the largest provider of 1-to-1 maths tutor support in the UK.',
+          icon1: 'mdi-account-group-outline',
+          label1: 'Rebuilt core engineering team',
+          icon2: 'mdi-clock-outline',
+          label2: '5 week average time to hire',
+          icon3: 'mdi-trophy-outline',
+          label3: '100% success rate',
+          icon4: '',
+          label4: '',
+          hiresMade: '17',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "Third Space Learning needed to build out their core product and engineering team to enable growth into new markets. We’ve helped them hire 17 people across Dev, DevOps, Product and UX.",
+            'Third Space Learning needed to build out their core product and engineering team to enable growth into new markets. We’ve helped them hire 17 people across Dev, DevOps, Product and UX.',
           quote:
             "It's a pleasure working with Confido. Simply put, they deliver. At Third Space Learning we've filled multiple engineering positions through Confido over the past six months, covering full-stack, frontend and DevOps, and both contract and permanent roles. Confido have sourced universally high-quality candidates, then worked seamlessly with us to manage a candidate-centred interview process and close offers. Confido have approached the whole process as a true partnership, and that has definitely helped us overcome the inevitable bumps in the road that happen when growing a team. I look forward to working with Confido in future - highly recommended.",
-          person: "Sam Stagg – CTO, Third Space Learning",
+          person: 'Sam Stagg – CTO, Third Space Learning',
         },
         {
-          image: "../images/octopusWealth-white.png",
+          image: '../images/octopusWealth-white.png',
           title:
             "Octopus Wealth help you do more with your money, with a tailored financial plan that's clear, straightforward and convenient.",
-          icon1: "mdi-account-group-outline",
-          label1: "Hired Tech Co-Founder to enable MVP launch",
-          icon2: "mdi-clock-outline",
-          label2: "Hire made within 3 weeks",
-          icon3: "mdi-trophy-outline",
-          label3: "100% interview success rate",
-          icon4: "",
-          label4: "",
-          hiresMade: "2",
-          subtitle: "Hires made by Confido",
+          icon1: 'mdi-account-group-outline',
+          label1: 'Hired Tech Co-Founder to enable MVP launch',
+          icon2: 'mdi-clock-outline',
+          label2: 'Hire made within 3 weeks',
+          icon3: 'mdi-trophy-outline',
+          label3: '100% interview success rate',
+          icon4: '',
+          label4: '',
+          hiresMade: '2',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "Octopus Wealth required a Technical Co-Founder to help them build out their engineering team, they needed a top tier tech leader within a short timeframe. The hire was made from a shortlist of three candidates within three weeks. ",
+            'Octopus Wealth required a Technical Co-Founder to help them build out their engineering team, they needed a top tier tech leader within a short timeframe. The hire was made from a shortlist of three candidates within three weeks. ',
           quote:
-            "Confido worked really closely with me to help me find our new Head of Engineering. The most important aspect for me was calibrating with Confido really quickly on what we were looking for. Within days of spec’ing out the role, we were seeing CVs and meeting potential candidates so we could quickly agree and hone-in on what we were looking for. The Confido team were really keen to understand exactly what I was looking for from the start, and as a result the candidates we met were all high caliber and very credible. This meant the whole process was much quicker than I’ve experienced on similar searches in the past.",
-          person: "Richard Wazacz – CEO, Octopus Wealth",
+            'Confido worked really closely with me to help me find our new Head of Engineering. The most important aspect for me was calibrating with Confido really quickly on what we were looking for. Within days of spec’ing out the role, we were seeing CVs and meeting potential candidates so we could quickly agree and hone-in on what we were looking for. The Confido team were really keen to understand exactly what I was looking for from the start, and as a result the candidates we met were all high caliber and very credible. This meant the whole process was much quicker than I’ve experienced on similar searches in the past.',
+          person: 'Richard Wazacz – CEO, Octopus Wealth',
         },
         {
-          image: "../images/visionbox-white.png",
+          image: '../images/visionbox-white.png',
           title:
-            "Vision-box are creating a world where everyone can travel seamlessly without the need for physical documentation using cutting edge biometrics and cyber security.",
+            'Vision-box are creating a world where everyone can travel seamlessly without the need for physical documentation using cutting edge biometrics and cyber security.',
           cols4: true,
-          icon1: "mdi-account-group-outline",
-          label1: "Helped new CTO reshape and scale his team",
-          icon2: "mdi-clock-outline",
-          label2: "Created QA and DevOps functions",
-          icon3: "mdi-trophy-outline",
-          label3: "11 hires made within 13 weeks",
-          icon4: "mdi-finance",
-          label4: "Time to hire reduced by 30%",
-          hiresMade: "12",
-          subtitle: "Hires made by Confido",
+          icon1: 'mdi-account-group-outline',
+          label1: 'Helped new CTO reshape and scale his team',
+          icon2: 'mdi-clock-outline',
+          label2: 'Created QA and DevOps functions',
+          icon3: 'mdi-trophy-outline',
+          label3: '11 hires made within 13 weeks',
+          icon4: 'mdi-finance',
+          label4: 'Time to hire reduced by 30%',
+          hiresMade: '12',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "Vision-Box needed to accelerate their engineering hiring after struggling with direct hiring and local partners. Within 13 weeks we made 11 hires across Dev, QA, Release and DevOps, including five Head of departments. We were able to attract both local and international candidates.",
+            'Vision-Box needed to accelerate their engineering hiring after struggling with direct hiring and local partners. Within 13 weeks we made 11 hires across Dev, QA, Release and DevOps, including five Head of departments. We were able to attract both local and international candidates.',
           quote:
-            "I’ve worked with Confido twice now. Once, building a team for an early-stage startup from the ground up. Then now, scaling a team for a global business. Both times, Confido have delivered to my high expectations. At Vision-Box, I needed to scale my team quickly, with top engineers. When I joined, we’d only made one hire in six months and I didn’t know the local market in Lisbon. Confido acted as a true recruiting partner, not only did they attract some of the best engineers I’ve come across, but they fed back valuable intel about the local market and what our competitors were doing. We were able to make 10+ hires in the first 3 months and speed up our hiring. Honestly, if you’re a startup that needs to make hires, you need to speak to Confido!",
-          person: "Andrea Candian – CTO, Vision-Box",
+            'I’ve worked with Confido twice now. Once, building a team for an early-stage startup from the ground up. Then now, scaling a team for a global business. Both times, Confido have delivered to my high expectations. At Vision-Box, I needed to scale my team quickly, with top engineers. When I joined, we’d only made one hire in six months and I didn’t know the local market in Lisbon. Confido acted as a true recruiting partner, not only did they attract some of the best engineers I’ve come across, but they fed back valuable intel about the local market and what our competitors were doing. We were able to make 10+ hires in the first 3 months and speed up our hiring. Honestly, if you’re a startup that needs to make hires, you need to speak to Confido!',
+          person: 'Andrea Candian – CTO, Vision-Box',
         },
         {
-          image: "../images/feedr-white.png",
+          image: '../images/feedr-white.png',
           title:
-            "Feedr is on a mission to make it easier for people to get healthy, delicious food at the office, every day.",
+            'Feedr is on a mission to make it easier for people to get healthy, delicious food at the office, every day.',
           cols4: true,
-          icon1: "mdi-finance",
-          label1: "4x increase in hiring velocity",
-          icon2: "mdi-clock-outline",
-          label2: "13 hires made in 14 weeks",
-          icon3: "mdi-trophy-outline",
-          label3: "Overall cost saving of 37.5%",
-          icon4: "mdi-account-group-outline",
-          label4: "Team diversity improved by 44%",
-          hiresMade: "12",
-          subtitle: "Hires made by Confido",
+          icon1: 'mdi-finance',
+          label1: '4x increase in hiring velocity',
+          icon2: 'mdi-clock-outline',
+          label2: '13 hires made in 14 weeks',
+          icon3: 'mdi-trophy-outline',
+          label3: 'Overall cost saving of 37.5%',
+          icon4: 'mdi-account-group-outline',
+          label4: 'Team diversity improved by 44%',
+          hiresMade: '12',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "Following their acquisition, Feedr needed to double the size of their product and engineering teams within a three month timeframe. We tripled the previous hiring speed to make 12 hires in 14 weeks across product management, development and QA.",
+            'Following their acquisition, Feedr needed to double the size of their product and engineering teams within a three month timeframe. We tripled the previous hiring speed to make 12 hires in 14 weeks across product management, development and QA.',
           quote:
             "Working with Confido was incredibly helpful when we needed to double the size of our engineering and product teams within a period of 3 months. From day one, it felt like the Confido team was a natural extension of our brand/business that we could trust to go to market on our behalf. They partnered with us to learn about our team and what we needed in our hires, working closely with the full team in screening, interviewing, and finding the right candidate fit. As a result, we were able to achieve our demanding hiring goals, bringing in top engineers that will help take the product to the next level. Outside of hiring, Confido provided clear hiring data and metrics that we could action, and supported our strategic focus on building a diverse and inclusive team, ensuring we achieved an agreed ratio of diverse hires. We very rarely work with recruiters, but I'd recommend working with the team at Confido.",
           quote2:
             "I have really enjoyed working with Confido. We needed to scale a small startup team about 3x in a short space of time, but didn't want to compromise on the quality of candidates. We'd tried alternative recruitment arrangements but hadn't seen results until we engaged Confido. Not only did they source quality candidates, but they were engaged throughout the interview process and gave really useful insight into our whole process.",
-          person: "Lyz Swanton – COO, Feedr",
-          person2: "Mark Somerfield – VP of Engineering, Feedr",
+          person: 'Lyz Swanton – COO, Feedr',
+          person2: 'Mark Somerfield – VP of Engineering, Feedr',
         },
         {
-          image: "../images/wagestream-white.png",
+          image: '../images/wagestream-white.png',
           title:
-            "Wagestream allows users to track what they’ve earnt, stream those wages when they need them, and whilst doing so become better educated on making their money go further.",
-          icon1: "mdi-percent-outline",
-          label1: "100% submittal to interview rate",
-          icon2: "mdi-account-group-outline",
-          label2: "Shortlist of 3 candidates per hire",
-          icon3: "mdi-lightbulb",
-          label3: "Critical hires made in order to scale globally",
-          icon4: "",
-          label4: "",
-          hiresMade: "3",
-          subtitle: "Hires made by Confido",
+            'Wagestream allows users to track what they’ve earnt, stream those wages when they need them, and whilst doing so become better educated on making their money go further.',
+          icon1: 'mdi-percent-outline',
+          label1: '100% submittal to interview rate',
+          icon2: 'mdi-account-group-outline',
+          label2: 'Shortlist of 3 candidates per hire',
+          icon3: 'mdi-lightbulb',
+          label3: 'Critical hires made in order to scale globally',
+          icon4: '',
+          label4: '',
+          hiresMade: '3',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "Wagestream were struggling to attract the right calibre of software engineer through traditional recruitment routes. Following their Series B funding round, they needed to grow quickly as they were launching in new markets. We’ve made three key hires: Senior Product Engineer, System Architect and Senior Platform Engineer.",
+            'Wagestream were struggling to attract the right calibre of software engineer through traditional recruitment routes. Following their Series B funding round, they needed to grow quickly as they were launching in new markets. We’ve made three key hires: Senior Product Engineer, System Architect and Senior Platform Engineer.',
           quote:
             "In the past, hiring skilled candidates in DevOps roles has always been nothing short of painful.  This, refreshingly, was not the case with Confido: they quickly calibrated with what we needed, I was quickly supplied with two high quality, well vetted candidates who were a pleasure to interview. Communication through the entire process was always quick, easy and very professional. In short - I wouldn't hesitate to use Confido’s services again for any of my future technical staffing needs and recommend that anyone looking for similar do the same.",
-          person:
-            "Charlie Livingston – Head of Infrastructure and Security, Wagestream",
+          person: 'Charlie Livingston – Head of Infrastructure and Security, Wagestream',
         },
         {
-          image: "../images/allplants-white.png",
+          image: '../images/allplants-white.png',
           title:
-            "allplants deliver 5* plant-based meals nationwide; making eating more plants easy, exciting and delicious, to help both people and the planet thrive. ",
-          icon1: "mdi-clock-outline",
-          label1: "Average time to hire 4 weeks",
-          icon2: "mdi-account-group-outline",
-          label2: "Average 3.5 candidates submitted per hire",
-          icon3: "mdi-calendar-outline",
-          label3: "100% CV to interview ratio",
-          icon4: "",
-          label4: "",
-          hiresMade: "17",
-          subtitle: "Key hire made by Confido",
+            'allplants deliver 5* plant-based meals nationwide; making eating more plants easy, exciting and delicious, to help both people and the planet thrive. ',
+          icon1: 'mdi-clock-outline',
+          label1: 'Average time to hire 4 weeks',
+          icon2: 'mdi-account-group-outline',
+          label2: 'Average 3.5 candidates submitted per hire',
+          icon3: 'mdi-calendar-outline',
+          label3: '100% CV to interview ratio',
+          icon4: '',
+          label4: '',
+          hiresMade: '17',
+          subtitle: 'Key hire made by Confido',
           overviewText:
-            "In preparation for Series B funding allplants needed to make a critical backend engineer hire. After the position had been open for months, allplants needed a partner that could help them make the hire quickly and efficiently whilst offering candidates a great experience and focusing on pipeline diversity. Pre and post Series B, allplants needed a talent partner that could help them grow across product, data and engineering. They needed to double the size of their product and engineering teams and build a new data engineering function from scratch. Partnering with the CTO, Head of Product and Director of Finance/BI, the key thing was attracting talented, mission-aligned people whilst providing a great candidate experience.  ",
+            'In preparation for Series B funding allplants needed to make a critical backend engineer hire. After the position had been open for months, allplants needed a partner that could help them make the hire quickly and efficiently whilst offering candidates a great experience and focusing on pipeline diversity. Pre and post Series B, allplants needed a talent partner that could help them grow across product, data and engineering. They needed to double the size of their product and engineering teams and build a new data engineering function from scratch. Partnering with the CTO, Head of Product and Director of Finance/BI, the key thing was attracting talented, mission-aligned people whilst providing a great candidate experience.  ',
           quote:
-            "We had an urgent position to fill that we had been struggling with for 12 months. Confido came on and helped us to redefine the role and brief to better fit the market before carrying out a fantastic headhunting search that yielded a really diverse set of candidates. They also provided a huge amount of help with the process itself so that candidates always felt in to the loop, many of whom commenting on how well run everything was. From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.",
-          person: "Adam Dunkley – Director of Technology, Allplants",
+            'We had an urgent position to fill that we had been struggling with for 12 months. Confido came on and helped us to redefine the role and brief to better fit the market before carrying out a fantastic headhunting search that yielded a really diverse set of candidates. They also provided a huge amount of help with the process itself so that candidates always felt in to the loop, many of whom commenting on how well run everything was. From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.',
+          person: 'Adam Dunkley – Director of Technology, Allplants',
         },
         {
-          image: "../images/mindlabs-white.png",
+          image: '../images/mindlabs-white.png',
           title:
-            "MindLabs is a live platform with video classes for your mind, designed to reduce anxiety, stress and loneliness.",
+            'MindLabs is a live platform with video classes for your mind, designed to reduce anxiety, stress and loneliness.',
           cols4: false,
-          icon1: "mdi-percent",
-          label1: "100% CV to interview ratio",
-          icon2: "mdi-account-group-outline",
-          label2: "Diverse candidates hired",
-          icon3: "mdi-clock-outline",
-          label3: "Average 4-week time to hire",
-          icon4: "",
-          label4: "",
-          hiresMade: "3",
-          subtitle: "Hires made by Confido",
+          icon1: 'mdi-percent',
+          label1: '100% CV to interview ratio',
+          icon2: 'mdi-account-group-outline',
+          label2: 'Diverse candidates hired',
+          icon3: 'mdi-clock-outline',
+          label3: 'Average 4-week time to hire',
+          icon4: '',
+          label4: '',
+          hiresMade: '3',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "Pre-Seed, we’ve helped Mindlabs hire their first Product Manager to finishing building their MVP and find product market fit. Post-Seed, we’ve helped them build out their product and design function with a Head of Product to focus on their long-term product vision and roadmap, and Digital Designer to support sales and marketing.",
+            'Pre-Seed, we’ve helped Mindlabs hire their first Product Manager to finishing building their MVP and find product market fit. Post-Seed, we’ve helped them build out their product and design function with a Head of Product to focus on their long-term product vision and roadmap, and Digital Designer to support sales and marketing.',
           quote:
             "Confido approached hiring for our first Product Manager with a level of rigour we hadn't experienced before from a recruiter. Straight away we noticed a difference, they felt more like an in-house recruitment expert than an external recruiter. From taking the time to fully understand our business, to vetting candidates with an extremely detailed screening call, to providing valuable market insights, to constant communication around the clock, it was a real pleasure to work with Confido. We could trust them in representing our brand and attracting high calibre candidates for what was a critical hire for us. I wouldn't hesitate in not only recommending them but working with them again as we scale our Product team.",
-          person: "Adnan Ebrahim – CEO/Co-founder, MindLabs",
+          person: 'Adnan Ebrahim – CEO/Co-founder, MindLabs',
         },
         {
-          image: "../images/cleanhub-white.png",
+          image: '../images/cleanhub-white.png',
           title:
-            "CLEANHUB partners with brands to prevent plastic from entering our oceans. They are protecting and preserving the oceans by building an economy where plastic is too valuable to waste.",
+            'CLEANHUB partners with brands to prevent plastic from entering our oceans. They are protecting and preserving the oceans by building an economy where plastic is too valuable to waste.',
           cols4: true,
-          icon1: "mdi-account-group-outline",
-          label1: "100% diverse candidates hired",
-          icon2: "mdi-account-check",
-          label2: "First Lead Product Designer hire",
-          icon3: "mdi-account-check",
-          label3: "First Backend hire",
-          icon4: "mdi-percent",
-          label4: "100% of hires made from initial shortlist",
-          hiresMade: "3",
-          subtitle: "Hires made by Confido",
+          icon1: 'mdi-account-group-outline',
+          label1: '100% diverse candidates hired',
+          icon2: 'mdi-account-check',
+          label2: 'First Lead Product Designer hire',
+          icon3: 'mdi-account-check',
+          label3: 'First Backend hire',
+          icon4: 'mdi-percent',
+          label4: '100% of hires made from initial shortlist',
+          hiresMade: '3',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "Following their Seed funding, CLEANHUB needed to make two critical hires within product and engineering; a Lead Product Designer and a Senior Backend Engineer. CLEANHUB needed a partner that understood early-stage startups and could attract value-aligned candidates quickly and effectively.",
+            'Following their Seed funding, CLEANHUB needed to make two critical hires within product and engineering; a Lead Product Designer and a Senior Backend Engineer. CLEANHUB needed a partner that understood early-stage startups and could attract value-aligned candidates quickly and effectively.',
           quote:
             "Working with Confido was amazing. The things I appreciated most were the diligence and flexibility. They held us accountable throughout the entire process to make it was a great experience for candidates as well. I'm looking forward to welcoming our new team members soon and working with Craig as we continue to grow.",
-          person: "Joel Tasche – CEO/Founder, CLEANHUB",
+          person: 'Joel Tasche – CEO/Founder, CLEANHUB',
         },
         {
-          image: "../images/onhand-white.png",
+          image: '../images/onhand-white.png',
           title:
-            "onHand is the volunteering and climate impact platform for businesses and individuals. Through onHand, you can help your local communities and have global impact.",
+            'onHand is the volunteering and climate impact platform for businesses and individuals. Through onHand, you can help your local communities and have global impact.',
           cols4: true,
-          icon1: "mdi-account-group-outline",
-          label1: "Shortlist of 3 candidates",
-          icon2: "mdi-percent",
-          label2: "100% submittal to interview ratio",
-          icon3: "mdi-account-check",
-          label3: "Hire made from first shortlist",
-          icon4: "mdi-calendar",
-          label4: "Hire made within 4 weeks",
-          hiresMade: "1",
-          subtitle: "Hire made by Confido",
+          icon1: 'mdi-account-group-outline',
+          label1: 'Shortlist of 3 candidates',
+          icon2: 'mdi-percent',
+          label2: '100% submittal to interview ratio',
+          icon3: 'mdi-account-check',
+          label3: 'Hire made from first shortlist',
+          icon4: 'mdi-calendar',
+          label4: 'Hire made within 4 weeks',
+          hiresMade: '4',
+          subtitle: 'Hire made by Confido',
           overviewText:
-            "Following their Seed funding, onHand needed to hire an experienced Senior Engineer to take ownership of their backend. For them, it was important to work with a partner that shared their mission-led approach.",
+            'Following Seed and Series A funding, we’ve helped build out their product and engineering function with a number of key senior hires. For them, it was important to work with a partner that shared their mission-led approach.',
           quote:
-            "Confido did an excellent job in making our crucial Senior Backend hire. From the very beginning their process was smooth, clear and quick. We had three candidates to interview in under two weeks and hired one soon after. Craig was a pleasure to work with, his knowledge, expertise and professionalism made this experience superb. He gave marvellous advice throughout the whole process and most importantly, delivered! We’re looking forward to working with Confido in the future to help grow our teams. onHand couldn’t have asked for a better talent partnership",
-          person: "Dan Moffatt – CTO, onHand",
+            'Confido did an excellent job in making our crucial Senior Backend hire. From the very beginning their process was smooth, clear and quick. We had three candidates to interview in under two weeks and hired one soon after. Craig was a pleasure to work with, his knowledge, expertise and professionalism made this experience superb. He gave marvellous advice throughout the whole process and most importantly, delivered! We’re looking forward to working with Confido in the future to help grow our teams. onHand couldn’t have asked for a better talent partnership',
+          person: 'Dan Moffatt – CTO, onHand',
         },
         {
-          image: "../images/cpr-logo-white.svg",
+          image: '../images/cpr-logo-white.svg',
           title:
-            "Climate Policy Radar is a not-for-profit climatetech startup. They are giving policymakers, researchers and civil society tools for better policy design and accountability.",
+            'Climate Policy Radar is a not-for-profit climatetech startup. They are giving policymakers, researchers and civil society tools for better policy design and accountability.',
           cols4: false,
-          icon1: "mdi-account-group-outline",
-          label1: "Average 3 candidate shortlist per role",
-          icon2: "mdi-calendar",
-          label2: "Average 2.5 week time to hire ",
-          icon3: "mdi-percent",
-          label3: "92% CV to interview ratio",
-          icon4: "",
-          label4: "",
-          hiresMade: "4",
-          subtitle: "Hires made by Confido",
+          icon1: 'mdi-account-group-outline',
+          label1: 'Average 3 candidate shortlist per role',
+          icon2: 'mdi-calendar',
+          label2: 'Average 2.5 week time to hire ',
+          icon3: 'mdi-percent',
+          label3: '92% CV to interview ratio',
+          icon4: '',
+          label4: '',
+          hiresMade: '4',
+          subtitle: 'Hires made by Confido',
           overviewText:
-            "Following their Seed round, Climate Policy Radar needed to make multiple hires across their data science and software engineering team.",
+            'Following their Seed round, Climate Policy Radar needed to make multiple hires across their data science and software engineering team.',
           quote:
-            "What a joy and a relief working with a professional recruiter that just gets it. Following our initial funding round, we set out to expand our core team of engineers and data scientists. This was our first time working with a recruiter and we needed someone who could balance hiring quality people in a timely manner. We spoke to a number of recruiters but felt Confido really understood what it meant to represent an impact/not-for-profit business and how to attract great people. They instantly aligned with our needs and values which quickly translated into a shortlist of quality candidates. The amount of work that went into each recruit was immense, the advice we received from Confido was golden, and even our candidates commented on how positively different it was working with Confido. Confido helped us recruit four excellent people for the team in a short period of time, all along deeply attuned to our needs.",
-          person: "Michal Nachmany – CEO & Founder, Climate Policy Radar",
+            'What a joy and a relief working with a professional recruiter that just gets it. Following our initial funding round, we set out to expand our core team of engineers and data scientists. This was our first time working with a recruiter and we needed someone who could balance hiring quality people in a timely manner. We spoke to a number of recruiters but felt Confido really understood what it meant to represent an impact/not-for-profit business and how to attract great people. They instantly aligned with our needs and values which quickly translated into a shortlist of quality candidates. The amount of work that went into each recruit was immense, the advice we received from Confido was golden, and even our candidates commented on how positively different it was working with Confido. Confido helped us recruit four excellent people for the team in a short period of time, all along deeply attuned to our needs.',
+          person: 'Michal Nachmany - CEO & Founder, Climate Policy Radar',
+        },
+        {
+          image: '../images/bubble-logo-white.svg',
+          title:
+            'Simpler childcare for busy lives. Book and find brilliant sitters and nannies recommended by your friends and community.',
+          cols4: false,
+          icon1: 'mdi-percent',
+          label1: '100% CV to interview ratio',
+          icon2: 'mdi-account-check',
+          label2: '80% passed 1st Interview',
+          icon3: 'mdi-account-group-outline',
+          label3: '50% of shortlist were diverse candidates',
+          icon4: '',
+          label4: '',
+          hiresMade: '1',
+          subtitle: 'Hires made by Confido',
+          overviewText:
+            'Bubble needed to make a key Senior Engineer hire to complete their core tech team, they’d been struggling with direct hiring efforts.',
+          quote:
+            "Craig and Confido did a superb job with a senior hire that we'd until that point been struggling with. Craig's approach is methodical and smart. There's no BS and his management of the process is super-efficient with no time wasted. We're really delighted with our hire and will definitely be looking to work with Confido again in future.",
+          person: 'Ari Last - Founder, Bubble',
+        },
+        {
+          image: '../images/percent-logo-white.svg',
+          title:
+            'Powering purpose across the globe. Percent provides the global rails for giving and makes it easy for you to build good into what you do.',
+          cols4: false,
+          icon1: 'mdi-calendar',
+          label1: '2.5 week average time to hire',
+          icon2: 'mdi-account-group-outline',
+          label2: '3 candidates submitted per hire',
+          icon3: 'mdi-account-check',
+          label3: '60% of candidates reached final interview',
+          icon4: '',
+          label4: '',
+          hiresMade: '2',
+          subtitle: 'Hires made by Confido',
+          overviewText:
+            'Percent needed to make a number of Senior Full Stack Engineer hires for their newest squad.',
+          quote:
+            'Confido are great and has found me a number of engineers. The process is always friendly, efficient, and delivers results. I would recommend working with Confido without hesitation.',
+          person: 'James Weston - Head of Engineering, Percent',
+        },
+        {
+          image: '../images/reco-logo-white.svg',
+          title:
+            'Re:Co uses their diversity of thought and experience to help clients achieve sustainable competitive advantage in the long term.',
+          cols4: false,
+          icon1: 'mdi-calendar',
+          label1: '3 week average time to hire',
+          icon2: 'mdi-account-group-outline',
+          label2: '3.5 candidates submitted per hire',
+          icon3: 'mdi-account-check',
+          label3: '80% of shortlist were diverse candidates ',
+          icon4: '',
+          label4: '',
+          hiresMade: '2',
+          subtitle: 'Hires made by Confido',
+          overviewText:
+            'Re:Co wanted to work with a value-aligned partner that could help them make their first engineering hires.',
+          quote:
+            "Working with Confido has been the most simple and straightforward recruitment experience imaginable! It was our shared focus on tech-for-good which brought us together and made them the stand-out choice of partner to represent my organisation within the talent market. It was immediately clear from Craig’s content and our conversations that he's an expert in his field, with a real passion for people and a duty of care towards both his clients and his candidates. Craig’s clear and casual communication style made our collaboration easy, quickly understanding my hiring needs, offering invaluable support and guidance, and before I knew it I had the right kind of candidates landing in my inbox! The whole process was so efficient and effective, I couldn't recommend working with Confido enough.",
+          person: 'Lee Brooks - CTO, Re:Co',
+        },
+        {
+          image: '../images/curaleaf-logo-white.svg',
+          title:
+            'Curaleaf have spent the last decade driving the cannabis health movement and providing people across America with quality products they can rely on.',
+          cols4: false,
+          icon1: 'mdi-calendar',
+          label1: '2.5 week average time to hire',
+          icon2: 'mdi-account-group-outline',
+          label2: '4 candidates submitted per hire',
+          icon3: 'mdi-account-check',
+          label3: '100% CV to interview ratio',
+          icon4: '',
+          label4: '',
+          hiresMade: '1',
+          subtitle: 'Hires made by Confido',
+          overviewText:
+            'Curaleaf were building out their UK team and needed to make their first Data Engineer hire.',
+          quote:
+            "I have, and will continue to happily recommend Confido for both finding a job and finding candidates. Most recently I've worked with Confido to hire our first Data Engineer. The recruitment process was very easy, we spoke about the requirement, which they turned into a hiring brief. I then only had to wait a couple of weeks for a shortlist of candidates from which I hired shortly after. The quality of candidates was very high, and a good match to the values I look for and share with Confido. Their process in my opinion is the model for good recruiting.",
+          person: 'Philip Jones - VP Technology Curaleaf International',
         },
       ],
-    };
+    }
   },
-};
+}
 </script>
