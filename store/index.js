@@ -1,5 +1,5 @@
-import Vuex from "vuex";
-import Request from "~/common/request";
+import Vuex from 'vuex';
+import Request from '~/common/request';
 const state = {
   blogs: {},
   blog: {},
@@ -32,18 +32,18 @@ const mutations = {
 const actions = {
   async nuxtServerInit(context) {
     const BlogsResponse = await Request.getBlogs();
-    const Blogs = BlogsResponse.objects;
+    const Blogs = BlogsResponse;
     if (Blogs) {
-      context.commit("SET_BLOGS", Blogs);
+      context.commit('SET_BLOGS', Blogs);
     }
   },
   getBlog(context, payload) {
     // Nomral Blogs
     this.state.blogs.forEach((element) => {
       if (element.slug == payload) {
-        context.commit("SET_SELECTED_BLOG", element);
+        context.commit('SET_SELECTED_BLOG', element);
       } else {
-        context.commit("SET_SELECTED_BLOG", null);
+        context.commit('SET_SELECTED_BLOG', null);
       }
     });
   },

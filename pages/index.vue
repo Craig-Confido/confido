@@ -2,11 +2,7 @@
   <v-container fluid class="pa-0 ma-0" v-if="home.metadata">
     <section class="mx-4 mx-lg-16">
       <v-row class="text-left mt-4">
-        <v-img
-          :src="require('../static/images/homeVisual.png')"
-          class="d-flex d-md-none mx-md-16"
-          alt="image of people"
-        />
+        <v-img :src="require('../static/images/homeVisual.png')" class="d-flex d-md-none mx-md-16" alt="image of people" />
         <v-col cols="12" sm="7" class="mt-md-16">
           <h1 class="text-h3 text-md-h2 font-weight-bold" aria-label="Intro text">
             {{ home.title }}
@@ -20,56 +16,18 @@
             >.
           </h2>
           <v-row class="mt-12 mx-0">
-            <v-btn
-              to="/startups"
-              class="mr-4 mb-2 btn--outlined font-weight-black"
-              outlined
-              color="accent"
-              rounded
-              width="250"
-              height="50"
-            >
-              Scale your team
-            </v-btn>
-            <v-btn
-              to="/talent"
-              class="mr-4 mb-2 btn--outlined font-weight-bold"
-              outlined
-              color="success"
-              rounded
-              width="250"
-              height="50"
-            >
-              Join a startup
-            </v-btn>
-            <v-btn
-              to="/talent"
-              class="btn--outlined font-weight-bold"
-              outlined
-              color="secondary"
-              rounded
-              width="250"
-              height="50"
-            >
-              Live roles
-            </v-btn>
+            <v-btn to="/startups" class="mr-4 mb-2 btn--outlined font-weight-black" outlined color="accent" rounded width="250" height="50"> Scale your team </v-btn>
+            <v-btn to="/talent" class="mr-4 mb-2 btn--outlined font-weight-bold" outlined color="success" rounded width="250" height="50"> Join a startup </v-btn>
+            <v-btn to="/talent" class="btn--outlined font-weight-bold" outlined color="secondary" rounded width="250" height="50"> Live roles </v-btn>
           </v-row>
         </v-col>
         <v-spacer />
         <v-col cols="12" sm="5">
-          <v-img
-            :src="require('../static/images/homeVisual.png')"
-            class="d-none d-md-flex mx-md-16"
-            alt="image of people"
-          />
+          <v-img :src="require('../static/images/homeVisual.png')" class="d-none d-md-flex mx-md-16" alt="image of people" />
         </v-col>
       </v-row>
     </section>
-    <v-row
-      class="full-width-green mt-10 mx-auto px-6 px-md-16 py-8 mb-0 white--text"
-      no-gutters
-      style="box-shadow: 0px 0px 70px rgba(100, 181, 246, 0.55)"
-    >
+    <v-row class="full-width-green mt-10 mx-auto px-6 px-md-16 py-8 mb-0 white--text" no-gutters style="box-shadow: 0px 0px 70px rgba(100, 181, 246, 0.55)">
       <v-col cols="12" md="4">
         <h1 class="mb-4 text-left">What we do.</h1>
         <h2 class="text-left">
@@ -102,21 +60,8 @@
       </v-row>
     </v-row>
     <v-row class="mx-0 mt-4 pt-0 mt-md-8 pb-0 mb-0 white--text" no-gutters>
-      <v-carousel
-        cycle
-        continuous
-        class="mx-0 my-8 my-md-0 py-0"
-        hide-delimiter-background
-        hide-delimiters
-        light
-        :show-arrows-on-hover="true"
-        height="100%"
-      >
-        <v-carousel-item
-          v-for="(quote, index) in quotes"
-          :key="index"
-          class="px-0 mx-0 px-md-16 mx-md-16 my-0 py-0"
-        >
+      <v-carousel cycle continuous class="mx-0 my-8 my-md-0 py-0" hide-delimiter-background hide-delimiters light :show-arrows-on-hover="true" height="100%">
+        <v-carousel-item v-for="(quote, index) in quotes" :key="index" class="px-0 mx-0 px-md-16 mx-md-16 my-0 py-0">
           <v-sheet color="transparent" height="100%" class="px-0 px-md-16 py-8 py-md-0 my-md-16">
             <v-row class="px-4 px-0 mx-6 mx-lg-16" align="center" justify="center">
               <p class="text-h6 text-md-h5 mt-md-0 mb-0 pb-0 text--primary">
@@ -143,28 +88,8 @@
       <v-col cols="12">
         <Logos />
         <v-row class="mx-auto justify-center mt-8">
-          <v-btn
-            to="/startups"
-            class="mx-12 px-6 btn--outlined font-weight-black mt-2 mt-sm-0"
-            outlined
-            color="accent"
-            rounded
-            width="250"
-            height="60"
-          >
-            Scale your team
-          </v-btn>
-          <v-btn
-            to="/talent"
-            class="mx-12 px-6 btn--outlined font-weight-black mt-2 mt-sm-0"
-            outlined
-            color="success"
-            rounded
-            width="250"
-            height="60"
-          >
-            Join a startup
-          </v-btn>
+          <v-btn to="/startups" class="mx-12 px-6 btn--outlined font-weight-black mt-2 mt-sm-0" outlined color="accent" rounded width="250" height="60"> Scale your team </v-btn>
+          <v-btn to="/talent" class="mx-12 px-6 btn--outlined font-weight-black mt-2 mt-sm-0" outlined color="success" rounded width="250" height="60"> Join a startup </v-btn>
         </v-row>
       </v-col>
     </v-row>
@@ -243,20 +168,17 @@
 </template>
 
 <script>
-import Logos from '../components/Logos'
-import GetInTouch from '../components/GetInTouch'
-
-const Cosmic = require('cosmicjs')
-const api = Cosmic()
-const bucket = api.bucket({
-  slug: 'confido',
-  read_key: '0O6acZ2ATKQSdKr8rLb5b489Kxg4yNPQRvVii3KCL8T8atx3gn',
-})
+import Logos from '../components/Logos';
+import GetInTouch from '../components/GetInTouch';
+import { createBucketClient } from '@cosmicjs/sdk';
+const bucket = createBucketClient({
+  bucketSlug: 'confido',
+  readKey: 'OrYlRGLrDpOrxqbRXMMw7gd7OzEL6jZCqHvfwJrhUbB0Q1Khcj',
+});
 
 const title = 'The Tech for Good talent partner',
-  desc =
-    'Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good startups. We connect people with the same values and a shared purpose to build a better future, together.',
-  url = 'https://confidotalent.com'
+  desc = 'Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good startups. We connect people with the same values and a shared purpose to build a better future, together.',
+  url = 'https://confidotalent.com';
 
 export default {
   name: 'Home',
@@ -292,44 +214,37 @@ export default {
       home: {},
       quotes: [
         {
-          content:
-            'We felt Confido really understood what it meant to represent an impact/not-for-profit business and how to attract great people. The amount of work that went into each recruit was immense, the advice we received from Confido was golden, and even our candidates commented on how positively different it was working with Confido',
+          content: 'We felt Confido really understood what it meant to represent an impact/not-for-profit business and how to attract great people. The amount of work that went into each recruit was immense, the advice we received from Confido was golden, and even our candidates commented on how positively different it was working with Confido',
           logo: '../images/cpr-logo.svg',
           advocate: 'Michal Nachmany – CEO & Founder, Climate Policy Radar',
         },
         {
-          content:
-            'From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.',
+          content: 'From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.',
           logo: '../images/allplants-logo-y.png',
           advocate: 'Adam Dunkley – Director of Technology, allplants',
         },
         {
-          content:
-            'Confido did an excellent job in making our crucial Senior Backend hire. From the very beginning their process was smooth, clear and quick. We had three candidates to interview in under two weeks and hired one soon after. onHand couldn’t have asked for a better talent partnership',
+          content: 'Confido did an excellent job in making our crucial Senior Backend hire. From the very beginning their process was smooth, clear and quick. We had three candidates to interview in under two weeks and hired one soon after. onHand couldn’t have asked for a better talent partnership',
           logo: '../images/onhand-logo.png',
           advocate: 'Dan Moffatt – CTO, onHand',
         },
         {
-          content:
-            "Working with Confido was amazing. The things I appreciated most were the diligence and flexibility. They held us accountable throughout the entire process to make it was a great experience for candidates as well. I'm looking forward to welcoming our new team members soon and working with Craig as we continue to grow.",
+          content: "Working with Confido was amazing. The things I appreciated most were the diligence and flexibility. They held us accountable throughout the entire process to make it was a great experience for candidates as well. I'm looking forward to welcoming our new team members soon and working with Craig as we continue to grow.",
           logo: '../images/cleanhub-black.png',
           advocate: 'Joel Tasche – CEO/Founder, CLEANHUB',
         },
         {
-          content:
-            "We needed to scale a small startup team about 3x in a short space of time but didn't want to compromise on the quality of candidates. We'd tried alternative recruitment arrangements but hadn't seen results until we engaged Confido.",
+          content: "We needed to scale a small startup team about 3x in a short space of time but didn't want to compromise on the quality of candidates. We'd tried alternative recruitment arrangements but hadn't seen results until we engaged Confido.",
           logo: '../images/feedr.webp',
           advocate: 'Mark Somerfield - VP of Engineering, Feedr',
         },
         {
-          content:
-            "Unmind needed to double the engineering team in a short time frame. Confido quickly calibrated on what we needed and we saw hires made within the first few weeks. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
+          content: "Unmind needed to double the engineering team in a short time frame. Confido quickly calibrated on what we needed and we saw hires made within the first few weeks. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
           logo: '../images/unmind.png',
           advocate: 'Phil Mullan – CTO, Unmind',
         },
         {
-          content:
-            'Confido have partnered with us in the truest sense. Helping us grow more in the last six months than we achieved with others over the previous twelve.',
+          content: 'Confido have partnered with us in the truest sense. Helping us grow more in the last six months than we achieved with others over the previous twelve.',
           logo: '../images/benefex.png',
           advocate: 'Paul Smith – CTO, Benefex',
         },
@@ -340,8 +255,7 @@ export default {
         //   advocate: "Sam Stagg - CTO, Third Space Learning",
         // },
         {
-          content:
-            'Confido have been a true partner to us over the last 18 months, both in advice and execution for a number of key hires across the engineering and product teams. I’d recommend them highly to anyone needing to scale up their product and engineering functions.',
+          content: 'Confido have been a true partner to us over the last 18 months, both in advice and execution for a number of key hires across the engineering and product teams. I’d recommend them highly to anyone needing to scale up their product and engineering functions.',
           logo: '../images/thirdSpace.png',
           advocate: 'Tom Hooper - CEO, Third Space Learning',
         },
@@ -352,43 +266,39 @@ export default {
         //   advocate: "Richard Wazacz - CEO, Octopus Wealth",
         // },
         {
-          content:
-            'Straight away we noticed a difference, they felt more like an in-house recruitment expert than an external recruiter. It was a real pleasure to work with Confido. We could trust them in representing our brand and attracting high calibre candidates for what was a critical hire for us.',
+          content: 'Straight away we noticed a difference, they felt more like an in-house recruitment expert than an external recruiter. It was a real pleasure to work with Confido. We could trust them in representing our brand and attracting high calibre candidates for what was a critical hire for us.',
           logo: '../images/mindlabs.png',
           advocate: 'Adnan Ebrahim - CEO/Co-founder, MindLabs',
         },
         {
-          content:
-            'Working with Confido has been one of the best choices we have made all year. It took less than two weeks to start talking to interesting candidates and we felt guided, supported and well briefed at every step of the way. In addition, the entire process felt personal and caring which lead to hiring not only the skill but also the personality that we love working with.',
+          content: 'Working with Confido has been one of the best choices we have made all year. It took less than two weeks to start talking to interesting candidates and we felt guided, supported and well briefed at every step of the way. In addition, the entire process felt personal and caring which lead to hiring not only the skill but also the personality that we love working with.',
           logo: '../images/eevieLogo.png',
           advocate: 'Lenni Paar - CTO, eevie',
         },
         {
-          content:
-            '“I have and will continue to happily recommend Confido for both finding a job and finding candidates. Their process in my opinion is the model for good recruiting.',
+          content: '“I have and will continue to happily recommend Confido for both finding a job and finding candidates. Their process in my opinion is the model for good recruiting.',
           logo: '../images/curaleafLogo.svg',
           advocate: 'Philip Jones - VP Tech, Curaleaf International',
         },
       ],
       contact: [],
-    }
+    };
   },
   created() {
-    this.getHomeData()
+    this.getHomeData();
   },
   methods: {
     async getHomeData() {
-      this.loading = true
-      await bucket
-        .getObject({
-          id: '631c652ae8aba00009a5f24a',
-          props: 'title,metadata',
+      this.loading = true;
+      const data = await bucket.objects
+        .findOne({
+          type: 'home',
+          id: '64ce853f07970f7296000a90',
         })
-        .then((data) => {
-          this.home = data.object
-          this.loading = false
-        })
+        .props('title,metadata');
+      this.home = await data.object;
+      this.loading = false;
     },
   },
-}
+};
 </script>

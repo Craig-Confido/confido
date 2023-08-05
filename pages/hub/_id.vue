@@ -1,13 +1,11 @@
 <template>
   <v-container>
-    <v-row class="mx-4 mx-lg-16 ">
+    <v-row class="mx-4 mx-lg-16">
       <v-col cols="12" md="12">
-        <v-row align="center" class="blog-900" style="margin:0px auto;">
+        <v-row align="center" class="blog-900" style="margin: 0px auto">
           <v-row>
             <v-btn text to="/hub" class="my-4">
-              <v-icon class="mr-2">
-                mdi-arrow-left
-              </v-icon>
+              <v-icon class="mr-2"> mdi-arrow-left </v-icon>
               Back to all posts
             </v-btn>
           </v-row>
@@ -24,33 +22,33 @@
 </template>
 
 <script>
-import Post from "../../components/Post";
-import GetInTouch from "../../components/GetInTouch";
-
-import getPost from "../../queries/getPost";
+import Post from '../../components/Post';
+import GetInTouch from '../../components/GetInTouch';
+import { createBucketClient } from '@cosmicjs/sdk';
+const bucket = createBucketClient({
+  bucketSlug: 'confido',
+  readKey: 'OrYlRGLrDpOrxqbRXMMw7gd7OzEL6jZCqHvfwJrhUbB0Q1Khcj',
+});
 
 export default {
-  name: "PostView",
+  name: 'PostView',
   components: {
     Post,
     GetInTouch,
   },
-  async asyncData({ app, route, redirect }) {
-    let data = {};
+  async asyncData({ route, redirect }) {
     try {
-      const d = await app.apolloProvider.defaultClient.query({
-        query: getPost,
-        variables: { slug: route.params.id },
-      });
-      const slug = { slug: route.params.id };
-      const data = { ...d.data.getObject, ...slug };
-
-      return {
-        page: data,
-      };
+      const data = await bucket.objects
+        .findOne({
+          type: 'posts',
+          slug: route.params.slug,
+        })
+        .status('any')
+        .props('slug,title,content,metadata,modified_at,created_at,status');
+      return { page: await data.object };
     } catch (error) {
-      console.log("error", error);
-      redirect("/hub");
+      console.log('error', error);
+      redirect('/hub');
     }
   },
   computed: {
