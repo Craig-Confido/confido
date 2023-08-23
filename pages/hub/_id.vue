@@ -41,7 +41,7 @@ export default {
       const data = await bucket.objects
         .findOne({
           type: 'posts',
-          slug: route.params.slug,
+          slug: route.params.id,
         })
         .status('any')
         .props('slug,title,content,metadata,modified_at,created_at,status');
