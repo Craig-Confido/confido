@@ -2,20 +2,12 @@
   <v-app>
     <v-app-bar app class="accent" flat height="100">
       <NuxtLink to="/">
-        <v-img
-          :src="require('../assets/Logo.svg')"
-          max-height="300"
-          max-width="300"
-          contain
-        />
+        <v-img :src="require('../assets/Logo.svg')" max-height="300" max-width="300" contain />
       </NuxtLink>
       <v-spacer />
-      <v-app-bar-nav-icon
-        class="white--text d-md-none"
-        @click.stop="drawer = !drawer"
-      />
+      <v-app-bar-nav-icon class="white--text d-md-none" @click.stop="drawer = !drawer" />
       <v-btn
-        v-for="(link, index_1) in links.slice(0, 5)"
+        v-for="(link, index_1) in links.slice(0, 3)"
         :key="link.label + index_1"
         class="my-2 mx-8 white--text d-none d-md-flex font-weight-medium"
         text
@@ -56,13 +48,11 @@
           absolute
           @click.stop="drawer = !drawer"
         >
-          <v-icon class="white--text" absolute icon>
-            mdi-close
-          </v-icon>
+          <v-icon class="white--text" absolute icon> mdi-close </v-icon>
         </v-app-bar-nav-icon>
         <v-list class="mt-16 pt-4" rounded>
           <v-list-item
-            v-for="(link, index_3) in links.slice(0, 5)"
+            v-for="(link, index_3) in links.slice(0, 3)"
             :key="link.url + index_3"
             class="my-2 mx-0 white--text"
             text
@@ -77,15 +67,9 @@
               {{ link.label }}
             </v-list-item-content>
           </v-list-item>
-          <v-list-item
-            class="my-2 mx-1 white--text"
-            text
-            @click="$vuetify.goTo('#getInTouch')"
-          >
+          <v-list-item class="my-2 mx-1 white--text" text @click="$vuetify.goTo('#getInTouch')">
             <v-list-item-icon class="white--text">
-              <v-icon class="white--text text-left">
-                mdi-human-greeting-proximity
-              </v-icon>
+              <v-icon class="white--text text-left"> mdi-human-greeting-proximity </v-icon>
             </v-list-item-icon>
             <v-list-item-content class="font-weight-medium white--text">
               Contact
@@ -113,36 +97,30 @@
     </v-app-bar>
 
     <v-main id="intro">
-          <div class="jobsforgoodbanner" style="background-color:#5e3aed; padding:.75rem; text-align:center;"><p style="margin:0px; padding:0px; color:#FFF; font-weight:bold;">🌎💛 Find the best jobs in sustainability, social impact and  more at <a style="color:#f8f42b;" href="https://www.jobsforgood.io" target="_blank">Jobs for Good  ></a></p></div>
+      <div
+        class="jobsforgoodbanner"
+        style="background-color: #5e3aed; padding: 0.75rem; text-align: center"
+      >
+        <p style="margin: 0px; padding: 0px; color: #fff; font-weight: bold">
+          🌎💛 Find the best jobs in sustainability, social impact and more at
+          <a style="color: #f8f42b" href="https://www.jobsforgood.io" target="_blank"
+            >Jobs for Good ></a
+          >
+        </p>
+      </div>
 
       <nuxt />
 
-      <v-snackbar
-        v-model="snackbar"
-        light
-        fixed
-        bottom
-        :timeout="timeout"
-        class="cookieBanner"
-      >
+      <v-snackbar v-model="snackbar" light fixed bottom :timeout="timeout" class="cookieBanner">
         By continuing to use this site, you accept our
-        <a href="/privacy" class="text-decoration-underline"
-          >privacy and cookies policy.</a
-        >
+        <a href="/privacy" class="text-decoration-underline">privacy and cookies policy.</a>
         <template>
-          <v-btn color="secondary" text @click="snackbar = false">
-            Close
-          </v-btn>
+          <v-btn color="secondary" text @click="snackbar = false"> Close </v-btn>
         </template>
       </v-snackbar>
       <v-speed-dial fixed bottom right alt="Scroll to top">
         <template v-slot:activator>
-          <v-btn
-            color="accent"
-            style="opacity: 0.7"
-            fab
-            @click="$vuetify.goTo('#intro')"
-          >
+          <v-btn color="accent" style="opacity: 0.7" fab @click="$vuetify.goTo('#intro')">
             <v-icon>mdi-arrow-up</v-icon>
           </v-btn>
         </template>
@@ -163,9 +141,7 @@
           </v-btn>
         </v-col>
         <v-col cols="12">
-          <p class="white--text text-sm-caption">
-            ©2020 Confido. All rights reserved.
-          </p>
+          <p class="white--text text-sm-caption">©2020 Confido. All rights reserved.</p>
         </v-col>
       </v-row>
     </v-footer>
@@ -181,11 +157,11 @@ export default {
       drawer: false,
       group: null,
       links: [
-        {
-          icon: "mdi-alpha-i-circle",
-          label: "Impact",
-          url: "/impact",
-        },
+        // {
+        //   icon: "mdi-alpha-i-circle",
+        //   label: "Impact",
+        //   url: "/impact",
+        // },
         {
           icon: "mdi-sprout",
           label: "Startups",
@@ -196,11 +172,11 @@ export default {
           label: "Talent",
           url: "/talent",
         },
-        {
-          icon: "mdi-domain",
-          label: "Careers",
-          url: "/careers",
-        },
+        // {
+        //   icon: "mdi-domain",
+        //   label: "Careers",
+        //   url: "/careers",
+        // },
         {
           icon: "mdi-id-card",
           label: "Hub",
