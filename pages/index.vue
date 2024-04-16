@@ -159,54 +159,54 @@
         </v-card>
       </v-col>
     </v-row>
-    <v-row id="getInTouch" class="mx-0 mx-md-6 mx-lg-16 mb-12">
+    <!-- <v-row id="getInTouch" class="mx-0 mx-md-6 mx-lg-16 mb-12">
       <v-col cols="12">
         <GetInTouch :contact="contact" />
       </v-col>
-    </v-row>
+    </v-row> -->
   </v-container>
 </template>
 
 <script>
-import Logos from '../components/Logos';
-import GetInTouch from '../components/GetInTouch';
-import { createBucketClient } from '@cosmicjs/sdk';
+import Logos from "../components/Logos"
+import GetInTouch from "../components/GetInTouch"
+import { createBucketClient } from "@cosmicjs/sdk"
 const bucket = createBucketClient({
-  bucketSlug: 'confido',
-  readKey: 'OrYlRGLrDpOrxqbRXMMw7gd7OzEL6jZCqHvfwJrhUbB0Q1Khcj',
-});
+  bucketSlug: "confido",
+  readKey: "OrYlRGLrDpOrxqbRXMMw7gd7OzEL6jZCqHvfwJrhUbB0Q1Khcj",
+})
 
-const title = 'The Tech for Good talent partner',
-  desc = 'Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good startups. We connect people with the same values and a shared purpose to build a better future, together.',
-  url = 'https://confidotalent.com';
+const title = "The Tech for Good talent partner",
+  desc = "Confido specialises in Product and Tech hiring for Seed to Series B Tech for Good startups. We connect people with the same values and a shared purpose to build a better future, together.",
+  url = "https://confidotalent.com"
 
 export default {
-  name: 'Home',
+  name: "Home",
   scrollToTop: true,
   head: {
     title: title,
     meta: [
-      { hid: 'description', name: 'description', content: desc },
+      { hid: "description", name: "description", content: desc },
 
-      { hid: 'og:title', property: 'og:title', content: title },
-      { hid: 'og:url', property: 'og:url', content: url },
-      { hid: 'og:description', property: 'og:description', content: desc },
+      { hid: "og:title", property: "og:title", content: title },
+      { hid: "og:url", property: "og:url", content: url },
+      { hid: "og:description", property: "og:description", content: desc },
 
-      { property: 'twitter:domain', content: url },
-      { hid: 'twitter:title', property: 'twitter:title', content: title },
+      { property: "twitter:domain", content: url },
+      { hid: "twitter:title", property: "twitter:title", content: title },
       {
-        hid: 'twitter:description',
-        property: 'twitter:description',
+        hid: "twitter:description",
+        property: "twitter:description",
         content: desc,
       },
-      { hid: 'twitter:url', property: 'twitter:url', content: url },
-      { hid: 'twitter:label1', property: 'twitter:label1', content: title },
+      { hid: "twitter:url", property: "twitter:url", content: url },
+      { hid: "twitter:label1", property: "twitter:label1", content: title },
     ],
-    link: [{ rel: 'canonical', href: url }],
+    link: [{ rel: "canonical", href: url }],
   },
   components: {
     Logos,
-    GetInTouch,
+    // GetInTouch,
   },
   data() {
     return {
@@ -214,39 +214,39 @@ export default {
       home: {},
       quotes: [
         {
-          content: 'We felt Confido really understood what it meant to represent an impact/not-for-profit business and how to attract great people. The amount of work that went into each recruit was immense, the advice we received from Confido was golden, and even our candidates commented on how positively different it was working with Confido',
-          logo: '../images/cpr-logo.svg',
-          advocate: 'Michal Nachmany – CEO & Founder, Climate Policy Radar',
+          content: "We felt Confido really understood what it meant to represent an impact/not-for-profit business and how to attract great people. The amount of work that went into each recruit was immense, the advice we received from Confido was golden, and even our candidates commented on how positively different it was working with Confido",
+          logo: "../images/cpr-logo.svg",
+          advocate: "Michal Nachmany – CEO & Founder, Climate Policy Radar",
         },
         {
-          content: 'From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.',
-          logo: '../images/allplants-logo-y.png',
-          advocate: 'Adam Dunkley – Director of Technology, allplants',
+          content: "From 12 months looking it took just weeks for Confido to fill the vacancy. But the biggest point for a B-Corp, like ourselves, was feeling safe that our brand was being presented well in the process. Any mission driven company would feel safe with Confido representing them.",
+          logo: "../images/allplants-logo-y.png",
+          advocate: "Adam Dunkley – Director of Technology, allplants",
         },
         {
-          content: 'Confido did an excellent job in making our crucial Senior Backend hire. From the very beginning their process was smooth, clear and quick. We had three candidates to interview in under two weeks and hired one soon after. onHand couldn’t have asked for a better talent partnership',
-          logo: '../images/onhand-logo.png',
-          advocate: 'Dan Moffatt – CTO, onHand',
+          content: "Confido did an excellent job in making our crucial Senior Backend hire. From the very beginning their process was smooth, clear and quick. We had three candidates to interview in under two weeks and hired one soon after. onHand couldn’t have asked for a better talent partnership",
+          logo: "../images/onhand-logo.png",
+          advocate: "Dan Moffatt – CTO, onHand",
         },
         {
           content: "Working with Confido was amazing. The things I appreciated most were the diligence and flexibility. They held us accountable throughout the entire process to make it was a great experience for candidates as well. I'm looking forward to welcoming our new team members soon and working with Craig as we continue to grow.",
-          logo: '../images/cleanhub-black.png',
-          advocate: 'Joel Tasche – CEO/Founder, CLEANHUB',
+          logo: "../images/cleanhub-black.png",
+          advocate: "Joel Tasche – CEO/Founder, CLEANHUB",
         },
         {
           content: "We needed to scale a small startup team about 3x in a short space of time but didn't want to compromise on the quality of candidates. We'd tried alternative recruitment arrangements but hadn't seen results until we engaged Confido.",
-          logo: '../images/feedr.webp',
-          advocate: 'Mark Somerfield - VP of Engineering, Feedr',
+          logo: "../images/feedr.webp",
+          advocate: "Mark Somerfield - VP of Engineering, Feedr",
         },
         {
           content: "Unmind needed to double the engineering team in a short time frame. Confido quickly calibrated on what we needed and we saw hires made within the first few weeks. If you're a startup looking to scale quickly without sacrificing on values alignment or diversity, then I would highly recommend Confido.",
-          logo: '../images/unmind.png',
-          advocate: 'Phil Mullan – CTO, Unmind',
+          logo: "../images/unmind.png",
+          advocate: "Phil Mullan – CTO, Unmind",
         },
         {
-          content: 'Confido have partnered with us in the truest sense. Helping us grow more in the last six months than we achieved with others over the previous twelve.',
-          logo: '../images/benefex.png',
-          advocate: 'Paul Smith – CTO, Benefex',
+          content: "Confido have partnered with us in the truest sense. Helping us grow more in the last six months than we achieved with others over the previous twelve.",
+          logo: "../images/benefex.png",
+          advocate: "Paul Smith – CTO, Benefex",
         },
         // {
         //   content:
@@ -255,9 +255,9 @@ export default {
         //   advocate: "Sam Stagg - CTO, Third Space Learning",
         // },
         {
-          content: 'Confido have been a true partner to us over the last 18 months, both in advice and execution for a number of key hires across the engineering and product teams. I’d recommend them highly to anyone needing to scale up their product and engineering functions.',
-          logo: '../images/thirdSpace.png',
-          advocate: 'Tom Hooper - CEO, Third Space Learning',
+          content: "Confido have been a true partner to us over the last 18 months, both in advice and execution for a number of key hires across the engineering and product teams. I’d recommend them highly to anyone needing to scale up their product and engineering functions.",
+          logo: "../images/thirdSpace.png",
+          advocate: "Tom Hooper - CEO, Third Space Learning",
         },
         // {
         //   content:
@@ -266,39 +266,39 @@ export default {
         //   advocate: "Richard Wazacz - CEO, Octopus Wealth",
         // },
         {
-          content: 'Straight away we noticed a difference, they felt more like an in-house recruitment expert than an external recruiter. It was a real pleasure to work with Confido. We could trust them in representing our brand and attracting high calibre candidates for what was a critical hire for us.',
-          logo: '../images/mindlabs.png',
-          advocate: 'Adnan Ebrahim - CEO/Co-founder, MindLabs',
+          content: "Straight away we noticed a difference, they felt more like an in-house recruitment expert than an external recruiter. It was a real pleasure to work with Confido. We could trust them in representing our brand and attracting high calibre candidates for what was a critical hire for us.",
+          logo: "../images/mindlabs.png",
+          advocate: "Adnan Ebrahim - CEO/Co-founder, MindLabs",
         },
         {
-          content: 'Working with Confido has been one of the best choices we have made all year. It took less than two weeks to start talking to interesting candidates and we felt guided, supported and well briefed at every step of the way. In addition, the entire process felt personal and caring which lead to hiring not only the skill but also the personality that we love working with.',
-          logo: '../images/eevieLogo.png',
-          advocate: 'Lenni Paar - CTO, eevie',
+          content: "Working with Confido has been one of the best choices we have made all year. It took less than two weeks to start talking to interesting candidates and we felt guided, supported and well briefed at every step of the way. In addition, the entire process felt personal and caring which lead to hiring not only the skill but also the personality that we love working with.",
+          logo: "../images/eevieLogo.png",
+          advocate: "Lenni Paar - CTO, eevie",
         },
         {
-          content: '“I have and will continue to happily recommend Confido for both finding a job and finding candidates. Their process in my opinion is the model for good recruiting.',
-          logo: '../images/curaleafLogo.svg',
-          advocate: 'Philip Jones - VP Tech, Curaleaf International',
+          content: "“I have and will continue to happily recommend Confido for both finding a job and finding candidates. Their process in my opinion is the model for good recruiting.",
+          logo: "../images/curaleafLogo.svg",
+          advocate: "Philip Jones - VP Tech, Curaleaf International",
         },
       ],
       contact: [],
-    };
+    }
   },
   created() {
-    this.getHomeData();
+    this.getHomeData()
   },
   methods: {
     async getHomeData() {
-      this.loading = true;
+      this.loading = true
       const data = await bucket.objects
         .findOne({
-          type: 'home',
-          id: '64ce853f07970f7296000a90',
+          type: "home",
+          id: "64ce853f07970f7296000a90",
         })
-        .props('title,metadata');
-      this.home = await data.object;
-      this.loading = false;
+        .props("title,metadata")
+      this.home = await data.object
+      this.loading = false
     },
   },
-};
+}
 </script>

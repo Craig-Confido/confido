@@ -179,51 +179,51 @@
         </v-row>
       </v-row>
     </section>
-    <v-row id="getInTouch" class="mx-0 mx-md-6 mx-lg-16 mb-12">
+    <!-- <v-row id="getInTouch" class="mx-0 mx-md-6 mx-lg-16 mb-12">
       <v-col cols="12">
         <GetInTouch :contact="contact" />
       </v-col>
-    </v-row>
+    </v-row> -->
   </v-container>
 </template>
 
 <script>
-import { createBucketClient } from '@cosmicjs/sdk';
+import { createBucketClient } from "@cosmicjs/sdk"
 const bucket = createBucketClient({
-  bucketSlug: 'confido',
-  readKey: 'OrYlRGLrDpOrxqbRXMMw7gd7OzEL6jZCqHvfwJrhUbB0Q1Khcj',
-});
+  bucketSlug: "confido",
+  readKey: "OrYlRGLrDpOrxqbRXMMw7gd7OzEL6jZCqHvfwJrhUbB0Q1Khcj",
+})
 
-let title = 'Why work with Confido?',
-  desc = 'We’ll connect you with a startup that alligns with your values so you can build products that make the world a better place. Get in touch to talk about Tech and Product roles.',
-  url = 'https://confidotalent.com/about',
-  image = 'https://confidotalent.com/images/meta/talent.png';
+let title = "Why work with Confido?",
+  desc = "We’ll connect you with a startup that alligns with your values so you can build products that make the world a better place. Get in touch to talk about Tech and Product roles.",
+  url = "https://confidotalent.com/about",
+  image = "https://confidotalent.com/images/meta/talent.png"
 
 export default {
-  name: 'About',
+  name: "About",
   scrollToTop: true,
   head: {
     title: title,
     meta: [
-      { hid: 'description', name: 'description', content: desc },
+      { hid: "description", name: "description", content: desc },
 
-      { hid: 'og:title', property: 'og:title', content: title },
-      { hid: 'og:url', property: 'og:url', content: url },
-      { hid: 'og:image', property: 'og:image', content: image },
-      { hid: 'og:description', property: 'og:description', content: desc },
+      { hid: "og:title", property: "og:title", content: title },
+      { hid: "og:url", property: "og:url", content: url },
+      { hid: "og:image", property: "og:image", content: image },
+      { hid: "og:description", property: "og:description", content: desc },
 
-      { property: 'twitter:domain', content: url },
-      { hid: 'twitter:title', property: 'twitter:title', content: title },
+      { property: "twitter:domain", content: url },
+      { hid: "twitter:title", property: "twitter:title", content: title },
       {
-        hid: 'twitter:description',
-        property: 'twitter:description',
+        hid: "twitter:description",
+        property: "twitter:description",
         content: desc,
       },
-      { hid: 'twitter:image', property: 'twitter:image', content: image },
-      { hid: 'twitter:url', property: 'twitter:url', content: url },
-      { hid: 'twitter:label1', property: 'twitter:label1', content: title },
+      { hid: "twitter:image", property: "twitter:image", content: image },
+      { hid: "twitter:url", property: "twitter:url", content: url },
+      { hid: "twitter:label1", property: "twitter:label1", content: title },
     ],
-    link: [{ rel: 'canonical', href: url }],
+    link: [{ rel: "canonical", href: url }],
   },
   data() {
     return {
@@ -231,48 +231,48 @@ export default {
       roles: {},
       benefits: [
         {
-          label: '33 days holiday (including bank hols)',
+          label: "33 days holiday (including bank hols)",
         },
         {
-          label: 'Oliva - mental wellbeing support',
+          label: "Oliva - mental wellbeing support",
         },
         {
-          label: 'Your birthday off',
+          label: "Your birthday off",
         },
         {
-          label: 'Remote first and flexible working',
+          label: "Remote first and flexible working",
         },
         {
-          label: 'Paid monthly team socials',
+          label: "Paid monthly team socials",
         },
         {
-          label: 'Four paid team volunteering days per year',
+          label: "Four paid team volunteering days per year",
         },
         {
-          label: '£500 training and wellbeing budget',
+          label: "£500 training and wellbeing budget",
         },
       ],
-    };
+    }
   },
   created() {
-    this.getRoles();
+    this.getRoles()
   },
   methods: {
     async getRoles() {
-      this.error = this.role = null;
-      this.loading = true;
+      this.error = this.role = null
+      this.loading = true
       await bucket.objects
         .find({
-          type: 'careers',
+          type: "careers",
         })
-        .props('id,slug,title,content,metadata,created_at,modified_at')
-        .sort('-created_at')
+        .props("id,slug,title,content,metadata,created_at,modified_at")
+        .sort("-created_at")
         .then((data) => {
-          const roles = data.objects;
-          this.loading = false;
-          this.roles = roles;
-        });
+          const roles = data.objects
+          this.loading = false
+          this.roles = roles
+        })
     },
   },
-};
+}
 </script>

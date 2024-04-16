@@ -22,16 +22,16 @@
 </template>
 
 <script>
-import Post from '../../components/Post';
-import GetInTouch from '../../components/GetInTouch';
-import { createBucketClient } from '@cosmicjs/sdk';
+import Post from "../../components/Post"
+import GetInTouch from "../../components/GetInTouch"
+import { createBucketClient } from "@cosmicjs/sdk"
 const bucket = createBucketClient({
-  bucketSlug: 'confido',
-  readKey: 'OrYlRGLrDpOrxqbRXMMw7gd7OzEL6jZCqHvfwJrhUbB0Q1Khcj',
-});
+  bucketSlug: "confido",
+  readKey: "OrYlRGLrDpOrxqbRXMMw7gd7OzEL6jZCqHvfwJrhUbB0Q1Khcj",
+})
 
 export default {
-  name: 'PostView',
+  name: "PostView",
   components: {
     Post,
     GetInTouch,
@@ -40,21 +40,21 @@ export default {
     try {
       const data = await bucket.objects
         .findOne({
-          type: 'posts',
+          type: "posts",
           slug: route.params.id,
         })
-        .status('any')
-        .props('slug,title,content,metadata,modified_at,created_at,status');
-      return { page: await data.object };
+        .status("any")
+        .props("slug,title,content,metadata,modified_at,created_at,status")
+      return { page: await data.object }
     } catch (error) {
-      console.log('error', error);
-      redirect('/hub');
+      console.log("error", error)
+      redirect("/hub")
     }
   },
   computed: {
     myRoute() {
-      return this.$route.params.id;
+      return this.$route.params.id
     },
   },
-};
+}
 </script>
