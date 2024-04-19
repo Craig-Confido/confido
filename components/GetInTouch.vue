@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <v-card class="pa-8 my-2 white--text text-left card-shadow">
     <v-row class="d-none d-md-flex">
       <v-col cols="12">
@@ -282,4 +282,4 @@ export default {
         },
     },
 };
-</script>
+</script> -->
